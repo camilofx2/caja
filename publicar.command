@@ -3,7 +3,7 @@
 cd "$(dirname "$0")" || exit 1
 git add -A
 git commit -m "Actualizar Caja $(date '+%Y-%m-%d %H:%M')" >/dev/null 2>&1 || echo "No hay cambios nuevos."
-if git push; then
+if git push -u origin main; then
   echo ""
   echo "✅ Publicado. En 1–2 minutos la app se actualiza en tu iPhone y tu Mac."
 else
