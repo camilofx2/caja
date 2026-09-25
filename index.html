@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Caja</title>
+<title>Finanzas personales</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" href="icons/favicon.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Caja">
+<meta name="apple-mobile-web-app-title" content="Finanzas">
 <meta name="theme-color" content="#04050A">
 <script src="config.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
@@ -123,6 +123,18 @@ input,select,textarea{font:inherit;color:inherit}
 .swc[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
 .swc.wheel{background:conic-gradient(#f44,#fa0,#ee2,#4c4,#2cd,#36f,#a3f,#f4b,#f44);overflow:hidden;cursor:pointer}
 .swc.wheel input{position:absolute;inset:-8px;opacity:0;cursor:pointer;width:60px;height:60px}
+.inbox{grid-column:1/-1;border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:0 10px 40px -20px var(--accent)}
+.inbox .acts{display:flex;gap:6px;flex:none}
+.inbox .acts button{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--surface)}
+.inbox .acts button.ok{background:var(--accent);color:#fff}
+.inbox .acts .ico{width:17px;height:17px;stroke-width:2.2}
+.inbox .row{flex-wrap:nowrap}
+@media (max-width:560px){.inbox .row{flex-wrap:wrap;row-gap:8px}.inbox .acts{flex-basis:100%;justify-content:flex-end}}
+.copy{display:flex;gap:8px;align-items:center;background:var(--surface);border-radius:12px;padding:8px 8px 8px 12px;font-family:var(--mono);font-size:12px;word-break:break-all}
+.copy span{flex:1;min-width:0}
+.copy button{flex:none;height:32px;padding:0 12px;border-radius:10px;background:var(--ink);color:var(--bg);font-family:var(--font);font-size:12.5px;font-weight:600}
+.steps2{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:12px;font-size:14px;color:var(--ink2)}
+.steps2 b{color:var(--ink)}
 .credits{display:flex;gap:14px;align-items:center;padding:14px;border-radius:16px;background:var(--surface)}
 .credits .logo{width:74px;flex:none}
 .credits b{font-size:15px}
@@ -447,7 +459,7 @@ button.row{transition:background .2s;border-radius:12px}
 <div class="bgfx" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
 <div class="shell">
   <nav class="nav" id="nav" aria-label="Secciones">
-    <div class="brand"><span class="wordmark"><i>C</i>Caja</span><span class="beta" style="margin:0 0 0 2px"><i></i>Beta</span></div>
+    <div class="brand"><span class="wordmark"><i>F</i>Finanzas</span><span class="beta" style="margin:0 0 0 2px"><i></i>Beta</span></div>
     <button class="mob-btn" data-act="menu" aria-label="Abrir secciones"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
     <a href="#inicio" data-view="inicio" class="desk-only"><svg class="ico" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Inicio</a>
     <a href="#movimientos" data-view="movimientos" class="desk-only"><svg class="ico" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>Historial</a>
@@ -468,7 +480,7 @@ button.row{transition:background .2s;border-radius:12px}
 <div class="toast" id="toast" role="status"></div>
 <div class="login" id="login" hidden>
   <div class="login-card">
-    <span class="wordmark" style="font-size:22px;font-weight:700;letter-spacing:-.03em"><i>C</i>Caja</span>
+    <span class="wordmark" style="font-size:22px;font-weight:700;letter-spacing:-.03em"><i>F</i>Finanzas personales</span>
     <span class="beta" style="align-self:flex-start;margin-top:4px"><i></i>Beta</span>
     <p class="muted">Entra con tu cuenta para tener los mismos datos en tu iPhone y en tu Mac.</p>
     <form class="form" id="loginform">
@@ -579,10 +591,12 @@ const Sync={pending:new Set(),timer:null,status:'local',uid:null,email:'',starte
     this.uid=user.id;this.email=user.email||'';hideLogin();setSync('connecting');
     try{localStorage.removeItem('caja.localOnly')}catch(e){}
     await this.pull(true);
+    inboxLoad();
     const nm=user.user_metadata&&user.user_metadata.name;if(S&&!S.settings.name&&nm){S.settings.name=nm;this.mark('state');render()}
     if(this.started)return;this.started=true;
-    sb.channel('caja-'+user.id).on('postgres_changes',{event:'*',schema:'public',table:'caja_docs',filter:'user_id=eq.'+user.id},p=>this.applyOne(p.new)).subscribe();
-    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){this.flush();this.pull(false)}});
+    sb.channel('caja-'+user.id).on('postgres_changes',{event:'*',schema:'public',table:'caja_docs',filter:'user_id=eq.'+user.id},p=>this.applyOne(p.new))
+      .on('postgres_changes',{event:'INSERT',schema:'public',table:'caja_inbox',filter:'user_id=eq.'+user.id},p=>{if(p.new&&!INBOX.some(r=>r.id===p.new.id)){INBOX.push(p.new);toast('Nuevo movimiento del banco');maybeAutoConfirm();render()}}).subscribe();
+    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){this.flush();this.pull(false);inboxLoad()}});
     addEventListener('online',()=>{this.flush();this.pull(false)});
   },
   configured(){const c=window.CAJA_CONFIG||{};return !!(c.url&&c.anonKey&&!/PEGA_AQUI/.test(c.url+c.anonKey)&&window.supabase)},
@@ -873,6 +887,138 @@ function monthBars(n=6){
     <span class="m">${MES[Number(m.k.slice(5))-1]}</span></div>`).join('')}</div>`;
 }
 
+/* ---------- captura automática: SMS de Bancolombia ---------- */
+let INBOX=[];            // [{id, raw, created_at, local}]
+const MERCHANT_CATS=[
+  ['mercado',/\b(d1|ara|exito|éxito|carulla|olimpica|olímpica|jumbo|makro|metro|isimo|justo ?& ?bueno|surtimax|supermercado|mercado)\b/i],
+  ['moto',/\b(terpel|texaco|esso|primax|biomax|mobil|zeuss|eds|gasolina|combustible|lubricentro|moto)\b/i],
+  ['transporte',/\b(uber|didi|cabify|indriver|indrive|picap|transmilenio|sitp|metro de|peaje|parqueadero|parking|taxi)\b/i],
+  ['comida',/\b(rappi|ifood|didi food|restaurante|frisby|kfc|mc ?donald|burger|pizza|starbucks|juan valdez|tostao|oma|crepes|el corral|domino|subway|panaderia|panadería|cafe|café)\b/i],
+  ['suscripciones',/\b(netflix|spotify|disney|hbo|max|prime video|amazon prime|apple\.com|itunes|google|youtube|bitdefender|2co|icloud|chatgpt|openai|claude|anthropic|adobe|canva|microsoft|xbox|playstation)\b/i],
+  ['celular',/\b(claro|movistar|tigo|wom|virgin mobile|etb)\b/i],
+  ['servicios',/\b(epm|enel|codensa|vanti|acueducto|gas natural|energia|energía|aseo|empresas publicas|empresas públicas)\b/i],
+  ['salud',/\b(drogueria|droguería|farmacia|cruz verde|farmatodo|colsubsidio|eps|clinica|clínica|odontolog|laboratorio)\b/i],
+  ['ropa',/\b(zara|h&m|falabella|arturo calle|adidas|nike|studio f|koaj|pull ?& ?bear|bershka|tennis)\b/i],
+  ['ocio',/\b(cine|cinecolombia|cine colombia|procinal|cinemark|tuboleta|eticket|bar|discoteca|steam)\b/i],
+  ['educacion',/\b(universidad|colegio|curso|udemy|platzi|coursera|libreria|librería)\b/i],
+  ['hogar',/\b(homecenter|easy|ikea|arriendo|administracion|administración|tugo|jamar)\b/i],
+];
+const normKey=m=>String(m||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+function parseAmount(v){let t=String(v).replace(/[^\d.,]/g,'');let dec=0;const m=t.match(/[.,](\d{1,2})$/);if(m){dec=Number(m[1].padEnd(2,'0'))/100;t=t.slice(0,-m[0].length)}return Math.round(Number(t.replace(/[.,]/g,''))+dec)||0}
+function parseDateCO(d){if(!d)return TODAY();const[dd,mm,yy]=d.split('/');const y=yy.length===2?'20'+yy:yy;const out=y+'-'+pad(mm)+'-'+pad(dd);return /^\d{4}-\d{2}-\d{2}$/.test(out)?out:TODAY()}
+function guessCat(merchant,kind){
+  if(kind==='income')return /n[oó]mina|salario|sueldo|pago de/i.test(merchant)?'salario':'otros_in';
+  for(const[c,re]of MERCHANT_CATS)if(re.test(merchant))return c;
+  return 'otros';
+}
+function defaultBank(){return(S.accounts.find(a=>a.type==='bank')||S.accounts.find(a=>a.type!=='card')||S.accounts[0]||{}).id}
+function parseSMS(raw){
+  const txt=String(raw||'').replace(/\s+/g,' ').trim();
+  const am=txt.match(/\$\s?([\d.,]*\d)/);if(!am)return null;
+  const amount=parseAmount(am[1]);if(!amount)return null;
+  const dm=txt.match(/(\d{1,2}\/\d{1,2}\/\d{2,4})/),tm=txt.match(/a las (\d{1,2}:\d{2})/i);
+  const last4=(txt.match(/\*(\d{4})/)||[])[1]||'';
+  let kind='expense',merchant='',what='',m;
+  if(m=txt.match(/compraste \$[\d.,]+ en (.+?) con tu/i)){merchant=m[1];what='Compra'}
+  else if(/transferiste/i.test(txt)){m=txt.match(/ a (?!la llave)(.+?) el \d/i);merchant=m?m[1]:'Transferencia enviada';what='Transferencia enviada'}
+  else if(m=txt.match(/pagaste \$[\d.,]+ (?:a|en) (.+?)(?: desde| con tu| el \d|\.|$)/i)){merchant=m[1];what='Pago'}
+  else if(/retiraste|retiro/i.test(txt)){kind='cash';merchant='Retiro en cajero';what='Retiro'}
+  else if(/recibiste|te (?:lleg[oó]|consignaron|transfirieron|enviaron)|recibida|abono|consignaci|n[oó]mina|te pag/i.test(txt)){kind='income';m=txt.match(/(?:\bde|\bdesde) (?!tu )(.+?)(?: en tu| a tu| a la| el \d|,|\.|$)/i);merchant=m?m[1]:'Ingreso';what='Ingreso'}
+  else if(/compra|pago|d[eé]bito|cobro/i.test(txt)){what='Movimiento'}
+  else return null;
+  merchant=merchant.replace(/\|/g,' · ').replace(/\s+/g,' ').trim().slice(0,60)||what;
+  const key=normKey(merchant),learned=(S.settings.merchants||{})[key]||{};
+  const category=learned.category||guessCat(merchant,kind);
+  const accountId=(S.settings.cardMap||{})[last4]||learned.accountId||defaultBank();
+  return{amount,date:parseDateCO(dm&&dm[1]),time:tm?tm[1]:'',last4,kind,merchant,what,category,accountId,key};
+}
+function learnFrom(p,tx){
+  S.settings.merchants=S.settings.merchants||{};S.settings.cardMap=S.settings.cardMap||{};
+  if(p.key&&tx.category)S.settings.merchants[p.key]={category:tx.category,accountId:tx.accountId};
+  if(p.last4&&tx.accountId)S.settings.cardMap[p.last4]=tx.accountId;
+  Sync.mark('state');
+}
+function txFromParsed(p,id){
+  const base={id,date:p.date,amount:p.amount,accountId:p.accountId,note:p.merchant};
+  if(p.kind==='income')return{...base,type:'income',category:p.category};
+  if(p.kind==='cash'){const cash=S.accounts.find(a=>a.type==='cash');if(cash&&cash.id!==p.accountId)return{...base,type:'transfer',toAccountId:cash.id,note:'Retiro en cajero'}}
+  return{...base,type:'expense',category:p.category};
+}
+async function inboxRemove(id){
+  INBOX=INBOX.filter(r=>r.id!==id);
+  if(sb&&Sync.uid&&!String(id).startsWith('local-')){try{await sb.from('caja_inbox').delete().eq('id',id)}catch(e){}}
+}
+function inboxConfirm(row,silent){
+  const p=parseSMS(row.raw);if(!p)return false;
+  const id='sms_'+String(row.id).replace(/[^a-z0-9]/gi,'').slice(0,24);
+  if(!findTx(id)){const tx=addTx(txFromParsed(p,id));learnFrom(p,tx)}
+  inboxRemove(row.id);if(!silent){toast('Registrado: '+p.merchant);render()}return true;
+}
+function maybeAutoConfirm(){if(!S.settings.autoCapture||!INBOX.length)return;let n=0;[...INBOX].forEach(r=>{if(inboxConfirm(r,true))n++});if(n){toast(n===1?'Se registró 1 movimiento del banco':'Se registraron '+n+' movimientos del banco');render()}}
+async function inboxLoad(){
+  if(!sb||!Sync.uid)return;
+  const{data,error}=await sb.from('caja_inbox').select('id,raw,created_at').order('created_at');
+  if(error)return;
+  INBOX=[...(data||[]),...INBOX.filter(r=>r.local)];maybeAutoConfirm();render();
+}
+async function inboxAdd(raw){
+  raw=String(raw||'').trim();if(!raw)return false;
+  if(sb&&Sync.uid){const{error}=await sb.from('caja_inbox').upsert({user_id:Sync.uid,raw},{onConflict:'user_id,raw',ignoreDuplicates:true});if(error){toast('No se pudo enviar a la bandeja');return false}await inboxLoad();return true}
+  INBOX.push({id:'local-'+nid(),raw,created_at:new Date().toISOString(),local:true});maybeAutoConfirm();render();return true;
+}
+function inboxCard(){
+  if(!INBOX.length)return '';
+  const rows=INBOX.map(r=>{const p=parseSMS(r.raw);
+    if(!p)return `<div class="row"><span class="mono">?</span><span class="t"><b>No reconocí este mensaje</b><small>${esc(r.raw.slice(0,90))}</small></span><span class="acts"><button data-act="inboxManual" data-id="${r.id}" aria-label="Registrar a mano">${ico('plus')}</button><button data-act="inboxDel" data-id="${r.id}" aria-label="Descartar">${ico('x')}</button></span></div>`;
+    const acc=S.accounts.find(a=>a.id===p.accountId);const inc=p.kind==='income';
+    return `<div class="row"><span class="mono ${inc?'in':''}">${esc(initials(p.merchant))}</span>
+     <span class="t"><b>${esc(p.merchant)}</b><small>${p.what} · ${fdate(p.date)}${p.time?' '+p.time:''}${p.last4?' · *'+p.last4:''} · ${esc(acc?acc.name:'')} · ${p.kind==='cash'?'a Efectivo':catById(p.category).n}</small></span>
+     <span class="v num ${inc?'pos':''}">${inc?'+':'−'}${money(p.amount).replace('−','')}</span>
+     <span class="acts"><button class="ok" data-act="inboxOk" data-id="${r.id}" aria-label="Confirmar">${ico('check')}</button><button data-act="inboxEdit" data-id="${r.id}" aria-label="Editar antes de guardar">${ico('gear')}</button><button data-act="inboxDel" data-id="${r.id}" aria-label="Descartar">${ico('x')}</button></span></div>`}).join('');
+  return `<section class="card inbox" aria-label="Por confirmar"><div class="card-head"><h3>Del banco · por confirmar (${INBOX.length})</h3>${INBOX.length>1?'<button class="linkbtn" data-act="inboxAll">Confirmar todo</button>':''}</div><div class="rows">${rows}</div>
+   <div class="muted" style="font-size:12.5px;margin-top:8px">La categoría y la cuenta se sugieren solas. Si corriges una, la app la recuerda para ese comercio o esa tarjeta.</div></section>`;
+}
+async function getCaptureKey(create){
+  if(!sb||!Sync.uid)return null;
+  const{data}=await sb.from('caja_keys').select('key').eq('user_id',Sync.uid).maybeSingle();
+  if(data&&data.key&&create!=='new')return data.key;
+  if(!create)return null;
+  const b=new Uint8Array(24);crypto.getRandomValues(b);const key=[...b].map(x=>x.toString(16).padStart(2,'0')).join('');
+  const{error}=await sb.from('caja_keys').upsert({user_id:Sync.uid,key},{onConflict:'user_id'});
+  return error?null:key;
+}
+function copyBtn(v,label){return `<div class="copy"><span>${esc(v)}</span><button type="button" data-act="copy" data-v="${esc(v)}">${label||'Copiar'}</button></div>`}
+async function smsSheet(){
+  const logged=!!(sb&&Sync.uid);
+  openSheet(`${title('Registro automático por SMS')}
+  <p class="muted" style="margin:-4px 0 14px;font-size:14px">Cada SMS de Bancolombia (compras, pagos, transferencias e ingresos) llega a la bandeja <b style="color:var(--ink)">“Por confirmar”</b> del Inicio. Tú lo confirmas con un toque.</p>
+  <label class="toggle"><span>Registrar sin confirmar<small>Los movimientos se guardan solos, con la categoría sugerida.</small></span><input type="checkbox" class="sw" id="sms-auto" ${S.settings.autoCapture?'checked':''}></label>
+  <div class="section-title">Probar con un mensaje</div>
+  <div class="field"><textarea id="sms-test" rows="3" placeholder="Pega aquí un SMS de Bancolombia"></textarea></div>
+  <div id="sms-prev" class="muted" style="font-size:13.5px;margin:8px 0"></div>
+  <button class="btn block" id="sms-send" type="button">Enviar a la bandeja</button>
+  <div class="section-title">Conectar el iPhone (una sola vez)</div>
+  ${logged?`<div id="sms-setup" class="muted">Cargando tu clave…</div>`:'<p class="muted" style="font-size:14px">Inicia sesión para conectar el iPhone.</p>'}`,async s=>{
+    $('#sms-auto',s).addEventListener('change',e=>{S.settings.autoCapture=e.target.checked;Sync.mark('state');if(e.target.checked)maybeAutoConfirm()});
+    const prev=()=>{const p=parseSMS($('#sms-test',s).value);$('#sms-prev',s).innerHTML=!$('#sms-test',s).value.trim()?'':p?`Entendí: <b style="color:var(--ink)">${p.kind==='income'?'Ingreso':p.kind==='cash'?'Retiro':'Gasto'} de ${money(p.amount)}</b> · ${esc(p.merchant)} · ${fdate(p.date)} · ${p.kind==='cash'?'a Efectivo':catById(p.category).n}${p.last4?' · *'+p.last4:''}`:'<span style="color:var(--danger)">No reconocí el formato de este mensaje.</span>'};
+    $('#sms-test',s).addEventListener('input',prev);
+    $('#sms-send',s).addEventListener('click',async()=>{if(await inboxAdd($('#sms-test',s).value)){closeSheet();toast('Enviado a “Por confirmar”')}});
+    if(!logged)return;
+    const key=await getCaptureKey(true);const box=$('#sms-setup',s);if(!box)return;
+    if(!key){box.textContent='No se pudo crear tu clave. Revisa tu conexión e inténtalo de nuevo.';return}
+    const url=CAJA_CONFIG.url+'/rest/v1/rpc/caja_capture';
+    box.outerHTML=`<ol class="steps2">
+     <li>Abre la app <b>Atajos</b> → pestaña <b>Atajos</b> → <b>+</b>. Nómbralo <b>Enviar a Finanzas</b>.</li>
+     <li>Agrega la acción <b>“Obtener contenido de URL”</b> y pega esta URL:${copyBtn(url)}</li>
+     <li>Toca <b>Mostrar más</b>: Método <b>POST</b>. En <b>Encabezados</b> agrega dos:
+       <br><b>apikey</b> con este valor:${copyBtn(CAJA_CONFIG.anonKey)}
+       <b>x-clave</b> con tu clave personal:${copyBtn(key)}</li>
+     <li>En <b>Cuerpo de la solicitud</b> elige <b>JSON</b>, agrega un campo de <b>Texto</b> llamado <b>msg</b> y como valor elige la variable <b>Entrada del atajo</b>.</li>
+     <li>Ve a la pestaña <b>Automatización</b> → <b>+</b> → <b>Mensaje</b> → <b>El mensaje contiene</b>: <b>Bancolombia</b> → marca <b>Ejecutar inmediatamente</b> → Siguiente → <b>Ejecutar atajo</b> → <b>Enviar a Finanzas</b>, con la entrada <b>Mensaje</b>.</li>
+     <li>¡Listo! El próximo SMS aparecerá en el Inicio. Tu clave solo permite <b>agregar</b> mensajes a tu bandeja, nunca leer tus datos. <button class="linkbtn" type="button" data-act="newKey">Cambiar mi clave</button></li></ol>`;
+  });
+}
+
 /* ---------- vistas ---------- */
 function header(title,sub,extra='',logo=false){
   return `<header class="top"><div class="hello"><div><span class="beta" title="Versión en desarrollo"><i></i>Beta · en desarrollo</span><h1>${title}</h1>${sub?`<div class="sub">${sub}</div>`:''}</div></div>
@@ -924,6 +1070,7 @@ function vInicio(){
   ${!allTx().length&&!S.settings.sample?`<div class="banner"><span><b>Bienvenido${S.settings.name?', '+esc(S.settings.name.split(' ')[0]):''}.</b> Empieza agregando tus cuentas (banco, Nequi, efectivo). Si tienes una copia de seguridad, puedes restaurarla.</span><span style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" style="height:34px" data-act="editAcc">Agregar cuenta</button><button class="btn" style="height:34px" data-act="settings">Restaurar copia</button></span></div>`:''}
   ${S.settings.sample?`<div class="banner"><span><b>Datos de ejemplo.</b> Explora la app y cuando quieras empieza con tus cuentas reales.</span><button class="btn primary" style="height:34px" data-act="startFresh">Empezar con mis datos</button></div>`:''}
   <div class="grid three">
+   ${inboxCard()}
    <section class="hero span2" aria-label="Tu dinero">
     <i class="orb a"></i><i class="orb b"></i><i class="orb c"></i>
     <div class="label">Tu dinero hoy</div><div class="big num" data-count="${T.money}">${money(T.money)}</div>
@@ -1288,7 +1435,7 @@ const fld=(label,inner,id)=>`<div class="field"><label ${id?`for="${id}"`:''}>${
 const val=id=>{const e=$('#'+id);return e?(e.type==='checkbox'?e.checked:e.value):''};
 function confirmBox(msg,act,id){return `<div class="confirm" id="confirmbox" hidden><span>${msg}</span><div style="display:flex;gap:8px"><button type="button" class="btn danger" data-act="${act}" data-id="${id}">Sí, eliminar</button><button type="button" class="btn" data-act="hideConfirm">Cancelar</button></div></div>`}
 
-function txSheet(type='expense',tx,prefill){
+function txSheet(type='expense',tx,prefill,onSave){
   const editing=!!tx&&!prefill;tx=tx||{type,amount:0,date:TODAY(),accountId:S.accounts[0]?.id,category:type==='income'?'salario':'comida',note:''};
   let cur=tx.type,cat=tx.category;
   const baseSelect=()=>{const its=(S.budget?.items||[]).filter(i=>i.kind===(cur==='income'?'income':'expense'));if(!its.length)return '';
@@ -1317,7 +1464,8 @@ function txSheet(type='expense',tx,prefill){
     s.addEventListener('submit',e=>{e.preventDefault();const amount=parseMoney(val('f-amount'));if(!amount){toast('Escribe un monto');return}
       const acc=val('f-acc'),to=val('f-to');if(cur==='transfer'&&acc===to){toast('Elige dos cuentas distintas');return}
       if(editing)removeTx(tx.id);
-      addTx({id:editing?tx.id:undefined,date:val('f-date')||TODAY(),type:cur,amount,accountId:acc,toAccountId:cur==='transfer'?to:undefined,category:cur==='transfer'?undefined:cat,note:val('f-note').trim(),budgetId:cur==='transfer'?undefined:(val('f-base')||undefined)});
+      const saved=addTx({id:editing?tx.id:undefined,date:val('f-date')||TODAY(),type:cur,amount,accountId:acc,toAccountId:cur==='transfer'?to:undefined,category:cur==='transfer'?undefined:cat,note:val('f-note').trim(),budgetId:cur==='transfer'?undefined:(val('f-base')||undefined)});
+      if(onSave)onSave(saved);
       closeSheet();toast(editing?'Movimiento actualizado':cur==='income'?'Ingreso registrado':cur==='transfer'?'Transferencia registrada':'Gasto registrado');render()});
   };
   openSheet(draw(),mount);
@@ -1451,6 +1599,8 @@ function settingsSheet(){
   <div class="field"><span class="lbl">Color de la app</span><div class="swatches" id="swatches">${PRESETS.map(([c,n])=>`<button type="button" class="swc" style="--c:${c}" data-c="${c}" aria-label="${n}" aria-pressed="${(S.settings.accent||'#2F5BFF').toLowerCase()===c.toLowerCase()}"></button>`).join('')}
    <label class="swc wheel" title="Elegir cualquier color" aria-label="Elegir cualquier color"><input type="color" id="s-color" value="${S.settings.accent||'#2F5BFF'}"></label></div></div>
   <div class="field" style="margin-top:12px"><span class="lbl">Modo</span><div class="seg" role="group" id="s-mode">${[['auto','Automático'],['light','Claro'],['dark','Oscuro']].map(([v,l])=>`<button type="button" data-m="${v}" aria-pressed="${(S.settings.theme||'auto')===v}">${l}</button>`).join('')}</div></div>
+  <div class="section-title">Registro automático</div>
+  <button class="btn block" data-act="smsSetup">${ico('phone','sm')}SMS de Bancolombia → Por confirmar</button>
   <div class="section-title">Cuenta y sincronización</div><div class="toggle" style="display:block">${syncPill()}<p class="muted" style="margin:8px 0 0;font-size:13.5px">${syncTxt}</p>
    ${Sync.uid?`<p class="muted" style="font-size:13px;margin:8px 0 10px">Conectado como <b style="color:var(--ink)">${esc(Sync.email)}</b></p><button class="btn" data-act="logout">Cerrar sesión</button>`:cfg?`<div style="margin-top:10px"><button class="btn primary" data-act="login">Iniciar sesión</button></div>`:''}</div>
   <div class="section-title">Instalar</div>
@@ -1464,7 +1614,7 @@ function settingsSheet(){
    ${confirmBox('Se borran cuentas, movimientos, metas y deudas en todos tus dispositivos. No se puede deshacer.','wipe','all')}
   </div>
   <div class="section-title">Acerca de</div>
-  <div class="credits"><span class="logo" role="img" aria-label="Firma del desarrollador"></span><div><b>Caja</b> <span class="beta" style="margin:0 0 0 4px;vertical-align:2px"><i></i>Beta 0.3</span>
+  <div class="credits"><span class="logo" role="img" aria-label="Firma del desarrollador"></span><div><b>Finanzas personales</b> <span class="beta" style="margin:0 0 0 4px;vertical-align:2px"><i></i>Beta 0.4</span>
    <small>Diseño y desarrollo: Juan Camilo Orozco</small><small>App personal de finanzas · Colombia, 2026</small></div></div>`,s=>{
     const saveAccent=c=>{S.settings.accent=c;applyTheme();Sync.mark('state');$$('.swc[data-c]',s).forEach(b=>b.setAttribute('aria-pressed',b.dataset.c.toLowerCase()===c.toLowerCase()))};
     s.addEventListener('click',e=>{const b=e.target.closest('.swc[data-c]');if(b){saveAccent(b.dataset.c);$('#s-color',s).value=b.dataset.c}
@@ -1473,7 +1623,7 @@ function settingsSheet(){
     $('#s-color',s).addEventListener('change',e=>saveAccent(e.target.value));
     s.addEventListener('submit',e=>{e.preventDefault();S.settings.name=val('s-name').trim();Sync.mark('state');closeSheet();render()});
     $('#importfile',s).addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const j=JSON.parse(await f.text());if(!j.S||!j.TX)throw 0;
-      const old=Object.keys(TX);S=j.S;TX=j.TX;Sync.mark('state',...new Set([...old,...Object.keys(TX)].map(k=>'tx-'+k)));closeSheet();toast('Copia restaurada');render()}catch(err){toast('Ese archivo no es una copia válida de Caja')}});
+      const old=Object.keys(TX);S=j.S;TX=j.TX;Sync.mark('state',...new Set([...old,...Object.keys(TX)].map(k=>'tx-'+k)));closeSheet();toast('Copia restaurada');render()}catch(err){toast('Ese archivo no es una copia válida de Finanzas personales')}});
   });
 }
 
@@ -1502,6 +1652,16 @@ const ACT={
   delAcc:d=>{S.accounts=S.accounts.filter(a=>a.id!==d.id);Sync.mark('state');closeSheet();render()},
   settings:()=>settingsSheet(),
   goAccounts:()=>{closeSheet();location.hash='cuentas'},
+  smsSetup:()=>smsSheet(),
+  newKey:async()=>{const k=await getCaptureKey('new');if(k){toast('Clave nueva creada: actualízala en tu Atajo');smsSheet()}},
+  copy:async(d,el)=>{try{await navigator.clipboard.writeText(d.v);el.textContent='Copiado ✓';setTimeout(()=>el.textContent='Copiar',1600)}catch(e){const sp=el.previousElementSibling;const r=document.createRange();r.selectNodeContents(sp);const sel=getSelection();sel.removeAllRanges();sel.addRange(r);toast('Selecciona y copia el texto')}},
+  inboxOk:d=>{const r=INBOX.find(x=>String(x.id)===d.id);if(r)inboxConfirm(r)},
+  inboxAll:()=>{let n=0;[...INBOX].forEach(r=>{if(inboxConfirm(r,true))n++});toast(n+' movimientos registrados');render()},
+  inboxDel:d=>{inboxRemove(isNaN(d.id)?d.id:d.id).then(()=>{toast('Descartado');render()})},
+  inboxEdit:d=>{const r=INBOX.find(x=>String(x.id)===d.id);if(!r)return;const p=parseSMS(r.raw);if(!p)return;const t=txFromParsed(p);
+    txSheet(t.type,{...t,id:undefined},true,saved=>{learnFrom(p,saved);inboxRemove(r.id).then(render)})},
+  inboxManual:d=>{const r=INBOX.find(x=>String(x.id)===d.id);if(!r)return;const am=(r.raw.match(/\$\s?([\d.,]*\d)/)||[])[1];
+    txSheet('expense',{type:'expense',amount:am?parseAmount(am):0,date:TODAY(),accountId:defaultBank(),category:'otros',note:''},true,()=>{inboxRemove(r.id).then(render)})},
   menu:()=>{const items=[['inicio','Inicio','<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>'],['movimientos','Historial','<path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/>'],['pagos','Pagos','<rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>'],['metas','Metas','<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/>'],['base','Mes base','<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'],['cuentas','Cuentas','<rect x="3" y="6" width="18" height="14" rx="2.5"/><path d="M16 13h2M3 10h18M6 6V4.5h11V6"/>'],['consejos','Consejos','<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>']];
     openSheet(`${title('Secciones')}<div class="menu-grid">${items.map(([v,n,p])=>`<a href="#${v}" data-act="closeSheet" ${UI.view===v?'aria-current="page"':''}><svg class="ico" viewBox="0 0 24 24">${p}</svg>${n}</a>`).join('')}<button type="button" data-act="settings"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>Ajustes</button></div>`)},
   login:()=>{closeSheet();showLogin()},
@@ -1516,7 +1676,7 @@ const ACT={
   payCard:d=>{const a=S.accounts.find(x=>x.id===d.id);if(!a)return;txSheet('transfer',{type:'transfer',amount:Math.max(0,-accBalance(a.id)),date:TODAY(),accountId:S.accounts.find(x=>x.type!=='card')?.id,toAccountId:a.id,note:'Pago '+a.name},true)},
   startFresh:()=>{openSheet(`${title('Empezar con tus datos')}<p class="muted" style="margin:0 0 16px">Se borran los datos de ejemplo. Luego agrega tus cuentas (bancos, Nequi, efectivo, tarjetas) con su saldo actual y programa tu sueldo y pagos fijos.</p><button class="btn primary block" data-act="wipe">Borrar ejemplo y empezar</button>`)},
   wipe:()=>{const old=Object.keys(TX),keepBase=S.budget;S=emptyState();if(keepBase)S.budget=keepBase;TX={};old.forEach(k=>TX[k]=[]);Sync.mark('state',...old.map(k=>'tx-'+k));TX={};closeSheet();UI.animNext=true;location.hash='cuentas';go('cuentas');setTimeout(()=>accSheet(),350)},
-  exportData:async()=>{const data=JSON.stringify({app:'caja',exported:new Date().toISOString(),S,TX},null,1);const name='caja-finanzas-'+TODAY()+'.json';
+  exportData:async()=>{const data=JSON.stringify({app:'caja',exported:new Date().toISOString(),S,TX},null,1);const name='finanzas-personales-'+TODAY()+'.json';
     
     const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));a.download=name;a.click();}
 };

@@ -1,4 +1,4 @@
-# Caja: tu app de finanzas independiente
+# Finanzas personales (antes "Caja")
 
 **Tu app:** https://camilofx2.github.io/caja/  ·  Código: github.com/camilofx2/caja  ·  Datos: Supabase, proyecto `caja`
 
