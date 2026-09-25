@@ -1,5 +1,7 @@
 # Caja: tu app de finanzas independiente
 
+**Tu app:** https://camilofx2.github.io/caja/  ·  Código: github.com/camilofx2/caja  ·  Datos: Supabase, proyecto `caja`
+
 Caja es una app web instalable (PWA). Se instala en el iPhone y en el Mac como cualquier app, funciona sin internet
 y sincroniza tus datos entre ambos con **Supabase** (base de datos privada y gratuita). Se publica gratis con **GitHub Pages**.
 No depende de Claude: Claude solo te ayuda a hacerle cambios.
