@@ -203,6 +203,9 @@ input,select,textarea{font:inherit;color:inherit}
 .profile{display:flex;gap:14px;align-items:center;margin-bottom:6px}
 .profile small{display:block;color:var(--muted);font-size:13px}
 .profile b{font-family:var(--serif);font-size:22px;font-weight:500}
+.capr{display:block;width:100%;text-align:left}
+.capr small{display:block;font-size:12.5px;margin-top:5px}
+.capr .meter.in>span{background:linear-gradient(90deg,color-mix(in srgb,var(--brand) 35%,#fff),var(--brand))}
 .credits{display:flex;gap:14px;align-items:center;padding:14px;border-radius:16px;background:var(--surface)}
 .credits .logo{width:74px;flex:none}
 .credits b{font-size:15px}
@@ -909,6 +912,7 @@ function tips(){
   if(S.budget&&S.budget.items.length){const b=baseStats(k);
     if(b.close<0)out.push({l:'warn',t:`A este ritmo cierras ${MESL[Number(k.slice(5))-1]} con ${money(b.close)}`,b:`Para cumplir tu mes base, el día a día no debería pasar de ${money(Math.max(0,b.perDay))} diarios en los ${b.daysLeft} días que quedan.`});
     else if(b.daysLeft<=7)out.push({l:'good',t:`Cerrarías el mes con ${money(b.close)} a favor`,b:'Cuando cierre el mes, pasa ese sobrante a una caja de ahorro o abónalo al crédito más caro.'});}
+  (S.settings.caps||[]).forEach(c=>{const sp=capSpent(c);if(sp>c.amount)out.push({l:'warn',t:`Te pasaste del tope ${capName(c)}`,b:`Llevas ${money(sp)} ${CAP_SCOPE[c.scope][1]} y tu tope es ${money(c.amount)}.`});else if(sp>=c.amount*.8)out.push({l:'info',t:`Vas en el ${Math.round(sp/c.amount*100)}% del tope ${capName(c)}`,b:`Te quedan ${money(c.amount-sp)} ${CAP_SCOPE[c.scope][1]}.`})});
   const order={warn:0,info:1,good:2};return out.sort((a,b)=>order[a.l]-order[b.l]);
 }
 
@@ -1153,7 +1157,7 @@ function vInicio(){
    <div class="rail">${T.acc.map(accCard).join('')}${S.goals.length?goalsRailCard(T):''}<button class="acard add" data-act="editAcc">${ico('plus')}Nueva cuenta</button></div>
   </section>
   ${!S.settings.name?`<form class="banner" id="nameform"><span><b>¿Cómo te llamas?</b> Así te saludamos.</span><span style="display:flex;gap:8px;flex:1;min-width:200px;max-width:360px"><input id="nm" required placeholder="Tu nombre" style="flex:1;min-width:0;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--sheet);padding:0 10px;font-size:15px"><button class="btn primary" style="height:36px">Listo</button></span></form>`:''}
-  ${!allTx().length&&!S.settings.sample?`<div class="banner"><span><b>Bienvenido${S.settings.name?', '+esc(S.settings.name.split(' ')[0]):''}.</b> Empieza agregando tus cuentas (banco, Nequi, efectivo). Si tienes una copia de seguridad, puedes restaurarla.</span><span style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" style="height:34px" data-act="editAcc">Agregar cuenta</button><button class="btn" style="height:34px" data-act="settings">Restaurar copia</button></span></div>`:''}
+  ${showWelcome()?`<div class="banner"><span><b>Bienvenido${S.settings.name?', '+esc(S.settings.name.split(' ')[0]):''}.</b> Empieza agregando tus cuentas (banco, Nequi, efectivo). Si tienes una copia de seguridad, puedes restaurarla.</span><span style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" style="height:34px" data-act="editAcc">Agregar cuenta</button><button class="btn" style="height:34px" data-act="settings">Restaurar copia</button></span></div>`:''}
   ${S.settings.sample?`<div class="banner"><span><b>Datos de ejemplo.</b> Explora la app y cuando quieras empieza con tus cuentas reales.</span><button class="btn primary" style="height:34px" data-act="startFresh">Empezar con mis datos</button></div>`:''}
   <div class="grid three">
    ${inboxCard()}
@@ -1163,17 +1167,7 @@ function vInicio(){
     <span class="chip ${chg2>=0?'blue':'red'}">${chg2>=0?'↑':'↓'} ${money(Math.abs(chg2))} · ${Math.abs(pc).toFixed(1).replace('.',',')}% vs hace ${range===30?'30 días':range===90?'3 meses':'6 meses'}</span>
     <div style="margin-top:14px">${areaChart('worth',h2,180,true)}</div>
    </section>
-   <section class="card today" aria-label="Hoy">
-    <h3>Puedes gastar hoy</h3>
-    <div class="big num" style="color:${db.left<0?'var(--danger)':'var(--ink)'}" data-count="${db.left}">${money(db.left)}</div>
-    <div class="meter ${pct>1?'over':''}"><span style="width:${Math.min(100,pct*100)}%"></span></div>
-    <div class="muted" style="font-size:13px">Gastado hoy <b class="num" style="color:var(--ink)">${money(db.spentToday)}</b> de un tope diario de <span class="num">${money(db.allowance)}</span> · quedan ${db.daysLeft} días del mes</div>
-    <div class="quick">
-     <button class="qbtn gbtn g-out" data-act="newTx" data-type="expense">${ico('down')}Gasto</button>
-     <button class="qbtn gbtn g-mid" data-act="newTx" data-type="transfer">${ico('swap')}Transferir</button>
-     <button class="qbtn gbtn g-in" data-act="newTx" data-type="income">${ico('up')}Ingreso</button>
-    </div>
-   </section>
+   ${capsCard()}
    <section class="card" aria-label="Este mes">
     <div class="card-head"><h3>Ingresos y egresos</h3><div class="legend"><span><i style="background:var(--accent)"></i>Ingresos</span><span><i style="background:var(--ink)"></i>Egresos</span></div></div>
     <div style="display:flex;gap:18px;flex-wrap:wrap"><div><small class="muted">Ingresos ${MESL[now.getMonth()]}</small><div class="mid num pos">${money(ms.inc)}</div></div><div><small class="muted">Egresos</small><div class="mid num">${money(ms.out)}</div></div></div>
@@ -1208,6 +1202,43 @@ function vInicio(){
    </section>
    ${baseCard()}
   </div>`;
+}
+function showWelcome(){
+  if(S.settings.onboarded||S.settings.sample||allTx().length)return false;
+  return S.accounts.length<=1&&S.accounts.every(a=>!a.initial);
+}
+/* topes de gasto elegidos por el usuario */
+const CAP_SCOPE={day:['Diario','hoy'],week:['Semanal','esta semana'],month:['Mensual','este mes']};
+function capRange(scope){const t=TODAY();if(scope==='day')return[t,t];if(scope==='week'){const dow=(pd(t).getDay()+6)%7;return[addDays(t,-dow),t]}return[mkey(t)+'-01',t]}
+function capSpent(c){const[a,b]=capRange(c.scope);
+  return allTx().filter(x=>x.date>=a&&x.date<=b&&(x.type==='expense'||x.type==='debt')&&(c.category==='all'?(x.type==='expense'&&!x.budgetId&&!x.recurringId):((x.type==='debt'?'creditos':x.category)===c.category))).reduce((s2,x)=>s2+x.amount,0)}
+const capName=c=>(c.category==='all'?'Día a día':catById(c.category).n)+' · '+CAP_SCOPE[c.scope][0].toLowerCase();
+function capsCard(){
+  const caps=S.settings.caps||[];
+  return `<section class="card" aria-label="Topes de gasto"><div class="card-head"><h3>Topes de gasto</h3><button class="linkbtn" data-act="editCap">Nuevo ${ico('plus','sm')}</button></div>
+  ${caps.length?`<div class="pvr">${caps.map(c=>{const sp=capSpent(c),left=c.amount-sp,over=left<0;
+    return `<button class="capr" data-act="editCap" data-id="${c.id}"><div class="h"><span>${esc(capName(c))}</span><span><b class="num" style="${over?'color:var(--danger)':''}">${money(sp)}</b> de <span class="num">${money(c.amount)}</span></span></div>
+     <div class="meter ${over?'over':'in'}"><span style="width:${Math.min(100,sp/c.amount*100)}%"></span></div>
+     <small style="color:${over?'var(--danger)':'var(--muted)'}">${over?'Te pasaste por '+money(-left):'Te quedan '+money(left)+' '+CAP_SCOPE[c.scope][1]}</small></button>`}).join('')}</div>`
+  :`<div class="empty" style="padding:18px 8px"><b>Sin topes</b>Pon un máximo diario, semanal o mensual, para todo el día a día o para una categoría (comida, salidas…).</div><button class="btn primary block" data-act="editCap">Crear mi primer tope</button>`}
+  </section>`;
+}
+function capSheet(c){
+  const editing=!!c;c=c||{scope:'day',category:'all',amount:0};let scope=c.scope;
+  openSheet(`${title(editing?'Editar tope':'Nuevo tope de gasto')}
+  <form class="form">
+   <div class="field"><span class="lbl">Periodo</span><div class="seg" role="group">${Object.entries(CAP_SCOPE).map(([k,[l]])=>`<button type="button" data-sc="${k}" aria-pressed="${scope===k}">${l}</button>`).join('')}</div></div>
+   ${fld('¿Para qué gastos?',`<select id="cp-cat"><option value="all" ${c.category==='all'?'selected':''}>Todo el día a día (sin pagos fijos)</option>${CATS.expense.map(x=>`<option value="${x.id}" ${x.id===c.category?'selected':''}>${x.n}</option>`).join('')}</select>`,'cp-cat')}
+   <div class="amount"><span>$</span><input id="cp-amount" data-money inputmode="numeric" value="${c.amount||''}" placeholder="0" aria-label="Tope"></div>
+   <button class="btn primary block" type="submit">${editing?'Guardar':'Crear tope'}</button>
+   ${editing?`<button type="button" class="btn danger block" data-act="showConfirm">Eliminar tope</button>${confirmBox('¿Eliminar este tope?','delCap',c.id)}`:''}
+  </form>`,s2=>{
+    s2.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(b){scope=b.dataset.sc;$$('[data-sc]',s2).forEach(x=>x.setAttribute('aria-pressed',x===b))}});
+    s2.addEventListener('submit',e=>{e.preventDefault();const amount=parseMoney(val('cp-amount'));if(!amount)return toast('Escribe el tope');
+      S.settings.caps=S.settings.caps||[];const o={id:c.id||nid(),scope,category:val('cp-cat'),amount};
+      if(editing)S.settings.caps[S.settings.caps.findIndex(x=>x.id===c.id)]=o;else S.settings.caps.push(o);
+      Sync.mark('state');closeSheet();toast(editing?'Tope actualizado':'Tope creado');render()});
+  });
 }
 function avatarInner(){return S.settings.avatar?`<img src="${S.settings.avatar}" alt="">`:`<span>${esc(initials(S.settings.name||'Tú'))}</span>`}
 function accLast4(a){if(a.last4)return a.last4;const m=S.settings.cardMap||{};return Object.keys(m).find(k=>m[k]===a.id)||''}
@@ -1694,7 +1725,7 @@ function accSheet(a){
       const l4=String(val('a-l4')||'').replace(/\D/g,'').slice(-4);S.settings.cardMap=S.settings.cardMap||{};
       for(const k of Object.keys(S.settings.cardMap))if(S.settings.cardMap[k]===a.id&&k!==l4)delete S.settings.cardMap[k];
       if(l4.length===4){S.settings.cardMap[l4]=a.id;a.last4=l4}else delete a.last4;
-      Sync.mark('state');closeSheet();toast(editing?'Cuenta actualizada':'Cuenta creada');render()})});
+      S.settings.onboarded=true;Sync.mark('state');closeSheet();toast(editing?'Cuenta actualizada':'Cuenta creada');render()})});
 }
 const PRESETS=[['#2F5BFF','Azul'],['#6D4CFF','Violeta'],['#0E9F6E','Esmeralda'],['#0891B2','Turquesa'],['#E0457B','Rosa'],['#EF5B3B','Coral'],['#D99A0B','Ámbar'],['#4B5563','Grafito']];
 function applyTheme(accent,mode){
@@ -1776,6 +1807,8 @@ const ACT={
   goAccounts:()=>{closeSheet();location.hash='cuentas'},
   smsSetup:()=>smsSheet(),
   notif:()=>notifSheet(),
+  editCap:d=>capSheet(d.id?clone((S.settings.caps||[]).find(x=>x.id===d.id)):null),
+  delCap:d=>{S.settings.caps=(S.settings.caps||[]).filter(x=>x.id!==d.id);Sync.mark('state');closeSheet();toast('Tope eliminado');render()},
   range:d=>{UI.range=Number(d.d);render()},
   goInbox:()=>{closeSheet();const go2=()=>{const el=$('.inbox');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})};if(UI.view!=='inicio'){location.hash='inicio';setTimeout(go2,400)}else go2()},
   newKey:async()=>{const k=await getCaptureKey('new');if(k){toast('Clave nueva creada: actualízala en tu Atajo');smsSheet()}},
