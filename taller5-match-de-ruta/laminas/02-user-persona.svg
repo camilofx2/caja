@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="4491" viewBox="0 0 3600 4491"><rect id="Fondo" x="0" y="0" width="3600" height="4491" fill="#FFFFFF"/><g id="Encabezado">
+<text y="140.2" font-family="Space Mono" font-size="22" font-weight="700" fill="#084FE9" letter-spacing="1.76" xml:space="preserve"><tspan x="120.0" dy="0.0">02 · ANALIZAR · USER PERSONA</tspan></text>
+<text y="269.4" font-family="Space Grotesk" font-size="104" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="120.0" dy="0.0">User persona</tspan></text>
+<text y="338.5" font-family="Space Grotesk" font-size="30" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="120.0" dy="0.0">Construido con las 5 entrevistas (3 mujeres y 2 hombres, de 21 a 25 años), el mapa de empatía y los 6 insights. Lo que viene de la investigación lleva la marca [E]; lo</tspan><tspan x="120.0" dy="43.5">que es supuesto y se valida en la próxima ronda lleva [S].</tspan></text>
+<rect x="120.0" y="437.9" width="3360.0" height="177.7" fill="#FFF3D6" rx="20" ry="20" id="Lo que pidió la profe"/>
+<text y="486.5" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F" letter-spacing="1.44" xml:space="preserve"><tspan x="160.0" dy="0.0">LO QUE PIDIÓ LA PROFE</tspan></text>
+<text y="532.1" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">“El perfil es demasiado general: podría representar a cualquier persona que se desplaza de noche. Necesitamos entender quién es específicamente, en qué contexto se encuentra, qué necesidades tiene, cómo se comporta y qué situaciones afectan sus</tspan><tspan x="160.0" dy="37.7">decisiones.”</tspan></text>
+</g>
+<g id="Persona principal · Daniela">
+<rect x="120.0" y="671.6" width="3360.0" height="440.0" fill="#084FE9" rx="32" ry="32"/>
+<circle cx="310.0" cy="861.6" r="110" fill="#FFB81C"/>
+<text y="902.8" font-family="Space Grotesk" font-size="110" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="273.4" dy="0.0">D</tspan></text>
+<text y="1018.2" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.44" xml:space="preserve"><tspan x="222.0" dy="0.0">PERSONA PRINCIPAL</tspan></text>
+<text y="807.8" font-family="Space Grotesk" font-size="72" font-weight="700" fill="#FFFFFF" xml:space="preserve"><tspan x="500.0" dy="0.0">Daniela Gómez, 22 años</tspan></text>
+<text y="874.6" font-family="Space Grotesk" font-size="28" font-weight="400" fill="#FFFFFF" xml:space="preserve"><tspan x="500.0" dy="0.0">Estudiante de 8.º semestre de Comunicación Social · Vive en Bosa, estudia en Chapinero (Bogotá) · Sale de clase a las 9:00 p. m. los martes y jueves · Viaja sola en TransMilenio + alimentador</tspan></text>
+<text y="959.9" font-family="Space Grotesk" font-size="44" font-weight="700" fill="#FFB81C" xml:space="preserve"><tspan x="500.0" dy="0.0">“La app me informa, pero no me protege.” [E]</tspan></text>
+<text y="1014.6" font-family="Space Grotesk" font-size="28" font-weight="400" fill="#FFFFFF" xml:space="preserve"><tspan x="500.0" dy="0.0">“Si veo que alguien de la U va para el mismo lado, me quedo hasta tarde estudiando sin pensarlo dos veces.” [S]</tspan></text>
+</g>
+<g id="Quién es">
+<rect x="120.0" y="1159.6" width="1093.3" height="415.9" fill="#FFFFFF" rx="24" ry="24" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1216.2" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="160.0" dy="0.0">QUIÉN ES</tspan></text>
+<text y="1266.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Mujer, 22 años, estudiante de 8.º semestre [S: carrera y semestre]</tspan></text>
+<text y="1312.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Vive con su mamá y su hermano menor en Bosa [S]</tspan></text>
+<text y="1359.6" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Práctica de medio tiempo en las mañanas; clases de 6 a 9 p. m. martes y jueves [S]</tspan></text>
+<text y="1406.4" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• No tiene carro ni moto: depende del transporte público [E]</tspan></text>
+<text y="1453.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Celular Android de gama media, plan prepago: cuida la batería y los datos [S]</tspan></text>
+</g>
+<g id="Su contexto">
+<rect x="1253.3" y="1159.6" width="1093.3" height="415.9" fill="#FFFFFF" rx="24" ry="24" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1216.2" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="1293.3" dy="0.0">SU CONTEXTO</tspan></text>
+<text y="1266.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Su trayecto dura cerca de 1 h 40 min e incluye una troncal y un alimentador [S]</tspan></text>
+<text y="1312.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• El tramo más largo lo hace de pie y con el celular guardado [S]</tspan></text>
+<text y="1359.6" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Espera el alimentador en un paradero con poca luz que se va quedando vacío [E: brief</tspan><tspan x="1293.3" dy="34.8">de María José]</tspan></text>
+<text y="1441.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• En su curso hay gente que sale a la misma hora, pero no sabe quién va hacia el sur [S]</tspan></text>
+<text y="1488.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Ya vivió un incidente: la siguieron una cuadra al bajarse [E: “Me persiguieron”]</tspan></text>
+</g>
+<g id="Tecnología que usa">
+<rect x="2386.7" y="1159.6" width="1093.3" height="415.9" fill="#FFFFFF" rx="24" ry="24" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1216.2" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="2426.7" dy="0.0">TECNOLOGÍA QUE USA</tspan></text>
+<text y="1266.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• App oficial del transporte para ver rutas y horarios (como 5 de 5) [E]</tspan></text>
+<text y="1312.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Google Maps cuando va a un lugar nuevo (como 2 de 5) [E]</tspan></text>
+<text y="1359.6" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Comparte su ubicación en tiempo real con su mamá (como 2 de 5 que la comparten</tspan><tspan x="2426.7" dy="34.8">siempre) [E; el canal, WhatsApp, es S]</tspan></text>
+<text y="1441.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Escucha música cuando hay gente; la apaga y guarda el celular cuando se queda sola</tspan><tspan x="2426.7" dy="34.8">[E: datos de la espera]</tspan></text>
+<text y="1522.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Nivel digital alto: no necesita tutoriales, sí reglas claras de privacidad [S]</tspan></text>
+</g>
+<g id="Su trayecto de un martes">
+<text y="1675.7" font-family="Space Mono" font-size="22" font-weight="700" fill="#084FE9" letter-spacing="1.76" xml:space="preserve"><tspan x="120.0" dy="0.0">SU TRAYECTO DE UN MARTES</tspan></text>
+<text y="1752.7" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="120.0" dy="0.0">Dónde y cuándo se siente más expuesta</tspan></text>
+<rect x="120.0" y="1826.8" width="459.4" height="225.8" fill="#FFFFFF" rx="20" ry="20" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="148.0" dy="0.0">9:00 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="148.0" dy="0.0">Sale de clase</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="148.0" dy="0.0">Revisa en la app cuándo pasa la</tspan><tspan x="148.0" dy="29.4">troncal.</tspan></text>
+<rect x="603.4" y="1826.8" width="459.4" height="225.8" fill="#FFFFFF" rx="20" ry="20" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="631.4" dy="0.0">9:05 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="631.4" dy="0.0">Camina a la estación</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="631.4" dy="0.0">8 minutos por una calle con poca luz.</tspan><tspan x="631.4" dy="29.4">Se quita un audífono.</tspan></text>
+<rect x="1086.9" y="1826.8" width="459.4" height="225.8" fill="#FFFFFF" rx="20" ry="20" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="1114.9" dy="0.0">9:15 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="1114.9" dy="0.0">Troncal de TransMilenio</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="1114.9" dy="0.0">40 minutos de pie. Hay gente; guarda el</tspan><tspan x="1114.9" dy="29.4">celular en la maleta de adelante.</tspan></text>
+<rect x="1570.3" y="1826.8" width="459.4" height="225.8" fill="#FFFFFF" rx="20" ry="20" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="1598.3" dy="0.0">9:55 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="1598.3" dy="0.0">Llega al portal</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="1598.3" dy="0.0">Busca el paradero del alimentador;</tspan><tspan x="1598.3" dy="29.4">cada vez hay menos gente.</tspan></text>
+<rect x="2053.7" y="1826.8" width="459.4" height="225.8" fill="#FFF3D6" rx="20" ry="20" stroke="#FFB81C" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="2081.7" dy="0.0">10:00 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="2081.7" dy="0.0">Espera el alimentador</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="2081.7" dy="0.0">De 10 a 20 min sin saber cuánto tarda.</tspan><tspan x="2081.7" dy="29.4">Se para cerca de la luz y de otras</tspan><tspan x="2081.7" dy="29.4">personas.</tspan></text>
+<rect x="2537.1" y="1826.8" width="459.4" height="225.8" fill="#FFF3D6" rx="20" ry="20" stroke="#FFB81C" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="2565.1" dy="0.0">10:30 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="2565.1" dy="0.0">Se baja y camina a casa</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="2565.1" dy="0.0">6 minutos a pie. Mira hacia atrás varias</tspan><tspan x="2565.1" dy="29.4">veces.</tspan></text>
+<rect x="3020.6" y="1826.8" width="459.4" height="225.8" fill="#FFFFFF" rx="20" ry="20" stroke="#D3DBEA" stroke-width="2"/>
+<text y="1875.2" font-family="Space Mono" font-size="20" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="3048.6" dy="0.0">10:40 p. m.</tspan></text>
+<text y="1921.6" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="3048.6" dy="0.0">Llega a casa</tspan></text>
+<text y="1960.7" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#5A6887" xml:space="preserve"><tspan x="3048.6" dy="0.0">Le escribe “llegué” a su mamá y apaga</tspan><tspan x="3048.6" dy="29.4">la ubicación (cuando se acuerda).</tspan></text>
+<rect x="120.0" y="2092.6" width="3360.0" height="220.0" fill="#F3F6FC" rx="20" ry="20"/>
+<text y="2125.3" font-family="Space Mono" font-size="16" font-weight="700" fill="#5A6887" letter-spacing="1.28" xml:space="preserve"><tspan x="144.0" dy="0.0">NIVEL DE TENSIÓN</tspan></text>
+<path d="M 349.7 2272.6 L 833.1 2192.6 L 1316.6 2232.6 L 1800.0 2192.6 L 2283.4 2152.6 L 2766.9 2152.6 L 3250.3 2272.6" fill="none" stroke="#084FE9" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="349.7" cy="2272.6" r="14" fill="#084FE9" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2257.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="371.7" dy="0.0">Tranquila</tspan></text>
+<circle cx="833.1" cy="2192.6" r="14" fill="#084FE9" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2177.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="855.1" dy="0.0">Alerta</tspan></text>
+<circle cx="1316.6" cy="2232.6" r="14" fill="#084FE9" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2217.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="1338.6" dy="0.0">Atenta</tspan></text>
+<circle cx="1800.0" cy="2192.6" r="14" fill="#084FE9" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2177.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="1822.0" dy="0.0">Tensa</tspan></text>
+<circle cx="2283.4" cy="2152.6" r="14" fill="#FFB81C" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2137.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="2305.4" dy="0.0">Máxima tensión</tspan></text>
+<circle cx="2766.9" cy="2152.6" r="14" fill="#FFB81C" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2137.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="2788.9" dy="0.0">Miedo</tspan></text>
+<circle cx="3250.3" cy="2272.6" r="14" fill="#084FE9" stroke="#FFFFFF" stroke-width="4"/>
+<text y="2257.0" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="3272.3" dy="0.0">Alivio</tspan></text>
+</g>
+<text y="2366.5" font-family="Space Grotesk" font-size="26" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="120.0" dy="0.0">→ El momento más expuesto no es el bus: es la espera del alimentador y la caminata final. Ahí es donde Match tiene que actuar.</tspan></text>
+<g id="Necesidades">
+<rect x="120.0" y="2447.7" width="1093.3" height="381.1" fill="#E6EEFE" rx="24" ry="24"/>
+<text y="2504.3" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="160.0" dy="0.0">NECESIDADES</tspan></text>
+<text y="2554.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Funcional: saber quién de su universidad hace su mismo tramo a la misma hora [E:</tspan><tspan x="160.0" dy="34.8">insight 03]</tspan></text>
+<text y="2635.7" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Funcional: que su mamá sepa que llegó sin tener que escribirle [E: insight 04]</tspan></text>
+<text y="2682.5" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Emocional: no sentirse sola en la espera del alimentador [E]</tspan></text>
+<text y="2729.3" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Seguridad: que la otra persona esté verificada y, si lo prefiere, sea mujer [E: insight 05]</tspan></text>
+<text y="2776.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Privacidad: que nadie sepa su dirección ni su rutina completa [S]</tspan></text>
+</g>
+<g id="Cómo se comporta">
+<rect x="1253.3" y="2447.7" width="1093.3" height="381.1" fill="#FFFFFF" rx="24" ry="24" stroke="#D3DBEA" stroke-width="2"/>
+<text y="2504.3" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="1293.3" dy="0.0">CÓMO SE COMPORTA</tspan></text>
+<text y="2554.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Revisa la app oficial antes de salir, aunque eso no le quita el miedo [E: 5 de 5]</tspan></text>
+<text y="2600.9" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Elige dónde esperar por la luz, la cercanía y la gente, no por una app [E: 0 de 5 usa una</tspan><tspan x="1293.3" dy="34.8">app]</tspan></text>
+<text y="2682.5" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Guarda el celular y se queda en alerta cuando el paradero se vacía [E]</tspan></text>
+<text y="2729.3" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Comparte la ubicación por WhatsApp; a veces se le olvida apagarla [E/S]</tspan></text>
+<text y="2776.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Pregunta en el grupo del curso “¿alguien va para el sur?”, pero casi nunca coincide [S]</tspan></text>
+</g>
+<g id="Frustraciones">
+<rect x="2386.7" y="2447.7" width="1093.3" height="381.1" fill="#FDECEA" rx="24" ry="24"/>
+<text y="2504.3" font-family="Space Mono" font-size="18" font-weight="700" fill="#B42318" letter-spacing="1.44" xml:space="preserve"><tspan x="2426.7" dy="0.0">FRUSTRACIONES</tspan></text>
+<text y="2554.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• La app le da horarios, no tranquilidad [E]</tspan></text>
+<text y="2600.9" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Pedir un carro todas las noches no le alcanza [S]</tspan></text>
+<text y="2647.7" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Compartir la ubicación es manual y queda activa más tiempo del necesario [E/S]</tspan></text>
+<text y="2694.5" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• No confía en desconocidos: “acompañante” no puede ser cualquiera [E: idea</tspan><tspan x="2426.7" dy="34.8">descartada]</tspan></text>
+<text y="2776.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Los grupos de WhatsApp no sirven para coordinar a última hora [S]</tspan></text>
+</g>
+<g id="Motivaciones">
+<rect x="120.0" y="2868.8" width="1093.3" height="427.9" fill="#DDF3E5" rx="24" ry="24"/>
+<text y="2925.4" font-family="Space Mono" font-size="18" font-weight="700" fill="#127A3F" letter-spacing="1.44" xml:space="preserve"><tspan x="160.0" dy="0.0">MOTIVACIONES</tspan></text>
+<text y="2975.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• No sentirse sola en el momento más expuesto [E]</tspan></text>
+<text y="3022.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Terminar la carrera sin evitar las materias de la noche [S]</tspan></text>
+<text y="3068.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Autonomía: no depender de que alguien la recoja [S]</tspan></text>
+<text y="3115.6" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Tranquilizar a su mamá [E: la mayoría le avisa a alguien]</tspan></text>
+</g>
+<g id="Miedos">
+<rect x="1253.3" y="2868.8" width="1093.3" height="427.9" fill="#FFF3D6" rx="24" ry="24"/>
+<text y="2925.4" font-family="Space Mono" font-size="18" font-weight="700" fill="#8A5A00" letter-spacing="1.44" xml:space="preserve"><tspan x="1293.3" dy="0.0">MIEDOS</tspan></text>
+<text y="2975.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Violencia sexual (lo mencionaron las 3 mujeres) [E]</tspan></text>
+<text y="3022.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Robo y agresión (lo mencionaron las 5 personas) [E]</tspan></text>
+<text y="3068.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Que la sigan al bajarse del bus [E: “Me persiguieron”]</tspan></text>
+<text y="3115.6" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1293.3" dy="0.0">• Que una app exponga su ubicación a quien no debe [S: planteado en la retro]</tspan></text>
+</g>
+<g id="Situaciones que cambian sus decisiones">
+<rect x="2386.7" y="2868.8" width="1093.3" height="427.9" fill="#FFFFFF" rx="24" ry="24" stroke="#D3DBEA" stroke-width="2"/>
+<text y="2925.4" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="2426.7" dy="0.0">SITUACIONES QUE CAMBIAN SUS DECISIONES</tspan></text>
+<text y="2975.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Después de las 10 p. m. ya no espera el alimentador: pide un carro o se queda donde</tspan><tspan x="2426.7" dy="34.8">una amiga [E: 4 de 5 cambiaron de plan]</tspan></text>
+<text y="3056.8" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Si llueve, el paradero se vacía y la espera se siente más larga [S]</tspan></text>
+<text y="3103.6" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Con menos del 20 % de batería deja de compartir la ubicación [S]</tspan></text>
+<text y="3150.4" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• Si va con alguien conocido, se queda hasta tarde sin problema [S]</tspan></text>
+<text y="3197.2" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• En semana de parciales sale más tarde de la biblioteca [S]</tspan></text>
+<text y="3244.0" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="2426.7" dy="0.0">• A final de mes decide si le alcanza para un carro [S]</tspan></text>
+</g>
+<g id="Escenario con Match">
+<rect x="120.0" y="3376.7" width="3360.0" height="324.7" fill="#0B1B3F" rx="32" ry="32"/>
+<text y="3466.9" font-family="Space Mono" font-size="22" font-weight="700" fill="#FFB81C" letter-spacing="1.76" xml:space="preserve"><tspan x="200.0" dy="0.0">ESCENARIO: UN MARTES CON MATCH</tspan></text>
+<text y="3524.0" font-family="Space Grotesk" font-size="30" font-weight="400" fill="#FFFFFF" xml:space="preserve"><tspan x="200.0" dy="0.0">Martes, 8:40 p. m. Daniela abre Match: hay 2 personas de su universidad que salen entre las 9:00 y las 9:15 hacia el Portal. Revisa a Laura (verificada con correo institucional, 14 trayectos acompañados, comparten 2 de 3</tspan><tspan x="200.0" dy="45.0">tramos) y le envía una solicitud. Laura acepta. Se encuentran en la entrada de la estación y confirman el código “Naranja-12”. Su mamá recibe un enlace por WhatsApp y ve el trayecto sin instalar nada. En el portal, Laura</tspan><tspan x="200.0" dy="45.0">espera con ella hasta que llega el alimentador. A las 10:38 Daniela llega: la ubicación se apaga sola y su mamá recibe “Daniela llegó”.</tspan></text>
+</g>
+<text y="3811.6" font-family="Space Mono" font-size="22" font-weight="700" fill="#084FE9" letter-spacing="1.76" xml:space="preserve"><tspan x="120.0" dy="0.0">OTRAS PERSONAS QUE AFECTAN EL PRODUCTO</tspan></text>
+<text y="3888.6" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="120.0" dy="0.0">Persona secundaria y segmento complementario</tspan></text>
+<g id="Gloria, 49 · mamá de Daniela">
+<rect x="120.0" y="3952.7" width="1660.0" height="418.3" fill="#FFFFFF" rx="24" ry="24" stroke="#084FE9" stroke-width="3"/>
+<text y="4009.3" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="160.0" dy="0.0">PERSONA SECUNDARIA · CONTACTO AVISADO</tspan></text>
+<text y="4065.8" font-family="Space Grotesk" font-size="40" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">Gloria, 49 · mamá de Daniela</tspan></text>
+<text y="4129.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Quién es: trabaja de día y espera despierta a que Daniela llegue [S]</tspan></text>
+<text y="4175.9" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Qué hace hoy: si son las 10:30 y no sabe nada, la llama; Daniela no contesta porque guardó el celular [S]</tspan></text>
+<text y="4222.7" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• Necesita: saber que llegó, con quién va y si algo cambió, sin tener que llamar [E: usuario secundario validado]</tspan></text>
+<text y="4269.5" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="160.0" dy="0.0">• No quiere: instalar otra app ni aprender a usarla [S]</tspan></text>
+<text y="4316.3" font-family="Space Grotesk" font-size="24" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="160.0" dy="0.0">→ Implicación: los avisos llegan por SMS o WhatsApp con un enlace web; no necesita la app.</tspan></text>
+</g>
+<g id="Daniel, 21 · estudiante">
+<rect x="1820.0" y="3952.7" width="1660.0" height="418.3" fill="#FFFFFF" rx="24" ry="24" stroke="#084FE9" stroke-width="3"/>
+<text y="4009.3" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.44" xml:space="preserve"><tspan x="1860.0" dy="0.0">SEGMENTO COMPLEMENTARIO · HOMBRES</tspan></text>
+<text y="4065.8" font-family="Space Grotesk" font-size="40" font-weight="700" fill="#0B1B3F" xml:space="preserve"><tspan x="1860.0" dy="0.0">Daniel, 21 · estudiante</tspan></text>
+<text y="4129.1" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1860.0" dy="0.0">• Quién es: estudiante que sale de noche del trabajo o de la universidad [E]</tspan></text>
+<text y="4175.9" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1860.0" dy="0.0">• Su miedo principal: el robo, no la violencia sexual [E: los 2 hombres]</tspan></text>
+<text y="4222.7" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1860.0" dy="0.0">• Qué hace hoy: va en alerta, no saca el celular y a veces cambia de ruta [E]</tspan></text>
+<text y="4269.5" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#0B1B3F" xml:space="preserve"><tspan x="1860.0" dy="0.0">• Necesita: no ir solo en los tramos de riesgo y poder ayudar a alguien de su comunidad [S]</tspan></text>
+<text y="4316.3" font-family="Space Grotesk" font-size="24" font-weight="700" fill="#084FE9" xml:space="preserve"><tspan x="1860.0" dy="0.0">→ Implicación: la preferencia de género es opcional; él puede acompañar a cualquier persona que lo acepte.</tspan></text>
+</g></svg>
