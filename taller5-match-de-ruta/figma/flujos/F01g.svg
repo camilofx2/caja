@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2990" height="1398" viewBox="0 0 2990 1398"><rect id="Fondo" x="0" y="0" width="2990" height="1398" fill="#F4F4F5"/><text y="67" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.08"><tspan x="60" dy="0">04 · USER FLOWS · 1 DE 7</tspan></text>
+<text y="126" font-family="Space Grotesk" font-size="48" font-weight="700" fill="#1F1F1F"><tspan x="60" dy="0">Acceso</tspan></text>
+<g id="F01 · Ingreso">
+<rect x="60" y="170" width="884" height="533" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="84" dy="0">F01 · Ingreso</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="84" dy="0">Ingreso</tspan></text>
+<path d="M 467 319 L 467 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="467,363 460,352 474,352" fill="#4A4A4A"/>
+<path d="M 467 424 L 467 461" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="467,468 460,457 474,457" fill="#4A4A4A"/>
+<path d="M 467 573 L 467 595 L 195 595 L 195 610" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="195,617 188,606 202,606" fill="#4A4A4A"/>
+<path d="M 467 573 L 467 610" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="467,617 460,606 474,606" fill="#4A4A4A"/>
+<path d="M 467 573 L 467 595 L 739 595 L 739 610" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="739,617 732,606 746,606" fill="#4A4A4A"/>
+<rect x="352" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="440" dy="0">Ingreso</tspan></text>
+<rect x="352" y="363" width="230" height="61" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="389" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="397" dy="0">Bienvenida: qué es,</tspan><tspan x="379" dy="20">verificación y privacidad</tspan></text>
+<polygon points="467,468 582,521 467,573 352,521" fill="#FAD9B8"/>
+<text y="516" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="414" dy="0">¿Cómo quieres</tspan><tspan x="433" dy="20">ingresar?</tspan></text>
+<rect x="80" y="617" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="645" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="127" dy="0">Crear cuenta (F02)</tspan></text>
+<rect x="352" y="617" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="645" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="398" dy="0">Iniciar sesión (F03)</tspan></text>
+<rect x="624" y="617" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="645" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="653" dy="0">Recuperar cuenta (F04)</tspan></text>
+</g>
+<g id="F02 · Crear cuenta">
+<rect x="994" y="170" width="612" height="1168" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="1018" dy="0">F02 · Crear cuenta</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="1018" dy="0">Ingreso → Crear cuenta</tspan></text>
+<path d="M 1129 319 L 1129 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,363 1122,352 1136,352" fill="#4A4A4A"/>
+<path d="M 1129 424 L 1129 461" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,468 1122,457 1136,457" fill="#4A4A4A"/>
+<path d="M 1129 514 L 1129 551" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,558 1122,547 1136,547" fill="#4A4A4A"/>
+<path d="M 1129 604 L 1129 641" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,648 1122,637 1136,637" fill="#4A4A4A"/>
+<path d="M 1244 701 L 1279 701" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1286,701 1274,694 1274,708" fill="#4A4A4A"/>
+<path d="M 1516 701 L 1538 701 L 1538 491 L 1251 491" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1244,491 1256,485 1256,498" fill="#4A4A4A"/>
+<path d="M 1129 753 L 1129 790" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,797 1122,786 1136,786" fill="#4A4A4A"/>
+<path d="M 1129 858 L 1129 895" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,902 1122,891 1136,891" fill="#4A4A4A"/>
+<path d="M 1244 950 L 1279 950" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1286,950 1274,944 1274,957" fill="#4A4A4A"/>
+<path d="M 1129 998 L 1129 1035" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,1042 1122,1031 1136,1031" fill="#4A4A4A"/>
+<path d="M 1129 1103 L 1129 1140" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,1147 1122,1136 1136,1136" fill="#4A4A4A"/>
+<path d="M 1129 1208 L 1129 1245" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1129,1252 1122,1241 1136,1241" fill="#4A4A4A"/>
+<rect x="1014" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1082" dy="0">Crear cuenta</tspan></text>
+<polygon points="1030,363 1244,363 1228,424 1014,424" fill="#C3DDFD"/>
+<text y="389" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1051" dy="0">Ingresa su número de</tspan><tspan x="1105" dy="20">celular</tspan></text>
+<path d="M 1014 477.3 A 115.0 9 0 0 1 1244 477.3 L 1244 505.29999999999995 A 115.0 9 0 0 1 1014 505.29999999999995 Z" fill="#CDEFD7"/>
+<path d="M 1014 477.3 A 115.0 9 0 0 0 1244 477.3" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="496" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1040" dy="0">Envía un código por SMS</tspan></text>
+<polygon points="1030,558 1244,558 1228,604 1014,604" fill="#C3DDFD"/>
+<text y="586" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1067" dy="0">Ingresa el código</tspan></text>
+<polygon points="1129,648 1244,701 1129,753 1014,701" fill="#FAD9B8"/>
+<text y="696" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1099" dy="0">¿Código</tspan><tspan x="1093" dy="20">correcto?</tspan></text>
+<rect x="1286" y="678" width="230" height="46" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="706" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1312" dy="0">Reenviar código (máx. 3)</tspan></text>
+<polygon points="1030,797 1244,797 1228,858 1014,858" fill="#C3DDFD"/>
+<text y="823" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1065" dy="0">Nombre, fecha de</tspan><tspan x="1055" dy="20">nacimiento y género</tspan></text>
+<polygon points="1129,902 1244,950 1129,998 1014,950" fill="#FAD9B8"/>
+<text y="955" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1067" dy="0">¿Es mayor de 18?</tspan></text>
+<rect x="1286" y="927" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="955" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1325" dy="0">No puede registrarse</tspan></text>
+<rect x="1014" y="1042" width="230" height="61" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="1068" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1051" dy="0">Permisos: ubicación y</tspan><tspan x="1077" dy="20">notificaciones</tspan></text>
+<rect x="1014" y="1147" width="230" height="61" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="1173" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1040" dy="0">Acepta términos y datos</tspan><tspan x="1093" dy="20">(Ley 1581)</tspan></text>
+<rect x="1014" y="1252" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="1280" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1065" dy="0">Verificación (F05)</tspan></text>
+<text y="693" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1252" dy="0">No</tspan></text>
+<text y="769" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1137" dy="0">Sí</tspan></text>
+<text y="942" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1252" dy="0">No</tspan></text>
+<text y="1014" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1137" dy="0">Sí</tspan></text>
+</g>
+<g id="F03 · Iniciar sesión">
+<rect x="1656" y="170" width="612" height="847" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="1680" dy="0">F03 · Iniciar sesión</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="1680" dy="0">Ingreso → Iniciar sesión</tspan></text>
+<path d="M 1791 319 L 1791 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1791,363 1784,352 1798,352" fill="#4A4A4A"/>
+<path d="M 1791 409 L 1791 446" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1791,453 1784,442 1798,442" fill="#4A4A4A"/>
+<path d="M 1791 499 L 1791 536" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1791,543 1784,532 1798,532" fill="#4A4A4A"/>
+<path d="M 1791 589 L 1791 626" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1791,633 1784,622 1798,622" fill="#4A4A4A"/>
+<path d="M 1906 686 L 1941 686" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1948,686 1936,679 1936,693" fill="#4A4A4A"/>
+<path d="M 2178 686 L 2200 686 L 2200 566 L 1913 566" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1906,566 1918,560 1918,573" fill="#4A4A4A"/>
+<path d="M 1791 738 L 1791 775" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1791,782 1784,771 1798,771" fill="#4A4A4A"/>
+<path d="M 1906 835 L 1941 835" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1948,835 1936,828 1936,842" fill="#4A4A4A"/>
+<path d="M 1791 887 L 1791 924" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1791,931 1784,920 1798,920" fill="#4A4A4A"/>
+<rect x="1676" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1743" dy="0">Iniciar sesión</tspan></text>
+<polygon points="1692,363 1906,363 1890,409 1676,409" fill="#C3DDFD"/>
+<text y="391" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1728" dy="0">Ingresa su celular</tspan></text>
+<path d="M 1676 462.3 A 115.0 9 0 0 1 1906 462.3 L 1906 490.3 A 115.0 9 0 0 1 1676 490.3 Z" fill="#CDEFD7"/>
+<path d="M 1676 462.3 A 115.0 9 0 0 0 1906 462.3" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="481" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1702" dy="0">Envía un código por SMS</tspan></text>
+<polygon points="1692,543 1906,543 1890,589 1676,589" fill="#C3DDFD"/>
+<text y="571" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1729" dy="0">Ingresa el código</tspan></text>
+<polygon points="1791,633 1906,686 1791,738 1676,686" fill="#FAD9B8"/>
+<text y="681" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1761" dy="0">¿Código</tspan><tspan x="1755" dy="20">correcto?</tspan></text>
+<rect x="1948" y="663" width="230" height="46" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="691" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2006" dy="0">Muestra el error</tspan></text>
+<polygon points="1791,782 1906,835 1791,887 1676,835" fill="#FAD9B8"/>
+<text y="830" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1761" dy="0">¿Cuenta</tspan><tspan x="1751" dy="20">verificada?</tspan></text>
+<rect x="1948" y="812" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="840" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1999" dy="0">Verificación (F05)</tspan></text>
+<rect x="1676" y="931" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="959" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1750" dy="0">Inicio (F09)</tspan></text>
+<text y="678" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1914" dy="0">No</tspan></text>
+<text y="754" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1799" dy="0">Sí</tspan></text>
+<text y="827" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1914" dy="0">No</tspan></text>
+<text y="903" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1799" dy="0">Sí</tspan></text>
+</g>
+<g id="F04 · Recuperar cuenta">
+<rect x="2318" y="170" width="612" height="967" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="2342" dy="0">F04 · Recuperar cuenta</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="2342" dy="0">Ingreso → Recuperar cuenta</tspan></text>
+<path d="M 2453 319 L 2453 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,363 2446,352 2460,352" fill="#4A4A4A"/>
+<path d="M 2453 468 L 2453 513" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,520 2446,508 2460,508" fill="#4A4A4A"/>
+<path d="M 2568 416 L 2725 416 L 2725 505" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2725,512 2718,501 2732,501" fill="#4A4A4A"/>
+<path d="M 2453 566 L 2453 610" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,617 2446,606 2460,606" fill="#4A4A4A"/>
+<path d="M 2725 573 L 2725 610" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2725,617 2718,606 2732,606" fill="#4A4A4A"/>
+<path d="M 2453 663 L 2453 700" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,707 2446,696 2460,696" fill="#4A4A4A"/>
+<path d="M 2725 663 L 2725 685 L 2453 685 L 2453 700" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,707 2446,696 2460,696" fill="#4A4A4A"/>
+<path d="M 2453 753 L 2453 790" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,797 2446,786 2460,786" fill="#4A4A4A"/>
+<path d="M 2568 850 L 2603 850" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2610,850 2598,843 2598,857" fill="#4A4A4A"/>
+<path d="M 2840 850 L 2862 850 L 2862 730 L 2575 730" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2568,730 2580,724 2580,737" fill="#4A4A4A"/>
+<path d="M 2453 902 L 2453 939" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,946 2446,935 2460,935" fill="#4A4A4A"/>
+<path d="M 2453 1007 L 2453 1044" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2453,1051 2446,1040 2460,1040" fill="#4A4A4A"/>
+<rect x="2338" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2388" dy="0">Recuperar cuenta</tspan></text>
+<polygon points="2453,363 2568,416 2453,468 2338,416" fill="#FAD9B8"/>
+<text y="411" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2405" dy="0">¿Conserva su</tspan><tspan x="2421" dy="20">número?</tspan></text>
+<polygon points="2354,520 2568,520 2552,566 2338,566" fill="#C3DDFD"/>
+<text y="548" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2390" dy="0">Ingresa su celular</tspan></text>
+<polygon points="2626,512 2840,512 2824,573 2610,573" fill="#C3DDFD"/>
+<text y="538" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2662" dy="0">Ingresa su correo</tspan><tspan x="2680" dy="20">institucional</tspan></text>
+<path d="M 2338 626.3 A 115.0 9 0 0 1 2568 626.3 L 2568 654.3 A 115.0 9 0 0 1 2338 654.3 Z" fill="#CDEFD7"/>
+<path d="M 2338 626.3 A 115.0 9 0 0 0 2568 626.3" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="645" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2375" dy="0">Envía código por SMS</tspan></text>
+<path d="M 2610 626.3 A 115.0 9 0 0 1 2840 626.3 L 2840 654.3 A 115.0 9 0 0 1 2610 654.3 Z" fill="#CDEFD7"/>
+<path d="M 2610 626.3 A 115.0 9 0 0 0 2840 626.3" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="645" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2645" dy="0">Envía código al correo</tspan></text>
+<polygon points="2354,707 2568,707 2552,753 2338,753" fill="#C3DDFD"/>
+<text y="735" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2391" dy="0">Ingresa el código</tspan></text>
+<polygon points="2453,797 2568,850 2453,902 2338,850" fill="#FAD9B8"/>
+<text y="845" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2423" dy="0">¿Código</tspan><tspan x="2417" dy="20">correcto?</tspan></text>
+<rect x="2610" y="827" width="230" height="46" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="855" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2668" dy="0">Muestra el error</tspan></text>
+<polygon points="2354,946 2568,946 2552,1007 2338,1007" fill="#C3DDFD"/>
+<text y="972" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2365" dy="0">Registra el celular nuevo</tspan><tspan x="2413" dy="20">(si cambió)</tspan></text>
+<rect x="2338" y="1051" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="1079" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2412" dy="0">Inicio (F09)</tspan></text>
+<text y="484" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2461" dy="0">Sí</tspan></text>
+<text y="408" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2576" dy="0">No</tspan></text>
+<text y="842" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2576" dy="0">No</tspan></text>
+<text y="918" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2461" dy="0">Sí</tspan></text>
+</g></svg>

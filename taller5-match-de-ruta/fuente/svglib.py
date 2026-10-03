@@ -74,7 +74,7 @@ class Svg:
         self.add("</g>")
 
     def rect(self, x, y, w, h, fill=WHITE, stroke=None, sw=2, r=0, dash=None, name=None, opacity=None):
-        a = f'x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{fill}"'
+        a = f'x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" fill="{fill}"'
         if r:
             a += f' rx="{r}" ry="{r}"'
         if stroke:
@@ -88,29 +88,29 @@ class Svg:
         self.add(f"<rect {a}/>")
 
     def circle(self, cx, cy, r, fill, stroke=None, sw=2):
-        a = f'cx="{cx:.1f}" cy="{cy:.1f}" r="{r}" fill="{fill}"'
+        a = f'cx="{cx:.0f}" cy="{cy:.0f}" r="{r}" fill="{fill}"'
         if stroke:
             a += f' stroke="{stroke}" stroke-width="{sw}"'
         self.add(f"<circle {a}/>")
 
     def poly(self, pts, fill, stroke=None, sw=2):
-        p = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+        p = " ".join(f"{x:.0f},{y:.0f}" for x, y in pts)
         a = f'points="{p}" fill="{fill}"'
         if stroke:
             a += f' stroke="{stroke}" stroke-width="{sw}"'
         self.add(f"<polygon {a}/>")
 
     def path(self, pts, stroke=INK, sw=3, dash=None):
-        d = "M " + " L ".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+        d = "M " + " L ".join(f"{x:.0f} {y:.0f}" for x, y in pts)
         a = f'd="{d}" fill="none" stroke="{stroke}" stroke-width="{sw}" stroke-linejoin="round"'
         if dash:
             a += f' stroke-dasharray="{dash}"'
         self.add(f"<path {a}/>")
 
-    def arrow(self, pts, stroke=INK, sw=3):
-        self.path(pts[:-1] + [self._shorten(pts[-2], pts[-1], 12)], stroke, sw)
+    def arrow(self, pts, stroke=INK, sw=3, hs=14):
+        self.path(pts[:-1] + [self._shorten(pts[-2], pts[-1], hs - 2)], stroke, sw)
         (x1, y1), (x2, y2) = pts[-2], pts[-1]
-        s = 14
+        s = hs
         if abs(x2 - x1) >= abs(y2 - y1):
             d = 1 if x2 > x1 else -1
             tri = [(x2, y2), (x2 - d * s * 1.3, y2 - s * 0.75), (x2 - d * s * 1.3, y2 + s * 0.75)]
@@ -126,6 +126,14 @@ class Svg:
             return (x2, y2 - n if y2 > y1 else y2 + n)
         return (x2 - n if x2 > x1 else x2 + n, y2)
 
+    def pathd(self, d, fill, stroke=None, sw=2, dash=None):
+        a = f'd="{d}" fill="{fill}"'
+        if stroke:
+            a += f' stroke="{stroke}" stroke-width="{sw}"'
+        if dash:
+            a += f' stroke-dasharray="{dash}"'
+        self.add(f"<path {a}/>")
+
     def text(self, x, y, s, size=22, weight=400, color=INK, maxw=None, lh=1.35, mono=False, ls=0, center=False, name=None):
         """Escribe un bloque de texto (y = borde superior). Devuelve la altura usada."""
         lines = wrap(s, size, weight, maxw, mono, ls) if maxw else s.split("\n")
@@ -139,8 +147,8 @@ class Svg:
             if center:
                 lx = x - measure(ln, size, weight, mono, ls) / 2
             dy = 0 if i == 0 else size * lh
-            parts.append(f'<tspan x="{lx:.1f}" dy="{dy:.1f}">{escape(ln)}</tspan>')
-        self.add(f'<text{nm} y="{base:.1f}" font-family="{fam}" font-size="{size}" font-weight="{weight}" fill="{color}"{lsa} xml:space="preserve">' + "".join(parts) + "</text>")
+            parts.append(f'<tspan x="{lx:.0f}" dy="{dy:.0f}">{escape(ln)}</tspan>')
+        self.add(f'<text{nm} y="{base:.0f}" font-family="{fam}" font-size="{size}" font-weight="{weight}" fill="{color}"{lsa}>' + "".join(parts) + "</text>")
         return len(lines) * size * lh
 
     def save(self, path, h=None):

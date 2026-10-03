@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · USER PERSONA</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Motivaciones, miedos y decisiones</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">13 / 15</tspan></text>
+<rect x="120" y="254" width="544" height="518" fill="#2160EB" rx="20" ry="20"/>
+<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">MOTIVACIONES</tspan></text>
+<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• No sentirse sola en el momento más</tspan><tspan x="148" dy="32">expuesto [E]</tspan></text>
+<text y="411" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Terminar la carrera sin evitar las materias</tspan><tspan x="148" dy="32">de la noche [S]</tspan></text>
+<text y="483" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Autonomía: no depender de que alguien la</tspan><tspan x="148" dy="32">recoja [S]</tspan></text>
+<text y="556" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Tranquilizar a su mamá [E: la mayoría le</tspan><tspan x="148" dy="32">avisa a alguien]</tspan></text>
+<rect x="688" y="254" width="544" height="518" fill="#2160EB" rx="20" ry="20"/>
+<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">MIEDOS</tspan></text>
+<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Violencia sexual (las 3 mujeres) [E]</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Robo y agresión (las 5 personas) [E]</tspan></text>
+<text y="419" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Que la sigan al bajarse del bus [E: “Me</tspan><tspan x="716" dy="32">persiguieron”]</tspan></text>
+<text y="491" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Que una app exponga su ubicación a</tspan><tspan x="716" dy="32">quien no debe [S: planteado en la retro]</tspan></text>
+<rect x="1256" y="254" width="544" height="518" fill="#2160EB" rx="20" ry="20"/>
+<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">SITUACIONES QUE CAMBIAN SUS DECISIONES</tspan></text>
+<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Después de las 10 p. m. no espera el</tspan><tspan x="1284" dy="32">alimentador: pide un carro o se queda</tspan><tspan x="1284" dy="32">donde una amiga [E: 4 de 5 cambiaron de</tspan><tspan x="1284" dy="32">plan]</tspan></text>
+<text y="475" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Si llueve, el paradero se vacía [S]</tspan></text>
+<text y="515" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Con menos del 20 % de batería deja de</tspan><tspan x="1284" dy="32">compartir la ubicación [S]</tspan></text>
+<text y="588" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Si va con alguien conocido, se queda</tspan><tspan x="1284" dy="32">hasta tarde [S]</tspan></text>
+<text y="660" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• En semana de parciales sale más tarde [S]</tspan></text>
+<text y="700" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• A fin de mes decide si le alcanza para un</tspan><tspan x="1284" dy="32">carro [S]</tspan></text></svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Diferenciación</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">07 / 15</tspan></text>
+<rect x="120" y="254" width="544" height="497" fill="#2160EB" rx="20" ry="20"/>
+<text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">TOMO</tspan></text>
+<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="148" dy="0">Patrones ya probados</tspan></text>
+<text y="399" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Círculos de confianza → Life360</tspan></text>
+<text y="449" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Compartir un viaje que termina solo →</tspan><tspan x="148" dy="36">Uber y Google Maps</tspan></text>
+<text y="536" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Calificación y reporte → Uber</tspan></text>
+<text y="587" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Filtros por institución y género →</tspan><tspan x="148" dy="36">Waze Carpool</tspan></text>
+<text y="673" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Tiempos de llegada como capa</tspan><tspan x="148" dy="36">secundaria → Moovit</tspan></text>
+<rect x="688" y="254" width="544" height="497" fill="#2160EB" rx="20" ry="20"/>
+<text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="716" dy="0">EVITO</tspan></text>
+<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="716" dy="0">Lo que genera desconfianza</tspan></text>
+<text y="399" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Ubicación permanente e historial</tspan><tspan x="716" dy="36">(Life360)</tspan></text>
+<text y="486" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Emparejar a desconocidos (UberX</tspan><tspan x="716" dy="36">Share)</tspan></text>
+<text y="573" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Cobrar por sentirse seguro (Uber)</tspan></text>
+<text y="623" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Actuar solo cuando ya pasó algo</tspan><tspan x="716" dy="36">(bSafe)</tspan></text>
+<rect x="1256" y="254" width="544" height="497" fill="#FFB81C" rx="20" ry="20"/>
+<text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#0B1B3F"><tspan x="1284" dy="0">SOLO MATCH</tspan></text>
+<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">Lo que nadie más hace</tspan></text>
+<text y="399" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Emparejar por tramo de transporte</tspan><tspan x="1284" dy="36">público y horario</tspan></text>
+<text y="486" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Verificación doble: institución +</tspan><tspan x="1284" dy="36">avales</tspan></text>
+<text y="573" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Acompañar la espera en el paradero</tspan></text>
+<text y="623" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Ubicación que se apaga sola, sin</tspan><tspan x="1284" dy="36">historial</tspan></text>
+<text y="710" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Aviso al contacto sin instalar la app</tspan></text></svg>

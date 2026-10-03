@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · ARQUITECTURA</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Las 4 preguntas de la profe</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="7" fill="#FFB81C"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">15 / 15</tspan></text>
+<rect x="120" y="254" width="828" height="292" fill="#2160EB" rx="20" ry="20"/>
+<text y="306" font-family="Space Grotesk" font-size="27" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">¿Cómo funciona la verificación a través del círculo</tspan><tspan x="148" dy="34">cercano?</tspan></text>
+<text y="376" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">Verificación → Círculo cercano · Flujos 07 y 08</tspan></text>
+<text y="415" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">Quien no tiene correo institucional pide 2 avales a personas ya verificadas.</tspan><tspan x="148" dy="30">Quien avala confirma que la conoce en persona, la relación y desde cuándo.</tspan><tspan x="148" dy="30">Con 2 avales queda “Verificada por círculo”. Cada persona avala máximo 5</tspan><tspan x="148" dy="30">cuentas; si una avalada es suspendida, se revisan sus avales.</tspan></text>
+<rect x="972" y="254" width="828" height="292" fill="#2160EB" rx="20" ry="20"/>
+<text y="306" font-family="Space Grotesk" font-size="27" font-weight="700" fill="#FFFFFF"><tspan x="1000" dy="0">¿Qué información me muestra la plataforma cuando reviso</tspan><tspan x="1000" dy="34">los posibles perfiles?</tspan></text>
+<text y="376" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="1000" dy="0">Matches → Personas compatibles · Flujo 13</tspan></text>
+<text y="415" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">Foto, nombre con inicial del apellido, insignia e institución o círculo, tramo</tspan><tspan x="1000" dy="30">en común, hora de salida y diferencia, punto de encuentro, trayectos</tspan><tspan x="1000" dy="30">acompañados y conocidos en común. Nunca el destino final, el apellido ni el</tspan><tspan x="1000" dy="30">celular.</tspan></text>
+<rect x="120" y="570" width="828" height="258" fill="#2160EB" rx="20" ry="20"/>
+<text y="623" font-family="Space Grotesk" font-size="27" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">¿Dónde agrego los contactos que serán avisados?</tspan></text>
+<text y="658" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">Perfil → Contactos de confianza · Flujo 21</tspan></text>
+<text y="698" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">En Perfil → Contactos de confianza (máximo 3), desde la agenda o a mano,</tspan><tspan x="148" dy="30">con relación, canal (SMS o WhatsApp) y avisos. El contacto debe aceptar.</tspan><tspan x="148" dy="30">Antes de cada trayecto se confirma a quién avisar.</tspan></text>
+<rect x="972" y="570" width="828" height="258" fill="#2160EB" rx="20" ry="20"/>
+<text y="623" font-family="Space Grotesk" font-size="27" font-weight="700" fill="#FFFFFF"><tspan x="1000" dy="0">¿Qué información contiene el detalle de un match?</tspan></text>
+<text y="658" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="1000" dy="0">Match → Detalle del match · Flujo 13</tspan></text>
+<text y="698" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">Perfil público ampliado, mapa del tramo compartido (dónde se unen y se</tspan><tspan x="1000" dy="30">separan), punto y hora de encuentro, tiempo juntos, verificación,</tspan><tspan x="1000" dy="30">reputación, preferencia de compañía y acciones: solicitar, bloquear o</tspan><tspan x="1000" dy="30">reportar.</tspan></text></svg>

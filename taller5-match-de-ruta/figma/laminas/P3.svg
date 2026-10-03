@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · USER PERSONA</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Su trayecto de un martes</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">11 / 15</tspan></text>
+<rect x="120" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="136" dy="0">9:00 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="136" dy="0">Sale de clase</tspan></text>
+<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="136" dy="0">Revisa en la app cuándo</tspan><tspan x="136" dy="20">pasa la troncal.</tspan></text>
+<rect x="362" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="378" dy="0">9:05 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="378" dy="0">Camina a la</tspan><tspan x="378" dy="25">estación</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="378" dy="0">8 minutos por una calle</tspan><tspan x="378" dy="20">con poca luz. Se quita un</tspan><tspan x="378" dy="20">audífono.</tspan></text>
+<rect x="604" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="620" dy="0">9:15 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="620" dy="0">Troncal</tspan></text>
+<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="620" dy="0">40 minutos de pie. Hay</tspan><tspan x="620" dy="20">gente; guarda el celular en</tspan><tspan x="620" dy="20">la maleta.</tspan></text>
+<rect x="846" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="862" dy="0">9:55 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="862" dy="0">Llega al portal</tspan></text>
+<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="862" dy="0">Busca el paradero del</tspan><tspan x="862" dy="20">alimentador; cada vez hay</tspan><tspan x="862" dy="20">menos gente.</tspan></text>
+<rect x="1088" y="254" width="228" height="212" fill="#FFB81C" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#0B1B3F"><tspan x="1104" dy="0">10:00 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#0B1B3F"><tspan x="1104" dy="0">Espera el</tspan><tspan x="1104" dy="25">alimentador</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#0B1B3F"><tspan x="1104" dy="0">De 10 a 20 min sin saber</tspan><tspan x="1104" dy="20">cuánto tarda. Se para</tspan><tspan x="1104" dy="20">cerca de la luz y de otras</tspan><tspan x="1104" dy="20">personas.</tspan></text>
+<rect x="1330" y="254" width="228" height="212" fill="#FFB81C" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#0B1B3F"><tspan x="1346" dy="0">10:30 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#0B1B3F"><tspan x="1346" dy="0">Camina a casa</tspan></text>
+<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#0B1B3F"><tspan x="1346" dy="0">6 minutos a pie. Mira hacia</tspan><tspan x="1346" dy="20">atrás varias veces.</tspan></text>
+<rect x="1572" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
+<text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="1588" dy="0">10:40 p. m.</tspan></text>
+<text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="1588" dy="0">Llega a casa</tspan></text>
+<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="1588" dy="0">Le escribe “llegué” a su</tspan><tspan x="1588" dy="20">mamá y apaga la ubicación</tspan><tspan x="1588" dy="20">(si se acuerda).</tspan></text>
+<rect x="120" y="490" width="1680" height="200" fill="#2160EB" rx="16" ry="16"/>
+<text y="519" font-family="Space Mono" font-size="14" font-weight="700" fill="#C7D7FB"><tspan x="140" dy="0">NIVEL DE TENSIÓN</tspan></text>
+<path d="M 234 654 L 476 580 L 718 617 L 960 580 L 1202 544 L 1444 544 L 1686 654" fill="none" stroke="#FFB81C" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="234" cy="654" r="10" fill="#FFFFFF"/>
+<text y="641" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="250" dy="0">Tranquila</tspan></text>
+<circle cx="476" cy="580" r="10" fill="#FFFFFF"/>
+<text y="567" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="492" dy="0">Alerta</tspan></text>
+<circle cx="718" cy="617" r="10" fill="#FFFFFF"/>
+<text y="604" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="734" dy="0">Atenta</tspan></text>
+<circle cx="960" cy="580" r="10" fill="#FFFFFF"/>
+<text y="567" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="976" dy="0">Tensa</tspan></text>
+<circle cx="1202" cy="544" r="10" fill="#FFB81C"/>
+<text y="531" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="1218" dy="0">Máxima tensión</tspan></text>
+<circle cx="1444" cy="544" r="10" fill="#FFB81C"/>
+<text y="531" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="1460" dy="0">Miedo</tspan></text>
+<circle cx="1686" cy="654" r="10" fill="#FFFFFF"/>
+<text y="641" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="1702" dy="0">Alivio</tspan></text>
+<text y="730" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFB81C"><tspan x="120" dy="0">→ El momento más expuesto no es el bus: es la espera del alimentador y la caminata final. Ahí actúa Match.</tspan></text></svg>

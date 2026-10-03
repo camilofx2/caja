@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · USER PERSONA</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">User persona</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">09 / 15</tspan></text>
+<rect x="120" y="254" width="560" height="660" fill="#2160EB" rx="24" ry="24"/>
+<circle cx="230" cy="364" r="70" fill="#FFB81C"/>
+<text y="390" font-family="Space Grotesk" font-size="72" font-weight="700" fill="#0B1B3F"><tspan x="206" dy="0">D</tspan></text>
+<text y="487" font-family="Space Grotesk" font-size="36" font-weight="700" fill="#FFFFFF"><tspan x="156" dy="0">Daniela Gómez, 22 años</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="156" dy="0">Estudiante de 8.º semestre de Comunicación Social ·</tspan><tspan x="156" dy="26">Vive en Bosa, estudia en Chapinero (Bogotá) · Sale de</tspan><tspan x="156" dy="26">clase a las 9:00 p. m. martes y jueves · Viaja sola en</tspan><tspan x="156" dy="26">TransMilenio + alimentador</tspan></text>
+<text y="657" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#FFB81C"><tspan x="156" dy="0">“La app me informa, pero no me</tspan><tspan x="156" dy="35">protege.”</tspan></text>
+<text y="724" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="156" dy="0">PERSONA PRINCIPAL · [E] entrevistas · [S] supuesto</tspan></text>
+<rect x="710" y="254" width="1090" height="103" fill="#2160EB" rx="18" ry="18"/>
+<text y="290" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="738" dy="0">OBJETIVO</tspan></text>
+<text y="325" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="738" dy="0">Llegar a casa tranquila, sin depender de que la recojan ni de pagar un carro cada noche.</tspan></text>
+<rect x="710" y="369" width="1090" height="132" fill="#2160EB" rx="18" ry="18"/>
+<text y="405" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="738" dy="0">NECESIDADES</tspan></text>
+<text y="440" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="738" dy="0">Saber quién de su universidad hace su mismo tramo a la misma hora · que su mamá sepa que llegó sin</tspan><tspan x="738" dy="29">escribirle · que la otra persona esté verificada.</tspan></text>
+<rect x="710" y="513" width="1090" height="103" fill="#2160EB" rx="18" ry="18"/>
+<text y="550" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="738" dy="0">FRUSTRACIONES</tspan></text>
+<text y="584" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="738" dy="0">La app le da horarios, no tranquilidad · compartir la ubicación es manual · no confía en desconocidos.</tspan></text>
+<rect x="710" y="628" width="1090" height="103" fill="#2160EB" rx="18" ry="18"/>
+<text y="665" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="738" dy="0">MOTIVACIONES</tspan></text>
+<text y="699" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="738" dy="0">No sentirse sola en el momento más expuesto · autonomía · tranquilizar a su mamá.</tspan></text>
+<text y="764" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="710" dy="0">RECORRIDO</tspan></text>
+<rect x="710" y="783" width="69" height="40" fill="#3A73EE" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="725" dy="0">Sale</tspan></text>
+<text y="809" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#C7D7FB"><tspan x="785" dy="0">→</tspan></text>
+<rect x="813" y="783" width="97" height="40" fill="#3A73EE" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="828" dy="0">Camina</tspan></text>
+<text y="809" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#C7D7FB"><tspan x="916" dy="0">→</tspan></text>
+<rect x="944" y="783" width="98" height="40" fill="#3A73EE" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="959" dy="0">Troncal</tspan></text>
+<text y="809" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#C7D7FB"><tspan x="1047" dy="0">→</tspan></text>
+<rect x="1075" y="783" width="85" height="40" fill="#3A73EE" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="1090" dy="0">Portal</tspan></text>
+<text y="809" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#C7D7FB"><tspan x="1166" dy="0">→</tspan></text>
+<rect x="1194" y="783" width="92" height="40" fill="#FFB81C" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#0B1B3F"><tspan x="1209" dy="0">Espera</tspan></text>
+<text y="809" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#C7D7FB"><tspan x="1292" dy="0">→</tspan></text>
+<rect x="1320" y="783" width="97" height="40" fill="#FFB81C" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#0B1B3F"><tspan x="1335" dy="0">Camina</tspan></text>
+<text y="809" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#C7D7FB"><tspan x="1423" dy="0">→</tspan></text>
+<rect x="1451" y="783" width="79" height="40" fill="#3A73EE" rx="20" ry="20"/>
+<text y="809" font-family="Space Grotesk" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="1466" dy="0">Llega</tspan></text></svg>

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2718" height="1273" viewBox="0 0 2718 1273"><rect id="Fondo" x="0" y="0" width="2718" height="1273" fill="#F4F4F5"/><text y="67" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.08"><tspan x="60" dy="0">04 · USER FLOWS · 2 DE 7</tspan></text>
+<text y="126" font-family="Space Grotesk" font-size="48" font-weight="700" fill="#1F1F1F"><tspan x="60" dy="0">Verificación</tspan></text>
+<g id="F05 · Elegir método de verificación">
+<rect x="60" y="170" width="612" height="533" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="84" dy="0">F05 · Elegir método de verificación</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="84" dy="0">Verificación</tspan></text>
+<path d="M 195 319 L 195 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="195,363 188,352 202,352" fill="#4A4A4A"/>
+<path d="M 195 424 L 195 461" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="195,468 188,457 202,457" fill="#4A4A4A"/>
+<path d="M 195 573 L 195 610" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="195,617 188,606 202,606" fill="#4A4A4A"/>
+<path d="M 310 521 L 345 521" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="352,521 340,514 340,528" fill="#4A4A4A"/>
+<rect x="80" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="152" dy="0">Verificación</tspan></text>
+<rect x="80" y="363" width="230" height="61" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="389" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="100" dy="0">Explica por qué se verifica</tspan><tspan x="120" dy="20">a todas las personas</tspan></text>
+<polygon points="195,468 310,521 195,573 80,521" fill="#FAD9B8"/>
+<text y="516" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="145" dy="0">¿Tiene correo</tspan><tspan x="145" dy="20">institucional?</tspan></text>
+<rect x="80" y="617" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="645" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="102" dy="0">Correo institucional (F06)</tspan></text>
+<rect x="352" y="498" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="526" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="390" dy="0">Círculo cercano (F07)</tspan></text>
+<text y="589" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="203" dy="0">Sí</tspan></text>
+<text y="513" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="318" dy="0">No</tspan></text>
+</g>
+<g id="F06 · Correo institucional">
+<rect x="722" y="170" width="612" height="1043" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="746" dy="0">F06 · Correo institucional</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="746" dy="0">Verificación → Correo institucional</tspan></text>
+<path d="M 857 319 L 857 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,363 850,352 864,352" fill="#4A4A4A"/>
+<path d="M 857 424 L 857 461" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,468 850,457 864,457" fill="#4A4A4A"/>
+<path d="M 857 529 L 857 566" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,573 850,562 864,562" fill="#4A4A4A"/>
+<path d="M 857 634 L 857 671" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,678 850,667 864,667" fill="#4A4A4A"/>
+<path d="M 857 724 L 857 761" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,768 850,757 864,757" fill="#4A4A4A"/>
+<path d="M 972 821 L 1007 821" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1014,821 1002,814 1002,828" fill="#4A4A4A"/>
+<path d="M 1244 821 L 1266 821 L 1266 604 L 979 604" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="972,604 984,597 984,611" fill="#4A4A4A"/>
+<path d="M 857 873 L 857 910" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,917 850,906 864,906" fill="#4A4A4A"/>
+<path d="M 857 978 L 857 1015" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,1022 850,1011 864,1011" fill="#4A4A4A"/>
+<path d="M 857 1083 L 857 1120" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="857,1127 850,1116 864,1116" fill="#4A4A4A"/>
+<rect x="742" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="785" dy="0">Correo institucional</tspan></text>
+<polygon points="758,363 972,363 956,424 742,424" fill="#C3DDFD"/>
+<text y="389" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="774" dy="0">Busca su universidad o</tspan><tspan x="826" dy="20">empresa</tspan></text>
+<polygon points="758,468 972,468 956,529 742,529" fill="#C3DDFD"/>
+<text y="494" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="794" dy="0">Escribe su correo</tspan><tspan x="810" dy="20">@institución</tspan></text>
+<path d="M 742 582.3 A 115.0 9 0 0 1 972 582.3 L 972 625.3 A 115.0 9 0 0 1 742 625.3 Z" fill="#CDEFD7"/>
+<path d="M 742 582.3 A 115.0 9 0 0 0 972 582.3" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="599" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="782" dy="0">Envía un código de 6</tspan><tspan x="832" dy="20">dígitos</tspan></text>
+<polygon points="758,678 972,678 956,724 742,724" fill="#C3DDFD"/>
+<text y="706" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="795" dy="0">Ingresa el código</tspan></text>
+<polygon points="857,768 972,821 857,873 742,821" fill="#FAD9B8"/>
+<text y="816" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="827" dy="0">¿Código</tspan><tspan x="821" dy="20">correcto?</tspan></text>
+<rect x="1014" y="798" width="230" height="46" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="826" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1040" dy="0">Reenviar código (máx. 3)</tspan></text>
+<polygon points="758,917 972,917 956,978 742,978" fill="#C3DDFD"/>
+<text y="943" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="791" dy="0">Toma su foto en el</tspan><tspan x="823" dy="20">momento</tspan></text>
+<path d="M 742 1031.3 A 115.0 9 0 0 1 972 1031.3 L 972 1074.3 A 115.0 9 0 0 1 742 1074.3 Z" fill="#CDEFD7"/>
+<path d="M 742 1031.3 A 115.0 9 0 0 0 972 1031.3" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="1048" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="795" dy="0">Asigna la insignia</tspan><tspan x="767" dy="20">“Verificada · Universidad”</tspan></text>
+<rect x="742" y="1127" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="1155" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="771" dy="0">Crear primera ruta (F10)</tspan></text>
+<text y="813" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="980" dy="0">No</tspan></text>
+<text y="889" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="865" dy="0">Sí</tspan></text>
+</g>
+<g id="F07 · Círculo cercano: pedir avales">
+<rect x="1384" y="170" width="612" height="859" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="1408" dy="0">F07 · Círculo cercano: pedir avales</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="1408" dy="0">Verificación → Círculo cercano · Pregunta 1</tspan></text>
+<path d="M 1519 319 L 1519 356" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1519,363 1512,352 1526,352" fill="#4A4A4A"/>
+<path d="M 1519 424 L 1519 461" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1519,468 1512,457 1526,457" fill="#4A4A4A"/>
+<path d="M 1519 549 L 1519 586" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1519,593 1512,581 1526,581" fill="#4A4A4A"/>
+<path d="M 1519 654 L 1519 691" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1519,698 1512,686 1526,686" fill="#4A4A4A"/>
+<path d="M 1634 746 L 1669 746" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1676,746 1664,739 1664,753" fill="#4A4A4A"/>
+<path d="M 1906 746 L 1928 746 L 1928 509 L 1641 509" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1634,509 1646,502 1646,515" fill="#4A4A4A"/>
+<path d="M 1519 794 L 1519 831" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1519,838 1512,826 1526,826" fill="#4A4A4A"/>
+<path d="M 1519 899 L 1519 936" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1519,943 1512,931 1526,931" fill="#4A4A4A"/>
+<rect x="1404" y="273" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="301" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1462" dy="0">Círculo cercano</tspan></text>
+<rect x="1404" y="363" width="230" height="61" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="389" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1423" dy="0">Explica: necesitas 2 avales</tspan><tspan x="1433" dy="20">de personas verificadas</tspan></text>
+<polygon points="1420,468 1634,468 1618,549 1404,549" fill="#C3DDFD"/>
+<text y="494" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1460" dy="0">Elige 2 personas</tspan><tspan x="1441" dy="20">verificadas o envía un</tspan><tspan x="1495" dy="20">enlace</tspan></text>
+<path d="M 1404 601.8 A 115.0 9 0 0 1 1634 601.8 L 1634 644.8 A 115.0 9 0 0 1 1404 644.8 Z" fill="#CDEFD7"/>
+<path d="M 1404 601.8 A 115.0 9 0 0 0 1634 601.8" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="619" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1435" dy="0">Envía las solicitudes de</tspan><tspan x="1484" dy="20">aval (F08)</tspan></text>
+<polygon points="1519,698 1634,746 1519,794 1404,746" fill="#FAD9B8"/>
+<text y="751" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1460" dy="0">¿Tiene 2 avales?</tspan></text>
+<rect x="1676" y="706" width="230" height="80" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="731" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1701" dy="0">Pendiente · 1 de 2: puede</tspan><tspan x="1701" dy="20">crear rutas, aún no hacer</tspan><tspan x="1768" dy="20">match</tspan></text>
+<path d="M 1404 846.8 A 115.0 9 0 0 1 1634 846.8 L 1634 889.8 A 115.0 9 0 0 1 1404 889.8 Z" fill="#CDEFD7"/>
+<path d="M 1404 846.8 A 115.0 9 0 0 0 1634 846.8" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="864" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1457" dy="0">Asigna la insignia</tspan><tspan x="1436" dy="20">“Verificada por círculo”</tspan></text>
+<rect x="1404" y="943" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="971" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1455" dy="0">Cuenta verificada</tspan></text>
+<text y="738" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1642" dy="0">No</tspan></text>
+<text y="810" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="1527" dy="0">Sí</tspan></text>
+</g>
+<g id="F08 · Círculo cercano: dar un aval">
+<rect x="2046" y="170" width="612" height="930" fill="#FFFFFF" rx="20" ry="20" stroke="#E4E4E7" stroke-width="2"/>
+<text y="216" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#1F1F1F"><tspan x="2070" dy="0">F08 · Círculo cercano: dar un aval</tspan></text>
+<text y="242" font-family="Space Mono" font-size="13" font-weight="400" fill="#71717A"><tspan x="2070" dy="0">Verificación → Círculo cercano · Pregunta 1</tspan></text>
+<path d="M 2181 334 L 2181 371" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2181,378 2174,367 2188,367" fill="#4A4A4A"/>
+<path d="M 2181 439 L 2181 476" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2181,483 2174,472 2188,472" fill="#4A4A4A"/>
+<path d="M 2296 536 L 2331 536" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2338,536 2326,529 2326,543" fill="#4A4A4A"/>
+<path d="M 2181 588 L 2181 625" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2181,632 2174,621 2188,621" fill="#4A4A4A"/>
+<path d="M 2181 693 L 2181 730" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2181,737 2174,726 2188,726" fill="#4A4A4A"/>
+<path d="M 2296 809 L 2331 809" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2338,809 2326,802 2326,815" fill="#4A4A4A"/>
+<path d="M 2181 880 L 2181 917" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2181,924 2174,912 2188,912" fill="#4A4A4A"/>
+<path d="M 2181 970 L 2181 1007" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="2181,1014 2174,1002 2188,1002" fill="#4A4A4A"/>
+<rect x="2066" y="273" width="230" height="61" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="299" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2096" dy="0">Recibe una solicitud de</tspan><tspan x="2167" dy="20">aval</tspan></text>
+<rect x="2066" y="378" width="230" height="61" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="404" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2091" dy="0">Ve la foto y el nombre de</tspan><tspan x="2135" dy="20">quien la pide</tspan></text>
+<polygon points="2181,483 2296,536 2181,588 2066,536" fill="#FAD9B8"/>
+<text y="531" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2129" dy="0">¿La conoce en</tspan><tspan x="2147" dy="20">persona?</tspan></text>
+<rect x="2338" y="505" width="230" height="61" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="531" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2358" dy="0">Rechaza (no se muestra el</tspan><tspan x="2425" dy="20">motivo)</tspan></text>
+<polygon points="2082,632 2296,632 2280,693 2066,693" fill="#C3DDFD"/>
+<text y="658" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2089" dy="0">Indica la relación y desde</tspan><tspan x="2109" dy="20">cuándo se conocen</tspan></text>
+<polygon points="2181,737 2296,809 2181,880 2066,809" fill="#FAD9B8"/>
+<text y="794" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2132" dy="0">¿Tiene avales</tspan><tspan x="2135" dy="20">disponibles?</tspan><tspan x="2152" dy="20">(máx. 5)</tspan></text>
+<rect x="2338" y="778" width="230" height="61" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="804" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2371" dy="0">Aviso: llegó al límite de</tspan><tspan x="2430" dy="20">avales</tspan></text>
+<path d="M 2066 932.8 A 115.0 9 0 0 1 2296 932.8 L 2296 960.8 A 115.0 9 0 0 1 2066 960.8 Z" fill="#CDEFD7"/>
+<path d="M 2066 932.8 A 115.0 9 0 0 0 2296 932.8" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="952" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="2127" dy="0">Registra el aval</tspan></text>
+<rect x="2066" y="1014" width="230" height="46" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="1042" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="2135" dy="0">Aval enviado</tspan></text>
+<text y="528" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2304" dy="0">No</tspan></text>
+<text y="604" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2189" dy="0">Sí</tspan></text>
+<text y="801" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2304" dy="0">No</tspan></text>
+<text y="896" font-family="Space Grotesk" font-size="13" font-weight="700" fill="#3F3F46"><tspan x="2189" dy="0">Sí</tspan></text>
+</g></svg>

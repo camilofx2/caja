@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking (1 de 4)</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">01 / 15</tspan></text>
+<rect x="1621" y="208" width="179" height="654" fill="#3A73EE" rx="18" ry="18"/>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="562" dy="0">Moovit</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">Informa</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="741" dy="0">Google Maps</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Ubica y guía</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="919" dy="0">Uber</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Transporta</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="1098" dy="0">Life360</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">Vigila</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="1276" dy="0">bSafe</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">Reacciona</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="1455" dy="0">Waze Carpool</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Carro compartido ·</tspan><tspan x="1455" dy="18">cerró en 2022</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFB81C"><tspan x="1633" dy="0">Match</tspan></text>
+<text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1633" dy="0">Acompaña</tspan></text>
+<text y="242" font-family="Space Mono" font-size="18" font-weight="700" fill="#C7D7FB"><tspan x="120" dy="0">Funcionalidad</tspan></text>
+<text y="325" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C" letter-spacing="1.50"><tspan x="120" dy="0">MOVILIDAD</tspan></text>
+<path d="M 120 340 L 1800 340" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="368" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Planear ruta en transporte público</tspan></text>
+<text y="390" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Combina buses, troncales y caminatas</tspan></text>
+<circle cx="574" cy="364" r="12" fill="#FFB81C"/>
+<circle cx="753" cy="364" r="12" fill="#FFB81C"/>
+<circle cx="931" cy="364" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 931.1428571428571 351.6 A 12 12 0 0 0 931.1428571428571 375.6 Z" fill="#FFB81C"/>
+<text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Solo en algunas</tspan><tspan x="919" dy="18">ciudades*</tspan></text>
+<circle cx="1110" cy="364" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1288" cy="364" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1467" cy="364" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Ruta en carro</tspan></text>
+<circle cx="1645" cy="364" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Usa la ruta que ya</tspan><tspan x="1633" dy="18">conoce</tspan></text>
+<path d="M 120 425 L 1800 425" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="453" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Tiempos de llegada en tiempo real</tspan></text>
+<text y="475" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Cuándo llega el bus o el alimentador</tspan></text>
+<circle cx="574" cy="449" r="12" fill="#FFB81C"/>
+<circle cx="753" cy="449" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 752.5714285714286 436.6 A 12 12 0 0 0 752.5714285714286 460.6 Z" fill="#FFB81C"/>
+<text y="479" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Según los datos de la</tspan><tspan x="741" dy="18">ciudad</tspan></text>
+<circle cx="931" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1110" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1288" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1467" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1645" cy="449" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 1645.4285714285716 436.6 A 12 12 0 0 0 1645.4285714285716 460.6 Z" fill="#FFB81C"/>
+<text y="479" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Capa secundaria</tspan><tspan x="1633" dy="18">(Could)</tspan></text>
+<path d="M 120 510 L 1800 510" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="538" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Alertas de servicio</tspan></text>
+<text y="560" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Desvíos, cierres o retrasos</tspan></text>
+<circle cx="574" cy="534" r="12" fill="#FFB81C"/>
+<circle cx="753" cy="534" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 752.5714285714286 521.6 A 12 12 0 0 0 752.5714285714286 545.6 Z" fill="#FFB81C"/>
+<text y="564" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Según la ciudad</tspan></text>
+<circle cx="931" cy="534" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1110" cy="534" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1288" cy="534" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1467" cy="534" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1645" cy="534" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="603" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C" letter-spacing="1.50"><tspan x="120" dy="0">SEGURIDAD Y RESPUESTA</tspan></text>
+<path d="M 120 617 L 1800 617" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="646" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Botón SOS / emergencia</tspan></text>
+<text y="668" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Pedir ayuda en un momento crítico</tspan></text>
+<circle cx="574" cy="641" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="753" cy="641" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="931" cy="641" r="12" fill="#FFB81C"/>
+<text y="672" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Durante el viaje</tspan></text>
+<circle cx="1110" cy="641" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 1109.7142857142858 629.1 A 12 12 0 0 0 1109.7142857142858 653.1 Z" fill="#FFB81C"/>
+<text y="672" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">Según el plan</tspan></text>
+<circle cx="1288" cy="641" r="12" fill="#FFB81C"/>
+<text y="672" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">A sus guardianes</tspan></text>
+<circle cx="1467" cy="641" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1645" cy="641" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 1645.4285714285716 629.1 A 12 12 0 0 0 1645.4285714285716 653.1 Z" fill="#FFB81C"/>
+<text y="672" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Atajo al 123</tspan><tspan x="1633" dy="18">(propuesta)</tspan></text>
+<path d="M 120 702 L 1800 702" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="730" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Grabar o transmitir evidencia</tspan></text>
+<text y="753" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Audio o video como respaldo</tspan></text>
+<circle cx="574" cy="726" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="753" cy="726" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="931" cy="726" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 931.1428571428571 714.1 A 12 12 0 0 0 931.1428571428571 738.1 Z" fill="#FFB81C"/>
+<text y="757" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Audio, en algunos</tspan><tspan x="919" dy="18">mercados*</tspan></text>
+<circle cx="1110" cy="726" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1288" cy="726" r="12" fill="#FFB81C"/>
+<text y="757" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">Video y audio en vivo</tspan></text>
+<circle cx="1467" cy="726" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1645" cy="726" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="757" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Fuera del MVP</tspan></text>
+<path d="M 120 787 L 1800 787" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="816" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Llamada falsa</tspan></text>
+<text y="838" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Excusa para salir de una situación</tspan></text>
+<circle cx="574" cy="811" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="753" cy="811" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="931" cy="811" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1110" cy="811" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1288" cy="811" r="12" fill="#FFB81C"/>
+<circle cx="1467" cy="811" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="1645" cy="811" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<path d="M 120 853 L 1800 853" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="132" cy="887" r="12" fill="#FFB81C"/>
+<text y="893" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="152" dy="0">Sí</tspan></text>
+<circle cx="219" cy="887" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 218.8125 875.3000000000001 A 12 12 0 0 0 218.8125 899.3000000000001 Z" fill="#FFB81C"/>
+<text y="893" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="239" dy="0">Parcial</tspan></text>
+<circle cx="358" cy="887" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="893" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="378" dy="0">No</tspan></text>
+<circle cx="444" cy="887" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="893" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="440" dy="0">?</tspan></text>
+<text y="893" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="464" dy="0">Por verificar</tspan></text>
+<text y="893" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* confirmar en la app antes de entregar</tspan></text></svg>

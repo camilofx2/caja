@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="560" viewBox="0 0 1500 560"><rect id="Fondo" x="0" y="0" width="1500" height="560" fill="#F4F4F5"/><text y="67" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.08"><tspan x="60" dy="0">04 · USER FLOWS</tspan></text>
+<text y="126" font-family="Space Grotesk" font-size="48" font-weight="700" fill="#1F1F1F"><tspan x="60" dy="0">User flows por funcionalidad</tspan></text>
+<text y="168" font-family="Space Grotesk" font-size="20" font-weight="400" fill="#52525B"><tspan x="60" dy="0">25 flujos, uno por cada nodo de la arquitectura. Cada flujo empieza y termina en una cápsula gris y se lee de arriba hacia abajo.</tspan></text>
+<rect x="60" y="240" width="200" height="60" fill="#B5B5B5" rx="22" ry="22"/>
+<text y="275" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="160" dy="0"></tspan></text>
+<text y="377" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="60" dy="0">Inicio / fin</tspan></text>
+<rect x="340" y="240" width="200" height="60" fill="#D9CCFB" rx="4" ry="4"/>
+<text y="275" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="440" dy="0"></tspan></text>
+<text y="377" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="340" dy="0">Pantalla o proceso</tspan></text>
+<polygon points="636,240 820,240 804,300 620,300" fill="#C3DDFD"/>
+<text y="275" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="720" dy="0"></tspan></text>
+<text y="377" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="620" dy="0">El usuario ingresa datos</tspan></text>
+<path d="M 900 249 A 100.0 9 0 0 1 1100 249 L 1100 291 A 100.0 9 0 0 1 900 291 Z" fill="#CDEFD7"/>
+<path d="M 900 249 A 100.0 9 0 0 0 1100 249" fill="none" stroke="#9AD9AE" stroke-width="1.5"/>
+<text y="275" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#1F1F1F"><tspan x="1000" dy="0"></tspan></text>
+<text y="377" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="900" dy="0">El sistema valida o</tspan><tspan x="900" dy="24">consulta</tspan></text>
+<polygon points="1280,240 1380,288 1280,336 1180,288" fill="#FAD9B8"/>
+<text y="293" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="1280" dy="0"></tspan></text>
+<text y="377" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="1180" dy="0">Decisión (Sí / No)</tspan></text>
+<text y="447" font-family="Space Mono" font-size="18" font-weight="400" fill="#52525B"><tspan x="60" dy="0">Índice: 01–04 Acceso · 05–08 Verificación · 09–12 Inicio y Mis rutas · 13–16 Matches · 17–19 Trayecto activo · 20–23 Perfil ·</tspan><tspan x="60" dy="25">24–25 Confianza y contacto avisado</tspan></text></svg>

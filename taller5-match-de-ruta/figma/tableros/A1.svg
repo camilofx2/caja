@@ -1,0 +1,417 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="3812" viewBox="0 0 2600 3812"><rect id="Fondo" x="0" y="0" width="2600" height="3812" fill="#F4F4F5"/><text y="100" font-family="Space Mono" font-size="22" font-weight="700" fill="#084FE9" letter-spacing="1.32"><tspan x="80" dy="0">03 · ANALIZAR · ARQUITECTURA DE LA INFORMACIÓN</tspan></text>
+<text y="186" font-family="Space Grotesk" font-size="72" font-weight="700" fill="#1F1F1F"><tspan x="80" dy="0">Arquitectura de la información</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#525252"><tspan x="80" dy="0">Qué contiene la plataforma, de arriba hacia abajo. Barra inferior: Hoy · Mis rutas · Matches · Perfil. El trayecto activo aparece como banner fijo y el contacto avisado</tspan><tspan x="80" dy="35">ve una página web sin instalar la app. Las cajas con borde amarillo responden las preguntas de la profe.</tspan></text>
+<rect x="80" y="320" width="534" height="40" fill="#FFFFFF" rx="20" ry="20" stroke="#FFB81C" stroke-width="3"/>
+<text y="346" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="98" dy="0">1 · ¿Cómo funciona la verificación por círculo cercano?</tspan></text>
+<rect x="630" y="320" width="475" height="40" fill="#FFFFFF" rx="20" ry="20" stroke="#FFB81C" stroke-width="3"/>
+<text y="346" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="648" dy="0">2 · ¿Qué muestra al revisar los posibles perfiles?</tspan></text>
+<rect x="1120" y="320" width="522" height="40" fill="#FFFFFF" rx="20" ry="20" stroke="#FFB81C" stroke-width="3"/>
+<text y="346" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="1138" dy="0">3 · ¿Dónde agrego los contactos que serán avisados?</tspan></text>
+<rect x="1658" y="320" width="418" height="40" fill="#FFFFFF" rx="20" ry="20" stroke="#FFB81C" stroke-width="3"/>
+<text y="346" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="1676" dy="0">4 · ¿Qué contiene el detalle de un match?</tspan></text>
+<g id="Ingreso">
+<rect x="1229" y="430" width="141" height="42" fill="#1F1F1F" rx="18" ry="18"/>
+<text y="457" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="1259" dy="0">INGRESO</tspan></text>
+<path d="M 1300 472 L 1300 506" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 506 L 1772 506" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 506 L 828 532" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,540 820,527 836,527" fill="#3A3A3A"/>
+<rect x="693" y="540" width="270" height="38" fill="#1F1F1F" rx="18" ry="18"/>
+<text y="564" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="783" dy="0">Bienvenida</tspan></text>
+<rect x="703" y="588" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="611" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="775" dy="0">Qué es Match</tspan></text>
+<rect x="703" y="632" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="656" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="764" dy="0">Cómo se verifica</tspan></text>
+<rect x="703" y="677" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="701" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="725" dy="0">Qué pasa con tu ubicación</tspan></text>
+<path d="M 1120 506 L 1120 532" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,540 1112,527 1128,527" fill="#3A3A3A"/>
+<rect x="985" y="540" width="270" height="38" fill="#1F1F1F" rx="18" ry="18"/>
+<text y="564" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1067" dy="0">Crear cuenta</tspan></text>
+<rect x="995" y="588" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="611" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1039" dy="0">Celular + código SMS</tspan></text>
+<rect x="995" y="632" width="250" height="58" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="656" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1047" dy="0">Nombre y fecha de</tspan><tspan x="1077" dy="21">nacimiento</tspan></text>
+<rect x="995" y="698" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="722" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1093" dy="0">Género</tspan></text>
+<rect x="995" y="743" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="767" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1085" dy="0">Permisos</tspan></text>
+<rect x="995" y="788" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="811" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1014" dy="0">Términos y datos (Ley 1581)</tspan></text>
+<path d="M 1480 506 L 1480 532" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,540 1472,527 1488,527" fill="#3A3A3A"/>
+<rect x="1345" y="540" width="270" height="38" fill="#1F1F1F" rx="18" ry="18"/>
+<text y="564" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1426" dy="0">Iniciar sesión</tspan></text>
+<rect x="1355" y="588" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="611" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1399" dy="0">Celular + código SMS</tspan></text>
+<path d="M 1772 506 L 1772 532" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,540 1764,527 1780,527" fill="#3A3A3A"/>
+<rect x="1637" y="540" width="270" height="38" fill="#1F1F1F" rx="18" ry="18"/>
+<text y="564" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1698" dy="0">Recuperar cuenta</tspan></text>
+<rect x="1647" y="588" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="611" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1731" dy="0">Por celular</tspan></text>
+<rect x="1647" y="632" width="250" height="37" fill="#D9D9D9" rx="18" ry="18"/>
+<text y="656" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1682" dy="0">Por correo institucional</tspan></text>
+<path d="M 1300 506 L 1300 842" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<path d="M 1300 842 L 1300 904" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1300,912 1292,899 1308,899" fill="#3A3A3A"/>
+<g id="Verificación">
+<rect x="1206" y="912" width="188" height="42" fill="#15803D" rx="18" ry="18"/>
+<text y="940" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="1236" dy="0">VERIFICACIÓN</tspan></text>
+<path d="M 1300 954 L 1300 988" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 988 L 1772 988" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 988 L 828 1014" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,1022 820,1009 836,1009" fill="#3A3A3A"/>
+<rect x="693" y="1022" width="270" height="38" fill="#15803D" rx="18" ry="18"/>
+<text y="1047" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="747" dy="0">Correo institucional</tspan></text>
+<rect x="703" y="1071" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1094" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="757" dy="0">Buscar institución</tspan></text>
+<rect x="703" y="1115" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1139" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="750" dy="0">Correo @institución</tspan></text>
+<rect x="703" y="1160" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1184" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="753" dy="0">Código de 6 dígitos</tspan></text>
+<rect x="703" y="1205" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1229" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="751" dy="0">Foto en el momento</tspan></text>
+<rect x="703" y="1250" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1274" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="751" dy="0">Insignia “Verificada”</tspan></text>
+<path d="M 1120 988 L 1120 1014" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,1022 1112,1009 1128,1009" fill="#3A3A3A"/>
+<circle cx="1249" cy="1018" r="15" fill="#FFB81C"/>
+<text y="1024" font-family="Space Mono" font-size="17" font-weight="700" fill="#1F1F1F"><tspan x="1244" dy="0">1</tspan></text>
+<rect x="985" y="1022" width="270" height="38" fill="#15803D" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1047" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1021" dy="0">Círculo cercano (avales)</tspan></text>
+<rect x="995" y="1071" width="250" height="37" fill="#D3F2DC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1094" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1067" dy="0">Pedir 2 avales</tspan></text>
+<rect x="995" y="1115" width="250" height="58" fill="#D3F2DC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1139" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1025" dy="0">Quien avala la conoce en</tspan><tspan x="1089" dy="21">persona</tspan></text>
+<rect x="995" y="1181" width="250" height="37" fill="#D3F2DC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1205" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1051" dy="0">Relación y tiempo</tspan></text>
+<rect x="995" y="1226" width="250" height="37" fill="#D3F2DC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1250" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1020" dy="0">Máx. 5 avales por persona</tspan></text>
+<rect x="995" y="1271" width="250" height="58" fill="#D3F2DC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1294" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1031" dy="0">Insignia “Verificada por</tspan><tspan x="1091" dy="21">círculo”</tspan></text>
+<path d="M 1480 988 L 1480 1014" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,1022 1472,1009 1488,1009" fill="#3A3A3A"/>
+<rect x="1345" y="1022" width="270" height="38" fill="#15803D" rx="18" ry="18"/>
+<text y="1047" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1399" dy="0">Estado de la cuenta</tspan></text>
+<rect x="1355" y="1071" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1094" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1435" dy="0">Sin verificar</tspan></text>
+<rect x="1355" y="1115" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1139" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1385" dy="0">Pendiente (1 de 2 avales)</tspan></text>
+<rect x="1355" y="1160" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1184" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1441" dy="0">Verificada</tspan></text>
+<rect x="1355" y="1205" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1229" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1387" dy="0">En revisión / suspendida</tspan></text>
+<path d="M 1772 988 L 1772 1014" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,1022 1764,1009 1780,1009" fill="#3A3A3A"/>
+<rect x="1637" y="1022" width="270" height="38" fill="#15803D" rx="18" ry="18"/>
+<text y="1047" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1723" dy="0">Mis círculos</tspan></text>
+<rect x="1647" y="1071" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1094" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1727" dy="0">Universidad</tspan></text>
+<rect x="1647" y="1115" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1139" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1744" dy="0">Trabajo</tspan></text>
+<rect x="1647" y="1160" width="250" height="37" fill="#D3F2DC" rx="18" ry="18"/>
+<text y="1184" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1712" dy="0">Barrio o amigos</tspan></text>
+<path d="M 1300 988 L 1300 1346" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<path d="M 1300 1346 L 1300 1408" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1300,1416 1292,1403 1308,1403" fill="#3A3A3A"/>
+<g id="Inicio">
+<rect x="1242" y="1416" width="116" height="42" fill="#084FE9" rx="18" ry="18"/>
+<text y="1444" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="1272" dy="0">INICIO</tspan></text>
+<path d="M 1300 1458 L 1300 1492" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 1492 L 1772 1492" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 1492 L 828 1518" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,1526 820,1513 836,1513" fill="#3A3A3A"/>
+<rect x="693" y="1526" width="270" height="38" fill="#084FE9" rx="18" ry="18"/>
+<text y="1551" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="812" dy="0">HOY</tspan></text>
+<rect x="703" y="1574" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1598" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="761" dy="0">Próximo trayecto</tspan></text>
+<rect x="703" y="1619" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1643" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="730" dy="0">Personas disponibles hoy</tspan></text>
+<rect x="703" y="1664" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1688" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="739" dy="0">Solicitudes pendientes</tspan></text>
+<rect x="703" y="1709" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1732" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="769" dy="0">Iniciar trayecto</tspan></text>
+<rect x="703" y="1753" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1777" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="753" dy="0">Tiempos de llegada</tspan></text>
+<path d="M 1120 1492 L 1120 1518" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,1526 1112,1513 1128,1513" fill="#3A3A3A"/>
+<rect x="985" y="1526" width="270" height="38" fill="#084FE9" rx="18" ry="18"/>
+<text y="1551" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1077" dy="0">MIS RUTAS</tspan></text>
+<rect x="995" y="1574" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1598" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1054" dy="0">Rutas guardadas</tspan></text>
+<rect x="995" y="1619" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1643" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1051" dy="0">Crear / editar ruta</tspan></text>
+<rect x="995" y="1664" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1688" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1056" dy="0">Partida y tramos</tspan></text>
+<rect x="995" y="1709" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1732" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1067" dy="0">Paradero final</tspan></text>
+<rect x="995" y="1753" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1777" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1046" dy="0">Hora ±15 min y días</tspan></text>
+<rect x="995" y="1798" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1822" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1025" dy="0">Trayecto de una sola vez</tspan></text>
+<rect x="995" y="1843" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1867" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1057" dy="0">Pausar / eliminar</tspan></text>
+<path d="M 1480 1492 L 1480 1518" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,1526 1472,1513 1488,1513" fill="#3A3A3A"/>
+<rect x="1345" y="1526" width="270" height="38" fill="#084FE9" rx="18" ry="18"/>
+<text y="1551" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1442" dy="0">MATCHES</tspan></text>
+<rect x="1355" y="1574" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1598" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1395" dy="0">Personas compatibles</tspan></text>
+<rect x="1355" y="1619" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1643" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1456" dy="0">Filtros</tspan></text>
+<rect x="1355" y="1664" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1688" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1437" dy="0">Solicitudes</tspan></text>
+<rect x="1355" y="1709" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1732" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1401" dy="0">Compañía frecuente</tspan></text>
+<rect x="1355" y="1753" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1777" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1433" dy="0">Sin matches</tspan></text>
+<path d="M 1772 1492 L 1772 1518" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,1526 1764,1513 1780,1513" fill="#3A3A3A"/>
+<circle cx="1901" cy="1522" r="15" fill="#FFB81C"/>
+<text y="1528" font-family="Space Mono" font-size="17" font-weight="700" fill="#1F1F1F"><tspan x="1896" dy="0">3</tspan></text>
+<rect x="1637" y="1526" width="270" height="38" fill="#084FE9" rx="18" ry="18"/>
+<text y="1551" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1745" dy="0">PERFIL</tspan></text>
+<rect x="1647" y="1574" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1598" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1721" dy="0">Perfil público</tspan></text>
+<rect x="1647" y="1619" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1643" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1714" dy="0">Datos privados</tspan></text>
+<rect x="1647" y="1664" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1688" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1685" dy="0">Preferencias de match</tspan></text>
+<rect x="1647" y="1709" width="250" height="37" fill="#D6E3FD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="1732" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1680" dy="0">Contactos de confianza</tspan></text>
+<rect x="1647" y="1753" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1777" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1732" dy="0">Privacidad</tspan></text>
+<rect x="1647" y="1798" width="250" height="37" fill="#D6E3FD" rx="18" ry="18"/>
+<text y="1822" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1743" dy="0">Ajustes</tspan></text>
+<path d="M 1300 1492 L 1300 1898" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<path d="M 1300 1898 L 1300 1960" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1300,1968 1292,1955 1308,1955" fill="#3A3A3A"/>
+<g id="Match">
+<rect x="1237" y="1968" width="126" height="42" fill="#7C3AED" rx="18" ry="18"/>
+<text y="1995" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="1267" dy="0">MATCH</tspan></text>
+<path d="M 1300 2010 L 1300 2044" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 2044 L 2064 2044" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 2044 L 828 2070" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,2078 820,2065 836,2065" fill="#3A3A3A"/>
+<circle cx="957" cy="2074" r="15" fill="#FFB81C"/>
+<text y="2080" font-family="Space Mono" font-size="17" font-weight="700" fill="#1F1F1F"><tspan x="952" dy="0">2</tspan></text>
+<rect x="693" y="2078" width="270" height="38" fill="#7C3AED" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2103" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="738" dy="0">Personas compatibles</tspan></text>
+<rect x="703" y="2126" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2150" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="810" dy="0">Foto</tspan></text>
+<rect x="703" y="2171" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2195" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="767" dy="0">Nombre + inicial</tspan></text>
+<rect x="703" y="2216" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2239" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="748" dy="0">Insignia e institución</tspan></text>
+<rect x="703" y="2260" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2284" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="764" dy="0">Tramo en común</tspan></text>
+<rect x="703" y="2305" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2329" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="762" dy="0">Hora y diferencia</tspan></text>
+<rect x="703" y="2350" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2374" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="751" dy="0">Punto de encuentro</tspan></text>
+<rect x="703" y="2395" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2419" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="733" dy="0">Trayectos acompañados</tspan></text>
+<rect x="703" y="2440" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2463" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="748" dy="0">Sin destino ni celular</tspan></text>
+<path d="M 1120 2044 L 1120 2070" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,2078 1112,2065 1128,2065" fill="#3A3A3A"/>
+<circle cx="1249" cy="2074" r="15" fill="#FFB81C"/>
+<text y="2080" font-family="Space Mono" font-size="17" font-weight="700" fill="#1F1F1F"><tspan x="1244" dy="0">4</tspan></text>
+<rect x="985" y="2078" width="270" height="38" fill="#7C3AED" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2103" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1049" dy="0">Detalle del match</tspan></text>
+<rect x="995" y="2126" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2150" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1013" dy="0">Mapa del tramo compartido</tspan></text>
+<rect x="995" y="2171" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2195" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1016" dy="0">Punto y hora de encuentro</tspan></text>
+<rect x="995" y="2216" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2239" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1065" dy="0">Tiempo juntos</tspan></text>
+<rect x="995" y="2260" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2284" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1074" dy="0">Verificación</tspan></text>
+<rect x="995" y="2305" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2329" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1075" dy="0">Reputación</tspan></text>
+<rect x="995" y="2350" width="250" height="37" fill="#E6DCFD" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2374" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1008" dy="0">Solicitar / bloquear / reportar</tspan></text>
+<path d="M 1480 2044 L 1480 2070" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,2078 1472,2065 1488,2065" fill="#3A3A3A"/>
+<rect x="1345" y="2078" width="270" height="38" fill="#7C3AED" rx="18" ry="18"/>
+<text y="2103" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1443" dy="0">Solicitud</tspan></text>
+<rect x="1355" y="2126" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2150" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1457" dy="0">Enviar</tspan></text>
+<rect x="1355" y="2171" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2195" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1406" dy="0">Aceptar o rechazar</tspan></text>
+<rect x="1355" y="2216" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2239" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1384" dy="0">Vence al iniciar el horario</tspan></text>
+<path d="M 1772 2044 L 1772 2070" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,2078 1764,2065 1780,2065" fill="#3A3A3A"/>
+<rect x="1637" y="2078" width="270" height="38" fill="#7C3AED" rx="18" ry="18"/>
+<text y="2103" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1689" dy="0">Confirmación mutua</tspan></text>
+<rect x="1647" y="2126" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2150" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1691" dy="0">Habilita chat y punto</tspan></text>
+<path d="M 2064 2044 L 2064 2070" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="2064,2078 2056,2065 2072,2065" fill="#3A3A3A"/>
+<rect x="1929" y="2078" width="270" height="38" fill="#7C3AED" rx="18" ry="18"/>
+<text y="2103" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="2020" dy="0">Chat breve</tspan></text>
+<rect x="1939" y="2126" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2150" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1997" dy="0">Mensajes rápidos</tspan></text>
+<rect x="1939" y="2171" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2195" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1982" dy="0">Código de encuentro</tspan></text>
+<rect x="1939" y="2216" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2239" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1986" dy="0">Sin fotos ni archivos</tspan></text>
+<rect x="1939" y="2260" width="250" height="37" fill="#E6DCFD" rx="18" ry="18"/>
+<text y="2284" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="2001" dy="0">Se borra en 24 h</tspan></text>
+<path d="M 1300 2044 L 1300 2494" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<path d="M 1300 2494 L 1300 2556" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1300,2564 1292,2551 1308,2551" fill="#3A3A3A"/>
+<g id="Trayecto activo">
+<rect x="1185" y="2564" width="229" height="42" fill="#C2410C" rx="18" ry="18"/>
+<text y="2592" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="1215" dy="0">TRAYECTO ACTIVO</tspan></text>
+<path d="M 1300 2606 L 1300 2640" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 536 2640 L 2064 2640" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 536 2640 L 536 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="536,2674 528,2661 544,2661" fill="#3A3A3A"/>
+<circle cx="665" cy="2670" r="15" fill="#FFB81C"/>
+<text y="2676" font-family="Space Mono" font-size="17" font-weight="700" fill="#1F1F1F"><tspan x="660" dy="0">3</tspan></text>
+<rect x="401" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="481" dy="0">Antes de salir</tspan></text>
+<rect x="411" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="458" dy="0">Confirmar compañía</tspan></text>
+<rect x="411" y="2767" width="250" height="37" fill="#FDE2CC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="464" dy="0">Contactos a avisar</tspan></text>
+<rect x="411" y="2812" width="250" height="37" fill="#FDE2CC" rx="18" ry="18" stroke="#FFB81C" stroke-width="3"/>
+<text y="2836" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="459" dy="0">Punto de encuentro</tspan></text>
+<path d="M 828 2640 L 828 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,2674 820,2661 836,2661" fill="#3A3A3A"/>
+<rect x="693" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>
+<text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="786" dy="0">Encuentro</tspan></text>
+<rect x="703" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="787" dy="0">“Ya llegué”</tspan></text>
+<rect x="703" y="2767" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="761" dy="0">Confirmar código</tspan></text>
+<rect x="703" y="2812" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2836" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="751" dy="0">Si no llega en 10 min</tspan></text>
+<path d="M 1120 2640 L 1120 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,2674 1112,2661 1128,2661" fill="#3A3A3A"/>
+<rect x="985" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>
+<text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1085" dy="0">En curso</tspan></text>
+<rect x="995" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1059" dy="0">Mapa de ambas</tspan></text>
+<rect x="995" y="2767" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1018" dy="0">Tramo y tiempo de llegada</tspan></text>
+<rect x="995" y="2812" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2836" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1048" dy="0">Dejar de compartir</tspan></text>
+<rect x="995" y="2857" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2881" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1044" dy="0">¿Algo no está bien?</tspan></text>
+<path d="M 1480 2640 L 1480 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,2674 1472,2661 1488,2661" fill="#3A3A3A"/>
+<rect x="1345" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>
+<text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1434" dy="0">Separación</tspan></text>
+<rect x="1355" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1417" dy="0">Aviso: sigue sola</tspan></text>
+<path d="M 1772 2640 L 1772 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,2674 1764,2661 1780,2661" fill="#3A3A3A"/>
+<rect x="1637" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>
+<text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1740" dy="0">Llegada</tspan></text>
+<rect x="1647" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1699" dy="0">Apaga la ubicación</tspan></text>
+<rect x="1647" y="2767" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1705" dy="0">Aviso al contacto</tspan></text>
+<path d="M 2064 2640 L 2064 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="2064,2674 2056,2661 2072,2661" fill="#3A3A3A"/>
+<rect x="1929" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>
+<text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="2032" dy="0">Retraso</tspan></text>
+<rect x="1939" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="2010" dy="0">“¿Todo bien?”</tspan></text>
+<rect x="1939" y="2767" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1961" dy="0">Aviso con última ubicación</tspan></text>
+<path d="M 1300 2640 L 1300 2912" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<path d="M 1300 2912 L 1300 2974" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1300,2982 1292,2969 1308,2969" fill="#3A3A3A"/>
+<g id="Confianza">
+<rect x="1217" y="2982" width="166" height="42" fill="#BE185D" rx="18" ry="18"/>
+<text y="3009" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="1247" dy="0">CONFIANZA</tspan></text>
+<path d="M 1300 3024 L 1300 3058" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 3058 L 1772 3058" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 3058 L 828 3084" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,3092 820,3079 836,3079" fill="#3A3A3A"/>
+<rect x="693" y="3092" width="270" height="38" fill="#BE185D" rx="18" ry="18"/>
+<text y="3116" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="750" dy="0">Confirmar trayecto</tspan></text>
+<rect x="703" y="3140" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3164" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="759" dy="0">¿Se encontraron?</tspan></text>
+<rect x="703" y="3185" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3208" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="759" dy="0">Suma un trayecto</tspan></text>
+<path d="M 1120 3058 L 1120 3084" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,3092 1112,3079 1128,3079" fill="#3A3A3A"/>
+<rect x="985" y="3092" width="270" height="38" fill="#BE185D" rx="18" ry="18"/>
+<text y="3116" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1042" dy="0">¿Volverías a viajar?</tspan></text>
+<rect x="995" y="3140" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3164" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1048" dy="0">Respuesta privada</tspan></text>
+<path d="M 1480 3058 L 1480 3084" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,3092 1472,3079 1488,3079" fill="#3A3A3A"/>
+<rect x="1345" y="3092" width="270" height="38" fill="#BE185D" rx="18" ry="18"/>
+<text y="3116" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1397" dy="0">Reportar y bloquear</tspan></text>
+<rect x="1355" y="3140" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3164" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1454" dy="0">Motivo</tspan></text>
+<rect x="1355" y="3185" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3208" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1434" dy="0">Moderación</tspan></text>
+<rect x="1355" y="3229" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3253" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1380" dy="0">Advertencia o suspensión</tspan></text>
+<path d="M 1772 3058 L 1772 3084" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,3092 1764,3079 1780,3079" fill="#3A3A3A"/>
+<rect x="1637" y="3092" width="270" height="38" fill="#BE185D" rx="18" ry="18"/>
+<text y="3116" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1724" dy="0">Sin historial</tspan></text>
+<rect x="1647" y="3140" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3164" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1666" dy="0">Se guarda: fecha y persona</tspan></text>
+<rect x="1647" y="3185" width="250" height="37" fill="#FBD5E5" rx="18" ry="18"/>
+<text y="3208" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1662" dy="0">Se borra: ubicaciones y chat</tspan></text>
+<path d="M 1300 3058 L 1300 3284" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<path d="M 1300 3284 L 1300 3346" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1300,3354 1292,3341 1308,3341" fill="#3A3A3A"/>
+<g id="Vista del contacto (web, sin app)">
+<rect x="1098" y="3354" width="403" height="42" fill="#FFFFFF" rx="18" ry="18" stroke="#525252" stroke-width="3" stroke-dasharray="8 6"/>
+<text y="3382" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#525252"><tspan x="1128" dy="0">VISTA DEL CONTACTO (WEB, SIN APP)</tspan></text>
+<path d="M 1300 3396 L 1300 3430" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 3430 L 1772 3430" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 828 3430 L 828 3456" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="828,3464 820,3451 836,3451" fill="#3A3A3A"/>
+<rect x="693" y="3464" width="270" height="38" fill="#525252" rx="18" ry="18"/>
+<text y="3489" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="787" dy="0">Invitación</tspan></text>
+<rect x="703" y="3512" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3536" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="763" dy="0">SMS o WhatsApp</tspan></text>
+<rect x="703" y="3557" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3581" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="771" dy="0">Aceptar avisos</tspan></text>
+<path d="M 1120 3430 L 1120 3456" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1120,3464 1112,3451 1128,3451" fill="#3A3A3A"/>
+<rect x="985" y="3464" width="270" height="38" fill="#525252" rx="18" ry="18"/>
+<text y="3489" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1040" dy="0">Enlace del trayecto</tspan></text>
+<rect x="995" y="3512" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3536" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1070" dy="0">Con quién va</tspan></text>
+<rect x="995" y="3557" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3581" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1070" dy="0">Mapa en vivo</tspan></text>
+<rect x="995" y="3602" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3626" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1065" dy="0">Hora estimada</tspan></text>
+<path d="M 1480 3430 L 1480 3456" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1480,3464 1472,3451 1488,3451" fill="#3A3A3A"/>
+<rect x="1345" y="3464" width="270" height="38" fill="#525252" rx="18" ry="18"/>
+<text y="3489" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1454" dy="0">Avisos</tspan></text>
+<rect x="1355" y="3512" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3536" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1459" dy="0">Inicio</tspan></text>
+<rect x="1355" y="3557" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3581" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1437" dy="0">Separación</tspan></text>
+<rect x="1355" y="3602" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3626" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1450" dy="0">Llegada</tspan></text>
+<rect x="1355" y="3647" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3670" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1450" dy="0">Retraso</tspan></text>
+<path d="M 1772 3430 L 1772 3456" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1772,3464 1764,3451 1780,3451" fill="#3A3A3A"/>
+<rect x="1637" y="3464" width="270" height="38" fill="#525252" rx="18" ry="18"/>
+<text y="3489" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1728" dy="0">Caducidad</tspan></text>
+<rect x="1647" y="3512" width="250" height="37" fill="#E5E5E5" rx="18" ry="18"/>
+<text y="3536" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1704" dy="0">Se apaga al llegar</tspan></text>
+</g></svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Riesgos que revela el benchmarking</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">08 / 15</tspan></text>
+<rect x="120" y="254" width="544" height="349" fill="#2160EB" rx="20" ry="20"/>
+<text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">Masa crítica</tspan></text>
+<text y="364" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#C7D7FB"><tspan x="148" dy="0">Si no hay personas en la misma ruta y</tspan><tspan x="148" dy="34">hora, la app no sirve.</tspan></text>
+<text y="447" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">CÓMO LO ABORDO</tspan></text>
+<text y="489" font-family="Space Grotesk" font-size="27" font-weight="500" fill="#FFFFFF"><tspan x="148" dy="0">Lanzar en una universidad piloto,</tspan><tspan x="148" dy="38">emparejar por tramo y usar un rango</tspan><tspan x="148" dy="38">de ±15 min.</tspan></text>
+<rect x="688" y="254" width="544" height="349" fill="#2160EB" rx="20" ry="20"/>
+<text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFFFFF"><tspan x="716" dy="0">Suplantación</tspan></text>
+<text y="364" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#C7D7FB"><tspan x="716" dy="0">Alguien se hace pasar por otra persona en</tspan><tspan x="716" dy="34">el encuentro.</tspan></text>
+<text y="447" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">CÓMO LO ABORDO</tspan></text>
+<text y="489" font-family="Space Grotesk" font-size="27" font-weight="500" fill="#FFFFFF"><tspan x="716" dy="0">Foto tomada en el momento, código</tspan><tspan x="716" dy="38">de encuentro y reporte con bloqueo</tspan><tspan x="716" dy="38">inmediato.</tspan></text>
+<rect x="1256" y="254" width="544" height="349" fill="#2160EB" rx="20" ry="20"/>
+<text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFFFFF"><tspan x="1284" dy="0">Exponer la rutina</tspan></text>
+<text y="364" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#C7D7FB"><tspan x="1284" dy="0">Que alguien sepa a qué hora sale y dónde</tspan><tspan x="1284" dy="34">vive.</tspan></text>
+<text y="447" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">CÓMO LO ABORDO</tspan></text>
+<text y="489" font-family="Space Grotesk" font-size="27" font-weight="500" fill="#FFFFFF"><tspan x="1284" dy="0">Sin destino exacto, apellido ni</tspan><tspan x="1284" dy="38">celular: solo el tramo en común, y</tspan><tspan x="1284" dy="38">solo para personas compatibles.</tspan></text></svg>
