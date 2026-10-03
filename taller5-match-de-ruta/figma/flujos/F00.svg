@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="560" viewBox="0 0 1500 560"><rect id="Fondo" x="0" y="0" width="1500" height="560" fill="#F4F4F5"/><text y="67" font-family="Space Mono" font-size="18" font-weight="700" fill="#084FE9" letter-spacing="1.08"><tspan x="60" dy="0">04 · USER FLOWS</tspan></text>
 <text y="126" font-family="Space Grotesk" font-size="48" font-weight="700" fill="#1F1F1F"><tspan x="60" dy="0">User flows por funcionalidad</tspan></text>
-<text y="168" font-family="Space Grotesk" font-size="20" font-weight="400" fill="#52525B"><tspan x="60" dy="0">25 flujos, uno por cada nodo de la arquitectura. Cada flujo empieza y termina en una cápsula gris y se lee de arriba hacia abajo.</tspan></text>
+<text y="168" font-family="Space Grotesk" font-size="20" font-weight="400" fill="#52525B"><tspan x="60" dy="0">25 flujos, uno por proceso. Cada uno indica en qué parte de la arquitectura ocurre y se lee de arriba hacia abajo, de la cápsula gris de inicio a la</tspan><tspan x="60" dy="28">de cierre.</tspan></text>
 <rect x="60" y="240" width="200" height="60" fill="#B5B5B5" rx="22" ry="22"/>
 <text y="275" font-family="Space Grotesk" font-size="15" font-weight="700" fill="#1F1F1F"><tspan x="160" dy="0"></tspan></text>
 <text y="377" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="60" dy="0">Inicio / fin</tspan></text>

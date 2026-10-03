@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">03 · IDEAR · MOSCOW</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">MoSCoW: qué entra en el MVP</tspan></text>
+<text y="244" font-family="Space Grotesk" font-size="22" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Las 16 ideas del brainstorming, priorizadas. El benchmarking, la arquitectura y los flujos muestran el producto completo; el MVP es la columna</tspan><tspan x="120" dy="31">Must.</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="4" fill="#5285F0"/>
+<circle cx="142" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">02 / 17</tspan></text>
+<rect x="120" y="325" width="405" height="354" fill="#FFB81C" rx="20" ry="20"/>
+<text y="382" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#0B1B3F"><tspan x="148" dy="0">MUST</tspan></text>
+<text y="416" font-family="Space Mono" font-size="16" font-weight="400" fill="#0B1B3F"><tspan x="148" dy="0">Entra en el MVP</tspan></text>
+<rect x="148" y="443" width="84" height="30" fill="#0B1B3F" rx="15" ry="15"/>
+<text y="462" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C"><tspan x="158" dy="0">01 · 11</tspan></text>
+<text y="464" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#0B1B3F"><tspan x="246" dy="0">Registro verificado</tspan></text>
+<rect x="148" y="491" width="38" height="30" fill="#0B1B3F" rx="15" ry="15"/>
+<text y="510" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C"><tspan x="158" dy="0">02</tspan></text>
+<text y="512" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#0B1B3F"><tspan x="212" dy="0">Ruta y horario</tspan></text>
+<rect x="148" y="539" width="38" height="30" fill="#0B1B3F" rx="15" ry="15"/>
+<text y="558" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C"><tspan x="158" dy="0">03</tspan></text>
+<text y="560" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#0B1B3F"><tspan x="212" dy="0">Emparejamiento</tspan><tspan x="212" dy="28">automático</tspan></text>
+<rect x="148" y="606" width="38" height="30" fill="#0B1B3F" rx="15" ry="15"/>
+<text y="624" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C"><tspan x="158" dy="0">04</tspan></text>
+<text y="627" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#0B1B3F"><tspan x="212" dy="0">Ubicación en vivo</tspan><tspan x="212" dy="28">temporal</tspan></text>
+<rect x="545" y="325" width="405" height="354" fill="#2160EB" rx="20" ry="20"/>
+<text y="382" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="573" dy="0">SHOULD</tspan></text>
+<text y="416" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="573" dy="0">Segunda versión</tspan></text>
+<rect x="573" y="443" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="462" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="583" dy="0">05</tspan></text>
+<text y="464" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="637" dy="0">Dejar de compartir</tspan></text>
+<rect x="573" y="491" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="510" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="583" dy="0">09</tspan></text>
+<text y="512" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="637" dy="0">Aviso a contacto</tspan></text>
+<rect x="573" y="539" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="558" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="583" dy="0">06</tspan></text>
+<text y="560" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="637" dy="0">Preferencia de género</tspan></text>
+<rect x="573" y="587" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="606" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="583" dy="0">12</tspan></text>
+<text y="608" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="637" dy="0">Reporte de conducta</tspan></text>
+<rect x="970" y="325" width="405" height="354" fill="#2160EB" rx="20" ry="20"/>
+<text y="382" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="998" dy="0">COULD</tspan></text>
+<text y="416" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="998" dy="0">Si hay tiempo</tspan></text>
+<rect x="998" y="443" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="462" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1008" dy="0">07</tspan></text>
+<text y="464" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1062" dy="0">Chat para coordinar</tspan></text>
+<rect x="998" y="491" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="510" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1008" dy="0">08</tspan></text>
+<text y="512" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1062" dy="0">Confirmación mutua</tspan></text>
+<rect x="998" y="539" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="558" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1008" dy="0">14</tspan></text>
+<text y="560" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1062" dy="0">Solo acompañar la espera</tspan></text>
+<rect x="998" y="587" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="606" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1008" dy="0">16</tspan></text>
+<text y="608" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1062" dy="0">Tiempos de llegada</tspan></text>
+<rect x="1395" y="325" width="405" height="354" fill="#2160EB" rx="20" ry="20"/>
+<text y="382" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="1423" dy="0">WON&#x27;T</tspan></text>
+<text y="416" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="1423" dy="0">No se hará</tspan></text>
+<rect x="1423" y="443" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="462" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1433" dy="0">10</tspan></text>
+<text y="464" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1487" dy="0">Historial de ubicaciones</tspan></text>
+<rect x="1423" y="491" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="510" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1433" dy="0">15</tspan></text>
+<text y="512" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1487" dy="0">Reverificación periódica</tspan></text>
+<rect x="1423" y="539" width="38" height="30" fill="#3A73EE" rx="15" ry="15"/>
+<text y="558" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFFFFF"><tspan x="1433" dy="0">13</tspan></text>
+<text y="560" font-family="Space Grotesk" font-size="22" font-weight="500" fill="#FFFFFF"><tspan x="1487" dy="0">Sugerir hora de salida</tspan></text>
+<text y="730" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="120" dy="0">AJUSTES QUE PROPONGO DESPUÉS DEL BENCHMARKING Y LA ARQUITECTURA</tspan></text>
+<rect x="120" y="752" width="547" height="126" fill="#084FE9" rx="18" ry="18" stroke="#FFB81C" stroke-width="2"/>
+<text y="793" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="144" dy="0">05 Dejar de compartir → Must</tspan></text>
+<text y="823" font-family="Space Grotesk" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="144" dy="0">Fue mi respuesta a la retro sobre el riesgo de compartir la</tspan><tspan x="144" dy="24">ubicación. Sin este botón, el MVP no cumple esa promesa.</tspan></text>
+<rect x="687" y="752" width="547" height="126" fill="#084FE9" rx="18" ry="18" stroke="#FFB81C" stroke-width="2"/>
+<text y="793" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="711" dy="0">08 Confirmación mutua → Must</tspan></text>
+<text y="823" font-family="Space Grotesk" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="711" dy="0">Sin que las dos personas acepten, el emparejamiento</tspan><tspan x="711" dy="24">automático conectaría a alguien sin su permiso.</tspan></text>
+<rect x="1253" y="752" width="547" height="126" fill="#084FE9" rx="18" ry="18" stroke="#FFB81C" stroke-width="2"/>
+<text y="793" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="1277" dy="0">Nuevas: código de encuentro y atajo al 123</tspan></text>
+<text y="823" font-family="Space Grotesk" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="1277" dy="0">Salen del benchmarking y de los riesgos. Propongo el código</tspan><tspan x="1277" dy="24">como Should y el atajo al 123 como Could.</tspan></text></svg>

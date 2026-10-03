@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">03 · IDEAR · MVP</tspan></text>
+<text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
+<text y="236" font-family="Space Grotesk" font-size="120" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">MVP</tspan></text>
+<path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="120" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">01 / 17</tspan></text>
+<rect x="408" y="170" width="122" height="52" fill="#FFB81C" rx="26" ry="26"/>
+<text y="207" font-family="Space Grotesk" font-size="30" font-weight="700" fill="#0B1B3F"><tspan x="432" dy="0">Must</tspan></text>
+<text y="341" font-family="Space Grotesk" font-size="42" font-weight="700" fill="#FFB81C"><tspan x="120" dy="0">Una app para emparejarte con alguien verificado que hace tu mismo</tspan><tspan x="120" dy="50">trayecto de noche.</tspan></text>
+<text y="451" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#FFFFFF"><tspan x="120" dy="0">Match de ruta verificado conecta a personas verificadas que hacen el mismo trayecto en transporte público a la misma hora. Para</tspan><tspan x="120" dy="35">entrar, cada persona se verifica con su correo institucional o con dos avales de su círculo cercano. Después guarda su ruta y su</tspan><tspan x="120" dy="35">horario, y la app le muestra quién de su universidad, su trabajo o su círculo sale a esa hora por el mismo tramo. Cuando las dos</tspan><tspan x="120" dy="35">aceptan, se encuentran en el paradero y comparten la ubicación solo mientras dura el trayecto. Al llegar, se apaga sola.</tspan></text>
+<rect x="120" y="604" width="544" height="292" fill="#2160EB" rx="20" ry="20"/>
+<text y="647" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">REGISTRO</tspan></text>
+<text y="693" font-family="Space Grotesk" font-size="32" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">Correo institucional o círculo</tspan><tspan x="148" dy="38">cercano</tspan></text>
+<path d="M 148 758 L 636 758" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="782" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="148" dy="0">MOSCOW</tspan></text>
+<text y="784" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="320" dy="0">Ideas 01 y 11</tspan></text>
+<path d="M 148 798 L 636 798" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="822" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="148" dy="0">ARQUITECTURA</tspan></text>
+<text y="824" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="320" dy="0">Ingreso · Verificación</tspan></text>
+<path d="M 148 838 L 636 838" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="862" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="148" dy="0">USER FLOWS</tspan></text>
+<text y="864" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="320" dy="0">F01–F08</tspan></text>
+<rect x="688" y="604" width="544" height="292" fill="#2160EB" rx="20" ry="20"/>
+<text y="647" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">MATCH</tspan></text>
+<text y="693" font-family="Space Grotesk" font-size="32" font-weight="700" fill="#FFFFFF"><tspan x="716" dy="0">Misma ruta, mismo horario</tspan></text>
+<path d="M 716 720 L 1204 720" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="744" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="716" dy="0">MOSCOW</tspan></text>
+<text y="745" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="888" dy="0">Ideas 02 y 03</tspan></text>
+<path d="M 716 760 L 1204 760" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="784" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="716" dy="0">ARQUITECTURA</tspan></text>
+<text y="785" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="888" dy="0">Mis rutas · Matches · Match</tspan></text>
+<path d="M 716 800 L 1204 800" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="824" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="716" dy="0">USER FLOWS</tspan></text>
+<text y="825" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="888" dy="0">F10–F14</tspan></text>
+<rect x="1256" y="604" width="544" height="292" fill="#2160EB" rx="20" ry="20"/>
+<text y="647" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">TRAYECTO</tspan></text>
+<text y="693" font-family="Space Grotesk" font-size="32" font-weight="700" fill="#FFFFFF"><tspan x="1284" dy="0">Ubicación en vivo que se apaga</tspan><tspan x="1284" dy="38">al llegar</tspan></text>
+<path d="M 1284 758 L 1772 758" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="782" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="1284" dy="0">MOSCOW</tspan></text>
+<text y="784" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="1456" dy="0">Idea 04</tspan></text>
+<path d="M 1284 798 L 1772 798" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="822" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="1284" dy="0">ARQUITECTURA</tspan></text>
+<text y="824" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="1456" dy="0">Trayecto activo</tspan></text>
+<path d="M 1284 838 L 1772 838" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="862" font-family="Space Mono" font-size="15" font-weight="700" fill="#C7D7FB"><tspan x="1284" dy="0">USER FLOWS</tspan></text>
+<text y="864" font-family="Space Grotesk" font-size="21" font-weight="500" fill="#FFFFFF"><tspan x="1456" dy="0">F17–F18</tspan></text></svg>

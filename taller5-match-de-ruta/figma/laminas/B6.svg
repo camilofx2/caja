@@ -7,9 +7,9 @@
 <circle cx="164" cy="990" r="4" fill="#5285F0"/>
 <circle cx="186" cy="990" r="4" fill="#5285F0"/>
 <circle cx="208" cy="990" r="4" fill="#5285F0"/>
-<circle cx="230" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="230" cy="990" r="4" fill="#5285F0"/>
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
-<circle cx="274" cy="990" r="4" fill="#5285F0"/>
+<circle cx="274" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
 <circle cx="318" cy="990" r="4" fill="#5285F0"/>
 <circle cx="340" cy="990" r="4" fill="#5285F0"/>
@@ -17,21 +17,23 @@
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">06 / 15</tspan></text>
-<text y="285" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="120" dy="0">“No se trata de dar más información sobre el bus. Se trata de que nadie tenga que esperar ni</tspan><tspan x="120" dy="42">viajar solo.”</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">08 / 17</tspan></text>
+<text y="285" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="120" dy="0">Los 5 entrevistados usan apps de rutas y aun así sienten miedo. La oportunidad está en que</tspan><tspan x="120" dy="42">nadie tenga que esperar ni viajar solo de noche.</tspan></text>
 <rect x="120" y="369" width="1680" height="0" fill="#2160EB"/>
 <rect x="120" y="369" width="1680" height="228" fill="#2160EB" rx="20" ry="20"/>
 <text y="413" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="160" dy="0">PROPUESTA DE VALOR</tspan></text>
 <text y="462" font-family="Space Grotesk" font-size="32" font-weight="500" fill="#FFFFFF"><tspan x="160" dy="0">Para estudiantes y trabajadores que dependen del transporte público de noche, Match de ruta</tspan><tspan x="160" dy="45">verificado los conecta con personas verificadas de su universidad, su trabajo o su círculo cercano que</tspan><tspan x="160" dy="45">hacen el mismo trayecto a la misma hora, para que no esperen ni viajen solos.</tspan></text>
-<rect x="120" y="625" width="402" height="204" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
+<rect x="120" y="625" width="402" height="318" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
 <text y="669" font-family="Space Mono" font-size="20" font-weight="700" fill="#FFB81C"><tspan x="146" dy="0">vs. Life360 y bSafe</tspan></text>
-<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="146" dy="0">No vigila ni reacciona:</tspan><tspan x="146" dy="38">acompaña.</tspan></text>
-<rect x="546" y="625" width="402" height="204" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
+<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="146" dy="0">Avisan o alertan a tus</tspan><tspan x="146" dy="38">contactos. Match busca</tspan><tspan x="146" dy="38">que no viajes sin</tspan><tspan x="146" dy="38">compañía.</tspan></text>
+<rect x="546" y="625" width="402" height="318" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
 <text y="669" font-family="Space Mono" font-size="20" font-weight="700" fill="#FFB81C"><tspan x="572" dy="0">vs. Uber</tspan></text>
-<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="572" dy="0">No saca a la persona del</tspan><tspan x="572" dy="38">transporte público ni le</tspan><tspan x="572" dy="38">cobra.</tspan></text>
-<rect x="972" y="625" width="402" height="204" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
+<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="572" dy="0">Uber te saca del</tspan><tspan x="572" dy="38">transporte público y</tspan><tspan x="572" dy="38">cobra cada viaje. Match</tspan><tspan x="572" dy="38">funciona dentro del</tspan><tspan x="572" dy="38">transporte público y es</tspan><tspan x="572" dy="38">gratis.</tspan></text>
+<rect x="972" y="625" width="402" height="318" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
 <text y="669" font-family="Space Mono" font-size="20" font-weight="700" fill="#FFB81C"><tspan x="998" dy="0">vs. Waze Carpool</tspan></text>
-<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="998" dy="0">Empareja por tramos de</tspan><tspan x="998" dy="38">transporte público, no por</tspan><tspan x="998" dy="38">viajes en carro.</tspan></text>
-<rect x="1398" y="625" width="402" height="204" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
+<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="998" dy="0">Emparejaba viajes en</tspan><tspan x="998" dy="38">carro. Match empareja</tspan><tspan x="998" dy="38">tramos de transporte</tspan><tspan x="998" dy="38">público.</tspan></text>
+<rect x="1398" y="625" width="402" height="318" fill="#084FE9" rx="20" ry="20" stroke="#5285F0" stroke-width="2"/>
 <text y="669" font-family="Space Mono" font-size="20" font-weight="700" fill="#FFB81C"><tspan x="1424" dy="0">vs. Moovit y Google Maps</tspan></text>
-<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="1424" dy="0">No informa más: resuelve</tspan><tspan x="1424" dy="38">el miedo que la</tspan><tspan x="1424" dy="38">información no quita.</tspan></text></svg>
+<text y="714" font-family="Space Grotesk" font-size="27" font-weight="400" fill="#FFFFFF"><tspan x="1424" dy="0">Dan rutas y horarios, y</tspan><tspan x="1424" dy="38">Moovit deja compartir el</tspan><tspan x="1424" dy="38">viaje. Lo que no dan es</tspan><tspan x="1424" dy="38">compañía.</tspan></text></svg>

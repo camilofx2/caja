@@ -8,36 +8,36 @@
 <circle cx="186" cy="990" r="4" fill="#5285F0"/>
 <circle cx="208" cy="990" r="4" fill="#5285F0"/>
 <circle cx="230" cy="990" r="4" fill="#5285F0"/>
-<circle cx="252" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="252" cy="990" r="4" fill="#5285F0"/>
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
-<circle cx="296" cy="990" r="4" fill="#5285F0"/>
+<circle cx="296" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="318" cy="990" r="4" fill="#5285F0"/>
 <circle cx="340" cy="990" r="4" fill="#5285F0"/>
 <circle cx="362" cy="990" r="4" fill="#5285F0"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">07 / 15</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">09 / 17</tspan></text>
 <rect x="120" y="254" width="544" height="497" fill="#2160EB" rx="20" ry="20"/>
 <text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">TOMO</tspan></text>
-<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="148" dy="0">Patrones ya probados</tspan></text>
+<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="148" dy="0">Lo que ya funciona en otras apps</tspan></text>
 <text y="399" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Círculos de confianza → Life360</tspan></text>
-<text y="449" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Compartir un viaje que termina solo →</tspan><tspan x="148" dy="36">Uber y Google Maps</tspan></text>
-<text y="536" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Calificación y reporte → Uber</tspan></text>
-<text y="587" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Filtros por institución y género →</tspan><tspan x="148" dy="36">Waze Carpool</tspan></text>
-<text y="673" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Tiempos de llegada como capa</tspan><tspan x="148" dy="36">secundaria → Moovit</tspan></text>
+<text y="449" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Viaje compartido que termina solo →</tspan><tspan x="148" dy="36">Uber y Google Maps</tspan></text>
+<text y="536" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Contacto que sigue el viaje sin</tspan><tspan x="148" dy="36">instalar la app → Moovit (SafeRide)</tspan></text>
+<text y="623" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Calificación y reporte → Uber</tspan></text>
+<text y="673" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Filtros por institución y género →</tspan><tspan x="148" dy="36">Waze Carpool</tspan></text>
 <rect x="688" y="254" width="544" height="497" fill="#2160EB" rx="20" ry="20"/>
 <text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFB81C"><tspan x="716" dy="0">EVITO</tspan></text>
 <text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="716" dy="0">Lo que genera desconfianza</tspan></text>
 <text y="399" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Ubicación permanente e historial</tspan><tspan x="716" dy="36">(Life360)</tspan></text>
 <text y="486" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Emparejar a desconocidos (UberX</tspan><tspan x="716" dy="36">Share)</tspan></text>
-<text y="573" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Cobrar por sentirse seguro (Uber)</tspan></text>
-<text y="623" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Actuar solo cuando ya pasó algo</tspan><tspan x="716" dy="36">(bSafe)</tspan></text>
+<text y="573" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Cobrar por sentirse seguro (Uber,</tspan><tspan x="716" dy="36">planes pagos)</tspan></text>
+<text y="659" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Actuar solo cuando ya pasó algo</tspan><tspan x="716" dy="36">(bSafe)</tspan></text>
 <rect x="1256" y="254" width="544" height="497" fill="#FFB81C" rx="20" ry="20"/>
 <text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#0B1B3F"><tspan x="1284" dy="0">SOLO MATCH</tspan></text>
-<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">Lo que nadie más hace</tspan></text>
+<text y="350" font-family="Space Mono" font-size="16" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">No lo encontré en ninguna de las 6</tspan></text>
 <text y="399" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Emparejar por tramo de transporte</tspan><tspan x="1284" dy="36">público y horario</tspan></text>
 <text y="486" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Verificación doble: institución +</tspan><tspan x="1284" dy="36">avales</tspan></text>
-<text y="573" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Acompañar la espera en el paradero</tspan></text>
-<text y="623" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Ubicación que se apaga sola, sin</tspan><tspan x="1284" dy="36">historial</tspan></text>
-<text y="710" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Aviso al contacto sin instalar la app</tspan></text></svg>
+<text y="573" font-family="Space Grotesk" font-size="26" font-weight="400" fill="#0B1B3F"><tspan x="1284" dy="0">• Compañía física en la espera del</tspan><tspan x="1284" dy="36">paradero</tspan></text></svg>

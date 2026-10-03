@@ -48,9 +48,10 @@ def plan():
     pers = [("P1", "P1 · User persona"), ("P2", "P2 · Quién es y su contexto"), ("P3", "P3 · Trayecto y tensión"),
             ("P4", "P4 · Necesidades, comportamiento y frustraciones"), ("P5", "P5 · Motivaciones, miedos y decisiones"),
             ("P6", "P6 · Escenario y otras personas")]
-    for sname, lst, ncol in [("01 · Benchmarking", bench, 4), ("02 · User persona", pers, 3)]:
+    mvp = [("M1", "M1 · MVP"), ("M2", "M2 · MoSCoW")]
+    for sname, lst, ncol in [("00 · MVP", mvp, 2), ("01 · Benchmarking", bench, 4), ("02 · User persona", pers, 3)]:
         for i, (f, nm) in enumerate(lst):
-            items.append((sname, nm, load("laminas", f), PAD + (i % ncol) * (1920 + GAP), PAD + (i // ncol) * (1080 + GAP)))
+            items.append((sname, nm, load("laminas", f), PAD + (i % ncol) * (1920 + GAP), PAD + (i // ncol) * (1080 + GAP), f))
         rows = (len(lst) + ncol - 1) // ncol
         sw, sh = 2 * PAD + ncol * 1920 + (ncol - 1) * GAP, 2 * PAD + rows * 1080 + (rows - 1) * GAP
         sections.append((sname, 0, sy, sw, sh))
@@ -58,8 +59,8 @@ def plan():
     # 3 · Arquitectura
     a1 = load("tableros", "A1")
     w1, h1 = svg_size(a1)
-    items.append(("03 · Arquitectura", "A1 · Arquitectura de la información", a1, PAD, PAD))
-    items.append(("03 · Arquitectura", "A2 · Las 4 preguntas de la profe", load("laminas", "A2"), PAD + w1 + GAP, PAD))
+    items.append(("03 · Arquitectura", "A1 · Arquitectura de la información", a1, PAD, PAD, "A1"))
+    items.append(("03 · Arquitectura", "A2 · Las 4 preguntas de la revisión", load("laminas", "A2"), PAD + w1 + GAP, PAD, "A2"))
     sections.append(("03 · Arquitectura", 0, sy, 2 * PAD + w1 + GAP + 1920, 2 * PAD + max(h1, 1080)))
     sy += 2 * PAD + max(h1, 1080) + 200
     # 4 · User flows (apilados)
@@ -70,7 +71,7 @@ def plan():
     for f, nm in zip(["F00", "F01g", "F02g", "F03g", "F04g", "F05g", "F06g", "F07g"], names):
         t = load("flujos", f)
         w, h = svg_size(t)
-        items.append(("04 · User flows", nm, t, PAD, y))
+        items.append(("04 · User flows", nm, t, PAD, y, f))
         y += h + GAP
         wmax = max(wmax, w)
     sections.append(("04 · User flows", 0, sy, 2 * PAD + wmax, y - GAP + PAD))
@@ -86,7 +87,8 @@ const page = figma.currentPage;
 function sec(name) {
   const d = S.find(s => s[0] === name);
   let s = page.findChild(n => n.type === "SECTION" && n.name === name);
-  if (!s) { s = figma.createSection(); s.name = name; s.x = d[1]; s.y = d[2]; }
+  if (!s) { s = figma.createSection(); s.name = name; }
+  s.x = d[1]; s.y = d[2];
   s.resizeWithoutConstraints(d[3], d[4]);
   return s;
 }
@@ -105,8 +107,10 @@ function place(secName, name, z, x, y) {
 """
 
 
-def build_calls():
+def build_calls(only=None):
     items, sections = plan()
+    if only:
+        items = [it for it in items if it[5] in only]
     pre = PRELUDE % (json.dumps(TOKENS, ensure_ascii=False), json.dumps(sections, ensure_ascii=False))
     calls = []
     for it in items:
@@ -120,16 +124,20 @@ def build_calls():
                 break
         else:
             calls.append([line])
+    # la primera llamada borra las secciones anteriores para reconstruir todo desde cero
+    # quita frames con nombres anteriores que ya no existen
+    reset = "for (const n of page.findAll(n => n.name === \"A2 · Las 4 preguntas de la profe\")) n.remove();\n"
     out = []
-    for c in calls:
-        out.append(pre + "".join(c) + "return made;\n")
+    for i, c in enumerate(calls):
+        out.append(pre + (reset if i == 0 else "") + "".join(c) + "return made;\n")
     return out
 
 
 if __name__ == "__main__":
     d = sys.argv[1]
     os.makedirs(d, exist_ok=True)
-    for i, js in enumerate(build_calls(), 1):
+    only = set(sys.argv[2].split(",")) if len(sys.argv) > 2 else None
+    for i, js in enumerate(build_calls(only), 1):
         p = os.path.join(d, f"llamada{i:02d}.js")
         with open(p, "w", encoding="utf-8") as f:
             f.write(js)

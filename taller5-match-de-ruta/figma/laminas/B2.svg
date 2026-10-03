@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING 2 DE 4</tspan></text>
 <text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
-<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking (2 de 4)</tspan></text>
+<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking · ubicación, avisos y costo</tspan></text>
 <path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="120" cy="990" r="4" fill="#5285F0"/>
-<circle cx="142" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="142" cy="990" r="4" fill="#5285F0"/>
 <circle cx="164" cy="990" r="4" fill="#5285F0"/>
-<circle cx="186" cy="990" r="4" fill="#5285F0"/>
+<circle cx="186" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="208" cy="990" r="4" fill="#5285F0"/>
 <circle cx="230" cy="990" r="4" fill="#5285F0"/>
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
@@ -17,8 +17,10 @@
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">02 / 15</tspan></text>
-<rect x="1621" y="208" width="179" height="529" fill="#3A73EE" rx="18" ry="18"/>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">04 / 17</tspan></text>
+<rect x="1621" y="208" width="179" height="564" fill="#3A73EE" rx="18" ry="18"/>
 <text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="562" dy="0">Moovit</tspan></text>
 <text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">Informa</tspan></text>
 <text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="741" dy="0">Google Maps</tspan></text>
@@ -38,9 +40,9 @@
 <path d="M 120 340 L 1800 340" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
 <text y="368" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Compartir ubicación en vivo</tspan></text>
 <text y="390" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Otra persona ve dónde estás</tspan></text>
-<circle cx="574" cy="364" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="369" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="569" dy="0">?</tspan></text>
-<text y="368" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="592" dy="0">*</tspan></text>
+<circle cx="574" cy="364" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 574.0 351.6 A 12 12 0 0 0 574.0 375.6 Z" fill="#FFB81C"/>
+<text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">SafeRide, solo con</tspan><tspan x="562" dy="18">Moovit+ (pago)*</tspan></text>
 <circle cx="753" cy="364" r="12" fill="#FFB81C"/>
 <text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Con contactos</tspan></text>
 <circle cx="931" cy="364" r="12" fill="#FFB81C"/>
@@ -48,7 +50,7 @@
 <circle cx="1110" cy="364" r="12" fill="#FFB81C"/>
 <text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">Siempre, en el círculo</tspan></text>
 <circle cx="1288" cy="364" r="12" fill="#FFB81C"/>
-<text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">“Follow me”*</tspan></text>
+<text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">Follow Me</tspan></text>
 <circle cx="1467" cy="364" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <text y="369" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1462" dy="0">?</tspan></text>
 <text y="368" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1485" dy="0">*</tspan></text>
@@ -56,7 +58,7 @@
 <text y="394" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Solo durante el</tspan><tspan x="1633" dy="18">trayecto</tspan></text>
 <path d="M 120 425 L 1800 425" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
 <text y="453" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Ubicación que se apaga sola</tspan></text>
-<text y="475" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">El permiso caduca solo</tspan></text>
+<text y="475" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">El permiso caduca sin que lo apagues</tspan></text>
 <circle cx="574" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <text y="454" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="569" dy="0">?</tspan></text>
 <text y="453" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="592" dy="0">*</tspan></text>
@@ -77,61 +79,63 @@
 <path d="M 120 492 L 1800 492" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
 <text y="520" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Aviso de llegada a contactos</tspan></text>
 <text y="543" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Saben que llegaste sin preguntar</tspan></text>
-<circle cx="574" cy="516" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="574" cy="516" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 574.0 504.1 A 12 12 0 0 0 574.0 528.1 Z" fill="#FFB81C"/>
+<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">SafeRide: ven el</tspan><tspan x="562" dy="18">avance y la hora</tspan><tspan x="562" dy="18">estimada*</tspan></text>
 <circle cx="753" cy="516" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
 <path d="M 752.5714285714286 504.1 A 12 12 0 0 0 752.5714285714286 528.1 Z" fill="#FFB81C"/>
-<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Progreso del viaje en</tspan><tspan x="741" dy="18">navegación</tspan></text>
+<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Comparte el avance</tspan><tspan x="741" dy="18">del viaje</tspan></text>
 <circle cx="931" cy="516" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
 <path d="M 931.1428571428571 504.1 A 12 12 0 0 0 931.1428571428571 528.1 Z" fill="#FFB81C"/>
 <text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Ven que el viaje</tspan><tspan x="919" dy="18">terminó</tspan></text>
 <circle cx="1110" cy="516" r="12" fill="#FFB81C"/>
-<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">Alertas al llegar a un</tspan><tspan x="1098" dy="18">lugar</tspan></text>
+<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">Alerta al llegar a un</tspan><tspan x="1098" dy="18">lugar</tspan></text>
 <circle cx="1288" cy="516" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
 <path d="M 1288.2857142857142 504.1 A 12 12 0 0 0 1288.2857142857142 528.1 Z" fill="#FFB81C"/>
-<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">Alarma con</tspan><tspan x="1276" dy="18">temporizador*</tspan></text>
+<text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1276" dy="0">Alarma si no confirmas</tspan><tspan x="1276" dy="18">a tiempo (premium)</tspan></text>
 <circle cx="1467" cy="516" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1645" cy="516" r="12" fill="#FFB81C"/>
 <text y="547" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Aviso automático</tspan></text>
-<path d="M 120 577 L 1800 577" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
-<text y="606" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Sin historial de ubicaciones</tspan></text>
-<text y="628" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">No queda registro de tus movimientos</tspan></text>
-<circle cx="574" cy="601" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="607" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="569" dy="0">?</tspan></text>
-<text y="606" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="592" dy="0">*</tspan></text>
-<circle cx="753" cy="601" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
-<path d="M 752.5714285714286 589.1 A 12 12 0 0 0 752.5714285714286 613.1 Z" fill="#FFB81C"/>
-<text y="632" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Cronología opcional</tspan></text>
-<circle cx="931" cy="601" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="632" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Guarda viajes</tspan></text>
-<circle cx="1110" cy="601" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="632" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">Guarda historial</tspan></text>
-<circle cx="1288" cy="601" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="607" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1283" dy="0">?</tspan></text>
-<text y="606" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1306" dy="0">*</tspan></text>
-<circle cx="1467" cy="601" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="607" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1462" dy="0">?</tspan></text>
-<text y="606" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1485" dy="0">*</tspan></text>
-<circle cx="1645" cy="601" r="12" fill="#FFB81C"/>
-<text y="632" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Se borra al llegar</tspan></text>
-<text y="670" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C" letter-spacing="1.50"><tspan x="120" dy="0">MODELO</tspan></text>
-<path d="M 120 685 L 1800 685" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
-<text y="713" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Costo para quien la usa</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="562" dy="0">Gratis + Moovit+</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="741" dy="0">Gratis</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="919" dy="0">Pago por viaje</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1098" dy="0">Gratis + planes</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1276" dy="0">Gratis + premium*</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1455" dy="0">Costo compartido</tspan></text>
-<text y="711" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1633" dy="0">Gratis (propuesta)</tspan></text>
-<path d="M 120 729 L 1800 729" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
-<circle cx="132" cy="763" r="12" fill="#FFB81C"/>
-<text y="768" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="152" dy="0">Sí</tspan></text>
-<circle cx="219" cy="763" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
-<path d="M 218.8125 750.6 A 12 12 0 0 0 218.8125 774.6 Z" fill="#FFB81C"/>
-<text y="768" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="239" dy="0">Parcial</tspan></text>
-<circle cx="358" cy="763" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="768" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="378" dy="0">No</tspan></text>
-<circle cx="444" cy="763" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<text y="768" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="440" dy="0">?</tspan></text>
-<text y="768" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="464" dy="0">Por verificar</tspan></text>
-<text y="768" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* confirmar en la app antes de entregar</tspan></text></svg>
+<path d="M 120 595 L 1800 595" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="623" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Sin historial de ubicaciones</tspan></text>
+<text y="645" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">No queda registro de tus movimientos</tspan></text>
+<circle cx="574" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="624" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="569" dy="0">?</tspan></text>
+<text y="623" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="592" dy="0">*</tspan></text>
+<circle cx="753" cy="619" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 752.5714285714286 606.6 A 12 12 0 0 0 752.5714285714286 630.6 Z" fill="#FFB81C"/>
+<text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Cronología opcional</tspan></text>
+<circle cx="931" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Guarda los viajes</tspan></text>
+<circle cx="1110" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1098" dy="0">De 2 a 30 días según el</tspan><tspan x="1098" dy="18">plan</tspan></text>
+<circle cx="1288" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="624" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1283" dy="0">?</tspan></text>
+<text y="623" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1306" dy="0">*</tspan></text>
+<circle cx="1467" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="624" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1462" dy="0">?</tspan></text>
+<text y="623" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1485" dy="0">*</tspan></text>
+<circle cx="1645" cy="619" r="12" fill="#FFB81C"/>
+<text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Se borra al llegar</tspan></text>
+<text y="705" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C" letter-spacing="1.50"><tspan x="120" dy="0">MODELO</tspan></text>
+<path d="M 120 720 L 1800 720" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<text y="748" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Costo para quien la usa</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="562" dy="0">Gratis + Moovit+</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="741" dy="0">Gratis</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="919" dy="0">Pago por viaje</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1098" dy="0">Gratis + planes</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1276" dy="0">Gratis + premium</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1455" dy="0">Costo compartido</tspan></text>
+<text y="746" font-family="Space Grotesk" font-size="16" font-weight="500" fill="#FFFFFF"><tspan x="1633" dy="0">Gratis (propuesta)</tspan></text>
+<path d="M 120 764 L 1800 764" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="132" cy="798" r="12" fill="#FFB81C"/>
+<text y="803" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="152" dy="0">Sí</tspan></text>
+<circle cx="219" cy="798" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 218.8125 785.6 A 12 12 0 0 0 218.8125 809.6 Z" fill="#FFB81C"/>
+<text y="803" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="239" dy="0">Parcial</tspan></text>
+<circle cx="358" cy="798" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="803" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="378" dy="0">No</tspan></text>
+<circle cx="444" cy="798" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="803" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="440" dy="0">?</tspan></text>
+<text y="803" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="464" dy="0">Por verificar</tspan></text>
+<text y="803" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* depende del país o del plan; por confirmar</tspan></text></svg>

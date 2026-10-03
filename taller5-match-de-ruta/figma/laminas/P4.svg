@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · USER PERSONA</tspan></text>
 <text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
 <text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Lo que necesita, hace y le frustra</tspan></text>
+<text y="244" font-family="Space Grotesk" font-size="22" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">[E] dato de las 5 entrevistas · [S] supuesto para completar el perfil</tspan></text>
 <path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="120" cy="990" r="4" fill="#5285F0"/>
 <circle cx="142" cy="990" r="4" fill="#5285F0"/>
@@ -13,29 +14,31 @@
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
 <circle cx="318" cy="990" r="4" fill="#5285F0"/>
 <circle cx="340" cy="990" r="4" fill="#5285F0"/>
-<circle cx="362" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="362" cy="990" r="4" fill="#5285F0"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
-<circle cx="406" cy="990" r="4" fill="#5285F0"/>
+<circle cx="406" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">12 / 15</tspan></text>
-<rect x="120" y="254" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
-<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">NECESIDADES</tspan></text>
-<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Saber quién de su universidad hace su</tspan><tspan x="148" dy="32">mismo tramo a la misma hora [E: insight 03]</tspan></text>
-<text y="411" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Que su mamá sepa que llegó sin tener que</tspan><tspan x="148" dy="32">escribirle [E: insight 04]</tspan></text>
-<text y="483" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• No sentirse sola en la espera del</tspan><tspan x="148" dy="32">alimentador [E]</tspan></text>
-<text y="556" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Que la otra persona esté verificada y, si lo</tspan><tspan x="148" dy="32">prefiere, sea mujer [E: insight 05]</tspan></text>
-<text y="628" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Que nadie sepa su dirección ni su rutina</tspan><tspan x="148" dy="32">completa [S]</tspan></text>
-<rect x="688" y="254" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
-<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">CÓMO SE COMPORTA</tspan></text>
-<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Revisa la app oficial antes de salir, aunque</tspan><tspan x="716" dy="32">no le quita el miedo [E: 5 de 5]</tspan></text>
-<text y="411" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Elige dónde esperar por la luz, la cercanía</tspan><tspan x="716" dy="32">y la gente [E: 0 de 5 usa una app]</tspan></text>
-<text y="483" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Guarda el celular y se queda alerta cuando</tspan><tspan x="716" dy="32">el paradero se vacía [E]</tspan></text>
-<text y="556" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Comparte la ubicación; a veces se le olvida</tspan><tspan x="716" dy="32">apagarla [E/S]</tspan></text>
-<text y="628" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Pregunta en el grupo del curso “¿alguien</tspan><tspan x="716" dy="32">va para el sur?”, pero casi nunca coincide</tspan><tspan x="716" dy="32">[S]</tspan></text>
-<rect x="1256" y="254" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
-<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">FRUSTRACIONES</tspan></text>
-<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• La app le da horarios, no tranquilidad [E]</tspan></text>
-<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Pedir un carro todas las noches no le</tspan><tspan x="1284" dy="32">alcanza [S]</tspan></text>
-<text y="451" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Compartir la ubicación es manual y queda</tspan><tspan x="1284" dy="32">activa de más [E/S]</tspan></text>
-<text y="523" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• No confía en desconocidos [E: idea</tspan><tspan x="1284" dy="32">descartada]</tspan></text>
-<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Los grupos de WhatsApp no sirven para</tspan><tspan x="1284" dy="32">coordinar a última hora [S]</tspan></text></svg>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">14 / 17</tspan></text>
+<rect x="120" y="294" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
+<text y="337" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">NECESIDADES</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Saber quién de su universidad hace su</tspan><tspan x="148" dy="32">mismo tramo a la misma hora [E]</tspan></text>
+<text y="452" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Que su mamá sepa que llegó sin tener que</tspan><tspan x="148" dy="32">escribirle [E]</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• No estar sola mientras espera el</tspan><tspan x="148" dy="32">alimentador [E]</tspan></text>
+<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Que la otra persona esté verificada y, si lo</tspan><tspan x="148" dy="32">prefiere, sea mujer [E]</tspan></text>
+<text y="669" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Que nadie conozca su dirección ni su</tspan><tspan x="148" dy="32">rutina completa [S]</tspan></text>
+<rect x="688" y="294" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
+<text y="337" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">CÓMO SE COMPORTA</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Revisa la app de rutas antes de salir,</tspan><tspan x="716" dy="32">aunque eso no le quita el miedo [E]</tspan></text>
+<text y="452" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Elige dónde esperar por la luz, la cercanía</tspan><tspan x="716" dy="32">y la gente, no por una app [E]</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Guarda el celular y se pone alerta cuando</tspan><tspan x="716" dy="32">el paradero se vacía [E]</tspan></text>
+<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Comparte la ubicación, pero a veces se le</tspan><tspan x="716" dy="32">olvida apagarla [S]</tspan></text>
+<text y="669" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Pregunta en el grupo del curso “¿alguien</tspan><tspan x="716" dy="32">va para el sur?”, pero casi nunca coincide</tspan><tspan x="716" dy="32">[S]</tspan></text>
+<rect x="1256" y="294" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
+<text y="337" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">FRUSTRACIONES</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• La app le da horarios, pero no tranquilidad</tspan><tspan x="1284" dy="32">[E]</tspan></text>
+<text y="452" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• No le alcanza para pedir un carro todas las</tspan><tspan x="1284" dy="32">noches [S]</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Compartir la ubicación es manual y se</tspan><tspan x="1284" dy="32">queda activa de más [S]</tspan></text>
+<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• No confía en desconocidos [E]</tspan></text>
+<text y="637" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Los grupos de WhatsApp no sirven para</tspan><tspan x="1284" dy="32">coordinar a última hora [S]</tspan></text></svg>

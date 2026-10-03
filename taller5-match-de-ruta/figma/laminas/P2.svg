@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · USER PERSONA</tspan></text>
 <text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
 <text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Daniela: quién es y su contexto</tspan></text>
+<text y="244" font-family="Space Grotesk" font-size="22" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">[E] dato de las 5 entrevistas · [S] supuesto para completar el perfil</tspan></text>
 <path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="120" cy="990" r="4" fill="#5285F0"/>
 <circle cx="142" cy="990" r="4" fill="#5285F0"/>
@@ -11,31 +12,33 @@
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
-<circle cx="318" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="318" cy="990" r="4" fill="#5285F0"/>
 <circle cx="340" cy="990" r="4" fill="#5285F0"/>
-<circle cx="362" cy="990" r="4" fill="#5285F0"/>
+<circle cx="362" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">10 / 15</tspan></text>
-<rect x="120" y="254" width="544" height="510" fill="#2160EB" rx="20" ry="20"/>
-<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">QUIÉN ES</tspan></text>
-<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Mujer, 22 años, 8.º semestre [S: carrera y</tspan><tspan x="148" dy="32">semestre]</tspan></text>
-<text y="411" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Vive con su mamá y su hermano menor en</tspan><tspan x="148" dy="32">Bosa [S]</tspan></text>
-<text y="483" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Práctica de medio tiempo en las mañanas;</tspan><tspan x="148" dy="32">clases de 6 a 9 p. m. martes y jueves [S]</tspan></text>
-<text y="556" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• No tiene carro ni moto: depende del</tspan><tspan x="148" dy="32">transporte público [E]</tspan></text>
-<text y="628" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Celular Android de gama media, plan</tspan><tspan x="148" dy="32">prepago: cuida la batería y los datos [S]</tspan></text>
-<rect x="688" y="254" width="544" height="510" fill="#2160EB" rx="20" ry="20"/>
-<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">SU CONTEXTO</tspan></text>
-<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Su trayecto dura cerca de 1 h 40 min: una</tspan><tspan x="716" dy="32">troncal y un alimentador [S]</tspan></text>
-<text y="411" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• El tramo más largo lo hace de pie y con el</tspan><tspan x="716" dy="32">celular guardado [S]</tspan></text>
-<text y="483" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Espera el alimentador en un paradero con</tspan><tspan x="716" dy="32">poca luz que se va quedando vacío [E: brief]</tspan></text>
-<text y="556" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• En su curso hay gente que sale a la misma</tspan><tspan x="716" dy="32">hora, pero no sabe quién va hacia el sur [S]</tspan></text>
-<text y="628" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Ya la siguieron una cuadra al bajarse [E:</tspan><tspan x="716" dy="32">“Me persiguieron”]</tspan></text>
-<rect x="1256" y="254" width="544" height="510" fill="#2160EB" rx="20" ry="20"/>
-<text y="296" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">TECNOLOGÍA QUE USA</tspan></text>
-<text y="338" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• App oficial del transporte para rutas y</tspan><tspan x="1284" dy="32">horarios (como 5 de 5) [E]</tspan></text>
-<text y="411" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Google Maps cuando va a un lugar nuevo</tspan><tspan x="1284" dy="32">(como 2 de 5) [E]</tspan></text>
-<text y="483" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Comparte su ubicación en tiempo real con</tspan><tspan x="1284" dy="32">su mamá (como 2 de 5) [E; canal WhatsApp:</tspan><tspan x="1284" dy="32">S]</tspan></text>
-<text y="588" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Escucha música cuando hay gente; la</tspan><tspan x="1284" dy="32">apaga y guarda el celular cuando se queda</tspan><tspan x="1284" dy="32">sola [E]</tspan></text>
-<text y="692" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Nivel digital alto: no necesita tutoriales, sí</tspan><tspan x="1284" dy="32">reglas claras de privacidad [S]</tspan></text></svg>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">12 / 17</tspan></text>
+<rect x="120" y="294" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
+<text y="337" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="148" dy="0">QUIÉN ES</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• 22 años, 8.º semestre de Comunicación</tspan><tspan x="148" dy="32">Social [S]</tspan></text>
+<text y="452" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Vive con su mamá y su hermano menor en</tspan><tspan x="148" dy="32">Bosa [S]</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Práctica de medio tiempo en las mañanas;</tspan><tspan x="148" dy="32">clases de 6 a 9 p. m. martes y jueves [S]</tspan></text>
+<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• No tiene carro ni moto: depende del</tspan><tspan x="148" dy="32">transporte público [E]</tspan></text>
+<text y="669" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Celular Android de gama media con plan</tspan><tspan x="148" dy="32">prepago: cuida la batería y los datos [S]</tspan></text>
+<rect x="688" y="294" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
+<text y="337" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="716" dy="0">SU CONTEXTO</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Su trayecto dura cerca de 1 h 40 min: una</tspan><tspan x="716" dy="32">troncal y un alimentador [S]</tspan></text>
+<text y="452" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Hace el tramo más largo de pie y con el</tspan><tspan x="716" dy="32">celular guardado [S]</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Espera el alimentador en un paradero con</tspan><tspan x="716" dy="32">poca luz que se va quedando vacío [E]</tspan></text>
+<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• En su curso hay gente que sale a la misma</tspan><tspan x="716" dy="32">hora, pero no sabe quién va hacia el sur [S]</tspan></text>
+<text y="669" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="716" dy="0">• Una vez la siguieron al bajarse del bus [E]</tspan></text>
+<rect x="1256" y="294" width="544" height="478" fill="#2160EB" rx="20" ry="20"/>
+<text y="337" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="1284" dy="0">TECNOLOGÍA QUE USA</tspan></text>
+<text y="379" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• App de rutas y horarios del transporte,</tspan><tspan x="1284" dy="32">como los 5 entrevistados [E]</tspan></text>
+<text y="452" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Google Maps cuando va a un lugar nuevo</tspan><tspan x="1284" dy="32">[E]</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Comparte su ubicación con su mamá; 2 de</tspan><tspan x="1284" dy="32">5 entrevistados lo hacen siempre [E]</tspan></text>
+<text y="596" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Escucha música cuando hay gente;</tspan><tspan x="1284" dy="32">cuando se queda sola, la apaga y guarda el</tspan><tspan x="1284" dy="32">celular [E]</tspan></text>
+<text y="701" font-family="Space Grotesk" font-size="23" font-weight="400" fill="#FFFFFF"><tspan x="1284" dy="0">• Maneja bien el celular; lo que pide son</tspan><tspan x="1284" dy="32">reglas claras de privacidad [S]</tspan></text></svg>

@@ -157,7 +157,7 @@ FLUJOS = [
         ("18", "En curso y llegada", "Trayecto activo → En curso, Separación, Llegada y Retraso", {
             "a": ("term", 0, 0, "En curso"), "b": ("proc", 0, 1, "Mapa de ambas, tramo y tiempo de llegada"),
             "c": ("dec", 0, 2, "¿La compañía se baja antes?"), "d": ("sys", 1, 2, "Avisa: “Sigue sola desde Portal Sur”"),
-            "e": ("dec", 0, 3, "¿Llegó a tiempo al paradero final?"), "f": ("sys", 0, 4, "Apaga la ubicación y avisa la llegada"),
+            "e": ("dec", 0, 3, "¿Toca “Llegué” a tiempo?"), "f": ("sys", 0, 4, "Apaga la ubicación y avisa la llegada"),
             "g": ("term", 0, 5, "Confirmar trayecto (F24)"), "h": ("sys", 1, 3, "15 min tarde: “¿Todo bien?”"),
             "i": ("dec", 1, 4, "¿Responde en 5 min?"), "j": ("sys", 2, 4, "Avisa al contacto con la última ubicación"),
             "k": ("term", 2, 5, "El contacto llama o marca al 123")},
@@ -374,7 +374,7 @@ def build_legend(path):
     s = Svg(1500, 560, BG)
     s.text(60, 50, "04 · USER FLOWS", 18, 700, "#084FE9", mono=True, ls=0.06)
     s.text(60, 82, "User flows por funcionalidad", 48, 700, DARK)
-    s.text(60, 150, "25 flujos, uno por cada nodo de la arquitectura. Cada flujo empieza y termina en una cápsula gris y se lee de arriba hacia abajo.",
+    s.text(60, 150, "25 flujos, uno por proceso. Cada uno indica en qué parte de la arquitectura ocurre y se lee de arriba hacia abajo, de la cápsula gris de inicio a la de cierre.",
            20, 400, "#52525B", maxw=1380, lh=1.4)
     items = [("term", "Inicio / fin"), ("proc", "Pantalla o proceso"), ("inp", "El usuario ingresa datos"),
              ("sys", "El sistema valida o consulta"), ("dec", "Decisión (Sí / No)")]

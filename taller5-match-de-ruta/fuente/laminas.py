@@ -10,8 +10,9 @@ CARD = "#2160EB"     # blanco al 10 % sobre el azul
 CARD2 = "#3A73EE"    # blanco al 20 %
 LINE = "#5285F0"     # blanco al 30 %
 SOFT = "#C7D7FB"     # texto secundario
-TOTAL = 15
+TOTAL = 17
 BOTTOM = 950         # límite inferior del contenido
+LEYENDA = "[E] dato de las 5 entrevistas · [S] supuesto para completar el perfil"
 
 
 def slide(n, tag, title, sub=None, tsize=76):
@@ -60,11 +61,11 @@ def legend(s, x, y):
         symbol(s, x + 12, y + 12, k)
         s.text(x + 32, y + 2, lab, 17, 400, WHITE, mono=True)
         x += 32 + measure(lab, 17, 400, True) + 34
-    s.text(x, y + 2, "* confirmar en la app antes de entregar", 17, 400, SOFT, mono=True)
+    s.text(x, y + 2, "* depende del país o del plan; por confirmar", 17, 400, SOFT, mono=True)
 
 
-def bench_table(n, part, groups, note=None):
-    s, y = slide(n, "04 · ANALIZAR · BENCHMARKING", f"Benchmarking ({part})", tsize=56)
+def bench_table(n, part, name, groups, note=None):
+    s, y = slide(n, f"04 · ANALIZAR · BENCHMARKING {part.upper()}", f"Benchmarking · {name}", tsize=56)
     y -= 10
     featW = 430
     colW = (CW - featW) / 7
@@ -172,17 +173,91 @@ def build_all():
     out = {}
     n = 0
 
+    # ---------------- MVP
+    n += 1
+    s, y = slide(n, "03 · IDEAR · MVP", "MVP", tsize=120)
+    tx = M + measure("MVP", 120, 700) + 36
+    s.rect(tx, 170, measure("Must", 30, 700) + 48, 52, YEL, r=26)
+    s.text(tx + 24, 179, "Must", 30, 700, INK)
+    y += s.text(M, y, C.MVP_FRASE, 42, 700, YEL, maxw=CW - 120, lh=1.2) + 26
+    y += s.text(M, y, C.MVP_PARRAFO, 24, 400, WHITE, maxw=CW - 120, lh=1.45) + 36
+
+    def pilar(s, x, y, w, it, h=None, measure_only=False):
+        tag, tit, ideas, arq, fl = it
+        inner = w - 56
+        rows = [("MOSCOW", ideas), ("ARQUITECTURA", arq), ("USER FLOWS", fl)]
+        hh = 28 + 16 * 1.35 + 10 + text_h(tit, 32, 700, inner, 1.2) + 24 + len(rows) * 40 + 12
+        if measure_only:
+            return hh
+        s.rect(x, y, w, h or hh, CARD, r=20)
+        yy = y + 28
+        yy += s.text(x + 28, yy, tag, 16, 700, YEL, mono=True, ls=0.06) + 10
+        yy += s.text(x + 28, yy, tit, 32, 700, WHITE, maxw=inner, lh=1.2) + 24
+        for a, b in rows:
+            s.path([(x + 28, yy - 6), (x + w - 28, yy - 6)], LINE, 1)
+            s.text(x + 28, yy + 4, a, 15, 700, SOFT, mono=True)
+            s.text(x + 200, yy, b, 21, 500, WHITE, maxw=w - 228)
+            yy += 40
+        return hh
+    y = cards_grid(s, y, C.MVP_PILARES, 3, pilar, gap=24)
+    check(y, "MVP")
+    out["M1 · MVP"] = s
+
+    n += 1
+    s, y = slide(n, "03 · IDEAR · MOSCOW", "MoSCoW: qué entra en el MVP",
+                 sub="Las 16 ideas del brainstorming, priorizadas. El benchmarking, la arquitectura y los flujos muestran el producto completo; el MVP es la columna Must.")
+
+    def msc(s, x, y, w, it, h=None, measure_only=False):
+        t, sub, items = it
+        inner = w - 56
+        hh = 26 + 34 * 1.2 + 4 + 16 * 1.35 + 18 + sum(max(36, text_h(nm, 22, 500, inner - max(64, measure(num, 15, 700, True) + 34), 1.25)) + 12 for num, nm in items) + 14
+        if measure_only:
+            return hh
+        hi = t == "MUST"
+        s.rect(x, y, w, h or hh, YEL if hi else CARD, r=20)
+        fg = INK if hi else WHITE
+        yy = y + 26
+        yy += s.text(x + 28, yy, t, 34, 700, INK if hi else YEL) + 4
+        yy += s.text(x + 28, yy, sub, 16, 400, INK if hi else SOFT, mono=True) + 18
+        for num, nm in items:
+            bw = measure(num, 15, 700, True) + 20
+            s.rect(x + 28, yy + 2, bw, 30, INK if hi else CARD2, r=15)
+            s.text(x + 38, yy + 7, num, 15, 700, YEL if hi else WHITE, mono=True)
+            off = max(64, bw + 14)
+            th = s.text(x + 28 + off, yy + 3, nm, 22, 500, fg, maxw=inner - off, lh=1.25)
+            yy += max(36, th) + 12
+        return hh
+    y = cards_grid(s, y, C.MOSCOW, 4, msc, gap=20)
+    y += 36
+    s.text(M, y, "AJUSTES QUE PROPONGO DESPUÉS DEL BENCHMARKING Y LA ARQUITECTURA", 16, 700, YEL, mono=True, ls=0.06)
+    y += 36
+
+    def aj(s, x, y, w, it, h=None, measure_only=False):
+        a, b = it
+        inner = w - 48
+        hh = 22 + text_h(a, 21, 700, inner, 1.25) + 8 + text_h(b, 17, 400, inner, 1.4) + 22
+        if measure_only:
+            return hh
+        s.rect(x, y, w, h or hh, BLUE, stroke=YEL, sw=2, r=18)
+        yy = y + 22
+        yy += s.text(x + 24, yy, a, 21, 700, WHITE, maxw=inner, lh=1.25) + 8
+        s.text(x + 24, yy, b, 17, 400, SOFT, maxw=inner, lh=1.4)
+        return hh
+    y = cards_grid(s, y, C.MOSCOW_AJUSTES, 3, aj, gap=20)
+    check(y, "MoSCoW")
+    out["M2 · MoSCoW"] = s
+
     # ---------------- Benchmarking
     n += 1
-    out["B1 · Benchmarking (1 de 4)"] = bench_table(n, "1 de 4", ["MOVILIDAD", "SEGURIDAD Y RESPUESTA"])
+    out["B1 · Benchmarking (1 de 4)"] = bench_table(n, "1 de 4", "movilidad y seguridad", ["MOVILIDAD", "SEGURIDAD Y RESPUESTA"])
     n += 1
-    out["B2 · Benchmarking (2 de 4)"] = bench_table(n, "2 de 4", ["UBICACIÓN Y AVISOS", "MODELO"])
+    out["B2 · Benchmarking (2 de 4)"] = bench_table(n, "2 de 4", "ubicación, avisos y costo", ["UBICACIÓN Y AVISOS", "MODELO"])
     n += 1
-    out["B3 · Benchmarking (3 de 4)"] = bench_table(n, "3 de 4", ["IDENTIDAD Y CONFIANZA"])
+    out["B3 · Benchmarking (3 de 4)"] = bench_table(n, "3 de 4", "identidad y confianza", ["IDENTIDAD Y CONFIANZA"])
     n += 1
     out["B4 · Benchmarking (4 de 4)"] = bench_table(
-        n, "4 de 4", ["ACOMPAÑAMIENTO"],
-        "Evalué 6 soluciones en 19 funcionalidades. Las celdas con * dependen del país, del plan de pago o de actualizaciones de la app. "
+        n, "4 de 4", "acompañamiento", ["ACOMPAÑAMIENTO"],
+        "Comparé 6 soluciones en 18 funcionalidades y en su costo. Las celdas con * dependen del país o del plan de pago y están por confirmar. "
         "Waze Carpool se incluye como antecedente: Google cerró el servicio en 2022.")
 
     n += 1
@@ -208,8 +283,7 @@ def build_all():
 
     n += 1
     s, y = slide(n, "04 · ANALIZAR · BENCHMARKING", "Oportunidad de diseño")
-    q = "“No se trata de dar más información sobre el bus. Se trata de que nadie tenga que esperar ni viajar solo.”"
-    y += s.text(M, y, q, 34, 700, YEL, maxw=CW - 100, lh=1.25) + 30
+    y += s.text(M, y, C.OPORTUNIDAD, 34, 700, YEL, maxw=CW - 100, lh=1.25) + 30
     s.rect(M, y, CW, 0, CARD)
     ph = 30 + 16 * 1.35 + 12 + text_h(C.PROPUESTA, 32, 500, CW - 80, 1.4) + 30
     s.rect(M, y, CW, ph, CARD, r=20)
@@ -286,7 +360,7 @@ def build_all():
     yy += s.text(lx + 36, yy, F["nombre"], 36, 700, WHITE, maxw=lw - 72, lh=1.15) + 12
     yy += s.text(lx + 36, yy, F["linea"], 18, 400, SOFT, maxw=lw - 72, lh=1.45) + 20
     yy += s.text(lx + 36, yy, F["cita"], 28, 700, YEL, maxw=lw - 72, lh=1.25) + 10
-    s.text(lx + 36, yy, "PERSONA PRINCIPAL · [E] entrevistas · [S] supuesto", 14, 400, SOFT, mono=True, maxw=lw - 72)
+    s.text(lx + 36, yy, "PERSONA PRINCIPAL · [E] dato de las entrevistas · [S] supuesto", 14, 400, SOFT, mono=True, maxw=lw - 72)
     rx = lx + lw + 30
     rw = W - M - rx
     resumen = [
@@ -320,7 +394,7 @@ def build_all():
     out["P1 · User persona · resumen"] = s
 
     def persona_cols(n, title, blocks, name):
-        s, y = slide(n, "04 · ANALIZAR · USER PERSONA", title)
+        s, y = slide(n, "04 · ANALIZAR · USER PERSONA", title, sub=LEYENDA)
         y = cards_grid(s, y, blocks, 3, bullets_card, gap=24)
         check(y, name)
         return s
@@ -353,7 +427,7 @@ def build_all():
         s.circle(cx, cy, 10, YEL if e[3] >= 4 else WHITE)
         s.text(cx + 16, cy - 28, e[4], 16, 700, WHITE)
     y = gy + gh + 20
-    y += s.text(M, y, "→ El momento más expuesto no es el bus: es la espera del alimentador y la caminata final. Ahí actúa Match.", 22, 700, YEL, maxw=CW)
+    y += s.text(M, y, "→ La tensión sube en la espera del alimentador y en la caminata a casa. Match se enfoca en esos dos momentos: compañía en la espera y aviso al contacto hasta que Daniela toca “Llegué”.", 22, 700, YEL, maxw=CW)
     check(y, "P3")
     out["P3 · Trayecto y tensión"] = s
 
@@ -390,7 +464,7 @@ def build_all():
 
     # ---------------- Arquitectura: preguntas
     n += 1
-    s, y = slide(n, "04 · ANALIZAR · ARQUITECTURA", "Las 4 preguntas de la profe")
+    s, y = slide(n, "04 · ANALIZAR · ARQUITECTURA", "Las 4 preguntas de la revisión")
     ans = [
         (C.Q1, "Verificación → Círculo cercano · Flujos 07 y 08",
          "Quien no tiene correo institucional pide 2 avales a personas ya verificadas. Quien avala confirma que la conoce en persona, la relación y desde cuándo. "
@@ -420,7 +494,7 @@ def build_all():
         return hh
     y = cards_grid(s, y, ans, 2, qa, gap=24)
     check(y, "Preguntas")
-    out["A2 · Las 4 preguntas de la profe"] = s
+    out["A2 · Las 4 preguntas de la revisión"] = s
     assert n == TOTAL, n
     return out
 

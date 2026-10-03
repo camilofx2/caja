@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="3812" viewBox="0 0 2600 3812"><rect id="Fondo" x="0" y="0" width="2600" height="3812" fill="#F4F4F5"/><text y="100" font-family="Space Mono" font-size="22" font-weight="700" fill="#084FE9" letter-spacing="1.32"><tspan x="80" dy="0">03 · ANALIZAR · ARQUITECTURA DE LA INFORMACIÓN</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="3812" viewBox="0 0 2600 3812"><rect id="Fondo" x="0" y="0" width="2600" height="3812" fill="#F4F4F5"/><text y="100" font-family="Space Mono" font-size="22" font-weight="700" fill="#084FE9" letter-spacing="1.32"><tspan x="80" dy="0">04 · ANALIZAR · ARQUITECTURA DE LA INFORMACIÓN</tspan></text>
 <text y="186" font-family="Space Grotesk" font-size="72" font-weight="700" fill="#1F1F1F"><tspan x="80" dy="0">Arquitectura de la información</tspan></text>
-<text y="242" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#525252"><tspan x="80" dy="0">Qué contiene la plataforma, de arriba hacia abajo. Barra inferior: Hoy · Mis rutas · Matches · Perfil. El trayecto activo aparece como banner fijo y el contacto avisado</tspan><tspan x="80" dy="35">ve una página web sin instalar la app. Las cajas con borde amarillo responden las preguntas de la profe.</tspan></text>
+<text y="242" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#525252"><tspan x="80" dy="0">Qué contiene la plataforma, de arriba hacia abajo. Barra inferior: Hoy · Mis rutas · Matches · Perfil. El trayecto activo aparece como banner fijo y el contacto avisado</tspan><tspan x="80" dy="35">ve una página web sin instalar la app. Las cajas con borde amarillo responden las 4 preguntas de la revisión.</tspan></text>
 <rect x="80" y="320" width="534" height="40" fill="#FFFFFF" rx="20" ry="20" stroke="#FFB81C" stroke-width="3"/>
 <text y="346" font-family="Space Grotesk" font-size="18" font-weight="700" fill="#1F1F1F"><tspan x="98" dy="0">1 · ¿Cómo funciona la verificación por círculo cercano?</tspan></text>
 <rect x="630" y="320" width="475" height="40" fill="#FFFFFF" rx="20" ry="20" stroke="#FFB81C" stroke-width="3"/>
@@ -317,9 +317,11 @@
 <rect x="1637" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>
 <text y="2699" font-family="Space Grotesk" font-size="17" font-weight="700" fill="#FFFFFF"><tspan x="1740" dy="0">Llegada</tspan></text>
 <rect x="1647" y="2723" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
-<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1699" dy="0">Apaga la ubicación</tspan></text>
+<text y="2746" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1719" dy="0">Toca “Llegué”</tspan></text>
 <rect x="1647" y="2767" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
-<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1705" dy="0">Aviso al contacto</tspan></text>
+<text y="2791" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1699" dy="0">Apaga la ubicación</tspan></text>
+<rect x="1647" y="2812" width="250" height="37" fill="#FDE2CC" rx="18" ry="18"/>
+<text y="2836" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#1F1F1F"><tspan x="1705" dy="0">Aviso al contacto</tspan></text>
 <path d="M 2064 2640 L 2064 2666" fill="none" stroke="#3A3A3A" stroke-width="2.5" stroke-linejoin="round"/>
 <polygon points="2064,2674 2056,2661 2072,2661" fill="#3A3A3A"/>
 <rect x="1929" y="2674" width="270" height="38" fill="#C2410C" rx="18" ry="18"/>

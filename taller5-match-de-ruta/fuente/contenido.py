@@ -322,7 +322,7 @@ FLOWS = [
 BENCH_COLS = [("Moovit", "Informa"), ("Google Maps", "Ubica y guía"), ("Uber", "Transporta"), ("Life360", "Vigila"),
               ("bSafe", "Reacciona"), ("Waze Carpool", "Carro compartido · cerró en 2022"), ("Match", "Acompaña")]
 
-# Estados: S = sí, P = parcial, N = no, V = por verificar, T = texto. "*" = confirmar antes de entregar.
+# Estados: S = sí, P = parcial, N = no, V = por verificar, T = texto. "*" = depende del país o del plan; por confirmar.
 BENCH_ROWS = [
     ("G", "MOVILIDAD"),
     ("Planear ruta en transporte público", "Combina buses, troncales y caminatas",
@@ -333,93 +333,92 @@ BENCH_ROWS = [
      ["S", "P|Según la ciudad", "N", "N", "N", "N", "N"]),
     ("G", "UBICACIÓN Y AVISOS"),
     ("Compartir ubicación en vivo", "Otra persona ve dónde estás",
-     ["V*", "S|Con contactos", "S|Solo durante el viaje", "S|Siempre, en el círculo", "S|“Follow me”*", "V*", "S|Solo durante el trayecto"]),
-    ("Ubicación que se apaga sola", "El permiso caduca solo",
+     ["P|SafeRide, solo con Moovit+ (pago)*", "S|Con contactos", "S|Solo durante el viaje", "S|Siempre, en el círculo", "S|Follow Me", "V*", "S|Solo durante el trayecto"]),
+    ("Ubicación que se apaga sola", "El permiso caduca sin que lo apagues",
      ["V*", "S|Eliges la duración", "S|Termina con el viaje", "N|Activa todo el tiempo", "P|Se apaga a mano*", "V*", "S|Se apaga al llegar"]),
     ("Aviso de llegada a contactos", "Saben que llegaste sin preguntar",
-     ["N", "P|Progreso del viaje en navegación", "P|Ven que el viaje terminó", "S|Alertas al llegar a un lugar", "P|Alarma con temporizador*", "N", "S|Aviso automático"]),
+     ["P|SafeRide: ven el avance y la hora estimada*", "P|Comparte el avance del viaje", "P|Ven que el viaje terminó", "S|Alerta al llegar a un lugar", "P|Alarma si no confirmas a tiempo (premium)", "N", "S|Aviso automático"]),
     ("Sin historial de ubicaciones", "No queda registro de tus movimientos",
-     ["V*", "P|Cronología opcional", "N|Guarda viajes", "N|Guarda historial", "V*", "V*", "S|Se borra al llegar"]),
+     ["V*", "P|Cronología opcional", "N|Guarda los viajes", "N|De 2 a 30 días según el plan", "V*", "V*", "S|Se borra al llegar"]),
     ("G", "SEGURIDAD Y RESPUESTA"),
     ("Botón SOS / emergencia", "Pedir ayuda en un momento crítico",
-     ["N", "N", "S|Durante el viaje", "P|Según el plan", "S|A sus guardianes", "N", "P|Atajo al 123 (propuesta)"]),
+     ["N", "N", "S|Durante el viaje", "S|Alerta SOS; más respuesta en planes pagos", "S|A sus guardianes", "N", "P|Atajo al 123 (propuesta)"]),
     ("Grabar o transmitir evidencia", "Audio o video como respaldo",
-     ["N", "N", "P|Audio, en algunos mercados*", "N", "S|Video y audio en vivo", "N", "N|Fuera del MVP"]),
+     ["N", "N", "P|Audio, en algunos países", "N", "S|Video y audio (premium)", "N", "N|Fuera del MVP"]),
     ("Llamada falsa", "Excusa para salir de una situación",
      ["N", "N", "N", "N", "S", "N", "N"]),
     ("G", "IDENTIDAD Y CONFIANZA"),
     ("Identidad verificada de la otra persona", "Sabes quién es antes de verla",
      ["N|No aplica", "N|Tus contactos", "S|Conductor verificado", "P|Conocidos, sin verificar", "P|Conocidos, sin verificar", "P|Correo laboral opcional*", "S|Correo institucional o avales"]),
     ("Verificación por institución", "Universidad o empresa como filtro",
-     ["N", "N", "N", "N", "N", "S|Empresa o universidad*", "S|Correo institucional"]),
+     ["N", "N", "N", "N", "N", "S|Filtro de compañeros de trabajo o de clase", "S|Correo institucional"]),
     ("Red de confianza elegida", "Contactos que tú escoges",
-     ["N", "S|Contactos", "S|Contactos de confianza", "S|Círculos", "S|Guardianes", "N", "S|Círculo + contactos avisados"]),
+     ["P|Contactos de seguridad (Moovit+)", "S|Contactos", "S|Contactos de confianza", "S|Círculos", "S|Guardianes", "N", "S|Círculo + contactos avisados"]),
     ("Calificación o reporte de personas", "Consecuencias por mal comportamiento",
-     ["N", "N", "S|Calificación mutua", "N", "N", "S|Calificación*", "S|Confirmación + reporte"]),
+     ["N", "N", "S|Calificación mutua", "N", "N", "S|Calificación con estrellas", "S|Confirmación + reporte"]),
     ("Preferencia de género", "Elegir con quién te emparejan",
-     ["N", "N", "P|Solo algunos países*", "N", "N", "S|Mismo género*", "S|Solo mujeres / cualquiera"]),
+     ["N", "N", "P|Women Preferences, en algunos países", "N", "N", "S|Filtro por género", "S|Solo mujeres / cualquiera"]),
     ("G", "ACOMPAÑAMIENTO"),
     ("Emparejamiento por ruta y horario", "Conecta personas que van al mismo lado",
      ["N", "N", "P|UberX Share: desconocidos, en carro*", "N", "N", "S|En carro", "S|En transporte público"]),
     ("Compañía física en espera y trayecto", "Alguien real a tu lado en el paradero",
      ["N", "N", "N|Te saca del transporte público", "N", "P|Solo virtual", "N", "S|Persona verificada"]),
     ("Chat entre usuarios", "Coordinar el encuentro",
-     ["N", "N", "S|Con el conductor", "V*", "N", "S|Conductor y pasajero*", "S|Tras confirmación mutua"]),
+     ["N", "N", "S|Con el conductor", "V*", "N", "V*", "S|Tras confirmación mutua"]),
     ("G", "MODELO"),
     ("Costo para quien la usa", "",
-     ["T|Gratis + Moovit+", "T|Gratis", "T|Pago por viaje", "T|Gratis + planes", "T|Gratis + premium*", "T|Costo compartido", "T|Gratis (propuesta)"]),
+     ["T|Gratis + Moovit+", "T|Gratis", "T|Pago por viaje", "T|Gratis + planes", "T|Gratis + premium", "T|Costo compartido", "T|Gratis (propuesta)"]),
 ]
 
 HALLAZGOS = [
-    ("El mercado se divide en informar, transportar y reaccionar.",
-     "Moovit y Google Maps informan; Uber y Waze Carpool transportan; Life360 y bSafe vigilan o reaccionan. Ninguna acompaña a quien ya va en transporte público.",
-     "Match no compite en tiempos ni en transporte: ocupa el espacio de la compañía."),
-    ("Compartir ubicación ya es un estándar, no un diferencial.",
-     "Cinco de las seis plataformas lo ofrecen de alguna forma.",
-     "Es un requisito básico. El diferencial es cómo: solo durante el trayecto, se apaga sola y sin historial."),
-    ("La confianza se construye de dos maneras y ninguna app las combina.",
-     "Life360 y bSafe confían en gente conocida sin verificar identidad. Uber verifica a sus conductores, no a tu red.",
-     "Match une las dos: correo institucional y avales del círculo cercano."),
-    ("El emparejamiento por ruta ya existe, pero en carro.",
-     "UberX Share empareja desconocidos que pagan. Waze Carpool filtraba por empresa, universidad y género; Google lo cerró en 2022.",
-     "Esos filtros ya se usaron en otros servicios. El riesgo que hay que cuidar es la masa crítica: sin gente en la misma ruta y hora, no hay match."),
+    ("Cada app resuelve una parte: informar, transportar o reaccionar.",
+     "Moovit y Google Maps informan; Uber y Waze Carpool transportan; Life360 y bSafe vigilan o reaccionan. Ninguna pone a otra persona al lado de quien viaja en transporte público.",
+     "Ahí entra Match: empareja a personas que ya hacen el mismo recorrido."),
+    ("Compartir la ubicación ya es algo común.",
+     "5 de las 6 apps lo tienen. Moovit lo agregó con SafeRide, dentro de su plan pago.",
+     "En Match la ubicación solo se comparte durante el trayecto, se apaga al llegar y no queda historial."),
+    ("Las apps generan confianza de dos formas y ninguna usa las dos.",
+     "Life360 y bSafe se apoyan en gente conocida, sin verificar identidad. Uber verifica a sus conductores, pero no a tu red.",
+     "Match usa las dos: correo institucional y avales del círculo cercano."),
+    ("Emparejar personas por ruta ya existe, pero en carro.",
+     "UberX Share empareja pasajeros que no se conocen. Waze Carpool filtraba por empresa, universidad y género; Google lo cerró en 2022 porque cambiaron los hábitos de viaje después de la pandemia.",
+     "Los filtros funcionaron. El riesgo es que no haya suficientes personas en la misma ruta y hora."),
     ("Las apps de seguridad actúan cuando el riesgo ya ocurrió.",
-     "El SOS, la grabación y la llamada falsa (bSafe, Uber) responden a un incidente.",
-     "Match es preventivo: baja la exposición antes (insight 03). No duplica el SOS: ofrece un atajo al 123."),
-    ("Nadie diseña para la espera en el paradero.",
-     "Ninguna función cubre el momento más expuesto: esperar el alimentador de noche.",
-     "La espera acompañada es el centro del producto, no un extra."),
+     "El SOS, la grabación y la llamada falsa (bSafe, Uber) sirven durante o después de un incidente.",
+     "Match busca que la persona no esté sola antes de que pase algo (insight 03). Para emergencias deja un atajo al 123."),
+    ("Ninguna de las 6 cubre la espera en el paradero.",
+     "Esperar el alimentador de noche es el momento de más tensión y no tiene una función propia en ninguna app.",
+     "Match empareja desde el paradero de salida, así que la espera también se hace acompañada."),
 ]
 
+OPORTUNIDAD = "Los 5 entrevistados usan apps de rutas y aun así sienten miedo. La oportunidad está en que nadie tenga que esperar ni viajar solo de noche."
 PROPUESTA = ("Para estudiantes y trabajadores que dependen del transporte público de noche, Match de ruta verificado los conecta con personas "
              "verificadas de su universidad, su trabajo o su círculo cercano que hacen el mismo trayecto a la misma hora, para que no esperen ni viajen solos.")
 PROPUESTA_VS = [
-    ("vs. Life360 y bSafe", "No vigila ni reacciona: acompaña."),
-    ("vs. Uber", "No saca a la persona del transporte público ni le cobra."),
-    ("vs. Waze Carpool", "Empareja por tramos de transporte público, no por viajes en carro."),
-    ("vs. Moovit y Google Maps", "No informa más: resuelve el miedo que la información no quita."),
+    ("vs. Life360 y bSafe", "Avisan o alertan a tus contactos. Match busca que no viajes sin compañía."),
+    ("vs. Uber", "Uber te saca del transporte público y cobra cada viaje. Match funciona dentro del transporte público y es gratis."),
+    ("vs. Waze Carpool", "Emparejaba viajes en carro. Match empareja tramos de transporte público."),
+    ("vs. Moovit y Google Maps", "Dan rutas y horarios, y Moovit deja compartir el viaje. Lo que no dan es compañía."),
 ]
 
 DIFERENCIACION = [
-    ("TOMO", "Patrones ya probados", [
+    ("TOMO", "Lo que ya funciona en otras apps", [
         "Círculos de confianza → Life360",
-        "Compartir un viaje que termina solo → Uber y Google Maps",
+        "Viaje compartido que termina solo → Uber y Google Maps",
+        "Contacto que sigue el viaje sin instalar la app → Moovit (SafeRide)",
         "Calificación y reporte → Uber",
         "Filtros por institución y género → Waze Carpool",
-        "Tiempos de llegada como capa secundaria → Moovit",
     ]),
     ("EVITO", "Lo que genera desconfianza", [
         "Ubicación permanente e historial (Life360)",
         "Emparejar a desconocidos (UberX Share)",
-        "Cobrar por sentirse seguro (Uber)",
+        "Cobrar por sentirse seguro (Uber, planes pagos)",
         "Actuar solo cuando ya pasó algo (bSafe)",
     ]),
-    ("SOLO MATCH", "Lo que nadie más hace", [
+    ("SOLO MATCH", "No lo encontré en ninguna de las 6", [
         "Emparejar por tramo de transporte público y horario",
         "Verificación doble: institución + avales",
-        "Acompañar la espera en el paradero",
-        "Ubicación que se apaga sola, sin historial",
-        "Aviso al contacto sin instalar la app",
+        "Compañía física en la espera del paradero",
     ]),
 ]
 
@@ -432,34 +431,57 @@ RIESGOS = [
      "Sin destino exacto, apellido ni celular: solo el tramo en común, y solo para personas compatibles."),
 ]
 
+# ---------------------------------------------------------------- MVP (tomado de la presentación: 16 ideas, MoSCoW y MVP)
+MVP_FRASE = "Una app para emparejarte con alguien verificado que hace tu mismo trayecto de noche."
+MVP_PARRAFO = ("Match de ruta verificado conecta a personas verificadas que hacen el mismo trayecto en transporte público a la misma hora. "
+               "Para entrar, cada persona se verifica con su correo institucional o con dos avales de su círculo cercano. Después guarda su ruta "
+               "y su horario, y la app le muestra quién de su universidad, su trabajo o su círculo sale a esa hora por el mismo tramo. "
+               "Cuando las dos aceptan, se encuentran en el paradero y comparten la ubicación solo mientras dura el trayecto. Al llegar, se apaga sola.")
+MVP_PILARES = [
+    ("REGISTRO", "Correo institucional o círculo cercano", "Ideas 01 y 11", "Ingreso · Verificación", "F01–F08"),
+    ("MATCH", "Misma ruta, mismo horario", "Ideas 02 y 03", "Mis rutas · Matches · Match", "F10–F14"),
+    ("TRAYECTO", "Ubicación en vivo que se apaga al llegar", "Idea 04", "Trayecto activo", "F17–F18"),
+]
+MOSCOW = [
+    ("MUST", "Entra en el MVP", [("01 · 11", "Registro verificado"), ("02", "Ruta y horario"), ("03", "Emparejamiento automático"), ("04", "Ubicación en vivo temporal")]),
+    ("SHOULD", "Segunda versión", [("05", "Dejar de compartir"), ("09", "Aviso a contacto"), ("06", "Preferencia de género"), ("12", "Reporte de conducta")]),
+    ("COULD", "Si hay tiempo", [("07", "Chat para coordinar"), ("08", "Confirmación mutua"), ("14", "Solo acompañar la espera"), ("16", "Tiempos de llegada")]),
+    ("WON'T", "No se hará", [("10", "Historial de ubicaciones"), ("15", "Reverificación periódica"), ("13", "Sugerir hora de salida")]),
+]
+MOSCOW_AJUSTES = [
+    ("05 Dejar de compartir → Must", "Fue mi respuesta a la retro sobre el riesgo de compartir la ubicación. Sin este botón, el MVP no cumple esa promesa."),
+    ("08 Confirmación mutua → Must", "Sin que las dos personas acepten, el emparejamiento automático conectaría a alguien sin su permiso."),
+    ("Nuevas: código de encuentro y atajo al 123", "Salen del benchmarking y de los riesgos. Propongo el código como Should y el atajo al 123 como Could."),
+]
+
 # ---------------------------------------------------------------- PERSONA
+# [E] = dato de las 5 entrevistas · [S] = supuesto para completar el perfil
 PERSONA_FICHA = {
     "nombre": "Daniela Gómez, 22 años",
-    "linea": "Estudiante de 8.º semestre de Comunicación Social · Vive en Bosa, estudia en Chapinero (Bogotá) · Sale de clase a las 9:00 p. m. martes y jueves · Viaja sola en TransMilenio + alimentador",
+    "linea": "Estudiante de Comunicación Social · Vive en Bosa y estudia en Chapinero (Bogotá) · Sale de clase a las 9:00 p. m. martes y jueves · Viaja sola en troncal y alimentador",
     "cita": "“La app me informa, pero no me protege.”",
-    "cita2": "“Si veo que alguien de la U va para el mismo lado, me quedo hasta tarde estudiando sin pensarlo dos veces.” [S]",
 }
 PERSONA_BLOQUES_1 = [
     ("QUIÉN ES", [
-        "Mujer, 22 años, 8.º semestre [S: carrera y semestre]",
+        "22 años, 8.º semestre de Comunicación Social [S]",
         "Vive con su mamá y su hermano menor en Bosa [S]",
         "Práctica de medio tiempo en las mañanas; clases de 6 a 9 p. m. martes y jueves [S]",
         "No tiene carro ni moto: depende del transporte público [E]",
-        "Celular Android de gama media, plan prepago: cuida la batería y los datos [S]",
+        "Celular Android de gama media con plan prepago: cuida la batería y los datos [S]",
     ]),
     ("SU CONTEXTO", [
         "Su trayecto dura cerca de 1 h 40 min: una troncal y un alimentador [S]",
-        "El tramo más largo lo hace de pie y con el celular guardado [S]",
-        "Espera el alimentador en un paradero con poca luz que se va quedando vacío [E: brief]",
+        "Hace el tramo más largo de pie y con el celular guardado [S]",
+        "Espera el alimentador en un paradero con poca luz que se va quedando vacío [E]",
         "En su curso hay gente que sale a la misma hora, pero no sabe quién va hacia el sur [S]",
-        "Ya la siguieron una cuadra al bajarse [E: “Me persiguieron”]",
+        "Una vez la siguieron al bajarse del bus [E]",
     ]),
     ("TECNOLOGÍA QUE USA", [
-        "App oficial del transporte para rutas y horarios (como 5 de 5) [E]",
-        "Google Maps cuando va a un lugar nuevo (como 2 de 5) [E]",
-        "Comparte su ubicación en tiempo real con su mamá (como 2 de 5) [E; canal WhatsApp: S]",
-        "Escucha música cuando hay gente; la apaga y guarda el celular cuando se queda sola [E]",
-        "Nivel digital alto: no necesita tutoriales, sí reglas claras de privacidad [S]",
+        "App de rutas y horarios del transporte, como los 5 entrevistados [E]",
+        "Google Maps cuando va a un lugar nuevo [E]",
+        "Comparte su ubicación con su mamá; 2 de 5 entrevistados lo hacen siempre [E]",
+        "Escucha música cuando hay gente; cuando se queda sola, la apaga y guarda el celular [E]",
+        "Maneja bien el celular; lo que pide son reglas claras de privacidad [S]",
     ]),
 ]
 PERSONA_TRAYECTO = [
@@ -469,69 +491,69 @@ PERSONA_TRAYECTO = [
     ("9:55 p. m.", "Llega al portal", "Busca el paradero del alimentador; cada vez hay menos gente.", 3, "Tensa"),
     ("10:00 p. m.", "Espera el alimentador", "De 10 a 20 min sin saber cuánto tarda. Se para cerca de la luz y de otras personas.", 4, "Máxima tensión"),
     ("10:30 p. m.", "Camina a casa", "6 minutos a pie. Mira hacia atrás varias veces.", 4, "Miedo"),
-    ("10:40 p. m.", "Llega a casa", "Le escribe “llegué” a su mamá y apaga la ubicación (si se acuerda).", 1, "Alivio"),
+    ("10:40 p. m.", "Llega a casa", "Le escribe “llegué” a su mamá y apaga la ubicación, si se acuerda.", 1, "Alivio"),
 ]
 PERSONA_BLOQUES_2 = [
     ("NECESIDADES", [
-        "Saber quién de su universidad hace su mismo tramo a la misma hora [E: insight 03]",
-        "Que su mamá sepa que llegó sin tener que escribirle [E: insight 04]",
-        "No sentirse sola en la espera del alimentador [E]",
-        "Que la otra persona esté verificada y, si lo prefiere, sea mujer [E: insight 05]",
-        "Que nadie sepa su dirección ni su rutina completa [S]",
+        "Saber quién de su universidad hace su mismo tramo a la misma hora [E]",
+        "Que su mamá sepa que llegó sin tener que escribirle [E]",
+        "No estar sola mientras espera el alimentador [E]",
+        "Que la otra persona esté verificada y, si lo prefiere, sea mujer [E]",
+        "Que nadie conozca su dirección ni su rutina completa [S]",
     ]),
     ("CÓMO SE COMPORTA", [
-        "Revisa la app oficial antes de salir, aunque no le quita el miedo [E: 5 de 5]",
-        "Elige dónde esperar por la luz, la cercanía y la gente [E: 0 de 5 usa una app]",
-        "Guarda el celular y se queda alerta cuando el paradero se vacía [E]",
-        "Comparte la ubicación; a veces se le olvida apagarla [E/S]",
+        "Revisa la app de rutas antes de salir, aunque eso no le quita el miedo [E]",
+        "Elige dónde esperar por la luz, la cercanía y la gente, no por una app [E]",
+        "Guarda el celular y se pone alerta cuando el paradero se vacía [E]",
+        "Comparte la ubicación, pero a veces se le olvida apagarla [S]",
         "Pregunta en el grupo del curso “¿alguien va para el sur?”, pero casi nunca coincide [S]",
     ]),
     ("FRUSTRACIONES", [
-        "La app le da horarios, no tranquilidad [E]",
-        "Pedir un carro todas las noches no le alcanza [S]",
-        "Compartir la ubicación es manual y queda activa de más [E/S]",
-        "No confía en desconocidos [E: idea descartada]",
+        "La app le da horarios, pero no tranquilidad [E]",
+        "No le alcanza para pedir un carro todas las noches [S]",
+        "Compartir la ubicación es manual y se queda activa de más [S]",
+        "No confía en desconocidos [E]",
         "Los grupos de WhatsApp no sirven para coordinar a última hora [S]",
     ]),
 ]
 PERSONA_BLOQUES_3 = [
     ("MOTIVACIONES", [
-        "No sentirse sola en el momento más expuesto [E]",
+        "No estar sola en el momento en que más expuesta se siente [E]",
         "Terminar la carrera sin evitar las materias de la noche [S]",
-        "Autonomía: no depender de que alguien la recoja [S]",
-        "Tranquilizar a su mamá [E: la mayoría le avisa a alguien]",
+        "No depender de que alguien la recoja [S]",
+        "Que su mamá esté tranquila [E]",
     ]),
     ("MIEDOS", [
-        "Violencia sexual (las 3 mujeres) [E]",
-        "Robo y agresión (las 5 personas) [E]",
-        "Que la sigan al bajarse del bus [E: “Me persiguieron”]",
-        "Que una app exponga su ubicación a quien no debe [S: planteado en la retro]",
+        "Violencia sexual: lo mencionaron las 3 mujeres entrevistadas [E]",
+        "Que la roben o la agredan en el bus o en el paradero [E]",
+        "Que la sigan al bajarse del bus [E]",
+        "Que una app muestre su ubicación a quien no debe [S]",
     ]),
     ("SITUACIONES QUE CAMBIAN SUS DECISIONES", [
-        "Después de las 10 p. m. no espera el alimentador: pide un carro o se queda donde una amiga [E: 4 de 5 cambiaron de plan]",
-        "Si llueve, el paradero se vacía [S]",
+        "Si se le hace tarde, cambia de plan: pide un carro o se queda donde una amiga; 4 de 5 entrevistados lo han hecho [E]",
+        "Si llueve, el paradero se vacía más rápido [S]",
         "Con menos del 20 % de batería deja de compartir la ubicación [S]",
-        "Si va con alguien conocido, se queda hasta tarde [S]",
+        "Si va con alguien conocido, se queda estudiando hasta tarde [S]",
         "En semana de parciales sale más tarde [S]",
-        "A fin de mes decide si le alcanza para un carro [S]",
+        "A fin de mes revisa si le alcanza para un carro [S]",
     ]),
 ]
 PERSONA_ESCENARIO = (
-    "Martes, 8:40 p. m. Daniela abre Match: hay 2 personas de su universidad que salen entre las 9:00 y las 9:15 hacia el Portal. "
-    "Revisa a Laura (verificada con correo institucional, 14 trayectos acompañados, comparten 2 de 3 tramos) y le envía una solicitud. "
+    "Martes, 8:40 p. m. Daniela abre Match: 2 personas de su universidad salen entre las 9:00 y las 9:15 hacia el portal. "
+    "Revisa el perfil de Laura (verificada con correo institucional, 14 trayectos acompañados, comparten 2 de 3 tramos) y le envía una solicitud. "
     "Laura acepta. Se encuentran en la entrada de la estación y confirman el código “Naranja-12”. Su mamá recibe un enlace por WhatsApp "
-    "y ve el trayecto sin instalar nada. En el portal, Laura espera con ella hasta que llega el alimentador. A las 10:38 Daniela llega: "
-    "la ubicación se apaga sola y su mamá recibe “Daniela llegó”.")
+    "y sigue el trayecto sin instalar nada. En el portal, Laura espera con ella hasta que llega el alimentador. A las 10:40 Daniela llega a su casa "
+    "y toca “Llegué”: la ubicación se apaga y su mamá recibe el aviso.")
 PERSONAS_SEC = [
     ("Gloria, 49", "PERSONA SECUNDARIA · CONTACTO AVISADO", "Mamá de Daniela", [
         "Trabaja de día y espera despierta a que Daniela llegue [S]",
         "Si son las 10:30 y no sabe nada, la llama; Daniela no contesta porque guardó el celular [S]",
-        "Necesita saber que llegó, con quién va y si algo cambió, sin llamar [E: usuario secundario validado]",
+        "Quiere saber con quién va, si algo cambió y que llegó, sin tener que llamar [E]",
         "No quiere instalar otra app ni aprender a usarla [S]",
-    ], "Los avisos llegan por SMS o WhatsApp con un enlace web: no necesita la app."),
+    ], "Los avisos le llegan por SMS o WhatsApp con un enlace web. No necesita la app."),
     ("Daniel, 21", "SEGMENTO COMPLEMENTARIO · HOMBRES", "Estudiante", [
         "Sale de noche del trabajo o de la universidad [E]",
-        "Su miedo principal es el robo, no la violencia sexual [E: los 2 hombres]",
+        "Su miedo principal es el robo, no la violencia sexual; así respondieron los 2 hombres [E]",
         "Va alerta, no saca el celular y a veces cambia de ruta [E]",
         "Quiere no ir solo en los tramos de riesgo y ayudar a alguien de su comunidad [S]",
     ], "La preferencia de género es opcional: puede acompañar a quien lo acepte."),

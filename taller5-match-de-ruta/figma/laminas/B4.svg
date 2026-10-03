@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING 4 DE 4</tspan></text>
 <text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
-<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking (4 de 4)</tspan></text>
+<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking · acompañamiento</tspan></text>
 <path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="120" cy="990" r="4" fill="#5285F0"/>
 <circle cx="142" cy="990" r="4" fill="#5285F0"/>
 <circle cx="164" cy="990" r="4" fill="#5285F0"/>
-<circle cx="186" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="186" cy="990" r="4" fill="#5285F0"/>
 <circle cx="208" cy="990" r="4" fill="#5285F0"/>
-<circle cx="230" cy="990" r="4" fill="#5285F0"/>
+<circle cx="230" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
@@ -17,7 +17,9 @@
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">04 / 15</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">06 / 17</tspan></text>
 <rect x="1621" y="208" width="179" height="412" fill="#3A73EE" rx="18" ry="18"/>
 <text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="562" dy="0">Moovit</tspan></text>
 <text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">Informa</tspan></text>
@@ -74,8 +76,9 @@
 <text y="557" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1105" dy="0">?</tspan></text>
 <text y="556" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1128" dy="0">*</tspan></text>
 <circle cx="1288" cy="551" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
-<circle cx="1467" cy="551" r="12" fill="#FFB81C"/>
-<text y="582" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Conductor y pasajero*</tspan></text>
+<circle cx="1467" cy="551" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<text y="557" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="1462" dy="0">?</tspan></text>
+<text y="556" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C"><tspan x="1485" dy="0">*</tspan></text>
 <circle cx="1645" cy="551" r="12" fill="#FFB81C"/>
 <text y="582" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Tras confirmación</tspan><tspan x="1633" dy="18">mutua</tspan></text>
 <path d="M 120 612 L 1800 612" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
@@ -89,5 +92,5 @@
 <circle cx="444" cy="646" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <text y="652" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="440" dy="0">?</tspan></text>
 <text y="652" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="464" dy="0">Por verificar</tspan></text>
-<text y="652" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* confirmar en la app antes de entregar</tspan></text>
-<text y="686" font-family="Space Grotesk" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Evalué 6 soluciones en 19 funcionalidades. Las celdas con * dependen del país, del plan de pago o de actualizaciones de la app. Waze Carpool se incluye como antecedente: Google cerró el servicio en</tspan><tspan x="120" dy="24">2022.</tspan></text></svg>
+<text y="652" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* depende del país o del plan; por confirmar</tspan></text>
+<text y="686" font-family="Space Grotesk" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Comparé 6 soluciones en 18 funcionalidades y en su costo. Las celdas con * dependen del país o del plan de pago y están por confirmar. Waze Carpool se incluye como antecedente: Google cerró el</tspan><tspan x="120" dy="24">servicio en 2022.</tspan></text></svg>

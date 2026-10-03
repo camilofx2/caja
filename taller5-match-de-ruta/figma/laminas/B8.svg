@@ -9,15 +9,17 @@
 <circle cx="208" cy="990" r="4" fill="#5285F0"/>
 <circle cx="230" cy="990" r="4" fill="#5285F0"/>
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
-<circle cx="274" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="274" cy="990" r="4" fill="#5285F0"/>
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
-<circle cx="318" cy="990" r="4" fill="#5285F0"/>
+<circle cx="318" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="340" cy="990" r="4" fill="#5285F0"/>
 <circle cx="362" cy="990" r="4" fill="#5285F0"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">08 / 15</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">10 / 17</tspan></text>
 <rect x="120" y="254" width="544" height="349" fill="#2160EB" rx="20" ry="20"/>
 <text y="315" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">Masa crítica</tspan></text>
 <text y="364" font-family="Space Grotesk" font-size="24" font-weight="400" fill="#C7D7FB"><tspan x="148" dy="0">Si no hay personas en la misma ruta y</tspan><tspan x="148" dy="34">hora, la app no sirve.</tspan></text>

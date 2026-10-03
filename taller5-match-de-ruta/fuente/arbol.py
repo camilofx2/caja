@@ -38,7 +38,7 @@ SECCIONES = [
         ("Encuentro", ["“Ya llegué”", "Confirmar código", "Si no llega en 10 min"], None),
         ("En curso", ["Mapa de ambas", "Tramo y tiempo de llegada", "Dejar de compartir", "¿Algo no está bien?"], None),
         ("Separación", ["Aviso: sigue sola"], None),
-        ("Llegada", ["Apaga la ubicación", "Aviso al contacto"], None),
+        ("Llegada", ["Toca “Llegué”", "Apaga la ubicación", "Aviso al contacto"], None),
         ("Retraso", ["“¿Todo bien?”", "Aviso con última ubicación"], None),
     ]),
     ("CONFIANZA", "#BE185D", "#FBD5E5", [
@@ -79,13 +79,13 @@ def build(path):
     cx = W / 2
     s = Svg(W, None, BG)
     y = 80
-    s.text(80, y, "03 · ANALIZAR · ARQUITECTURA DE LA INFORMACIÓN", 22, 700, "#084FE9", mono=True, ls=0.06)
+    s.text(80, y, "04 · ANALIZAR · ARQUITECTURA DE LA INFORMACIÓN", 22, 700, "#084FE9", mono=True, ls=0.06)
     y += 40
     s.text(80, y, "Arquitectura de la información", 72, 700, DARK)
     y += 100
     y += s.text(80, y, "Qué contiene la plataforma, de arriba hacia abajo. Barra inferior: Hoy · Mis rutas · Matches · Perfil. "
                 "El trayecto activo aparece como banner fijo y el contacto avisado ve una página web sin instalar la app. "
-                "Las cajas con borde amarillo responden las preguntas de la profe.", 24, 400, "#525252", maxw=1900, lh=1.45) + 30
+                "Las cajas con borde amarillo responden las 4 preguntas de la revisión.", 24, 400, "#525252", maxw=1900, lh=1.45) + 30
     # leyenda de preguntas
     qs = ["1 · ¿Cómo funciona la verificación por círculo cercano?", "2 · ¿Qué muestra al revisar los posibles perfiles?",
           "3 · ¿Dónde agrego los contactos que serán avisados?", "4 · ¿Qué contiene el detalle de un match?"]

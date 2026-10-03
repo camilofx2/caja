@@ -12,12 +12,14 @@
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
 <circle cx="318" cy="990" r="4" fill="#5285F0"/>
-<circle cx="340" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="340" cy="990" r="4" fill="#5285F0"/>
 <circle cx="362" cy="990" r="4" fill="#5285F0"/>
-<circle cx="384" cy="990" r="4" fill="#5285F0"/>
+<circle cx="384" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">11 / 15</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">13 / 17</tspan></text>
 <rect x="120" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
 <text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="136" dy="0">9:00 p. m.</tspan></text>
 <text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="136" dy="0">Sale de clase</tspan></text>
@@ -45,7 +47,7 @@
 <rect x="1572" y="254" width="228" height="212" fill="#2160EB" rx="16" ry="16"/>
 <text y="292" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="1588" dy="0">10:40 p. m.</tspan></text>
 <text y="327" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="1588" dy="0">Llega a casa</tspan></text>
-<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="1588" dy="0">Le escribe “llegué” a su</tspan><tspan x="1588" dy="20">mamá y apaga la ubicación</tspan><tspan x="1588" dy="20">(si se acuerda).</tspan></text>
+<text y="354" font-family="Space Grotesk" font-size="15" font-weight="400" fill="#FFFFFF"><tspan x="1588" dy="0">Le escribe “llegué” a su</tspan><tspan x="1588" dy="20">mamá y apaga la</tspan><tspan x="1588" dy="20">ubicación, si se acuerda.</tspan></text>
 <rect x="120" y="490" width="1680" height="200" fill="#2160EB" rx="16" ry="16"/>
 <text y="519" font-family="Space Mono" font-size="14" font-weight="700" fill="#C7D7FB"><tspan x="140" dy="0">NIVEL DE TENSIÓN</tspan></text>
 <path d="M 234 654 L 476 580 L 718 617 L 960 580 L 1202 544 L 1444 544 L 1686 654" fill="none" stroke="#FFB81C" stroke-width="4" stroke-linejoin="round"/>
@@ -63,4 +65,4 @@
 <text y="531" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="1460" dy="0">Miedo</tspan></text>
 <circle cx="1686" cy="654" r="10" fill="#FFFFFF"/>
 <text y="641" font-family="Space Grotesk" font-size="16" font-weight="700" fill="#FFFFFF"><tspan x="1702" dy="0">Alivio</tspan></text>
-<text y="730" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFB81C"><tspan x="120" dy="0">→ El momento más expuesto no es el bus: es la espera del alimentador y la caminata final. Ahí actúa Match.</tspan></text></svg>
+<text y="730" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFB81C"><tspan x="120" dy="0">→ La tensión sube en la espera del alimentador y en la caminata a casa. Match se enfoca en esos dos momentos: compañía en la espera y aviso al contacto</tspan><tspan x="120" dy="30">hasta que Daniela toca “Llegué”.</tspan></text></svg>

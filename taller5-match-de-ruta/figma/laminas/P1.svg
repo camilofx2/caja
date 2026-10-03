@@ -10,21 +10,23 @@
 <circle cx="230" cy="990" r="4" fill="#5285F0"/>
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
-<circle cx="296" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="296" cy="990" r="4" fill="#5285F0"/>
 <circle cx="318" cy="990" r="4" fill="#5285F0"/>
-<circle cx="340" cy="990" r="4" fill="#5285F0"/>
+<circle cx="340" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="362" cy="990" r="4" fill="#5285F0"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">09 / 15</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">11 / 17</tspan></text>
 <rect x="120" y="254" width="560" height="660" fill="#2160EB" rx="24" ry="24"/>
 <circle cx="230" cy="364" r="70" fill="#FFB81C"/>
 <text y="390" font-family="Space Grotesk" font-size="72" font-weight="700" fill="#0B1B3F"><tspan x="206" dy="0">D</tspan></text>
 <text y="487" font-family="Space Grotesk" font-size="36" font-weight="700" fill="#FFFFFF"><tspan x="156" dy="0">Daniela Gómez, 22 años</tspan></text>
-<text y="524" font-family="Space Grotesk" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="156" dy="0">Estudiante de 8.º semestre de Comunicación Social ·</tspan><tspan x="156" dy="26">Vive en Bosa, estudia en Chapinero (Bogotá) · Sale de</tspan><tspan x="156" dy="26">clase a las 9:00 p. m. martes y jueves · Viaja sola en</tspan><tspan x="156" dy="26">TransMilenio + alimentador</tspan></text>
+<text y="524" font-family="Space Grotesk" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="156" dy="0">Estudiante de Comunicación Social · Vive en Bosa y</tspan><tspan x="156" dy="26">estudia en Chapinero (Bogotá) · Sale de clase a las 9:00</tspan><tspan x="156" dy="26">p. m. martes y jueves · Viaja sola en troncal y</tspan><tspan x="156" dy="26">alimentador</tspan></text>
 <text y="657" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#FFB81C"><tspan x="156" dy="0">“La app me informa, pero no me</tspan><tspan x="156" dy="35">protege.”</tspan></text>
-<text y="724" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="156" dy="0">PERSONA PRINCIPAL · [E] entrevistas · [S] supuesto</tspan></text>
+<text y="724" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="156" dy="0">PERSONA PRINCIPAL · [E] dato de las entrevistas · [S]</tspan><tspan x="156" dy="19">supuesto</tspan></text>
 <rect x="710" y="254" width="1090" height="103" fill="#2160EB" rx="18" ry="18"/>
 <text y="290" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C" letter-spacing="0.96"><tspan x="738" dy="0">OBJETIVO</tspan></text>
 <text y="325" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="738" dy="0">Llegar a casa tranquila, sin depender de que la recojan ni de pagar un carro cada noche.</tspan></text>

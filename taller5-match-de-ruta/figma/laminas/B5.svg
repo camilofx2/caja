@@ -6,9 +6,9 @@
 <circle cx="142" cy="990" r="4" fill="#5285F0"/>
 <circle cx="164" cy="990" r="4" fill="#5285F0"/>
 <circle cx="186" cy="990" r="4" fill="#5285F0"/>
-<circle cx="208" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="208" cy="990" r="4" fill="#5285F0"/>
 <circle cx="230" cy="990" r="4" fill="#5285F0"/>
-<circle cx="252" cy="990" r="4" fill="#5285F0"/>
+<circle cx="252" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
 <circle cx="296" cy="990" r="4" fill="#5285F0"/>
 <circle cx="318" cy="990" r="4" fill="#5285F0"/>
@@ -17,40 +17,42 @@
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">05 / 15</tspan></text>
-<rect x="120" y="254" width="544" height="272" fill="#2160EB" rx="20" ry="20"/>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">07 / 17</tspan></text>
+<rect x="120" y="254" width="544" height="294" fill="#2160EB" rx="20" ry="20"/>
 <circle cx="162" cy="296" r="16" fill="#FFB81C"/>
 <text y="301" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="156" dy="0">1</tspan></text>
-<text y="335" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="146" dy="0">El mercado se divide en informar,</tspan><tspan x="146" dy="28">transportar y reaccionar.</tspan></text>
-<text y="394" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="146" dy="0">Moovit y Google Maps informan; Uber y Waze Carpool</tspan><tspan x="146" dy="22">transportan; Life360 y bSafe vigilan o reaccionan. Ninguna</tspan><tspan x="146" dy="22">acompaña a quien ya va en transporte público.</tspan></text>
-<text y="471" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="146" dy="0">→ Match no compite en tiempos ni en transporte: ocupa el</tspan><tspan x="146" dy="23">espacio de la compañía.</tspan></text>
-<rect x="688" y="254" width="544" height="272" fill="#2160EB" rx="20" ry="20"/>
+<text y="335" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="146" dy="0">Cada app resuelve una parte: informar,</tspan><tspan x="146" dy="28">transportar o reaccionar.</tspan></text>
+<text y="394" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="146" dy="0">Moovit y Google Maps informan; Uber y Waze Carpool</tspan><tspan x="146" dy="22">transportan; Life360 y bSafe vigilan o reaccionan. Ninguna</tspan><tspan x="146" dy="22">pone a otra persona al lado de quien viaja en transporte</tspan><tspan x="146" dy="22">público.</tspan></text>
+<text y="493" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="146" dy="0">→ Ahí entra Match: empareja a personas que ya hacen el</tspan><tspan x="146" dy="23">mismo recorrido.</tspan></text>
+<rect x="688" y="254" width="544" height="294" fill="#2160EB" rx="20" ry="20"/>
 <circle cx="730" cy="296" r="16" fill="#FFB81C"/>
 <text y="301" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="724" dy="0">2</tspan></text>
-<text y="335" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="714" dy="0">Compartir ubicación ya es un estándar, no</tspan><tspan x="714" dy="28">un diferencial.</tspan></text>
-<text y="394" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="714" dy="0">Cinco de las seis plataformas lo ofrecen de alguna forma.</tspan></text>
-<text y="428" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="714" dy="0">→ Es un requisito básico. El diferencial es cómo: solo</tspan><tspan x="714" dy="23">durante el trayecto, se apaga sola y sin historial.</tspan></text>
-<rect x="1256" y="254" width="544" height="272" fill="#2160EB" rx="20" ry="20"/>
+<text y="335" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="714" dy="0">Compartir la ubicación ya es algo común.</tspan></text>
+<text y="366" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="714" dy="0">5 de las 6 apps lo tienen. Moovit lo agregó con SafeRide, dentro</tspan><tspan x="714" dy="22">de su plan pago.</tspan></text>
+<text y="422" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="714" dy="0">→ En Match la ubicación solo se comparte durante el</tspan><tspan x="714" dy="23">trayecto, se apaga al llegar y no queda historial.</tspan></text>
+<rect x="1256" y="254" width="544" height="294" fill="#2160EB" rx="20" ry="20"/>
 <circle cx="1298" cy="296" r="16" fill="#FFB81C"/>
 <text y="301" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="1292" dy="0">3</tspan></text>
-<text y="335" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="1282" dy="0">La confianza se construye de dos maneras</tspan><tspan x="1282" dy="28">y ninguna app las combina.</tspan></text>
-<text y="394" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="1282" dy="0">Life360 y bSafe confían en gente conocida sin verificar</tspan><tspan x="1282" dy="22">identidad. Uber verifica a sus conductores, no a tu red.</tspan></text>
-<text y="450" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="1282" dy="0">→ Match une las dos: correo institucional y avales del</tspan><tspan x="1282" dy="23">círculo cercano.</tspan></text>
-<rect x="120" y="550" width="544" height="295" fill="#2160EB" rx="20" ry="20"/>
-<circle cx="162" cy="592" r="16" fill="#FFB81C"/>
-<text y="597" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="156" dy="0">4</tspan></text>
-<text y="631" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="146" dy="0">El emparejamiento por ruta ya existe, pero</tspan><tspan x="146" dy="28">en carro.</tspan></text>
-<text y="689" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="146" dy="0">UberX Share empareja desconocidos que pagan. Waze Carpool</tspan><tspan x="146" dy="22">filtraba por empresa, universidad y género; Google lo cerró en</tspan><tspan x="146" dy="22">2022.</tspan></text>
-<text y="767" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="146" dy="0">→ Esos filtros ya se usaron en otros servicios. El riesgo que</tspan><tspan x="146" dy="23">hay que cuidar es la masa crítica: sin gente en la misma</tspan><tspan x="146" dy="23">ruta y hora, no hay match.</tspan></text>
-<rect x="688" y="550" width="544" height="295" fill="#2160EB" rx="20" ry="20"/>
-<circle cx="730" cy="592" r="16" fill="#FFB81C"/>
-<text y="597" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="724" dy="0">5</tspan></text>
-<text y="631" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="714" dy="0">Las apps de seguridad actúan cuando el</tspan><tspan x="714" dy="28">riesgo ya ocurrió.</tspan></text>
-<text y="689" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="714" dy="0">El SOS, la grabación y la llamada falsa (bSafe, Uber) responden a</tspan><tspan x="714" dy="22">un incidente.</tspan></text>
-<text y="746" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="714" dy="0">→ Match es preventivo: baja la exposición antes (insight</tspan><tspan x="714" dy="23">03). No duplica el SOS: ofrece un atajo al 123.</tspan></text>
-<rect x="1256" y="550" width="544" height="295" fill="#2160EB" rx="20" ry="20"/>
-<circle cx="1298" cy="592" r="16" fill="#FFB81C"/>
-<text y="597" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="1292" dy="0">6</tspan></text>
-<text y="631" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="1282" dy="0">Nadie diseña para la espera en el paradero.</tspan></text>
-<text y="662" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="1282" dy="0">Ninguna función cubre el momento más expuesto: esperar el</tspan><tspan x="1282" dy="22">alimentador de noche.</tspan></text>
-<text y="718" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="1282" dy="0">→ La espera acompañada es el centro del producto, no un</tspan><tspan x="1282" dy="23">extra.</tspan></text></svg>
+<text y="335" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="1282" dy="0">Las apps generan confianza de dos formas</tspan><tspan x="1282" dy="28">y ninguna usa las dos.</tspan></text>
+<text y="394" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="1282" dy="0">Life360 y bSafe se apoyan en gente conocida, sin verificar</tspan><tspan x="1282" dy="22">identidad. Uber verifica a sus conductores, pero no a tu red.</tspan></text>
+<text y="450" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="1282" dy="0">→ Match usa las dos: correo institucional y avales del</tspan><tspan x="1282" dy="23">círculo cercano.</tspan></text>
+<rect x="120" y="571" width="544" height="294" fill="#2160EB" rx="20" ry="20"/>
+<circle cx="162" cy="613" r="16" fill="#FFB81C"/>
+<text y="619" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="156" dy="0">4</tspan></text>
+<text y="652" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="146" dy="0">Emparejar personas por ruta ya existe, pero</tspan><tspan x="146" dy="28">en carro.</tspan></text>
+<text y="711" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="146" dy="0">UberX Share empareja pasajeros que no se conocen. Waze</tspan><tspan x="146" dy="22">Carpool filtraba por empresa, universidad y género; Google lo</tspan><tspan x="146" dy="22">cerró en 2022 porque cambiaron los hábitos de viaje después</tspan><tspan x="146" dy="22">de la pandemia.</tspan></text>
+<text y="810" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="146" dy="0">→ Los filtros funcionaron. El riesgo es que no haya</tspan><tspan x="146" dy="23">suficientes personas en la misma ruta y hora.</tspan></text>
+<rect x="688" y="571" width="544" height="294" fill="#2160EB" rx="20" ry="20"/>
+<circle cx="730" cy="613" r="16" fill="#FFB81C"/>
+<text y="619" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="724" dy="0">5</tspan></text>
+<text y="652" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="714" dy="0">Las apps de seguridad actúan cuando el</tspan><tspan x="714" dy="28">riesgo ya ocurrió.</tspan></text>
+<text y="711" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="714" dy="0">El SOS, la grabación y la llamada falsa (bSafe, Uber) sirven</tspan><tspan x="714" dy="22">durante o después de un incidente.</tspan></text>
+<text y="767" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="714" dy="0">→ Match busca que la persona no esté sola antes de que</tspan><tspan x="714" dy="23">pase algo (insight 03). Para emergencias deja un atajo al</tspan><tspan x="714" dy="23">123.</tspan></text>
+<rect x="1256" y="571" width="544" height="294" fill="#2160EB" rx="20" ry="20"/>
+<circle cx="1298" cy="613" r="16" fill="#FFB81C"/>
+<text y="619" font-family="Space Mono" font-size="18" font-weight="700" fill="#0B1B3F"><tspan x="1292" dy="0">6</tspan></text>
+<text y="652" font-family="Space Grotesk" font-size="23" font-weight="700" fill="#FFFFFF"><tspan x="1282" dy="0">Ninguna de las 6 cubre la espera en el</tspan><tspan x="1282" dy="28">paradero.</tspan></text>
+<text y="711" font-family="Space Grotesk" font-size="16" font-weight="400" fill="#C7D7FB"><tspan x="1282" dy="0">Esperar el alimentador de noche es el momento de más tensión</tspan><tspan x="1282" dy="22">y no tiene una función propia en ninguna app.</tspan></text>
+<text y="767" font-family="Space Grotesk" font-size="17" font-weight="500" fill="#FFB81C"><tspan x="1282" dy="0">→ Match empareja desde el paradero de salida, así que la</tspan><tspan x="1282" dy="23">espera también se hace acompañada.</tspan></text></svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · ARQUITECTURA</tspan></text>
 <text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
-<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Las 4 preguntas de la profe</tspan></text>
+<text y="196" font-family="Space Grotesk" font-size="76" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Las 4 preguntas de la revisión</tspan></text>
 <path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="120" cy="990" r="4" fill="#5285F0"/>
 <circle cx="142" cy="990" r="4" fill="#5285F0"/>
@@ -16,8 +16,10 @@
 <circle cx="362" cy="990" r="4" fill="#5285F0"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
-<circle cx="428" cy="990" r="7" fill="#FFB81C"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">15 / 15</tspan></text>
+<circle cx="428" cy="990" r="4" fill="#5285F0"/>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="7" fill="#FFB81C"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">17 / 17</tspan></text>
 <rect x="120" y="254" width="828" height="292" fill="#2160EB" rx="20" ry="20"/>
 <text y="306" font-family="Space Grotesk" font-size="27" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">¿Cómo funciona la verificación a través del círculo</tspan><tspan x="148" dy="34">cercano?</tspan></text>
 <text y="376" font-family="Space Mono" font-size="16" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">Verificación → Círculo cercano · Flujos 07 y 08</tspan></text>

@@ -15,25 +15,27 @@
 <circle cx="340" cy="990" r="4" fill="#5285F0"/>
 <circle cx="362" cy="990" r="4" fill="#5285F0"/>
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
-<circle cx="406" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">14 / 15</tspan></text>
+<circle cx="450" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">16 / 17</tspan></text>
 <rect x="120" y="254" width="1680" height="211" fill="#FFB81C" rx="20" ry="20"/>
 <text y="294" font-family="Space Mono" font-size="16" font-weight="700" fill="#0B1B3F" letter-spacing="0.96"><tspan x="152" dy="0">ESCENARIO: UN MARTES CON MATCH</tspan></text>
-<text y="331" font-family="Space Grotesk" font-size="22" font-weight="400" fill="#0B1B3F"><tspan x="152" dy="0">Martes, 8:40 p. m. Daniela abre Match: hay 2 personas de su universidad que salen entre las 9:00 y las 9:15 hacia el Portal. Revisa a Laura (verificada con</tspan><tspan x="152" dy="32">correo institucional, 14 trayectos acompañados, comparten 2 de 3 tramos) y le envía una solicitud. Laura acepta. Se encuentran en la entrada de la</tspan><tspan x="152" dy="32">estación y confirman el código “Naranja-12”. Su mamá recibe un enlace por WhatsApp y ve el trayecto sin instalar nada. En el portal, Laura espera con</tspan><tspan x="152" dy="32">ella hasta que llega el alimentador. A las 10:38 Daniela llega: la ubicación se apaga sola y su mamá recibe “Daniela llegó”.</tspan></text>
+<text y="331" font-family="Space Grotesk" font-size="22" font-weight="400" fill="#0B1B3F"><tspan x="152" dy="0">Martes, 8:40 p. m. Daniela abre Match: 2 personas de su universidad salen entre las 9:00 y las 9:15 hacia el portal. Revisa el perfil de Laura (verificada con</tspan><tspan x="152" dy="32">correo institucional, 14 trayectos acompañados, comparten 2 de 3 tramos) y le envía una solicitud. Laura acepta. Se encuentran en la entrada de la</tspan><tspan x="152" dy="32">estación y confirman el código “Naranja-12”. Su mamá recibe un enlace por WhatsApp y sigue el trayecto sin instalar nada. En el portal, Laura espera con</tspan><tspan x="152" dy="32">ella hasta que llega el alimentador. A las 10:40 Daniela llega a su casa y toca “Llegué”: la ubicación se apaga y su mamá recibe el aviso.</tspan></text>
 <rect x="120" y="489" width="828" height="403" fill="#2160EB" rx="20" ry="20"/>
 <text y="529" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C" letter-spacing="0.75"><tspan x="148" dy="0">PERSONA SECUNDARIA · CONTACTO AVISADO</tspan></text>
 <text y="571" font-family="Space Grotesk" font-size="30" font-weight="700" fill="#FFFFFF"><tspan x="148" dy="0">Gloria, 49 · Mamá de Daniela</tspan></text>
 <text y="612" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Trabaja de día y espera despierta a que Daniela llegue [S]</tspan></text>
 <text y="650" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Si son las 10:30 y no sabe nada, la llama; Daniela no contesta porque</tspan><tspan x="148" dy="29">guardó el celular [S]</tspan></text>
-<text y="717" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Necesita saber que llegó, con quién va y si algo cambió, sin llamar [E:</tspan><tspan x="148" dy="29">usuario secundario validado]</tspan></text>
+<text y="717" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• Quiere saber con quién va, si algo cambió y que llegó, sin tener que llamar</tspan><tspan x="148" dy="29">[E]</tspan></text>
 <text y="783" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="148" dy="0">• No quiere instalar otra app ni aprender a usarla [S]</tspan></text>
-<text y="829" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">→ Los avisos llegan por SMS o WhatsApp con un enlace web: no necesita la</tspan><tspan x="148" dy="29">app.</tspan></text>
+<text y="829" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFB81C"><tspan x="148" dy="0">→ Los avisos le llegan por SMS o WhatsApp con un enlace web. No necesita</tspan><tspan x="148" dy="29">la app.</tspan></text>
 <rect x="972" y="489" width="828" height="403" fill="#2160EB" rx="20" ry="20"/>
 <text y="529" font-family="Space Mono" font-size="15" font-weight="700" fill="#FFB81C" letter-spacing="0.75"><tspan x="1000" dy="0">SEGMENTO COMPLEMENTARIO · HOMBRES</tspan></text>
 <text y="571" font-family="Space Grotesk" font-size="30" font-weight="700" fill="#FFFFFF"><tspan x="1000" dy="0">Daniel, 21 · Estudiante</tspan></text>
 <text y="612" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Sale de noche del trabajo o de la universidad [E]</tspan></text>
-<text y="650" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Su miedo principal es el robo, no la violencia sexual [E: los 2 hombres]</tspan></text>
-<text y="687" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Va alerta, no saca el celular y a veces cambia de ruta [E]</tspan></text>
-<text y="725" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Quiere no ir solo en los tramos de riesgo y ayudar a alguien de su</tspan><tspan x="1000" dy="29">comunidad [S]</tspan></text>
-<text y="799" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFB81C"><tspan x="1000" dy="0">→ La preferencia de género es opcional: puede acompañar a quien lo</tspan><tspan x="1000" dy="29">acepte.</tspan></text></svg>
+<text y="650" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Su miedo principal es el robo, no la violencia sexual; así respondieron los 2</tspan><tspan x="1000" dy="29">hombres [E]</tspan></text>
+<text y="717" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Va alerta, no saca el celular y a veces cambia de ruta [E]</tspan></text>
+<text y="754" font-family="Space Grotesk" font-size="21" font-weight="400" fill="#FFFFFF"><tspan x="1000" dy="0">• Quiere no ir solo en los tramos de riesgo y ayudar a alguien de su</tspan><tspan x="1000" dy="29">comunidad [S]</tspan></text>
+<text y="829" font-family="Space Grotesk" font-size="21" font-weight="700" fill="#FFB81C"><tspan x="1000" dy="0">→ La preferencia de género es opcional: puede acompañar a quien lo</tspan><tspan x="1000" dy="29">acepte.</tspan></text></svg>

@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect id="Fondo" x="0" y="0" width="1920" height="1080" fill="#084FE9"/><text y="105" font-family="Space Mono" font-size="18" font-weight="700" fill="#FFB81C" letter-spacing="1.08"><tspan x="120" dy="0">04 · ANALIZAR · BENCHMARKING 3 DE 4</tspan></text>
 <text y="105" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1536" dy="0">Match de ruta verificado</tspan></text>
-<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking (3 de 4)</tspan></text>
+<text y="178" font-family="Space Grotesk" font-size="56" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Benchmarking · identidad y confianza</tspan></text>
 <path d="M 0 990 L 1920 990" fill="none" stroke="#5285F0" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="120" cy="990" r="4" fill="#5285F0"/>
 <circle cx="142" cy="990" r="4" fill="#5285F0"/>
-<circle cx="164" cy="990" r="7" fill="#FFB81C"/>
+<circle cx="164" cy="990" r="4" fill="#5285F0"/>
 <circle cx="186" cy="990" r="4" fill="#5285F0"/>
-<circle cx="208" cy="990" r="4" fill="#5285F0"/>
+<circle cx="208" cy="990" r="7" fill="#FFB81C"/>
 <circle cx="230" cy="990" r="4" fill="#5285F0"/>
 <circle cx="252" cy="990" r="4" fill="#5285F0"/>
 <circle cx="274" cy="990" r="4" fill="#5285F0"/>
@@ -17,7 +17,9 @@
 <circle cx="384" cy="990" r="4" fill="#5285F0"/>
 <circle cx="406" cy="990" r="4" fill="#5285F0"/>
 <circle cx="428" cy="990" r="4" fill="#5285F0"/>
-<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">03 / 15</tspan></text>
+<circle cx="450" cy="990" r="4" fill="#5285F0"/>
+<circle cx="472" cy="990" r="4" fill="#5285F0"/>
+<text y="1035" font-family="Space Mono" font-size="18" font-weight="400" fill="#C7D7FB"><tspan x="1723" dy="0">05 / 17</tspan></text>
 <rect x="1621" y="208" width="179" height="565" fill="#3A73EE" rx="18" ry="18"/>
 <text y="242" font-family="Space Grotesk" font-size="22" font-weight="700" fill="#FFFFFF"><tspan x="562" dy="0">Moovit</tspan></text>
 <text y="264" font-family="Space Mono" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">Informa</tspan></text>
@@ -64,13 +66,15 @@
 <circle cx="1110" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1288" cy="449" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1467" cy="449" r="12" fill="#FFB81C"/>
-<text y="479" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Empresa o</tspan><tspan x="1455" dy="18">universidad*</tspan></text>
+<text y="479" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Filtro de compañeros</tspan><tspan x="1455" dy="18">de trabajo o de clase</tspan></text>
 <circle cx="1645" cy="449" r="12" fill="#FFB81C"/>
 <text y="479" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Correo institucional</tspan></text>
 <path d="M 120 510 L 1800 510" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
 <text y="538" font-family="Space Grotesk" font-size="20" font-weight="700" fill="#FFFFFF"><tspan x="120" dy="0">Red de confianza elegida</tspan></text>
 <text y="560" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="120" dy="0">Contactos que tú escoges</tspan></text>
-<circle cx="574" cy="534" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
+<circle cx="574" cy="534" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
+<path d="M 574.0 521.6 A 12 12 0 0 0 574.0 545.6 Z" fill="#FFB81C"/>
+<text y="564" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="562" dy="0">Contactos de</tspan><tspan x="562" dy="18">seguridad (Moovit+)</tspan></text>
 <circle cx="753" cy="534" r="12" fill="#FFB81C"/>
 <text y="564" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="741" dy="0">Contactos</tspan></text>
 <circle cx="931" cy="534" r="12" fill="#FFB81C"/>
@@ -92,7 +96,7 @@
 <circle cx="1110" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1288" cy="619" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1467" cy="619" r="12" fill="#FFB81C"/>
-<text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Calificación*</tspan></text>
+<text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Calificación con</tspan><tspan x="1455" dy="18">estrellas</tspan></text>
 <circle cx="1645" cy="619" r="12" fill="#FFB81C"/>
 <text y="649" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Confirmación +</tspan><tspan x="1633" dy="18">reporte</tspan></text>
 <path d="M 120 680 L 1800 680" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
@@ -102,11 +106,11 @@
 <circle cx="753" cy="704" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="931" cy="704" r="12" fill="#084FE9" stroke="#FFB81C" stroke-width="3"/>
 <path d="M 931.1428571428571 691.6 A 12 12 0 0 0 931.1428571428571 715.6 Z" fill="#FFB81C"/>
-<text y="734" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Solo algunos países*</tspan></text>
+<text y="734" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="919" dy="0">Women Preferences,</tspan><tspan x="919" dy="18">en algunos países</tspan></text>
 <circle cx="1110" cy="704" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1288" cy="704" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <circle cx="1467" cy="704" r="12" fill="#FFB81C"/>
-<text y="734" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Mismo género*</tspan></text>
+<text y="734" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#C7D7FB"><tspan x="1455" dy="0">Filtro por género</tspan></text>
 <circle cx="1645" cy="704" r="12" fill="#FFB81C"/>
 <text y="734" font-family="Space Grotesk" font-size="14" font-weight="400" fill="#FFFFFF"><tspan x="1633" dy="0">Solo mujeres /</tspan><tspan x="1633" dy="18">cualquiera</tspan></text>
 <path d="M 120 765 L 1800 765" fill="none" stroke="#5285F0" stroke-width="1" stroke-linejoin="round"/>
@@ -120,4 +124,4 @@
 <circle cx="444" cy="799" r="12" fill="#084FE9" stroke="#C7D7FB" stroke-width="2"/>
 <text y="804" font-family="Space Mono" font-size="16" font-weight="700" fill="#C7D7FB"><tspan x="440" dy="0">?</tspan></text>
 <text y="804" font-family="Space Mono" font-size="17" font-weight="400" fill="#FFFFFF"><tspan x="464" dy="0">Por verificar</tspan></text>
-<text y="804" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* confirmar en la app antes de entregar</tspan></text></svg>
+<text y="804" font-family="Space Mono" font-size="17" font-weight="400" fill="#C7D7FB"><tspan x="634" dy="0">* depende del país o del plan; por confirmar</tspan></text></svg>
