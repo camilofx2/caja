@@ -18,4 +18,4 @@ function stroke(n,cn,w,al='INSIDE',op){n.strokes=P(cn,op);n.strokeWeight=w;n.str
 const shadow=(a=0.08)=>[{type:'DROP_SHADOW',visible:true,blendMode:'NORMAL',color:{r:0,g:0,b:0,a},offset:{x:0,y:8},radius:24,spread:0}];
 const ring=(n,vn)=>{const e={type:'DROP_SHADOW',visible:true,blendMode:'NORMAL',color:{r:0,g:0,b:0,a:1},offset:{x:0,y:0},radius:0,spread:4};n.effects=[figma.variables.setBoundVariableForEffect(e,'color',V[vn])];};
 function glass(n,fillOp=0.22,frost=16){n.fills=P('neutral/0');op_(n,fillOp);n.effects=[{type:'GLASS',visible:true,radius:frost,refraction:0.5,depth:16,dispersion:0.2,lightAngle:-45,lightIntensity:0.6},shadow(0.1)[0]];stroke(n,'neutral/0',1,'INSIDE',0.7);}
-let cp=figma.root.children.find(p=>p.name==='Componentes · Match');
+let cp=figma.root.children.find(p=>(p.name==='Sistema de diseño · Componentes'||p.name==='Componentes · Match'));

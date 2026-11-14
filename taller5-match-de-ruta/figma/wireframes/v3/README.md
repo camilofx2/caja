@@ -46,3 +46,26 @@ Nota técnica: Figma ignora la opacidad de una pintura recién enlazada a una va
 
 Documento maestro (resumen, checklist contra lo que pidió la profesora, sistema y pendientes):
 https://claude.ai/artifact/3MnKRpGz7j6v3vK5KEqCs3
+
+## Componentes de ilustración y tarjeta, prototipo y páginas (14 nov)
+Se ejecutan en este orden, cada uno como una llamada (los que usan helpers van después de `base.js`):
+
+| Archivo | Qué hace |
+|---|---|
+| ajuste-contraste.js | El ajuste de contraste descrito arriba |
+| comp3.js (con base.js) | Componentes Ilustración (9 temas × Grande y Compacta), Tarjeta (5 tipos, título y texto como propiedades) y Tarjeta de match (4 combinaciones de tramos, Persona anidada y expuesta) |
+| reemplazo-ilustraciones-tarjetas.js | Cambia las ilustraciones y tarjetas armadas a mano de las 90 pantallas por instancias |
+| prototipo.js | Conecta el prototipo: 130 enlaces, 7 avances automáticos, 47 «Atrás», 32 pestañas del menú, 13 cierres de capa y 7 recorridos de inicio. El mapa `L` dice a dónde lleva cada botón |
+| ilustracion-mediana.js | Agrega el tamaño Mediana (412×340) a Ilustración y lo usa en los encabezados de altura media |
+| paginas.js | Renombra y ordena las páginas como la entrega y actualiza el texto de la guía |
+
+Páginas del archivo después de `paginas.js`: Investigación · primer y segundo corte, Wireframes · v2 (grises),
+Sistema de diseño · Identidad, Sistema de diseño · Componentes, Pantallas en alta · v3 (con prototipo),
+Wireframes · v1 (revisada 24 oct). Los scripts buscan las páginas por el nombre nuevo o por el anterior.
+
+Ilustraciones: el dibujo de cada tema es provisional. Para cambiarlo por ilustraciones descargadas (por ejemplo de
+Envato), se reemplaza el contenido de las 27 variantes del componente Ilustración y todas las pantallas se actualizan.
+Los colores van enlazados a las variables de marca (`primario/*`, `candidata/*`, `ilustracion/piel-*`).
+
+La página del prototipo de prueba del 8 de noviembre ya no está en el archivo de Figma; sus scripts siguen en
+`../../prototipo-v3/` y el recorrido vigente es el de la página de pantallas en alta.

@@ -10,7 +10,7 @@ const man=figma.root.children.find(p=>p.name==='Identidad · Mini manual v0.1');
 const LB={'negro':'neutral/900','gris-800':'neutral/800','gris-600':'neutral/600','gris-400':'neutral/400','gris-200':'neutral/200','gris-100':'neutral/100','blanco':'neutral/0'};
 for(const t of man.findAll(n=>n.type==='TEXT'&&LB[n.characters])){await figma.loadFontAsync(t.fontName);t.characters=LB[t.characters];}
 // 2) Página de componentes
-if(!cp){cp=figma.createPage();cp.name='Componentes · Match';}
+if(!cp){cp=figma.createPage();cp.name='Sistema de diseño · Componentes';}
 await figma.setCurrentPageAsync(cp);
 const proto=figma.root.children.find(p=>p.name==='Prototipo v3 · prueba 1');await proto.loadAsync();
 let lib=cp.children.find(n=>n.name==='Biblioteca · iconos');if(!lib){lib=proto.children.find(n=>n.name==='Biblioteca · iconos');cp.appendChild(lib);}lib.x=0;lib.y=200;

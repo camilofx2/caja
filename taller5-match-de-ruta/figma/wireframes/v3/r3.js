@@ -1,6 +1,6 @@
 await cp.loadAsync();const SETS={};for(const s of cp.children.filter(n=>n.type==='COMPONENT_SET'))SETS[s.name]=s;
 function inst(set,variant,props){const s=SETS[set];const nm=Object.entries(variant).map(([a,b])=>a+'='+b).join(', ');const c=s.children.find(k=>k.name===nm);if(!c)throw new Error(set+' '+nm);const i=c.createInstance();const defs=s.componentPropertyDefinitions;const q={};for(const [k,v] of Object.entries(props||{})){const key=Object.keys(defs).find(x=>x.split('#')[0]===k);if(key)q[key]=v;}if(Object.keys(q).length)i.setProperties(q);return i;}
-let wp=figma.root.children.find(p=>p.name==='Wireframes v3 · alta');if(!wp){wp=figma.createPage();wp.name='Wireframes v3 · alta';}await figma.setCurrentPageAsync(wp);
+let wp=figma.root.children.find(p=>(p.name==='Pantallas en alta · v3 (con prototipo)'||p.name==='Wireframes v3 · alta'));if(!wp){wp=figma.createPage();wp.name='Pantallas en alta · v3 (con prototipo)';}await figma.setCurrentPageAsync(wp);
 const G=(await figma.getLocalGridStylesAsync()).find(g=>g.name.startsWith('Grid/Mobile'));
 let DK=false;const c1=()=>DK?'neutral/0':'neutral/900',c2=()=>DK?'neutral/300':'neutral/600';
 function put(p,n,fill=true){p.appendChild(n);if(fill&&isAL(p))n.layoutSizingHorizontal='FILL';return n;}

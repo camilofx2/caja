@@ -1,0 +1,11 @@
+const REN={'Wireframes v3 · alta':'Pantallas en alta · v3 (con prototipo)','Componentes · Match':'Sistema de diseño · Componentes','Identidad · Mini manual v0.1':'Sistema de diseño · Identidad','Prototipo v3 · prueba 1':'Archivo · Prototipo de prueba (8 nov)','Wireframes v2':'Wireframes · v2 (grises)','Wireframes v1 · revisada 24 oct':'Wireframes · v1 (revisada 24 oct)','Entrega':'Investigación · primer y segundo corte'};
+for(const p of figma.root.children)if(REN[p.name])p.name=REN[p.name];
+const order=['Investigación · primer y segundo corte','Wireframes · v2 (grises)','Sistema de diseño · Identidad','Sistema de diseño · Componentes','Pantallas en alta · v3 (con prototipo)','Wireframes · v1 (revisada 24 oct)','Archivo · Prototipo de prueba (8 nov)'];
+order.forEach((n,i)=>{const p=figma.root.children.find(x=>x.name===n);if(p)figma.root.insertChild(i,p);});
+const wp=figma.root.children.find(p=>p.name.startsWith('Pantallas en alta'));await wp.loadAsync();await figma.setCurrentPageAsync(wp);
+for(const st of ['Bold','SemiBold','Medium','Regular'])await figma.loadFontAsync({family:'Figtree',style:st});
+const g=wp.findOne(n=>n.type==='FRAME'&&n.name==='Guía');const ts=g.findAll(n=>n.type==='TEXT');
+const t1=ts.find(t=>t.characters.startsWith('Wireframes v3'));if(t1)t1.characters='Pantallas en alta · v3';
+const t2=ts.find(t=>t.characters.startsWith('Todas las fases'));if(t2)t2.characters='Todas las fases con la identidad aplicada, componentes con estados, auto layout y prototipo navegable. Para probarlo: botón Presentar (▶) y elegir uno de los 7 recorridos. Las ilustraciones son un componente: al cambiar el dibujo en “Sistema de diseño · Componentes” se actualizan todas las pantallas.';
+const t3=ts.find(t=>t.characters.includes('página “Componentes · Match”'));if(t3)t3.characters=t3.characters.replace('página “Componentes · Match”','página “Sistema de diseño · Componentes”');
+return figma.root.children.map(p=>p.name+' | '+p.id);
