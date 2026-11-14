@@ -35,3 +35,14 @@ Total: 90 pantallas. Las ilustraciones son la base provisional.
 
 Nota técnica: Figma ignora la opacidad de una pintura recién enlazada a una variable;
 `op_()` en `base.js` la aplica después sobre el nodo.
+
+## Ajuste de contraste (14 nov, hecho directamente en Figma)
+- Fondo de las secciones: `neutral/200`; notas de sección en `neutral/700`.
+- Cada pantalla: borde exterior `neutral/300` de 1 px y sombra 0 · 8 · 32 al 8 %.
+- Pantallas blancas con tarjetas blancas, tarjetas de persona u opciones (17): fondo `neutral/100`;
+  sus tarjetas grises pasan a blanco con borde `neutral/200`.
+- Componente Aviso, variante Info: fondo `primario/100` e icono `primario/500`.
+- Componente Persona, variante Tarjeta: borde `neutral/300`.
+
+Documento maestro (resumen, checklist contra lo que pidió la profesora, sistema y pendientes):
+https://claude.ai/artifact/3MnKRpGz7j6v3vK5KEqCs3
