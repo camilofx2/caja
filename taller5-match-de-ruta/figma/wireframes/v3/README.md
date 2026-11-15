@@ -69,3 +69,7 @@ Los colores van enlazados a las variables de marca (`primario/*`, `candidata/*`,
 
 La página del prototipo de prueba del 8 de noviembre ya no está en el archivo de Figma; sus scripts siguen en
 `../../prototipo-v3/` y el recorrido vigente es el de la página de pantallas en alta.
+
+## Ilustraciones adaptadas (15 nov)
+El dibujo provisional del componente Ilustración se cambió por 9 escenas de unDraw recoloreadas con las
+variables de marca. Fuente, tabla de temas y scripts: `ilustraciones/README.md`.
