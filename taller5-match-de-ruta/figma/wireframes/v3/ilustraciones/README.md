@@ -6,7 +6,7 @@ Los SVG no se guardan en el repo; se vuelven a bajar con `npm pack undraw-svg@2.
 
 | Tema | Archivo de unDraw | Tratamiento |
 |---|---|---|
-| Espera | city-girl | Personaje sobre luna |
+| Espera (imagen principal) | high-five | Dos personas sobre luna, cielo violeta y ciudad |
 | Verificación | authentication | Personaje sobre luna |
 | Ubicación | my-location | Personaje sobre luna |
 | Encuentro | nice-to-meet-you | Personaje sobre luna |

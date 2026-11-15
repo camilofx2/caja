@@ -73,3 +73,19 @@ La página del prototipo de prueba del 8 de noviembre ya no está en el archivo 
 ## Ilustraciones adaptadas (15 nov)
 El dibujo provisional del componente Ilustración se cambió por 9 escenas de unDraw recoloreadas con las
 variables de marca. Fuente, tabla de temas y scripts: `ilustraciones/README.md`.
+
+## Revisión del prototipo e imagen principal (15 nov)
+- `prototipo-auditoria.js`: lista qué lleva a dónde en cada pantalla y marca destinos rotos, pantallas sin
+  entrada o sin salida y botones activos sin enlace. Hay que poner la página de pantallas como página actual
+  (`setCurrentPageAsync`): sin eso la API no devuelve los enlaces puestos dentro de instancias (pestañas, «Atrás»).
+- `prototipo-ajustes.js`: conecta lo que faltaba (opción de correo en B01, tarjetas de match en D06, E02 y E10,
+  tarjetas de D08 y E01, filas de D09, «Elegir de mi agenda», «Enviar un enlace», llamadas en I07 e I11, final
+  de I09) y cambia C06 para que vuelva a E01 en vez de reabrir el diálogo de C04.
+- Estado final: 170 enlaces, 67 regresos o cierres, 7 avances automáticos, 0 destinos rotos, 0 pantallas
+  inalcanzables y 0 sin salida.
+- Sin enlace a propósito (no existe la pantalla o la acción sale de la app): «Cambiar mi foto» (H02),
+  «Reenviar código» (B03), «Reenviar invitación» (H07), «Llamar al 123» (G06), «Personas bloqueadas» y
+  «Descargar mis datos» (H08).
+- `ilustraciones/imagen-principal.js`: rehace el tema Espera (el de la bienvenida) con cielo `primario/500`,
+  estrellas, ciudad `primario/700` con ventanas `candidata/b-lima`, luna `primario/100` y la escena
+  `high-five` de unDraw recortada con `ilustraciones/recortar-personajes.js`.
