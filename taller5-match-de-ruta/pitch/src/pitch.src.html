@@ -1,15 +1,16 @@
 <title>Pitch Match de ruta</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700;800&display=swap">
 <style>
 /* Lienzo fijo de 1280×720 que se escala a la ventana: comercial de 60 s + 15 láminas. Un solo mundo visual, de noche. */
 :root{
   color-scheme:dark;
-  --bg:#0a0a0a; --surface:#17171a; --surface-2:#27272a; --line:#3f3f46;
-  --fg:#ffffff; --muted:#a1a1aa; --soft:#d4d4d8;
+  --bg:#0e0c1f; --surface:#1a1730; --surface-2:#252140; --line:#3b3658;
+  --fg:#ffffff; --muted:#a29dba; --soft:#d5d2e5;
   --accent:#5b3df5; --accent-deep:#3f22c9; --accent-soft:#eeebfe; --lima:#c8f560; --danger:#f97066;
   --skin-a:#8d5524; --skin-b:#e0ac69;
   --font:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"Bricolage Grotesque","Figtree",ui-sans-serif,system-ui,sans-serif;
   --ease:cubic-bezier(.2,.75,.2,1); --spring:cubic-bezier(.3,1.5,.5,1);
 }
 html,body{height:100%}
@@ -31,7 +32,7 @@ button{font:inherit;color:inherit}
 .where{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .rail{position:absolute;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:50}
 .rail i{display:block;height:100%;width:0;background:var(--accent);transition:width .4s var(--ease)}
-.notes{position:fixed;left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));bottom:56px;z-index:80;background:rgba(23,23,26,.96);border:1px solid var(--line);border-radius:16px;padding:16px 20px;max-height:38%;overflow:auto;font-size:16px;line-height:1.5;color:var(--soft)}
+.notes{position:fixed;left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));bottom:56px;z-index:80;background:rgba(26,23,48,.96);border:1px solid var(--line);border-radius:16px;padding:16px 20px;max-height:38%;overflow:auto;font-size:16px;line-height:1.5;color:var(--soft)}
 .notes b{color:var(--fg)}
 .notes .t{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--lima);margin-bottom:6px;display:flex;justify-content:space-between;gap:12px}
 
@@ -39,7 +40,7 @@ button{font:inherit;color:inherit}
 .slide{position:absolute;inset:0;padding:60px 72px 64px;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s .45s;display:flex;flex-direction:column}
 .slide.active{opacity:1;visibility:visible;transition:opacity .45s ease}
 .eyebrow{font-size:15px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lima);margin-bottom:18px}
-h2{font-size:56px;line-height:1.04;font-weight:800;letter-spacing:-.025em;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-size:56px;line-height:1.04;font-weight:800;letter-spacing:-.025em;margin:0;text-wrap:balance}
 h2 em{font-style:normal;color:var(--accent)}
 .violet h2 em,.violet .eyebrow{color:var(--lima)}
 .lead{font-size:23px;line-height:1.4;color:var(--soft);margin:18px 0 0;max-width:760px}
@@ -69,18 +70,18 @@ h2 em{font-style:normal;color:var(--accent)}
 /* piezas */
 .row{display:flex;gap:40px;align-items:center;flex:1;min-height:0}
 .col{flex:1;min-width:0}
-.phone{flex:none;width:var(--w,230px);aspect-ratio:412/917;background:#000;border-radius:calc(var(--w,230px)*.13);padding:calc(var(--w,230px)*.03);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px #2c2c30;position:relative;margin:0}
+.phone{flex:none;width:var(--w,230px);aspect-ratio:412/917;background:#000;border-radius:calc(var(--w,230px)*.13);padding:calc(var(--w,230px)*.03);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px #2e2a48;position:relative;margin:0}
 .phone img{width:100%;height:100%;object-fit:cover;border-radius:calc(var(--w,230px)*.1);display:block;background:var(--surface-2)}
 .logo{display:inline-flex;align-items:center;gap:calc(var(--s,56px)*.22)}
 .logo svg{width:var(--s,56px);height:var(--s,56px);flex:none}
 .logo b{font-size:calc(var(--s,56px)*.9);font-weight:700;letter-spacing:-.04em;line-height:1}
-.card{background:var(--surface);border:1px solid #26262b;border-radius:20px;padding:22px 24px}
+.card{background:var(--surface);border:1px solid #2a2645;border-radius:20px;padding:22px 24px}
 .card h3{margin:0 0 6px;font-size:21px;font-weight:700;letter-spacing:-.01em}
 .card p{margin:0;font-size:16px;line-height:1.45;color:var(--muted)}
 .grid{display:grid;gap:16px}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--surface-2);color:var(--soft)}
 .tag.v{background:var(--accent);color:#fff}
-.tag.l{background:var(--lima);color:#0a0a0a}
+.tag.l{background:var(--lima);color:#0e0c1f}
 .moon{position:absolute;border-radius:50%;background:var(--accent-soft)}
 .stars i{position:absolute;border-radius:50%;background:#fff;animation:twinkle 3s ease-in-out infinite}
 .sky{position:absolute;inset:0;overflow:hidden;overflow:clip}
@@ -109,13 +110,13 @@ h2 em{font-style:normal;color:var(--accent)}
 .chart circle.hot{fill:var(--lima);stroke:var(--lima)}
 
 /* hallazgos */
-.big{font-size:150px;font-weight:800;letter-spacing:-.05em;line-height:.9;font-variant-numeric:tabular-nums}
+.big{font-family:var(--display);font-size:150px;font-weight:800;letter-spacing:-.05em;line-height:.9;font-variant-numeric:tabular-nums}
 .big span{color:var(--accent)}
 .meter{display:flex;gap:7px;flex:none}
 .meter i{width:18px;height:18px;border-radius:50%;background:var(--surface-2)}
 .meter i.on{background:var(--lima)}
 .meter i.w{background:var(--accent)}
-.stat{display:flex;align-items:center;gap:20px;padding:15px 0;border-bottom:1px solid #26262b;font-size:20px;line-height:1.3}
+.stat{display:flex;align-items:center;gap:20px;padding:15px 0;border-bottom:1px solid #2a2645;font-size:20px;line-height:1.3}
 .stat:last-child{border-bottom:0}
 .stat b{flex:none;width:76px;font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
 
@@ -137,14 +138,14 @@ h2 em{font-style:normal;color:var(--accent)}
 
 /* capas */
 .layers{display:grid;gap:12px;margin-top:26px}
-.layer{display:flex;gap:18px;align-items:flex-start;background:var(--surface);border:1px solid #26262b;border-radius:18px;padding:16px 20px}
+.layer{display:flex;gap:18px;align-items:flex-start;background:var(--surface);border:1px solid #2a2645;border-radius:18px;padding:16px 20px}
 .layer .k{flex:none;width:40px;height:40px;border-radius:12px;background:var(--accent);display:grid;place-items:center;font-weight:800}
-.layer h3{margin:0 0 3px;font-size:20px}
+.layer h3{margin:0 0 2px;font-size:19px}
 .layer p{margin:0;font-size:15.5px;color:var(--muted);line-height:1.4}
 
 /* competencia */
 .verbs{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:44px}
-.verb{background:var(--surface);border:1px solid #26262b;border-radius:18px;padding:28px 10px;text-align:center}
+.verb{background:var(--surface);border:1px solid #2a2645;border-radius:18px;padding:28px 10px;text-align:center}
 .verb small{display:block;font-size:14px;color:var(--muted);margin-bottom:8px}
 .verb b{font-size:21px;font-weight:700;line-height:1.15;display:block}
 .verb.me{background:var(--accent);border-color:var(--accent);transform:translateY(-10px)}
@@ -153,7 +154,7 @@ h2 em{font-style:normal;color:var(--accent)}
 
 /* tablas simples */
 .tbl{display:grid;grid-template-columns:330px 1fr;margin-top:34px;border-top:1px solid var(--line)}
-.tbl>div{padding:21px 0;border-bottom:1px solid #26262b;font-size:21px;line-height:1.4}
+.tbl>div{padding:17px 0;border-bottom:1px solid #2a2645;font-size:20px;line-height:1.38}
 .tbl>div:nth-child(odd){font-weight:700;padding-right:24px}
 .tbl>div:nth-child(even){color:var(--soft)}
 
@@ -164,37 +165,37 @@ h2 em{font-style:normal;color:var(--accent)}
 .slide.active .time::after{animation:growx 2.4s var(--ease) .4s both}
 .tp{position:relative;padding:30px 14px 0 0}
 .tp::before{content:"";position:absolute;left:0;top:0;width:19px;height:19px;border-radius:50%;background:var(--bg);border:4px solid var(--accent);box-sizing:border-box}
-.tp b{display:block;font-size:34px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
+.tp b{font-family:var(--display);display:block;font-size:34px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
 .tp h3{margin:6px 0 4px;font-size:16.5px}
 .tp p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.35}
 .strips{display:grid;gap:10px;margin-top:22px}
 .strip{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center}
 .strip span{font-size:14px;color:var(--muted);line-height:1.3}
 .strip span b{display:block;color:var(--fg);font-size:16px}
-.strip div{height:92px;border-radius:12px;overflow:hidden;border:1px solid #26262b;background:#f4f4f5}
+.strip div{height:92px;border-radius:12px;overflow:hidden;border:1px solid #2a2645;background:#f4f4f5}
 .strip img{width:100%;height:100%;object-fit:cover;object-position:50% 46%;display:block}
 
 /* sistema */
 .sw{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
-.sw i{height:54px;border-radius:12px;border:1px solid #2c2c30;display:block}
+.sw i{height:54px;border-radius:12px;border:1px solid rgba(255,255,255,.22);display:block}
 .sw span{display:block;font-size:11.5px;color:var(--muted);margin-top:5px;font-style:normal}
 .type{display:grid;gap:4px}
-.type div{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid #26262b;padding:5px 0}
+.type div{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid #2a2645;padding:5px 0}
 .type small{width:74px;flex:none;font-size:12px;color:var(--muted)}
 .ui{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .ui .b{border-radius:999px;padding:11px 20px;font-weight:600;font-size:15px}
-.ui .b.p{background:#fff;color:#0a0a0a}.ui .b.a{background:var(--accent)}.ui .b.s{border:1.5px solid #fff}.ui .b.d{background:var(--surface-2);color:#71717a}
-.mcard{background:#fff;color:#0a0a0a;border-radius:18px;padding:14px 16px;display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center}
-.mcard u{width:44px;height:44px;border-radius:50%;background:#e4e4e7;display:block}
+.ui .b.p{background:#fff;color:#0e0c1f}.ui .b.a{background:var(--accent)}.ui .b.s{border:1.5px solid #fff}.ui .b.d{background:var(--surface-2);color:#6f6a8a}
+.mcard{background:#fff;color:#0e0c1f;border-radius:18px;padding:14px 16px;display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center}
+.mcard u{width:44px;height:44px;border-radius:50%;background:#e7e4f2;display:block}
 .mcard b{font-size:16px}.mcard em{font-style:normal;color:var(--accent);font-size:13px;font-weight:600;display:block}
-.mcard div.seg{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
-.mcard div.seg i{height:5px;border-radius:5px;background:#e4e4e7}.mcard div.seg i.on{background:var(--accent)}
+.mcard .seg{grid-column:1/-1;width:100%;height:14px;display:block}
+.mcard div.seg i{height:5px;border-radius:5px;background:#e7e4f2}.mcard div.seg i.on{background:var(--accent)}
 
 /* ---------- comercial ---------- */
 #s0{padding:0}
-.ad{position:absolute;inset:0;overflow:hidden;overflow:clip;background:#0a0a0a}
+.ad{position:absolute;inset:0;overflow:hidden;overflow:clip;background:#0e0c1f}
 .ad.paused *{animation-play-state:paused!important}
-.poster{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;z-index:20;background:radial-gradient(900px 500px at 50% 40%,#1c1640 0%,#0a0a0a 70%)}
+.poster{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;z-index:20;background:radial-gradient(900px 500px at 50% 40%,#1c1640 0%,#0e0c1f 70%)}
 .ad.playing .poster,.ad.ended .poster{display:none}
 .play{width:112px;height:112px;border-radius:50%;background:var(--accent);border:0;cursor:pointer;display:grid;place-items:center;box-shadow:0 0 0 14px rgba(91,61,245,.22);transition:transform .2s var(--spring)}
 .play:hover{transform:scale(1.06)}
@@ -212,24 +213,24 @@ h2 em{font-style:normal;color:var(--accent)}
 .sc .a{opacity:0}
 .sc.on .a{animation:var(--an,rise) var(--d,.7s) var(--e,var(--ease)) both;animation-delay:var(--t,0s)}
 .sc.on .a.io{animation:var(--an,rise) var(--d,.7s) var(--e,var(--ease)) both,fadeout .4s ease forwards;animation-delay:var(--t,0s),var(--o,9s)}
-.kt{font-weight:800;letter-spacing:-.035em;line-height:.98}
+.kt{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:.98}
 
-#c1{background:linear-gradient(#07070c,#15122b)}
-#c1 .clock{position:absolute;left:84px;top:110px;font-size:170px;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;line-height:1}
+#c1{background:linear-gradient(#0b0919,#1d1840)}
+#c1 .clock{font-family:var(--display);position:absolute;left:84px;top:110px;font-size:170px;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;line-height:1}
 #c1 .clock small{font-size:54px;font-weight:600;letter-spacing:-.02em;color:var(--muted);margin-left:12px}
 #c1 .l1{position:absolute;left:92px;top:310px;font-size:44px;font-weight:600}
 #c1 .l2{position:absolute;left:92px;top:372px;font-size:44px;font-weight:600;color:var(--muted)}
 #c1.on .city b{animation:growy .9s var(--ease) both;animation-delay:calc(var(--k)*70ms + .3s)}
 
-#c2{background:#0a0a0a}
+#c2{background:#0e0c1f}
 #c2 .cone{position:absolute;left:150px;top:96px;width:420px;height:470px;background:linear-gradient(rgba(200,245,96,.34),rgba(200,245,96,0));clip-path:polygon(46% 0,54% 0,100% 100%,0 100%)}
 #c2.on .cone{animation:flick 7s linear both}
 @keyframes flick{0%{opacity:0}6%{opacity:1}30%{opacity:1}32%{opacity:.3}34%{opacity:1}62%{opacity:1}63%{opacity:.2}66%{opacity:.9}100%{opacity:.9}}
-#c2 .post{position:absolute;left:352px;top:80px;width:16px;height:486px;background:#3f3f46;border-radius:8px}
+#c2 .post{position:absolute;left:352px;top:80px;width:16px;height:486px;background:#3b3658;border-radius:8px}
 #c2 .lamp{position:absolute;left:316px;top:70px;width:88px;height:22px;border-radius:12px;background:var(--lima)}
 #c2 .sign{position:absolute;left:470px;top:300px;width:70px;height:70px;border-radius:16px;background:var(--accent);display:grid;place-items:center;font-weight:800;font-size:30px}
-#c2 .signp{position:absolute;left:500px;top:370px;width:10px;height:196px;background:#3f3f46}
-#c2 .ground{position:absolute;left:0;right:0;top:566px;bottom:0;background:#050505;border-top:2px solid #26262b}
+#c2 .signp{position:absolute;left:500px;top:370px;width:10px;height:196px;background:#3b3658}
+#c2 .ground{position:absolute;left:0;right:0;top:566px;bottom:0;background:#09071a;border-top:2px solid #2a2645}
 #c2 .me{position:absolute;left:236px;top:404px;width:56px}
 #c2 .me i{display:block;margin:auto;background:#fff}
 #c2 .me i.h{width:42px;height:42px;border-radius:50%;background:var(--skin-b)}
@@ -241,7 +242,7 @@ h2 em{font-style:normal;color:var(--accent)}
 #c2 .tx p{margin:0 0 22px;font-size:46px;font-weight:700;line-height:1.08;letter-spacing:-.02em}
 #c2 .tx p.m{color:var(--muted);font-weight:600;font-size:38px}
 
-#c3{background:#0a0a0a;display:flex;flex-direction:column;justify-content:center;padding:0 84px}
+#c3{background:#0e0c1f;display:flex;flex-direction:column;justify-content:center;padding:0 84px}
 #c3 .v{position:absolute;inset:0;background:var(--accent);clip-path:circle(0% at 50% 50%)}
 #c3.on .v{animation:wipe .9s var(--ease) 3s both}
 #c3 .kt{position:relative;font-size:124px}
@@ -250,7 +251,7 @@ h2 em{font-style:normal;color:var(--accent)}
 #c3.on .g::after{animation:strike .45s var(--ease) 2.3s both}
 #c3 .w{color:#fff}
 
-#c4{background:#0a0a0a}
+#c4{background:#0e0c1f}
 #c4 .lg{position:absolute;left:300px;top:170px;width:340px;height:340px}
 #c4 svg .p{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:10.8;stroke-dasharray:1;stroke-dashoffset:1}
 #c4.on svg .p1{animation:draw .9s var(--ease) .5s both}
@@ -263,7 +264,7 @@ h2 em{font-style:normal;color:var(--accent)}
 #c4 .tg{position:absolute;left:668px;top:446px;font-size:36px;color:var(--muted);font-weight:500}
 #c4 .q{position:absolute;left:84px;top:64px;font-size:34px;font-weight:600;color:var(--soft);width:900px}
 
-#c5{background:#0a0a0a}
+#c5{background:#0e0c1f}
 #c5 .moon{width:680px;height:680px;right:-40px;top:20px;background:var(--accent)}
 #c5.on .moon{animation:pop .9s var(--spring) both}
 #c5 .phone{position:absolute;right:224px;top:44px;--w:276px;transform:rotate(4deg)}
@@ -274,20 +275,20 @@ h2 em{font-style:normal;color:var(--accent)}
 #c5[data-beat="b1"] img.b1,#c5[data-beat="b2"] img.b2,#c5[data-beat="b3"] img.b3,#c5[data-beat="b4"] img.b4{opacity:1;transform:none}
 #c5 .beat{display:none;position:absolute;left:84px;top:170px;width:560px}
 #c5[data-beat="b1"] .beat.b1,#c5[data-beat="b2"] .beat.b2,#c5[data-beat="b3"] .beat.b3,#c5[data-beat="b4"] .beat.b4{display:block}
-#c5 .beat .n{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--lima);color:#0a0a0a;font-weight:800;font-size:24px;animation:pop .5s var(--spring) both}
-#c5 .beat h3{margin:22px 0 14px;font-size:76px;line-height:1;font-weight:800;letter-spacing:-.035em;animation:rise .6s var(--ease) .1s both}
+#c5 .beat .n{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--lima);color:#0e0c1f;font-weight:800;font-size:24px;animation:pop .5s var(--spring) both}
+#c5 .beat h3{font-family:var(--display);margin:22px 0 14px;font-size:76px;line-height:1;font-weight:800;letter-spacing:-.035em;animation:rise .6s var(--ease) .1s both}
 #c5 .beat p{margin:0;font-size:28px;line-height:1.3;color:var(--soft);animation:rise .6s var(--ease) .3s both}
-#c5 .chip{display:none;position:absolute;background:#fff;color:#0a0a0a;border-radius:999px;padding:12px 20px;font-weight:700;font-size:20px;box-shadow:0 14px 40px rgba(0,0,0,.45);animation:pop .5s var(--spring) .7s both}
+#c5 .chip{display:none;position:absolute;background:#fff;color:#0e0c1f;border-radius:999px;padding:12px 20px;font-weight:700;font-size:20px;box-shadow:0 14px 40px rgba(0,0,0,.45);animation:pop .5s var(--spring) .7s both}
 #c5 .chip.v{background:var(--lima)}
 #c5[data-beat="b1"] .chip.b1,#c5[data-beat="b2"] .chip.b2,#c5[data-beat="b3"] .chip.b3,#c5[data-beat="b4"] .chip.b4{display:block}
 
-#c6{background:#0a0a0a}
+#c6{background:#0e0c1f}
 #c6 .hd{position:absolute;left:84px;top:70px;font-size:60px;width:640px}
-#c6 .line{position:absolute;left:140px;top:470px;width:1000px;height:8px;border-radius:8px;background:#27272a}
+#c6 .line{position:absolute;left:140px;top:470px;width:1000px;height:8px;border-radius:8px;background:#252140}
 #c6 .line i{position:absolute;left:0;top:0;height:100%;border-radius:8px;background:var(--accent);width:0}
 #c6.on .line i{animation:prog 7.4s linear .6s both}
 @keyframes prog{0%{width:0}50%{width:50%}58%{width:50%}100%{width:100%}}
-#c6 .st{position:absolute;top:452px;width:44px;height:44px;margin-left:-22px;border-radius:50%;background:#0a0a0a;border:6px solid #fff;box-sizing:border-box}
+#c6 .st{position:absolute;top:452px;width:44px;height:44px;margin-left:-22px;border-radius:50%;background:#0e0c1f;border:6px solid #fff;box-sizing:border-box}
 #c6 .st.end{border-color:var(--lima)}
 #c6 .lb{position:absolute;top:520px;width:260px;margin-left:-130px;text-align:center;font-size:22px;font-weight:700;line-height:1.25}
 #c6 .lb small{display:block;font-size:17px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -299,8 +300,8 @@ h2 em{font-style:normal;color:var(--accent)}
 @keyframes trav{0%{left:140px}50%{left:640px}58%{left:640px}100%{left:1140px}}
 @keyframes trav2{0%{left:140px;opacity:1}50%{left:640px;opacity:1}58%{left:640px;opacity:1}66%{left:640px;opacity:0}100%{left:640px;opacity:0}}
 #c6 .toasts{position:absolute;right:70px;top:60px;width:440px;display:grid;gap:12px}
-#c6 .toast{background:#fff;color:#0a0a0a;border-radius:20px 20px 20px 6px;padding:16px 20px;font-size:21px;font-weight:600;line-height:1.3;box-shadow:0 16px 40px rgba(0,0,0,.5)}
-#c6 .toast small{display:block;font-size:14px;color:#71717a;font-weight:500;margin-top:4px;font-variant-numeric:tabular-nums}
+#c6 .toast{background:#fff;color:#0e0c1f;border-radius:20px 20px 20px 6px;padding:16px 20px;font-size:21px;font-weight:600;line-height:1.3;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+#c6 .toast small{display:block;font-size:14px;color:#6f6a8a;font-weight:500;margin-top:4px;font-variant-numeric:tabular-nums}
 #c6.on .st.end{animation:pulse .8s var(--spring) 8s both}
 @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.5)}100%{transform:scale(1)}}
 
@@ -309,7 +310,7 @@ h2 em{font-style:normal;color:var(--accent)}
 #c7.on .moon{animation:pop 1s var(--spring) both}
 #c7 .ppl{position:absolute;right:156px;top:168px;width:408px}
 #c7 .ppl svg{width:100%;height:auto;display:block}
-#c7 .gr{position:absolute;left:0;right:0;top:672px;bottom:0;background:#0a0a0a}
+#c7 .gr{position:absolute;left:0;right:0;top:672px;bottom:0;background:#0e0c1f}
 #c7 .kt{position:absolute;left:72px;top:70px;font-size:118px;width:600px}
 #c7 .lk{position:absolute;left:76px;top:440px}
 #c7 .tl{position:absolute;left:78px;top:508px;font-size:24px;color:#fff;width:420px;line-height:1.3}
@@ -329,7 +330,7 @@ h2 em{font-style:normal;color:var(--accent)}
       <section class="slide active" id="s0" data-name="Comercial" data-sec="Comercial · 1 minuto">
         <div class="ad" id="ad">
           <div class="poster">
-            <span class="logo" style="--s:74px"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0a0a0a" stroke="#5b3df5" stroke-width="5.4"/></svg><b>match</b></span>
+            <span class="logo" style="--s:74px"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/></svg><b>match</b></span>
             <button class="play" id="adPlay" aria-label="Reproducir el comercial"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5z"/></svg></button>
             <p>Comercial · 1 minuto</p>
           </div>
@@ -370,7 +371,7 @@ h2 em{font-style:normal;color:var(--accent)}
               <path class="p p3" pathLength="1" d="M36 37.8V55.8" stroke="#5b3df5"/>
               <circle class="o" cx="14.4" cy="12.6" r="9.9" fill="#fff"/>
               <circle class="o" cx="57.6" cy="12.6" r="9.9" fill="#fff"/>
-              <circle class="o o3" cx="36" cy="57.6" r="10.8" fill="#0a0a0a" stroke="#5b3df5" stroke-width="5.4"/>
+              <circle class="o o3" cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/>
             </svg>
             <div class="wm a" style="--t:2.6s;--d:.8s">match</div>
             <div class="tg a" style="--t:3.6s">Dos rutas, un tramo.</div>
@@ -381,16 +382,16 @@ h2 em{font-style:normal;color:var(--accent)}
             <figure class="phone">
               <img class="b1" data-img="B06" alt="">
               <img class="b2" data-img="E02" alt="">
-              <img class="b3" data-img="E08" alt="">
+              <img class="b3" data-img="F05" alt="">
               <img class="b4" data-img="F11" alt="">
             </figure>
             <div class="beat b1"><span class="n">1</span><h3>Personas verificadas.</h3><p>Con el correo de tu universidad o con dos avales de tu círculo.</p></div>
             <div class="beat b2"><span class="n">2</span><h3>Tu mismo trayecto, a tu misma hora.</h3><p>La app te muestra quién comparte tu tramo.</p></div>
-            <div class="beat b3"><span class="n">3</span><h3>Un código para reconocerse.</h3><p>Se lo dicen en persona antes de salir.</p></div>
+            <div class="beat b3"><span class="n">3</span><h3>Foto y código para reconocerse.</h3><p>Se encuentran en un punto con vigilancia.</p></div>
             <div class="beat b4"><span class="n">4</span><h3>Y alguien sabe que llegaste.</h3><p>Tu contacto recibe el aviso por WhatsApp, sin instalar nada.</p></div>
             <div class="chip b1 v" style="right:120px;top:120px">✓ Verificada · Universidad</div>
             <div class="chip b2" style="right:96px;top:300px">2 de 3 tramos en común</div>
-            <div class="chip b3 v" style="right:110px;top:470px">Naranja-12</div>
+            <div class="chip b3 v" style="right:110px;top:470px">Punto seguro · portería</div>
             <div class="chip b4" style="right:80px;top:560px">Daniela llegó a las 10:40 p. m.</div>
           </div>
 
@@ -421,7 +422,7 @@ h2 em{font-style:normal;color:var(--accent)}
           </div>
 
           <div class="adui"><span id="adTime">0:00</span><div class="adbar"><i id="adBar"></i></div><button id="adPause">Pausa</button><button id="adSkip">Saltar</button></div>
-          <div class="endcard"><button class="btn" id="adAgain">Ver de nuevo</button><button class="btn" id="adGo" style="background:#0a0a0a;border-color:#0a0a0a">Empezar el pitch →</button></div>
+          <div class="endcard"><button class="btn" id="adAgain">Ver de nuevo</button><button class="btn" id="adGo" style="background:#0e0c1f;border-color:#0e0c1f">Empezar el pitch →</button></div>
         </div>
       </section>
 
@@ -430,7 +431,7 @@ h2 em{font-style:normal;color:var(--accent)}
         <div class="moon in"></div>
         <figure class="phone in" style="--i:2"><img data-img="A01" alt="Pantalla de bienvenida de Match: Nadie espera solo."></figure>
         <div class="left">
-          <span class="logo in" style="--s:84px"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0a0a0a" stroke="#5b3df5" stroke-width="5.4"/></svg><b>match</b></span>
+          <span class="logo in" style="--s:84px"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/></svg><b>match</b></span>
           <h2 class="in" style="--i:1">Compañía verificada para los trayectos de noche.</h2>
         </div>
         <div class="by in" style="--i:3">Juan Camilo Orozco Galindo<br>Diseño e Interacción · Taller 5 · 2026</div>
@@ -483,7 +484,7 @@ h2 em{font-style:normal;color:var(--accent)}
 
       <!-- 4 · LA IDEA -->
       <section class="slide" id="s4" data-name="La idea" data-sec="La idea">
-        <svg class="sym pop" style="--i:4" viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0a0a0a" stroke="#5b3df5" stroke-width="5.4"/></svg>
+        <svg class="sym pop" style="--i:4" viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/></svg>
         <div class="eyebrow in">La idea</div>
         <h2 class="in" style="--i:1"><span class="old">No falta información.</span></h2>
         <h2 class="in" style="--i:5">Falta <em>compañía.</em></h2>
@@ -498,7 +499,7 @@ h2 em{font-style:normal;color:var(--accent)}
         <div class="steps">
           <div class="step in" style="--i:2"><figure class="phone"><img data-img="B06" alt="Pantalla: Ya estás verificada, Daniela."></figure><span class="n">1</span><h3>Te verificas</h3><p>Correo institucional o dos avales de personas ya verificadas.</p></div>
           <div class="step in" style="--i:4"><figure class="phone"><img data-img="D05" alt="Pantalla: resumen de la ruta De la U a la casa."></figure><span class="n">2</span><h3>Guardas tu ruta</h3><p>Tramos, hora de salida y días. Rango de ± 15 minutos.</p></div>
-          <div class="step in" style="--i:6"><figure class="phone"><img data-img="E02" alt="Pantalla: personas compatibles con tramos en común."></figure><span class="n">3</span><h3>Haces match</h3><p>Ves quién comparte tu tramo. Las dos personas tienen que aceptar.</p></div>
+          <div class="step in" style="--i:6"><figure class="phone"><img data-img="E02" alt="Pantalla: personas compatibles con tramos en común."></figure><span class="n">3</span><h3>Haces match</h3><p>Ves quién comparte tu tramo según tu modo de compañía. Las dos aceptan.</p></div>
           <div class="step in" style="--i:8"><figure class="phone"><img data-img="F06" alt="Pantalla: trayecto en curso con llegada estimada."></figure><span class="n">4</span><h3>Viajan y avisas</h3><p>La ubicación solo dura el trayecto y se apaga al llegar.</p></div>
         </div>
         <div class="foot"><span>La idea</span><span>05 / 15</span></div>
@@ -509,12 +510,13 @@ h2 em{font-style:normal;color:var(--accent)}
         <div class="row">
           <div class="col">
             <div class="eyebrow in">¿Y si la persona del match es la peligrosa?</div>
-            <h2 class="in" style="--i:1;font-size:48px">La confianza se arma <em>por capas.</em></h2>
-            <div class="layers">
-              <div class="layer in" style="--i:2"><span class="k">1</span><div><h3>Verificación doble</h3><p>Institución o dos avales. Quien avala responde: máximo 5 avales por persona.</p></div></div>
-              <div class="layer in" style="--i:3"><span class="k">2</span><div><h3>Código de encuentro</h3><p>Se lo dicen en voz alta antes de salir. Si no coincide, no hay trayecto.</p></div></div>
-              <div class="layer in" style="--i:4"><span class="k">3</span><div><h3>Solo lo necesario</h3><p>Nunca se muestran el destino final, el apellido ni el celular.</p></div></div>
-              <div class="layer in" style="--i:5"><span class="k">4</span><div><h3>Reporte con bloqueo inmediato</h3><p>Y atajo al 123. Match no reemplaza a las autoridades.</p></div></div>
+            <h2 class="in" style="--i:1;font-size:44px">La confianza se arma <em>por capas.</em></h2>
+            <div class="layers" style="gap:9px;margin-top:20px">
+              <div class="layer in" style="--i:2;padding:12px 18px"><span class="k">1</span><div><h3>Verificación doble</h3><p>Correo de la institución o dos avales. Quien avala responde.</p></div></div>
+              <div class="layer in" style="--i:3;padding:12px 18px"><span class="k">2</span><div><h3>Modo de compañía</h3><p>Solo mujeres, solo hombres o cualquier persona. Hay match solo si las dos coinciden.</p></div></div>
+              <div class="layer in" style="--i:4;padding:12px 18px"><span class="k">3</span><div><h3>Punto de encuentro seguro</h3><p>La app solo propone lugares con vigilancia: porterías, recepciones y CAI.</p></div></div>
+              <div class="layer in" style="--i:5;padding:12px 18px"><span class="k">4</span><div><h3>Foto y código</h3><p>Al encontrarse: ¿es la persona de la foto? ¿dijo el código?</p></div></div>
+              <div class="layer in" style="--i:6;padding:12px 18px"><span class="k">5</span><div><h3>Solo lo necesario</h3><p>Sin destino, apellido ni celular. Reporte con bloqueo inmediato y atajo al 123.</p></div></div>
             </div>
           </div>
           <figure class="phone in" style="--w:236px;--i:3;transform:rotate(-3deg)"><img data-img="E04" alt="Pantalla: detalle del match con el tramo que comparten."></figure>
@@ -579,9 +581,9 @@ h2 em{font-style:normal;color:var(--accent)}
         <h2 class="in" style="--i:1">Un piloto en una universidad.</h2>
         <p class="lead in" style="--i:2;color:#fff">La primera versión tiene tres partes. Lo demás llega después.</p>
         <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:30px">
-          <div class="card in" style="--i:3;background:#0a0a0a;border-color:#0a0a0a"><span class="tag v">1 · Registro</span><h3 style="margin-top:12px">Te verificas</h3><p>Correo institucional o dos avales.</p></div>
-          <div class="card in" style="--i:4;background:#0a0a0a;border-color:#0a0a0a"><span class="tag v">2 · Match</span><h3 style="margin-top:12px">Ruta, horario y confirmación mutua</h3><p>La app muestra quién hace tu mismo tramo.</p></div>
-          <div class="card in" style="--i:5;background:#0a0a0a;border-color:#0a0a0a"><span class="tag v">3 · Trayecto</span><h3 style="margin-top:12px">Ubicación temporal</h3><p>Dura el trayecto, se apaga al llegar y se puede dejar de compartir.</p></div>
+          <div class="card in" style="--i:3;background:#0e0c1f;border-color:#0e0c1f"><span class="tag v">1 · Registro</span><h3 style="margin-top:12px">Te verificas</h3><p>Correo institucional o dos avales.</p></div>
+          <div class="card in" style="--i:4;background:#0e0c1f;border-color:#0e0c1f"><span class="tag v">2 · Match</span><h3 style="margin-top:12px">Ruta, horario y confirmación mutua</h3><p>La app muestra quién hace tu mismo tramo.</p></div>
+          <div class="card in" style="--i:5;background:#0e0c1f;border-color:#0e0c1f"><span class="tag v">3 · Trayecto</span><h3 style="margin-top:12px">Ubicación temporal</h3><p>Dura el trayecto, se apaga al llegar y se puede dejar de compartir.</p></div>
         </div>
         <p class="lead in" style="--i:6;font-size:20px;margin-top:26px">Por validar con usuarias: preguntar «¿Todo bien?» a los 15 minutos de retraso, máximo 3 contactos y máximo 5 avales por persona.</p>
         <div class="foot"><span>La idea</span><span>10 / 15</span></div>
@@ -596,7 +598,7 @@ h2 em{font-style:normal;color:var(--accent)}
           <div class="tp"><b>16</b><h3>Ideas</h3><p>Priorizadas para definir la primera versión.</p></div>
           <div class="tp"><b>39</b><h3>Wireframes v1</h3><p>En gris, para probar el orden.</p></div>
           <div class="tp"><b>82</b><h3>Wireframes v2</h3><p>Todas las fases, tras la revisión.</p></div>
-          <div class="tp"><b>16</b><h3>Componentes</h3><p>Con estados y una sola biblioteca de color.</p></div>
+          <div class="tp"><b>18</b><h3>Componentes</h3><p>Con estados y una sola biblioteca de color.</p></div>
           <div class="tp"><b>90</b><h3>Pantallas en alta</h3><p>9 flujos con textos reales.</p></div>
           <div class="tp"><b>7</b><h3>Recorridos</h3><p>Prototipo navegable.</p></div>
         </div>
@@ -617,14 +619,14 @@ h2 em{font-style:normal;color:var(--accent)}
             <div class="card in" style="--i:2">
               <h3>Color</h3>
               <div class="sw" style="margin-top:10px">
-                <div><i style="background:#0a0a0a"></i><span>900</span></div><div><i style="background:#27272a"></i><span>800</span></div><div><i style="background:#71717a"></i><span>500</span></div><div><i style="background:#e4e4e7"></i><span>200</span></div><div><i style="background:#fff"></i><span>0</span></div><div><i style="background:#5b3df5"></i><span>Primario</span></div><div><i style="background:#eeebfe"></i><span>Suave</span></div><div><i style="background:#c8f560"></i><span>Lima</span></div>
+                <div><i style="background:#14112b"></i><span>900</span></div><div><i style="background:#252140"></i><span>800</span></div><div><i style="background:#6f6a8a"></i><span>500</span></div><div><i style="background:#e7e4f2"></i><span>200</span></div><div><i style="background:#fff"></i><span>0</span></div><div><i style="background:#5b3df5"></i><span>Primario</span></div><div><i style="background:#eeebfe"></i><span>Suave</span></div><div><i style="background:#c8f560"></i><span>Lima</span></div>
               </div>
-              <p style="margin-top:10px">Base neutra. El color solo marca lo que importa: el tramo, el match y la acción principal.</p>
+              <p style="margin-top:10px">Antes era blanco y negro puro, como Uber. Ahora los neutros llevan un tinte índigo de noche.</p>
             </div>
             <div class="card in" style="--i:3">
-              <h3>Tipografía · Figtree</h3>
+              <h3>Tipografía · Bricolage Grotesque y Figtree</h3>
               <div class="type" style="margin-top:6px">
-                <div><small>Título 32</small><span style="font-size:30px;font-weight:700;letter-spacing:-.02em">Laura aceptó.</span></div>
+                <div><small>Título 32</small><span style="font-family:var(--display);font-size:30px;font-weight:800;letter-spacing:-.02em">Laura aceptó.</span></div>
                 <div><small>Base 16</small><span style="font-size:16px">Ya tienen chat, punto de encuentro y código.</span></div>
                 <div><small>Pista 12</small><span style="font-size:12px;color:var(--muted)">No mostramos destino final, apellido ni celular.</span></div>
               </div>
@@ -634,15 +636,15 @@ h2 em{font-style:normal;color:var(--accent)}
             <div class="card in" style="--i:4">
               <h3>El símbolo es el producto</h3>
               <div style="display:flex;gap:18px;align-items:center;margin-top:8px">
-                <svg viewBox="0 0 72 72" width="84" height="84" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#17171a" stroke="#5b3df5" stroke-width="5.4"/></svg>
+                <svg viewBox="0 0 72 72" width="84" height="84" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#1a1730" stroke="#5b3df5" stroke-width="5.4"/></svg>
                 <p>Dos orígenes se unen en un tramo compartido y terminan en la llegada. Es la misma línea que aparece en las pantallas.</p>
               </div>
             </div>
             <div class="card in" style="--i:5">
               <h3>Componentes con estados</h3>
               <div class="ui" style="margin:10px 0 14px"><span class="b p">Primario</span><span class="b a">Acento</span><span class="b s">Secundario</span><span class="b d">Bloqueado</span></div>
-              <div class="mcard"><u></u><div><b>Laura M.</b><em>✓ Verificada · Universidad</em></div><div class="seg"><i class="on"></i><i class="on"></i><i></i></div></div>
-              <p style="margin-top:10px">16 componentes. La tarjeta de match lleva dentro otro componente, el de la persona.</p>
+              <div class="mcard"><u style="background:#eeebfe url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MzIgNTMyIj48cG9seWdvbiBwb2ludHM9IjM3OS4xOSAzNzkuMDQgMjQ2LjE5IDM3OS4wNCAyNDYuMTkgMTk5LjA0IDM2MS4xOSAyNjIuMDQgMzc5LjE5IDM3OS4wNCIgZmlsbD0iIzE0MTEyYiIvPjxjaXJjbGUgY3g9IjI3MC43NiIgY3k9IjI2MC45MyIgcj0iODYuMzQiIGZpbGw9IiNlMGFjNjkiLz48cG9seWdvbiBwb2ludHM9IjIyMS4xOSAzNjAuMDQgMjE3LjI4IDMyMC42MSAyOTUuMTkgMzA2LjA0IDM0MS4xOSA0MTguMDQgMjYxLjE5IDUxMC4wNCAyMDQuMTkgMzk4LjA0IDIyMS4xOSAzNjAuMDQiIGZpbGw9IiNlMGFjNjkiLz48cGF0aCBkPSJtNDU3LjAzLDQ1MS4wOGMtLjk2OTk3LDEuMDEtMS45NSwyLjAxLTIuOTQsMy0zLjE0LDMuMTQtNi4zNCw2LjE5LTkuNjEsOS4xNS00OSw0NC40NC0xMTEuODcsNjguNzYtMTc4LjQ3LDY4Ljc2LTYxLjQwLDAtMTE5LjY0LTIwLjY3LTE2Ni43NS01OC43Mi0uMDI5OTctLjAyMDAyLS4wNDk5OS0uMDM5OTgtLjA4MDAyLS4wNzAwMS0xLjQyLTEuMTQtMi44My0yLjMyLTQuMjUtMy41MS4yNS0uNzE5OTcuNTItMS40Mi43OTAwNC0yLjEzLDE1LjE0LTM5LjQ2LDQ1LjA3LTU4Ljc3LDYzLjIyLTY3LjIyLDktNC4xOSwxNS4xMC01LjcxLDE1LjEwLTUuNzFsMjEuMzItMzguNDAsMTUuMDEsMjgsMTEuMDYsMjAuNjQsNDUuMzgsODQuNjYsMzkuMTUtOTcuNDcsMTIuMTItMzAuMjIsMy4xMS03LjczLDE0Ljc4LDExLjUxLDE0LDEwLjg5LDI4LjE5LDYuMjEsMjIuODcsNS4wNCwzMS4wNiw2Ljg2YzEyLjU2LDEwLjIyLDIwLjIwLDI5LjY5LDI0LjQ3LDUzLjg3LjE1Ljg1OTk5LjMxLDEuNzIuNDQ5OTUsMi41OVoiIGZpbGw9IiM1YjNkZjUiLz48cGF0aCBkPSJtMjI1LjMzLDE2Mi44MGMxMC41MS0xNy42NiwyOS44My0yOS43OSw1MC4zMS0zMS41NywyMC40OC0xLjc4LDQxLjYwLDYuODAsNTUuMDIsMjIuMzgsNy45OSw5LjI4LDEzLjIzLDIwLjY1LDIxLjAzLDMwLjEwLDE2Ljc3LDIwLjM0LDQ1LjM3LDMyLjI0LDUyLjY5LDU3LjU3LDMuMTksMTEuMDUsMS42MCwyMi44NS0uMDEzNjcsMzQuMjQtMS4zOCw5Ljc2LTIuNzcsMTkuNTItNC4xNSwyOS4yOS0xLjA3LDcuNTktMi4xMSwxNS42MC43MzUzOCwyMi43MywzLjM0LDguMzYsMTEuMzQsMTMuODMsMTYuNTEsMjEuMjAsOC44MCwxMi41NCw4LjE1LDMwLjkwLTEuNDksNDIuNzktNC4xOCw1LjE1LTkuNzQsOS4wNC0xNC4xMywxNC4wM3MtNy42NCwxMS44MC01LjgwLDE4LjE5YzMuNTIsMTIuMjMsMjIuNzAsMTUuMTYsMjQuODAsMjcuNzEsMS4wNyw2LjQxLTMuMzUsMTIuODItOS4xNiwxNS43NnMtMTIuNjQsMy4wMi0xOS4xMCwyLjIzYy0yNC41NS0yLjk4LTQ3LjI4LTE4LjMyLTU5LjI0LTM5Ljk3LTExLjk1LTIxLjY1LTEyLjgyLTQ5LjA2LTIuMjYtNzEuNDMsOC42Ny0xOC4zNywyNC43OC0zNC42MCwyNC42MC01NC45MS0uMDk1NjQtMTEuMDYtNS4xNy0yMS40MC0xMC4xMy0zMS4yOS0xMC4xNS0yMC4yNC0yMC4zMS00MC40OS0zMC40Ny02MC43My01LjQ0LTEwLjg0LTExLjc1LTIyLjUzLTIyLjk2LTI3LjE5LTguNjUtMy42MC0xOC40OC0yLjIwLTI3Ljc0LS43MzE0MXMtMTkuMDcsMi45MC0yNy43NS0uNjMxODEtMTUuMjQtMTQuMDQtMTEuMTAtMjIuNDYiIGZpbGw9IiMxNDExMmIiLz48cGF0aCBkPSJtMjQwLjQ3LDE2My43MmMtMTYuNjgtNS40OS0zNS4zOSwzLjMyLTQ2LjY5LDE2Ljc3LTExLjI5LDEzLjQ1LTE2Ljc3LDMwLjcwLTIxLjk5LDQ3LjQ3LTIuOTgsOS42MC01Ljk3LDE5LjIxLTguOTYsMjguODEtMi44MSw5LjAzLTUuNjIsMTguMDctOC40MywyNy4xMC0zLjMwLDEwLjYyLTYuNjQsMjEuOTItMy45MiwzMi43MSwxLjk2LDcuODAsNy4wMSwxNC44OSw3LjEyLDIyLjkzLjExMzUzLDguNDAtNS4xNSwxNS43OC05Ljc2LDIyLjgxLTQuNjEsNy4wMi04Ljk0LDE1LjM3LTYuNzQsMjMuNDksMy4zNCwxMi4zNCwyMC41MCwxOS4xMiwxOS41NiwzMS44Ny0uMzEzOSw0LjI1LTIuNzcsOC4xOS0yLjczLDEyLjQ1LjA1Njg0LDUuNDIsNC4zMCwxMC4xMiw5LjI4LDEyLjI4LDQuOTcsMi4xNiwxMC41OCwyLjI4LDE2LjAxLDIuMTgsMTYuNjUtLjI5Mjc5LDMzLjI3LTIuMjcsNDkuNTItNS44OSw2LjI1LTEuMzksMTIuNjEtMy4xMCwxNy44MS02LjgzczkuMDgtOS45Miw4LjQxLTE2LjI5Yy0xLjA1LTkuOTItMTEuNzMtMTUuNTYtMTcuMTEtMjMuOTYtNS4yOS04LjI1LTUuMTYtMTguNzEtNy40NS0yOC4yNS0zLjEzLTEzLjEwLTEwLjg4LTI0LjU1LTE2LjY5LTM2LjcxLTIxLjg1LTQ1LjcxLTE0LjIwLTEwMy45OCwxOC43MS0xNDIuNTEsMi45MS0zLjQwLDYuMDktNi44Myw3LjMwLTExLjE0LDEuMjEtNC4zMS0uMzUxMDctOS44MC00LjU2LTExLjMxIiBmaWxsPSIjMTQxMTJiIi8+PHBhdGggZD0ibTQ1NC4wOSw3Ny45MEM0MDMuODQsMjcuNjYsMzM3LjA0LDAsMjY2LDBTMTI4LjE1LDI3LjY2LDc3LjkwLDc3LjkwQzI3LjY2LDEyOC4xNCwwLDE5NC45NCwwLDI2NmMwLDY0Ljg0LDIzLjA0LDEyNi4xNSw2NS4yOCwxNzQuNTYsNC4wMyw0LjYzLDguMjQsOS4xNCwxMi42MiwxMy41MiwxLjAzLDEuMDMsMi4wNywyLjA2LDMuMTIsMy4wNiwyLjc5LDIuNzEsNS42NCw1LjM1LDguNTQsNy45MiwxLjc2LDEuNTcsMy41MywzLjExLDUuMzMsNC42MiwxLjQxLDEuMTksMi44MiwyLjM2LDQuMjUsMy41MS4wMzAwMy4wMy4wNTAwNS4wNC4wODAwMi4wNyw0Ny4xMCwzOC4wNCwxMDUuMzQsNTguNzIsMTY2Ljc1LDU4LjcyLDY2LjYwLDAsMTI5LjQ3LTI0LjMyLDE3OC40Ny02OC43NiwzLjI3LTIuOTYsNi40Ny02LjAxLDkuNjEtOS4xNS45ODk5OS0uOTg5OTksMS45Ny0xLjk4LDIuOTQtMywyLjcwLTIuNzcsNS4zMi01LjYwLDcuODgtOC40Nyw0My4zNy00OC43Miw2Ny4wNy0xMTAuODQsNjcuMDctMTc2LjYwLDAtNzEuMDUtMjcuNjYtMTM3Ljg1LTc3LjkwLTE4OC4wOVptMTAuMTcsMzYyLjIxYy0yLjUsMi44My01LjA2LDUuNjMtNy42Nyw4LjM3LTQuMDgsNC4yNS04LjI5LDguMzctMTIuNjQsMTIuMzMtMS42NSwxLjUyLTMuMzIsMy01LjAxLDQuNDctMTcuMDcsMTQuODQtMzYuMDcsMjcuNTItNTYuNTYsMzcuNjMtNy4xOSwzLjU0LTE0LjU2LDYuNzctMjIuMDksOS42Ni0yOS4yOSwxMS4yMy02MS4wOCwxNy40MC05NC4yOCwxNy40MC0zMi4wMywwLTYyLjc2LTUuNzQtOTEuMTktMTYuMjQtMTEuNjYtNC4yOS0yMi45NS05LjQwLTMzLjc3LTE1LjI1LTEuNTktLjg2MDA1LTMuMTctMS43My00Ljc0LTIuNjItOC4yNS00LjY3LTE2LjI1LTkuNzgtMjMuOTEtMTUuMzEtNS43Mi00LjEwLTExLjI4LTguNDQtMTYuNjUtMTMtMS44OC0xLjU4LTMuNzMtMy4xOS01LjU3LTQuODQtMi45OC0yLjY1LTUuOTAtNS4zOC04Ljc1LTguMTctNS40MC01LjI4LTEwLjU2LTEwLjc5LTE1LjQ4LTE2LjUzQzI2LjA5LDM5MS43NiwyLDMzMS42NCwyLDI2NiwyLDEyMC40MiwxMjAuNDIsMiwyNjYsMnMyNjQsMTE4LjQyLDI2NCwyNjRjMCw2Ni42NS0yNC44MywxMjcuNjItNjUuNzIsMTc0LjEyWiIgZmlsbD0iIzNiMzY1OCIvPjwvc3ZnPg==) center/cover"></u><div><b>Laura M.</b><em>✓ Verificada · Universidad</em></div><svg class="seg" viewBox="0 0 320 14" aria-hidden="true"><line x1="7" y1="7" x2="313" y2="7" stroke="#d5d2e5" stroke-width="2"/><line x1="7" y1="7" x2="213" y2="7" stroke="#5b3df5" stroke-width="6" stroke-linecap="round"/><circle cx="7" cy="7" r="6" fill="#14112b"/><circle cx="110" cy="7" r="6" fill="#14112b"/><circle cx="213" cy="7" r="6" fill="#14112b"/><circle cx="313" cy="7" r="5" fill="#fff" stroke="#d5d2e5" stroke-width="2"/></svg></div>
+              <p style="margin-top:10px">18 componentes. La tarjeta de match lleva dentro la persona con su foto y dibuja los tramos con la línea del logo.</p>
             </div>
           </div>
         </div>
@@ -658,6 +660,7 @@ h2 em{font-style:normal;color:var(--accent)}
           <div>24 de octubre · «Amplía todas las fases»</div><div>Pasé de 39 a 82 pantallas y diseñé lo que ve la persona que recibe los avisos.</div>
           <div>7 de noviembre · Lineamientos</div><div>Pantalla de 412 de ancho, retícula de 4 columnas, textos reales y formularios con botón bloqueado y activo.</div>
           <div>14 de noviembre · Componentes</div><div>Tarjetas con propiedades e instancias anidadas, y todo el color desde una biblioteca.</div>
+          <div>25 de noviembre · «Refuerza la seguridad y aléjate de Uber»</div><div>Foto y código al encontrarse, puntos seguros, modo de compañía e identidad de noche.</div>
         </div>
         <div class="foot"><span>El proceso</span><span>13 / 15</span></div>
       </section>
@@ -682,7 +685,7 @@ h2 em{font-style:normal;color:var(--accent)}
         <div class="city" data-city="v" style="bottom:48px;height:120px"></div>
         <div class="moon pop" style="width:640px;height:640px;right:40px;top:110px"></div>
         <div class="in" style="--i:2;position:absolute;right:156px;top:168px;width:408px"><!--SVG:personas--></div>
-        <div style="position:absolute;left:0;right:0;top:672px;bottom:0;background:#0a0a0a"></div>
+        <div style="position:absolute;left:0;right:0;top:672px;bottom:0;background:#0e0c1f"></div>
         <h2 class="in" style="--i:3;position:absolute;left:72px;top:84px;font-size:118px;width:600px;line-height:.98">Nadie espera solo.</h2>
         <p class="lead in" style="--i:5;position:absolute;left:76px;top:452px;color:#fff;font-size:34px;font-weight:600;margin:0">Gracias. ¿Preguntas?</p>
         <p class="in" style="--i:6;position:absolute;left:76px;top:686px;font-size:15px;color:var(--muted);line-height:1.4;margin:0">Juan Camilo Orozco Galindo · Diseño e Interacción · Taller 5 · <a href="https://www.figma.com/design/B9iRO9GFetHn3IN3nbbWGJ/?node-id=125-2" style="color:#fff">Abrir el archivo y el prototipo en Figma</a></p>
@@ -721,14 +724,14 @@ const NOTES=[
  "<b>El dato central:</b> los 5 entrevistados ya usan apps de rutas y aun así sienten miedo. Lee dos datos más, no todos. Di tú mismo que son 5 entrevistas: patrones, no estadística.",
  "<b>La frase del proyecto.</b> Pausa después de «No falta información». Luego: «Falta compañía». Explica el símbolo: dos orígenes que se unen en un tramo y llegan.",
  "<b>Recorre los cuatro pasos señalando cada celular.</b> Verificarse, guardar la ruta, hacer match con confirmación de las dos personas, y viajar con ubicación que se apaga al llegar.",
- "<b>Responde la pregunta difícil antes de que la hagan.</b> No elimina el riesgo, lo reduce frente a esperar sola o con desconocidos. Cuatro capas; el código Naranja-12 es el ejemplo más fácil de recordar.",
+ "<b>Aquí está la retroalimentación de la profesora.</b> Cinco capas. Las nuevas: modo de compañía (solo mujeres, solo hombres o cualquier persona), punto de encuentro con vigilancia (portería, recepción o CAI) y confirmar en persona la foto y el código. No elimina el riesgo; lo reduce frente a esperar sola.",
  "<b>El segundo usuario.</b> Gloria, la mamá, no instala nada: le llega un WhatsApp y abre un enlace. Sabe con quién va su hija y que llegó. No queda historial.",
  "<b>Una palabra por app.</b> Informa, ubica, transporta, vigila, reacciona. Match acompaña. Waze Carpool emparejaba por ruta en carro y Google lo cerró en 2022: los filtros funcionaban, el riesgo es que haya suficiente gente.",
  "<b>Sé franco.</b> El riesgo principal es que no haya nadie en tu ruta. El modelo de negocio no está resuelto: gratis para el usuario y posibles alianzas con universidades. Dilo como pendiente.",
  "<b>Cierra la venta.</b> Lo que propongo es un piloto en una universidad con tres partes: registro, match y trayecto. Las reglas (15 minutos, 3 contactos, 5 avales) son propuestas por validar. Aquí termina el pitch; lo que sigue es el proceso.",
- "<b>Cambio de tono: ahora hablas como diseñador.</b> Recorre la línea: 5 entrevistas, 16 ideas, 39 pantallas en gris, 82 después de la revisión, 16 componentes, 90 pantallas en alta y 7 recorridos. Señala cómo cambia la misma pantalla en las tres tiras.",
- "<b>El sistema.</b> Base neutra y un solo color de acento. Figtree. El símbolo sale de la línea del trayecto. Los componentes tienen estados; la tarjeta de match lleva dentro el componente de persona. El violeta es provisional.",
- "<b>Reconoce las correcciones.</b> Cada revisión cambió algo concreto. La del 24 de octubre fue la más grande: casi el doble de pantallas y la vista del contacto.",
+ "<b>Cambio de tono: ahora hablas como diseñador.</b> Recorre la línea: 5 entrevistas, 16 ideas, 39 pantallas en gris, 82 después de la revisión, 18 componentes, 90 pantallas en alta y 7 recorridos. Señala cómo cambia la misma pantalla en las tres tiras.",
+ "<b>El sistema y la identidad propia.</b> La profesora la vio parecida a Uber. Respuesta: neutros con tinte índigo de noche, títulos en Bricolage Grotesque y la línea de tramos del logo como recurso gráfico. 18 componentes; la foto se cambia con intercambio de instancia.",
+ "<b>Reconoce las correcciones.</b> Cada revisión cambió algo concreto. La del 24 de octubre duplicó las pantallas; la del 25 de noviembre reforzó la seguridad en el encuentro y le dio a la app una identidad propia.",
  "<b>Habla en primera persona y con tus palabras.</b> Estas cuatro ideas son un borrador: cámbialas por lo que de verdad aprendiste. Termina con lo que falta.",
  "<b>Cierre.</b> «Nadie espera solo. Gracias.» Deja esta lámina durante las preguntas. Si piden ver la app, abre el prototipo desde el enlace."
 ];
@@ -736,7 +739,7 @@ const NOTES=[
 /* estrellas y ciudad */
 function rnd(seed){let s=seed;return()=>{s=(s*16807)%2147483647;return (s-1)/2147483646;};}
 document.querySelectorAll('[data-stars]').forEach((el,k)=>{const r=rnd(7+k*13);const n=+el.dataset.stars;for(let i=0;i<n;i++){const s=document.createElement('i');const z=1+r()*2.5;s.style.cssText=`left:${r()*100}%;top:${r()*62}%;width:${z}px;height:${z}px;animation-delay:${(r()*3).toFixed(2)}s`;el.appendChild(s);}});
-document.querySelectorAll('[data-city]').forEach((el,k)=>{const violet=el.dataset.city==='v';const r=rnd(31+k*5);let x=0,i=0;const H=el.clientHeight||260;while(x<1280){const w=44+Math.round(r()*70),h=Math.round(H*(.3+r()*.7));const b=document.createElement('b');b.style.cssText=`left:${x}px;width:${w}px;height:${h}px;--k:${i};--c:${violet?'#3f22c9':(i%2?'#16161b':'#1d1d24')}`;for(let yy=14;yy<h-14;yy+=22)for(let xx=8;xx<w-10;xx+=14)if(r()<.22){const wi=document.createElement('i');wi.style.cssText=`left:${xx}px;top:${yy}px`;b.appendChild(wi);}el.appendChild(b);x+=w+3;i++;}});
+document.querySelectorAll('[data-city]').forEach((el,k)=>{const violet=el.dataset.city==='v';const r=rnd(31+k*5);let x=0,i=0;const H=el.clientHeight||260;while(x<1280){const w=44+Math.round(r()*70),h=Math.round(H*(.3+r()*.7));const b=document.createElement('b');b.style.cssText=`left:${x}px;width:${w}px;height:${h}px;--k:${i};--c:${violet?'#3f22c9':(i%2?'#17142b':'#1f1b36')}`;for(let yy=14;yy<h-14;yy+=22)for(let xx=8;xx<w-10;xx+=14)if(r()<.22){const wi=document.createElement('i');wi.style.cssText=`left:${xx}px;top:${yy}px`;b.appendChild(wi);}el.appendChild(b);x+=w+3;i++;}});
 
 /* escala del lienzo */
 const stage=document.getElementById('stage'),vp=document.getElementById('viewport');

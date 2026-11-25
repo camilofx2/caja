@@ -89,3 +89,7 @@ variables de marca. Fuente, tabla de temas y scripts: `ilustraciones/README.md`.
 - `ilustraciones/imagen-principal.js`: rehace el tema Espera (el de la bienvenida) con cielo `primario/500`,
   estrellas, ciudad `primario/700` con ventanas `candidata/b-lima`, luna `primario/100` y la escena
   `high-five` de unDraw recortada con `ilustraciones/recortar-personajes.js`.
+
+## Ajustes del 25 de noviembre
+Respuesta a la profesora: identidad de noche, foto verificada, puntos seguros y modo de compañía.
+Detalle y scripts en `ajustes-25-nov/README.md`.
