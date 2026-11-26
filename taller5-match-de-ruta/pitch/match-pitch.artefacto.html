@@ -153,6 +153,17 @@ h2 em{font-style:normal;color:var(--accent)}
 .verb.off b{color:var(--muted)}
 
 /* tablas simples */
+.kpi{background:var(--surface);border:1px solid #2a2645;border-radius:18px;padding:16px 20px}
+.kpi b{display:block;font-family:var(--display);font-size:38px;font-weight:800;letter-spacing:-.03em;color:var(--lima);line-height:1}
+.kpi span{display:block;font-size:15px;line-height:1.4;color:var(--soft);margin-top:8px}
+.kpi small{display:block;font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.35}
+.ben ul,.plan ul{margin:14px 0 0;padding:0 0 0 18px;font-size:17px;line-height:1.5;color:var(--soft)}
+.ben li,.plan li{margin-bottom:6px}
+.plan .price{display:block;font-family:var(--display);font-size:44px;font-weight:800;letter-spacing:-.03em;margin-top:12px;line-height:1}
+.plan .price small{font-family:inherit;font-size:16px;font-weight:600;letter-spacing:0;color:var(--muted)}
+.plan:last-child .price small{color:#eeebfe}
+.plan p{margin-top:12px;font-size:14px}
+.est .num{display:block;font-family:var(--display);font-size:54px;font-weight:800;letter-spacing:-.04em;margin:12px 0 6px;line-height:1}
 .tbl{display:grid;grid-template-columns:330px 1fr;margin-top:34px;border-top:1px solid var(--line)}
 .tbl>div{padding:17px 0;border-bottom:1px solid #2a2645;font-size:20px;line-height:1.38}
 .tbl>div:nth-child(odd){font-weight:700;padding-right:24px}
@@ -459,7 +470,7 @@ h2 em{font-style:normal;color:var(--accent)}
           </svg>
         </div>
         <p class="small in" style="--i:3;margin:0">Trayecto de Daniela, 22 años, de Chapinero a Bosa. Es una persona construida a partir de 5 entrevistas; la curva muestra su tensión, no una medición.</p>
-        <div class="foot"><span>La idea</span><span>02 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>02 / 20</span></div>
       </section>
 
       <!-- 3 · HALLAZGOS -->
@@ -479,17 +490,17 @@ h2 em{font-style:normal;color:var(--accent)}
             <div class="stat"><b>0/5</b><span class="meter"><i></i><i></i><i></i><i></i><i></i></span><span>eligen dónde esperar por una app. Eligen por la luz y la gente.</span></div>
           </div>
         </div>
-        <div class="foot"><span>La idea</span><span>03 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>03 / 20</span></div>
       </section>
 
       <!-- 4 · LA IDEA -->
       <section class="slide" id="s4" data-name="La idea" data-sec="La idea">
         <svg class="sym pop" style="--i:4" viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/></svg>
-        <div class="eyebrow in">La idea</div>
+        <div class="eyebrow in">¿Qué es?</div>
         <h2 class="in" style="--i:1"><span class="old">No falta información.</span></h2>
         <h2 class="in" style="--i:5">Falta <em>compañía.</em></h2>
         <p class="lead in" style="--i:7;max-width:760px;font-size:26px">Match conecta a estudiantes y trabajadores con personas verificadas de su universidad, su trabajo o su círculo que hacen el mismo trayecto a la misma hora.</p>
-        <div class="foot"><span>La idea</span><span>04 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>04 / 20</span></div>
       </section>
 
       <!-- 5 · CÓMO FUNCIONA -->
@@ -502,7 +513,25 @@ h2 em{font-style:normal;color:var(--accent)}
           <div class="step in" style="--i:6"><figure class="phone"><img data-img="E02" alt="Pantalla: personas compatibles con tramos en común."></figure><span class="n">3</span><h3>Haces match</h3><p>Ves quién comparte tu tramo según tu modo de compañía. Las dos aceptan.</p></div>
           <div class="step in" style="--i:8"><figure class="phone"><img data-img="F06" alt="Pantalla: trayecto en curso con llegada estimada."></figure><span class="n">4</span><h3>Viajan y avisas</h3><p>La ubicación solo dura el trayecto y se apaga al llegar.</p></div>
         </div>
-        <div class="foot"><span>La idea</span><span>05 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>05 / 20</span></div>
+      </section>
+
+      <!-- A · A QUIÉN -->
+      <section class="slide mid" id="sA" data-name="A quién va dirigida" data-sec="La idea">
+        <div class="eyebrow in">¿A quién va dirigida?</div>
+        <h2 class="in" style="--i:1;font-size:46px">A quien sale de noche y depende del <em>transporte público.</em></h2>
+        <div class="grid" style="grid-template-columns:1.1fr 1fr 1fr 1fr;margin-top:26px">
+          <div class="card in" style="--i:2;background:var(--accent);border-color:var(--accent)"><span class="tag l">Público objetivo</span><h3 style="margin-top:12px">Estudiantes y trabajadores</h3><p style="color:#eeebfe">Salen de clase o del turno de noche y combinan troncal, alimentador o SITP. Primero, las mujeres: son las más expuestas.</p></div>
+          <div class="card in" style="--i:3"><span class="tag">Comunidad</span><h3 style="margin-top:12px">La institución</h3><p>La universidad o la empresa verifica a su gente con el correo.</p></div>
+          <div class="card in" style="--i:4"><span class="tag">Comunidad</span><h3 style="margin-top:12px">El círculo cercano</h3><p>Quien no tiene correo institucional entra con dos avales.</p></div>
+          <div class="card in" style="--i:5"><span class="tag">Comunidad</span><h3 style="margin-top:12px">Quien espera en casa</h3><p>Hasta 3 contactos reciben los avisos sin instalar la app.</p></div>
+        </div>
+        <div class="grid in" style="--i:6;grid-template-columns:repeat(3,1fr);margin-top:22px">
+          <div class="kpi"><b>2.723.364</b><span>estudiantes de educación superior en Colombia en 2025.</span><small>SNIES, Ministerio de Educación</small></div>
+          <div class="kpi"><b>62,7 %</b><span>en Bogotá considera que TransMilenio no es seguro; entre las mujeres, 66,6 %.</span><small>Encuesta de Percepción y Victimización 2025, Cámara de Comercio de Bogotá</small></div>
+          <div class="kpi"><b>52 %</b><span>de las mujeres vivió acoso sexual en el transporte público; los hombres, 16 %.</span><small>Encuesta de Acoso Sexual Callejero 2025, Veeduría Distrital</small></div>
+        </div>
+        <div class="foot"><span>La idea</span><span>06 / 20</span></div>
       </section>
 
       <!-- 6 · CONFIANZA -->
@@ -522,7 +551,7 @@ h2 em{font-style:normal;color:var(--accent)}
           <figure class="phone in" style="--w:236px;--i:3;transform:rotate(-3deg)"><img data-img="E04" alt="Pantalla: detalle del match con el tramo que comparten."></figure>
           <figure class="phone in" style="--w:236px;--i:5;transform:rotate(3deg);margin-left:-40px"><img data-img="F05" alt="Pantalla: confirmar el código Naranja-12."></figure>
         </div>
-        <div class="foot"><span>La idea</span><span>06 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>07 / 20</span></div>
       </section>
 
       <!-- 7 · CONTACTO -->
@@ -537,12 +566,27 @@ h2 em{font-style:normal;color:var(--accent)}
             <p class="lead in" style="--i:3;font-size:20px">Hasta 3 contactos de confianza. La página se apaga cuando Daniela llega y no queda historial.</p>
           </div>
         </div>
-        <div class="foot"><span>La idea</span><span>07 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>08 / 20</span></div>
+      </section>
+
+      <!-- B · IMPACTO -->
+      <section class="slide mid" id="sB" data-name="Impacto" data-sec="La idea">
+        <div class="eyebrow in">¿Qué impacto genera?</div>
+        <h2 class="in" style="--i:1;font-size:50px">De esperar sola <em>a llegar acompañada.</em></h2>
+        <div class="tbl in" style="--i:2;grid-template-columns:1fr 1fr;margin-top:26px">
+          <div style="color:var(--muted);font-size:14px;letter-spacing:.12em;text-transform:uppercase">Hoy · la necesidad</div><div style="color:var(--lima);font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:700">Con Match · la transformación</div>
+          <div>Espera el alimentador sola, en el momento de más tensión.</div><div>Espera con alguien verificado, en un punto con vigilancia.</div>
+          <div>Avisa a mano, o se le olvida apagar la ubicación.</div><div>Su contacto recibe los avisos solo y la ubicación se apaga al llegar.</div>
+          <div>Si se hace tarde, paga un carro o se queda donde una amiga (4 de 5).</div><div>Puede seguir en el transporte que ya paga, sin cambiar de plan.</div>
+          <div>La universidad no sabe cómo vuelve su gente a casa.</div><div>Bienestar con datos anónimos: qué franjas y tramos necesitan más apoyo.</div>
+        </div>
+        <p class="small in" style="--i:3;margin-top:16px">Cómo se mide en el piloto: porcentaje de trayectos acompañados, minutos de espera sola y percepción de seguridad antes y después.</p>
+        <div class="foot"><span>La idea</span><span>09 / 20</span></div>
       </section>
 
       <!-- 8 · COMPETENCIA -->
-      <section class="slide mid" id="s8" data-name="Lo que ya existe" data-sec="La idea">
-        <div class="eyebrow in">Lo que ya existe</div>
+      <section class="slide mid" id="s8" data-name="Propuesta de valor" data-sec="La idea">
+        <div class="eyebrow in">Propuesta de valor · frente a lo que ya existe</div>
         <h2 class="in" style="--i:1;font-size:54px">Cada app resuelve una parte. <em>Ninguna te pone a alguien al lado.</em></h2>
         <div class="verbs">
           <div class="verb in" style="--i:2"><small>Moovit</small><b>Informa</b></div>
@@ -559,20 +603,61 @@ h2 em{font-style:normal;color:var(--accent)}
           <div class="card in" style="--i:12"><span class="tag l">Solo Match</span><h3 style="margin-top:12px">Compañía en la espera</h3><p>El paradero es el momento de más tensión y nadie lo cubre.</p></div>
         </div>
         <p class="small in" style="--i:13;margin-top:14px">Comparación propia de 18 funcionalidades en 6 apps. Algunas funciones dependen del país o del plan.</p>
-        <div class="foot"><span>La idea</span><span>08 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>10 / 20</span></div>
+      </section>
+
+      <!-- C · BENEFICIOS -->
+      <section class="slide mid" id="sC" data-name="Beneficios" data-sec="La idea">
+        <div class="eyebrow in">Beneficios</div>
+        <h2 class="in" style="--i:1;font-size:50px">Gana quien viaja, quien espera <em>y quien verifica.</em></h2>
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:30px">
+          <div class="card in ben" style="--i:2"><span class="tag v">Quien viaja</span><ul><li>Compañía en la espera y en el trayecto.</li><li>Lo esencial es gratis.</li><li>Nadie ve su destino, apellido ni celular.</li><li>Sigue en el transporte que ya paga.</li></ul></div>
+          <div class="card in ben" style="--i:3"><span class="tag v">Quien espera en casa</span><ul><li>Sabe con quién va y que llegó.</li><li>No instala nada: WhatsApp o SMS y un enlace.</li><li>Si hay retraso, recibe la última ubicación.</li></ul></div>
+          <div class="card in ben" style="--i:4"><span class="tag l">La universidad o empresa</span><ul><li>Una acción de bienestar concreta para su comunidad.</li><li>Datos anónimos para pedir luz, vigilancia o rutas.</li><li>La Ley 30 (art. 118) ya pide destinar al menos el 2 % del presupuesto de funcionamiento a bienestar.</li></ul></div>
+        </div>
+        <div class="foot"><span>La idea</span><span>11 / 20</span></div>
       </section>
 
       <!-- 9 · RIESGOS -->
-      <section class="slide mid" id="s9" data-name="Riesgos y modelo" data-sec="La idea">
-        <div class="eyebrow in">Riesgos y modelo</div>
+      <section class="slide mid" id="s9" data-name="Riesgos" data-sec="La idea">
+        <div class="eyebrow in">Riesgos</div>
         <h2 class="in" style="--i:1;font-size:54px">Lo que puede fallar y cómo lo abordo.</h2>
         <div class="tbl in" style="--i:2">
           <div>Que no haya nadie en tu ruta</div><div>Empezar en una universidad piloto, emparejar por tramo y no por ruta completa, y usar un rango de ± 15 minutos que se puede ampliar.</div>
           <div>Suplantación</div><div>Foto tomada en el momento, código de encuentro y reporte con bloqueo inmediato.</div>
           <div>Exponer la rutina</div><div>Solo se ve el tramo en común, y solo lo ven personas verificadas y compatibles.</div>
-          <div>Cómo se sostiene</div><div>Gratis para quien la usa. La opción que veo son alianzas con las universidades y empresas que verifican. <b style="color:var(--lima)">Está por validar.</b></div>
         </div>
-        <div class="foot"><span>La idea</span><span>09 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>12 / 20</span></div>
+      </section>
+
+      <!-- D · MODELO -->
+      <section class="slide mid" id="sD" data-name="Modelo de negocio" data-sec="La idea">
+        <div class="eyebrow in">Modelo de negocio · mixto</div>
+        <h2 class="in" style="--i:1;font-size:48px">La seguridad es gratis. <em>Pagan la comodidad y la institución.</em></h2>
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:28px">
+          <div class="card in plan" style="--i:2"><span class="tag l">Gratis siempre</span><b class="price">$0</b><ul><li>Verificación y match</li><li>Punto seguro, foto y código</li><li>Contactos avisados</li><li>Reporte, bloqueo y atajo al 123</li></ul><p>El benchmarking mostró que cobrar por sentirse seguro genera desconfianza.</p></div>
+          <div class="card in plan" style="--i:3"><span class="tag v">Match Plus · persona</span><b class="price">$6.900<small> al mes</small></b><ul><li>Rutas guardadas sin límite (gratis: 2)</li><li>Compañía frecuente: programar la semana</li><li>Filtros extra: facultad y carrera</li><li>Personalizar el perfil</li></ul><p>Menos que dos pasajes de TransMilenio ($7.100). Plan anual: $59.000.</p></div>
+          <div class="card in plan" style="--i:4;background:var(--accent);border-color:var(--accent)"><span class="tag l">Licencia institucional</span><b class="price">$1.200<small> por estudiante al año</small></b><ul><li>Verificación con su dominio de correo</li><li>Sus porterías como puntos seguros</li><li>Panel con datos anónimos</li><li>Acompañamiento en el lanzamiento</li></ul><p style="color:#eeebfe">Universidad de 20.000 estudiantes: $24 millones al año.</p></div>
+        </div>
+        <p class="small in" style="--i:5;margin-top:14px">Precios propuestos para validar. Referencias: pasaje de TransMilenio 2026, $3.550 (Alcaldía de Bogotá); salario mínimo 2026, $1.750.905 (Decreto 1469 de 2025): Match Plus equivale al 0,39 %.</p>
+        <div class="foot"><span>La idea</span><span>13 / 20</span></div>
+      </section>
+
+      <!-- E · VALOR COMERCIAL -->
+      <section class="slide mid" id="sE" data-name="Valor comercial" data-sec="La idea">
+        <div class="eyebrow in">Valor comercial estimado</div>
+        <h2 class="in" style="--i:1;font-size:48px">Un estimado con los supuestos <em>a la vista.</em></h2>
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:26px">
+          <div class="card in est" style="--i:2"><span class="tag">Año 1 · piloto</span><b class="num">$0</b><p>1 universidad, sin cobro durante un semestre. Se mide si de verdad hay compañía en cada tramo.</p></div>
+          <div class="card in est" style="--i:3"><span class="tag v">Año 2</span><b class="num">$96,8 M</b><p>3 universidades: $72 M en licencias + 300 personas en Plus: $24,8 M.</p></div>
+          <div class="card in est" style="--i:4;border-color:var(--lima)"><span class="tag l">Año 3</span><b class="num">$322,8 M</b><p>10 instituciones: $240 M en licencias + 1.000 personas en Plus: $82,8 M.</p></div>
+        </div>
+        <div class="tbl in" style="--i:5;grid-template-columns:300px 1fr;margin-top:20px">
+          <div>Supuestos</div><div>Cada institución tiene 20.000 personas; el 10 % usa la app y el 5 % de quienes la usan paga Plus.</div>
+          <div>Techo de referencia</div><div>2.723.364 estudiantes × $1.200 = $3.268 millones al año, si todas las instituciones del país la usaran. Es un tope, no una meta.</div>
+          <div>Falta calcular</div><div>Costos: SMS de verificación, servidores, moderación de reportes y soporte.</div>
+        </div>
+        <div class="foot"><span>La idea</span><span>14 / 20</span></div>
       </section>
 
       <!-- 10 · SIGUIENTE PASO -->
@@ -586,12 +671,12 @@ h2 em{font-style:normal;color:var(--accent)}
           <div class="card in" style="--i:5;background:#0e0c1f;border-color:#0e0c1f"><span class="tag v">3 · Trayecto</span><h3 style="margin-top:12px">Ubicación temporal</h3><p>Dura el trayecto, se apaga al llegar y se puede dejar de compartir.</p></div>
         </div>
         <p class="lead in" style="--i:6;font-size:20px;margin-top:26px">Por validar con usuarias: preguntar «¿Todo bien?» a los 15 minutos de retraso, máximo 3 contactos y máximo 5 avales por persona.</p>
-        <div class="foot"><span>La idea</span><span>10 / 15</span></div>
+        <div class="foot"><span>La idea</span><span>15 / 20</span></div>
       </section>
 
       <!-- 11 · PROCESO -->
       <section class="slide" id="s11" data-name="Cómo se construyó" data-sec="El proceso">
-        <div class="eyebrow in">El proceso</div>
+        <div class="eyebrow in">Proceso</div>
         <h2 class="in" style="--i:1;font-size:46px">De 5 entrevistas a 90 pantallas.</h2>
         <div class="time in" style="--i:2">
           <div class="tp"><b>5</b><h3>Entrevistas</h3><p>6 hallazgos y el problema replanteado.</p></div>
@@ -607,7 +692,7 @@ h2 em{font-style:normal;color:var(--accent)}
           <div class="strip in" style="--i:6"><span><b>Versión 2</b>Tras el 24 de octubre</span><div><img data-img="wf2" alt="Wireframes de la versión 2, más detallados"></div></div>
           <div class="strip in" style="--i:7"><span><b>Alta fidelidad</b>Noviembre</span><div><img data-img="alta" alt="Las mismas pantallas en alta fidelidad"></div></div>
         </div>
-        <div class="foot"><span>El proceso</span><span>11 / 15</span></div>
+        <div class="foot"><span>El proceso</span><span>16 / 20</span></div>
       </section>
 
       <!-- 12 · SISTEMA -->
@@ -648,7 +733,7 @@ h2 em{font-style:normal;color:var(--accent)}
             </div>
           </div>
         </div>
-        <div class="foot"><span>El proceso</span><span>12 / 15</span></div>
+        <div class="foot"><span>El proceso</span><span>17 / 20</span></div>
       </section>
 
       <!-- 13 · RETROALIMENTACIÓN -->
@@ -662,7 +747,7 @@ h2 em{font-style:normal;color:var(--accent)}
           <div>14 de noviembre · Componentes</div><div>Tarjetas con propiedades e instancias anidadas, y todo el color desde una biblioteca.</div>
           <div>25 de noviembre · «Refuerza la seguridad y aléjate de Uber»</div><div>Foto y código al encontrarse, puntos seguros, modo de compañía e identidad de noche.</div>
         </div>
-        <div class="foot"><span>El proceso</span><span>13 / 15</span></div>
+        <div class="foot"><span>El proceso</span><span>18 / 20</span></div>
       </section>
 
       <!-- 14 · APRENDIZAJES -->
@@ -675,8 +760,8 @@ h2 em{font-style:normal;color:var(--accent)}
           <div class="card in" style="--i:4"><h3>El sistema ahorra trabajo</h3><p>Cambiar un componente actualiza 90 pantallas. Sin eso no habría podido corregir a tiempo.</p></div>
           <div class="card in" style="--i:5"><h3>Mostrar menos es más difícil</h3><p>En seguridad, decidir qué no se muestra pesa tanto como lo que sí.</p></div>
         </div>
-        <div class="card in" style="--i:6;margin-top:16px;border-color:var(--line)"><h3>Lo que falta</h3><p>Probar el prototipo con usuarias, definir el color final de la marca y resolver los dos puntos abiertos: el modelo de negocio y que haya suficientes personas en cada ruta.</p></div>
-        <div class="foot"><span>El proceso</span><span>14 / 15</span></div>
+        <div class="card in" style="--i:6;margin-top:16px;border-color:var(--line)"><h3>Lo que falta</h3><p>Probar el prototipo con usuarias, definir el color final de la marca y validar con una universidad los precios del modelo mixto y comprobar que haya suficientes personas en cada ruta.</p></div>
+        <div class="foot"><span>El proceso</span><span>19 / 20</span></div>
       </section>
 
       <!-- 15 · CIERRE -->
@@ -697,7 +782,7 @@ h2 em{font-style:normal;color:var(--accent)}
 
   <nav class="bar" aria-label="Controles de la presentación">
     <button class="btn" id="prev" aria-label="Lámina anterior">←</button>
-    <span class="count" id="count">0 / 15</span>
+    <span class="count" id="count">0 / 20</span>
     <button class="btn" id="next" aria-label="Lámina siguiente">→</button>
     <span class="where" id="where">Comercial</span>
     <span class="sp"></span>
@@ -718,16 +803,21 @@ document.querySelectorAll('img[data-img]').forEach(i=>{if(IMG[i.dataset.img])i.s
 
 /* guion por lámina */
 const NOTES=[
- "Antes de hablar, reproduce el comercial. Dura un minuto. Cuando termine, pasa a la portada.",
+ "Antes de hablar, reproduce el comercial. Dura un minuto. Meta total: 13 a 14 minutos (unos 40 segundos por lámina). Cuando termine, pasa a la portada.",
  "<b>Abre así:</b> «Soy Juan Camilo y les presento Match: compañía verificada para los trayectos de noche.» Una sola frase y sigue.",
  "<b>Cuenta el martes de Daniela.</b> Sale a las 9, camina por una calle oscura, 40 minutos de pie. Lo peor llega al final: esperar el alimentador y caminar a casa. Ahí es donde entra Match. Aclara que Daniela es una persona construida con las entrevistas.",
  "<b>El dato central:</b> los 5 entrevistados ya usan apps de rutas y aun así sienten miedo. Lee dos datos más, no todos. Di tú mismo que son 5 entrevistas: patrones, no estadística.",
- "<b>La frase del proyecto.</b> Pausa después de «No falta información». Luego: «Falta compañía». Explica el símbolo: dos orígenes que se unen en un tramo y llegan.",
+ "<b>¿Qué es?</b> Pausa después de «No falta información». Luego: «Falta compañía». En una frase: Match es una app que empareja a personas verificadas que hacen el mismo trayecto de noche. Explica el símbolo: dos orígenes que se unen en un tramo y llegan.",
  "<b>Recorre los cuatro pasos señalando cada celular.</b> Verificarse, guardar la ruta, hacer match con confirmación de las dos personas, y viajar con ubicación que se apaga al llegar.",
+ "<b>Público y comunidad.</b> El público son estudiantes y trabajadores que salen de noche en transporte público; primero las mujeres, porque los datos muestran que son las más expuestas. La comunidad es lo que hace funcionar la confianza: la institución verifica, el círculo avala y la familia recibe los avisos. Lee solo un dato: 52 % de las mujeres vivió acoso en el transporte público (Veeduría 2025).",
  "<b>Aquí está la retroalimentación de la profesora.</b> Cinco capas. Las nuevas: modo de compañía (solo mujeres, solo hombres o cualquier persona), punto de encuentro con vigilancia (portería, recepción o CAI) y confirmar en persona la foto y el código. No elimina el riesgo; lo reduce frente a esperar sola.",
  "<b>El segundo usuario.</b> Gloria, la mamá, no instala nada: le llega un WhatsApp y abre un enlace. Sabe con quién va su hija y que llegó. No queda historial.",
- "<b>Una palabra por app.</b> Informa, ubica, transporta, vigila, reacciona. Match acompaña. Waze Carpool emparejaba por ruta en carro y Google lo cerró en 2022: los filtros funcionaban, el riesgo es que haya suficiente gente.",
- "<b>Sé franco.</b> El riesgo principal es que no haya nadie en tu ruta. El modelo de negocio no está resuelto: gratis para el usuario y posibles alianzas con universidades. Dilo como pendiente.",
+ "<b>Necesidad y transformación.</b> Lee la tabla de izquierda a derecha, fila por fila. Cierra con cómo lo vas a medir: trayectos acompañados, minutos de espera sola y percepción de seguridad antes y después del piloto.",
+ "<b>Propuesta de valor.</b> Léela así: para quien depende del transporte público de noche, Match la conecta con alguien verificado de su comunidad que hace su mismo tramo. Una palabra por app: informa, ubica, transporta, vigila, reacciona. Match acompaña. Waze Carpool emparejaba por ruta en carro y Google lo cerró en 2022.",
+ "<b>Tres beneficiados.</b> Quien viaja, quien espera en casa y la institución. Para la universidad, menciona la Ley 30: ya debe destinar mínimo el 2 % de su presupuesto de funcionamiento a bienestar; Match es una forma concreta de usarlo.",
+ "<b>Sé franco con los riesgos.</b> El principal es que no haya nadie en tu ruta: por eso el piloto, emparejar por tramo y el rango de 15 minutos. Los otros dos ya tienen respuesta en el diseño.",
+ "<b>El modelo mixto.</b> Regla de oro: nada de seguridad se cobra, porque eso fue lo que generó desconfianza en el benchmarking. Lo que se paga es comodidad (Match Plus, $6.900 al mes, menos que dos pasajes) y la licencia de la institución ($1.200 por estudiante al año). La institución es la fuente principal; Plus es complementaria.",
+ "<b>El estimado.</b> Di primero los supuestos: 20.000 personas por institución, 10 % la usa y 5 % paga Plus. Año 1 es piloto sin cobro. Año 2: cerca de 97 millones; año 3: cerca de 323 millones. Aclara que faltan los costos y que el techo de 3.268 millones es una referencia, no una meta.",
  "<b>Cierra la venta.</b> Lo que propongo es un piloto en una universidad con tres partes: registro, match y trayecto. Las reglas (15 minutos, 3 contactos, 5 avales) son propuestas por validar. Aquí termina el pitch; lo que sigue es el proceso.",
  "<b>Cambio de tono: ahora hablas como diseñador.</b> Recorre la línea: 5 entrevistas, 16 ideas, 39 pantallas en gris, 82 después de la revisión, 18 componentes, 90 pantallas en alta y 7 recorridos. Señala cómo cambia la misma pantalla en las tres tiras.",
  "<b>El sistema y la identidad propia.</b> La profesora la vio parecida a Uber. Respuesta: neutros con tinte índigo de noche, títulos en Bricolage Grotesque y la línea de tramos del logo como recurso gráfico. 18 componentes; la foto se cambia con intercambio de instancia.",

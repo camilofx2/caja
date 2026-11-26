@@ -1,6 +1,6 @@
 # Pitch de Match de ruta
 
-Presentación en un solo archivo HTML: comercial animado de 1 minuto y 15 láminas.
+Presentación en un solo archivo HTML: comercial animado de 1 minuto y 20 láminas.
 
 - `match-de-ruta-pitch.html`: la que se abre con doble clic en Chrome. Funciona sin internet
   (solo cambia la tipografía por la del sistema si no puede cargar Figtree).
@@ -18,14 +18,36 @@ Presentación en un solo archivo HTML: comercial animado de 1 minuto y 15 lámin
 | F | Pantalla completa |
 | R (en el comercial) | Volver a empezar el comercial |
 
-El reloj de abajo empieza a contar con la primera tecla o clic. La meta son 15 minutos.
+El reloj de abajo empieza a contar con la primera tecla o clic. La meta son 13 a 14 minutos (máximo 15).
 
 ## Orden
 0. Comercial (1 min)
-1–10. La idea: portada, problema, hallazgos, la idea, cómo funciona, confianza, quien te espera,
-   lo que ya existe, riesgos y modelo, el primer paso.
-11–14. El proceso: cómo se construyó, sistema de diseño, lo que cambió, lo que me quedó.
-15. Cierre.
+1–15. La idea: portada, problema, hallazgos, ¿qué es?, cómo funciona, ¿a quién va dirigida?, confianza,
+   quien te espera, ¿qué impacto genera?, propuesta de valor, beneficios, riesgos, modelo de negocio mixto,
+   valor comercial estimado, el primer paso.
+16–19. Proceso: cómo se construyó, sistema de diseño, lo que cambió, lo que me quedó.
+20. Cierre.
+
+## Las 7 preguntas de la entrega y dónde se responden
+| Pregunta | Lámina |
+|---|---|
+| ¿Qué es? | 04 |
+| ¿A quién va dirigida? (público y comunidad) | 06 |
+| ¿Qué impacto genera? (necesidad y transformación) | 09 (y el problema en 02–03) |
+| Propuesta de valor | 10 |
+| Valor comercial o modelo de negocio | 13 y 14 |
+| Beneficios | 11 |
+| Proceso | 16–19 |
+
+## Fuentes de las cifras (láminas 06, 11, 13 y 14)
+- Pasaje TransMilenio 2026, $3.550: Alcaldía de Bogotá, bogota.gov.co ("Abecé del ajuste tarifario… 2026").
+- Salario mínimo 2026, $1.750.905: Decreto 1469 de 2025 (ratificado por el Decreto 0159 de 2026).
+- Matrícula en educación superior 2025, 2.723.364: SNIES, Ministerio de Educación.
+- 62,7 % considera que TransMilenio no es seguro (66,6 % mujeres): Encuesta de Percepción y Victimización 2025, Cámara de Comercio de Bogotá.
+- 52 % de las mujeres vivió acoso sexual en el transporte público (hombres 16 %): Encuesta de Acoso Sexual Callejero 2025, Veeduría Distrital.
+- Bienestar universitario, mínimo 2 % del presupuesto de funcionamiento: Ley 30 de 1992, art. 118.
+- Precios de Match Plus ($6.900) y licencia ($1.200 por estudiante al año), y los supuestos del estimado
+  (20.000 personas por institución, 10 % de uso, 5 % paga Plus) son propuestas propias por validar.
 
 ## De dónde sale el contenido
 Todo sale de `../EXPLICACION-PROYECTO.md` (5 entrevistas, 6 hallazgos, benchmarking, riesgos) y del archivo
