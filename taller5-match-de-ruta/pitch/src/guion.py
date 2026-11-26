@@ -1,0 +1,54 @@
+"""Guion del pitch: fuente única. Inyecta NOTES y TIEMPOS en pitch.src.html y escribe GUION.md.
+Uso (desde pitch/): python3 -I src/guion.py"""
+import json, pathlib, re
+raiz = pathlib.Path(__file__).resolve().parent
+G = [  # (id, nombre, segundos, qué haces, qué dices)
+ ('s0','Comercial',60,'No hables. Presiona Espacio para reproducir. Cuando termine, pasa con →.',''),
+ ('s1','Portada',15,'Mira al público, no a la pantalla.','Buenos días. Soy Juan Camilo Orozco y les presento Match: compañía verificada para los trayectos de noche.'),
+ ('s2','El problema',50,'Recorre la curva con la mano de izquierda a derecha. Detente en el recuadro morado.','Les presento a Daniela. Tiene 22 años, estudia en Chapinero y vive en Bosa. Los martes sale de clase a las nueve de la noche. Camina ocho minutos por una calle oscura y va cuarenta minutos de pie en la troncal. Cuando llega al portal viene lo peor: esperar el alimentador, de diez a veinte minutos, en un paradero que se va quedando vacío. Y después, caminar seis minutos a su casa. El miedo no está en el bus: está en la espera. Daniela no existe: la construí con lo que me contaron cinco personas en entrevistas.'),
+ ('s3','Lo que encontré',45,'Señala el 5 de 5 y lee solo dos datos de la derecha.','Mi hipótesis inicial era que el problema era no saber cuánto tarda el bus. Las entrevistas la tumbaron: los cinco ya usan apps de rutas y aun así sienten miedo. Los cinco cuentan algo que les pasó, y cuatro de cinco han cambiado de plan alguna vez. Ninguno elige dónde esperar por una app: eligen por la luz y por la gente. Son cinco entrevistas: me sirven para ver patrones, no para hacer estadística.'),
+ ('s4','¿Qué es?',30,'Haz una pausa de dos segundos después de «no falta información».','Entonces entendí esto: no falta información. Falta compañía. Match es una app que conecta a personas verificadas de tu universidad, tu trabajo o tu círculo que hacen tu mismo trayecto a la misma hora. El logo lo dice: dos orígenes que se unen en un tramo y llegan juntos.'),
+ ('s5','Cómo funciona',50,'Señala cada celular cuando digas su número.','Funciona en cuatro pasos. Uno: te verificas con el correo de tu universidad o con dos avales de personas ya verificadas. Dos: guardas tu ruta por tramos, con la hora y los días. Tres: la app te muestra quién comparte tu tramo con hasta quince minutos de diferencia, y solo hay match si las dos personas aceptan. Cuatro: viajan juntas, y la ubicación se comparte solo durante el trayecto y se apaga sola al llegar.'),
+ ('sA','A quién va dirigida',45,'Primero la tarjeta morada; luego las tres de comunidad. De las cifras, lee solo la del 52 %.','¿A quién va dirigida? A estudiantes y trabajadores que salen de noche y dependen del transporte público. Empiezo por las mujeres, porque son las más expuestas: según la Veeduría Distrital, el 52 % de las mujeres vivió acoso sexual en el transporte público, frente al 16 % de los hombres. Pero Match no funciona solo con usuarios: funciona con una comunidad. La universidad verifica, el círculo cercano avala y la familia recibe los avisos.'),
+ ('s6','Confianza',50,'Lee el título como pregunta, mirando al público. Luego recorre las cinco capas.','La pregunta obvia es: ¿y si la persona del match es la peligrosa? La confianza se arma por capas. Verificación doble. Modo de compañía: solo mujeres, solo hombres o cualquier persona. Puntos de encuentro con vigilancia: porterías, recepciones o un CAI. Al encontrarse confirman que es la persona de la foto y que dice el código. Y nunca se muestra el destino, el apellido ni el celular. No elimina el riesgo, pero lo reduce frente a esperar sola. Tres de estas capas salieron de la revisión del 25 de noviembre.'),
+ ('s7','Quien te espera',30,'Señala primero el WhatsApp y después la página web.','Hay una segunda usuaria: Gloria, la mamá de Daniela. Ella no instala nada. Le llega un WhatsApp, abre un enlace y ve con quién va su hija, por dónde va y a qué hora llega. Cuando Daniela llega, la página se apaga y no queda historial.'),
+ ('sB','Impacto',40,'Lee la tabla fila por fila: «hoy…», «con Match…».','¿Qué impacto genera? Hoy Daniela espera sola; con Match espera con alguien verificado en un punto vigilado. Hoy avisa a mano; con Match el aviso llega solo y la ubicación se apaga al llegar. Hoy, si se le hace tarde, paga un carro; con Match sigue en el transporte que ya paga. Y la universidad, por primera vez, sabe cómo vuelve su gente a casa. En el piloto lo mido con tres cosas: trayectos acompañados, minutos de espera sola y percepción de seguridad.'),
+ ('s8','Propuesta de valor',40,'Señala las seis apps rápido y quédate en la tarjeta morada de Match.','Revisé seis apps. Cada una resuelve una parte: Moovit informa, Google Maps ubica, Uber transporta, Life360 vigila y bSafe reacciona. Ninguna te pone a alguien al lado. Esa es mi propuesta de valor: a quien depende del transporte público de noche, Match lo conecta con alguien verificado de su comunidad que hace su mismo tramo. Y hay tres cosas que solo hace Match: emparejar por tramo, la verificación doble y la compañía en la espera.'),
+ ('sC','Beneficios',35,'Una frase por tarjeta.','Gana quien viaja: compañía, gratis y sin exponer sus datos. Gana quien espera en casa: tranquilidad sin instalar nada. Y gana la universidad: la Ley 30 ya le exige destinar al menos el 2 % de su presupuesto de funcionamiento a bienestar, y Match le da una forma concreta de usarlo, con datos para pedir más luz o más vigilancia.'),
+ ('s9','Riesgos',30,'Di la primera fila completa; las otras dos, rápido.','El riesgo más grande es que no haya nadie en tu ruta. Por eso empiezo con una sola universidad, emparejo por tramo y no por ruta completa, y uso un rango de quince minutos. La suplantación y la exposición de la rutina ya tienen respuesta en el diseño.'),
+ ('sD','Modelo de negocio',55,'Di la regla con calma. Luego tarjeta por tarjeta, de izquierda a derecha.','¿Cómo se sostiene? Con un modelo mixto y una regla: la seguridad nunca se cobra. Todo lo que te protege es gratis. Lo que se paga es la comodidad: Match Plus, a 6.900 pesos al mes, menos que dos pasajes de TransMilenio, para guardar rutas sin límite, programar tu compañía de la semana o filtrar por carrera. Y la fuente principal es la institución: una licencia de 1.200 pesos por estudiante al año. Una universidad de 20.000 estudiantes pagaría 24 millones al año. Son precios que propongo y que hay que validar.'),
+ ('sE','Valor comercial',45,'Di los supuestos ANTES de las cifras.','Con esos precios hice un estimado, y les muestro los supuestos: cada institución tiene 20.000 personas, el 10 % usa la app y el 5 % paga Plus. El primer año es un piloto sin cobro. El segundo, con tres universidades, son cerca de 97 millones de pesos. El tercero, con diez instituciones, cerca de 323 millones. Lo que me falta calcular son los costos: los SMS de verificación, los servidores y la moderación.'),
+ ('s10','El primer paso',30,'Esta lámina cierra la venta: baja el ritmo.','Lo que propongo es un piloto en una universidad, con tres partes: registro, match y trayecto. Lo demás llega después. Hasta aquí la propuesta; ahora les cuento cómo la construí.'),
+ ('s11','Cómo se construyó',50,'Recorre los números de izquierda a derecha y luego señala las tres tiras.','Empecé con cinco entrevistas y seis hallazgos. Hice dieciséis ideas y las prioricé. La primera versión de los wireframes tenía treinta y nueve pantallas en gris; después de la revisión del 24 de octubre pasé a ochenta y dos. Armé un sistema de dieciocho componentes y llegué a noventa pantallas en alta, con un prototipo de siete recorridos. En estas tres tiras se ve la misma secuencia en cada versión.'),
+ ('s12','Sistema de diseño',40,'Señala la paleta, luego el símbolo y la tarjeta.','En la revisión, la profesora vio la app muy parecida a Uber, que es blanco y negro puro. Le di una identidad propia de noche: neutros con tinte índigo, títulos en Bricolage Grotesque y un recurso gráfico que sale del logo, la línea de tramos. Como todo está en componentes, cambiar una pieza actualiza las noventa pantallas.'),
+ ('s13','Lo que cambió',40,'Lee solo la columna izquierda y resume la derecha.','Cada revisión cambió algo concreto. La primera me sacó de la idea de los tiempos de llegada. La del 24 de octubre duplicó las pantallas. Las clases de noviembre ordenaron la retícula y los componentes. Y la del 25 de noviembre reforzó la seguridad en el encuentro y le dio a la app una identidad propia.'),
+ ('s14','Lo que me quedó',35,'Habla con tus palabras: esta lámina es la más personal.','Me llevo cuatro cosas. El problema no era el que yo creía: no era el bus, era estar solo. Diseñar los errores también es diseñar. El sistema de componentes me permitió corregir a tiempo. Y en seguridad, decidir qué no se muestra pesa tanto como lo que sí. Lo que falta: probar el prototipo con usuarias y validar los precios con una universidad.'),
+ ('s15','Cierre',10,'Deja esta lámina durante las preguntas. Si piden la app, abre el prototipo desde el enlace.','Nadie espera solo. Gracias. ¿Preguntas?'),
+]
+def mmss(s): return f'{s//60}:{s%60:02d}'
+acc, notes, tiempos = 0, [], []
+for sid, nom, seg, haz, di in G:
+    acc += seg; tiempos.append([seg, acc])
+    h = f'<b>Haz:</b> {haz}'
+    if di: h += f'<br><br><b>Di:</b> «{di}»'
+    notes.append(h)
+src = raiz / 'pitch.src.html'; s = src.read_text(encoding='utf-8')
+order = re.findall(r'<section class="slide[^"]*" id="([^"]+)"', s)
+assert order == [g[0] for g in G], order
+a = s.index('const NOTES=['); b = s.index('];', a) + 2
+s = s[:a] + 'const NOTES=' + json.dumps(notes, ensure_ascii=False) + ';\nconst TIEMPOS=' + json.dumps(tiempos) + ';' + s[b:]
+old = "$('notesT').textContent='Guion · '+slides[cur].dataset.name;"
+new = "{const T=TIEMPOS[cur],f=x=>Math.floor(x/60)+':'+String(x%60).padStart(2,'0');$('notesT').textContent='Guion · '+slides[cur].dataset.name+' · meta '+f(T[0])+' · al terminar deberías ir en '+f(T[1]);}"
+if old in s: s = s.replace(old, new)
+assert 'TIEMPOS[cur]' in s
+src.write_text(s, encoding='utf-8')
+md = ['# Guion del pitch · Match de ruta', '', f'Duración meta: {mmss(acc)} (máximo 15:00). Ritmo: unas 120 palabras por minuto.', '',
+      'Cómo ensayar: abre `match-de-ruta-pitch.html`, presiona N para ver el guion y compara el reloj con la meta de cada lámina.', '',
+      '| # | Lámina | Meta | Acumulado |', '|---|---|---|---|']
+for i, (sid, nom, seg, haz, di) in enumerate(G): md.append(f'| {i} | {nom} | {mmss(seg)} | {mmss(tiempos[i][1])} |')
+md.append('')
+for i, (sid, nom, seg, haz, di) in enumerate(G):
+    md += [f'## {i} · {nom} · {mmss(seg)} (vas en {mmss(tiempos[i][1])})', '', f'**Haz:** {haz}', '']
+    if di: md += [f'**Di:** «{di}»', '']
+(raiz.parent / 'GUION.md').write_text('\n'.join(md), encoding='utf-8')
+print('total', mmss(acc), 'palabras', sum(len(g[4].split()) for g in G))

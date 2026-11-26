@@ -61,3 +61,8 @@ de Figma. No hay cifras externas. Los aprendizajes de la lámina 14 son un borra
 ## Pendiente
 - El comercial no tiene música. Si se quiere, se graba la pantalla y se le pone una pista con licencia en un editor.
 - El violeta sigue siendo provisional.
+
+## Guion
+`src/guion.py` es la fuente del guion: qué hacer, qué decir y la meta de tiempo de cada lámina.
+Al ejecutarlo (`python3 -I src/guion.py` y luego `python3 -I src/armar.py`) actualiza el guion de la tecla N
+y escribe `GUION.md` para leer o imprimir. Meta total: 13:45.
