@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700;800&display=swap">
 <style>
-/* Lienzo fijo de 1280×720 que se escala a la ventana: comercial de 60 s + 15 láminas. Un solo mundo visual, de noche. */
+/* Lienzo fijo de 1280×720 que se escala a la ventana: comercial de 40 s + 20 láminas. Un solo mundo visual, de noche. */
 :root{
   color-scheme:dark;
   --bg:#0e0c1f; --surface:#1a1730; --surface-2:#252140; --line:#3b3658;
@@ -32,9 +32,6 @@ button{font:inherit;color:inherit}
 .where{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .rail{position:absolute;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:50}
 .rail i{display:block;height:100%;width:0;background:var(--accent);transition:width .4s var(--ease)}
-.notes{position:fixed;left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));bottom:56px;z-index:80;background:rgba(26,23,48,.96);border:1px solid var(--line);border-radius:16px;padding:16px 20px;max-height:38%;overflow:auto;font-size:16px;line-height:1.5;color:var(--soft)}
-.notes b{color:var(--fg)}
-.notes .t{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--lima);margin-bottom:6px;display:flex;justify-content:space-between;gap:12px}
 
 /* láminas */
 .slide{position:absolute;inset:0;padding:60px 72px 64px;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s .45s;display:flex;flex-direction:column}
@@ -226,106 +223,116 @@ h2 em{font-style:normal;color:var(--accent)}
 .sc.on .a.io{animation:var(--an,rise) var(--d,.7s) var(--e,var(--ease)) both,fadeout .4s ease forwards;animation-delay:var(--t,0s),var(--o,9s)}
 .kt{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:.98}
 
-#c1{background:linear-gradient(#0b0919,#1d1840)}
-#c1 .clock{font-family:var(--display);position:absolute;left:84px;top:110px;font-size:170px;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;line-height:1}
-#c1 .clock small{font-size:54px;font-weight:600;letter-spacing:-.02em;color:var(--muted);margin-left:12px}
-#c1 .l1{position:absolute;left:92px;top:310px;font-size:44px;font-weight:600}
-#c1 .l2{position:absolute;left:92px;top:372px;font-size:44px;font-weight:600;color:var(--muted)}
-#c1.on .city b{animation:growy .9s var(--ease) both;animation-delay:calc(var(--k)*70ms + .3s)}
+/* modo cine: el comercial ocupa toda la pantalla */
+body.cine .bar{display:none}
+body.cine .deck{padding:0}
+body.cine .stage{border-radius:0}
+body.cine .rail{display:none}
+body.cine .adui,body.cine .endcard{opacity:0;transition:opacity .3s}
+body.cine.mouse .adui,body.cine.mouse .endcard{opacity:1}
 
-#c2{background:#0e0c1f}
-#c2 .cone{position:absolute;left:150px;top:96px;width:420px;height:470px;background:linear-gradient(rgba(200,245,96,.34),rgba(200,245,96,0));clip-path:polygon(46% 0,54% 0,100% 100%,0 100%)}
-#c2.on .cone{animation:flick 7s linear both}
-@keyframes flick{0%{opacity:0}6%{opacity:1}30%{opacity:1}32%{opacity:.3}34%{opacity:1}62%{opacity:1}63%{opacity:.2}66%{opacity:.9}100%{opacity:.9}}
-#c2 .post{position:absolute;left:352px;top:80px;width:16px;height:486px;background:#3b3658;border-radius:8px}
-#c2 .lamp{position:absolute;left:316px;top:70px;width:88px;height:22px;border-radius:12px;background:var(--lima)}
-#c2 .sign{position:absolute;left:470px;top:300px;width:70px;height:70px;border-radius:16px;background:var(--accent);display:grid;place-items:center;font-weight:800;font-size:30px}
-#c2 .signp{position:absolute;left:500px;top:370px;width:10px;height:196px;background:#3b3658}
-#c2 .ground{position:absolute;left:0;right:0;top:566px;bottom:0;background:#09071a;border-top:2px solid #2a2645}
-#c2 .me{position:absolute;left:236px;top:404px;width:56px}
-#c2 .me i{display:block;margin:auto;background:#fff}
-#c2 .me i.h{width:42px;height:42px;border-radius:50%;background:var(--skin-b)}
-#c2 .me i.b{width:56px;height:116px;border-radius:28px;margin-top:6px}
-#c2 .rg{position:absolute;left:214px;top:440px;width:100px;height:100px;border-radius:50%;border:2px solid rgba(255,255,255,.5);opacity:0}
-#c2.on .rg{animation:ring 2.2s ease-out infinite}
-#c2.on .rg.r2{animation-delay:1.1s}
-#c2 .tx{position:absolute;left:660px;top:170px;width:540px}
-#c2 .tx p{margin:0 0 22px;font-size:46px;font-weight:700;line-height:1.08;letter-spacing:-.02em}
-#c2 .tx p.m{color:var(--muted);font-weight:600;font-size:38px}
+#k1{background:linear-gradient(#0b0919,#1d1840)}
+#k1 .clock{font-family:var(--display);position:absolute;left:84px;top:120px;font-size:180px;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;line-height:1}
+#k1 .clock small{font-size:56px;font-weight:600;letter-spacing:-.02em;color:var(--muted);margin-left:12px}
+#k1 .l1{position:absolute;left:92px;top:330px;font-size:46px;font-weight:700}
+#k1 .l2{position:absolute;left:92px;top:392px;font-size:40px;font-weight:600;color:var(--muted)}
+#k1.on .city b{animation:growy .7s var(--ease) both;animation-delay:calc(var(--k)*45ms)}
 
-#c3{background:#0e0c1f;display:flex;flex-direction:column;justify-content:center;padding:0 84px}
-#c3 .v{position:absolute;inset:0;background:var(--accent);clip-path:circle(0% at 50% 50%)}
-#c3.on .v{animation:wipe .9s var(--ease) 3s both}
-#c3 .kt{position:relative;font-size:124px}
-#c3 .g{color:rgba(255,255,255,.5);display:inline-block;position:relative}
-#c3 .g::after{content:"";position:absolute;left:-8px;right:-8px;top:54%;height:10px;background:var(--lima);transform:scaleX(0);transform-origin:left}
-#c3.on .g::after{animation:strike .45s var(--ease) 2.3s both}
-#c3 .w{color:#fff}
+#k2{background:#0e0c1f}
+#k2 .cone{position:absolute;left:150px;top:96px;width:420px;height:470px;background:linear-gradient(rgba(200,245,96,.34),rgba(200,245,96,0));clip-path:polygon(46% 0,54% 0,100% 100%,0 100%)}
+#k2.on .cone{animation:flick 4.5s linear both}
+@keyframes flick{0%{opacity:0}8%{opacity:1}40%{opacity:1}42%{opacity:.25}45%{opacity:1}75%{opacity:1}76%{opacity:.2}80%{opacity:.9}100%{opacity:.9}}
+#k2 .post{position:absolute;left:352px;top:80px;width:16px;height:486px;background:#3b3658;border-radius:8px}
+#k2 .lamp{position:absolute;left:316px;top:70px;width:88px;height:22px;border-radius:12px;background:var(--lima)}
+#k2 .sign{position:absolute;left:470px;top:300px;width:70px;height:70px;border-radius:16px;background:var(--accent);display:grid;place-items:center;font-weight:800;font-size:30px}
+#k2 .signp{position:absolute;left:500px;top:370px;width:10px;height:196px;background:#3b3658}
+#k2 .ground{position:absolute;left:0;right:0;top:566px;bottom:0;background:#09071a;border-top:2px solid #2a2645}
+#k2 .me{position:absolute;left:236px;top:404px;width:56px}
+#k2 .me i{display:block;margin:auto;background:#fff}
+#k2 .me i.h{width:42px;height:42px;border-radius:50%;background:var(--skin-b)}
+#k2 .me i.b{width:56px;height:116px;border-radius:28px;margin-top:6px}
+#k2 .think{position:absolute;left:96px;top:272px;background:#fff;color:#14112b;border-radius:24px 24px 24px 6px;padding:16px 22px;font-weight:700;font-size:26px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+#k2 .tx{position:absolute;left:660px;top:170px;width:560px}
+#k2 .tx p{margin:0 0 22px;font-size:50px;font-weight:700;line-height:1.08;letter-spacing:-.02em}
+#k2 .tx p.m{color:var(--muted);font-weight:600;font-size:38px}
 
-#c4{background:#0e0c1f}
-#c4 .lg{position:absolute;left:300px;top:170px;width:340px;height:340px}
-#c4 svg .p{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:10.8;stroke-dasharray:1;stroke-dashoffset:1}
-#c4.on svg .p1{animation:draw .9s var(--ease) .5s both}
-#c4.on svg .p2{animation:draw .9s var(--ease) .5s both}
-#c4.on svg .p3{animation:draw .6s var(--ease) 1.4s both}
-#c4 svg .o{opacity:0;transform-box:fill-box;transform-origin:center}
-#c4.on svg .o{animation:pop .5s var(--spring) both}
-#c4.on svg .o3{animation-delay:2s}
-#c4 .wm{position:absolute;left:660px;top:238px;font-size:190px;font-weight:700;letter-spacing:-.045em;line-height:1}
-#c4 .tg{position:absolute;left:668px;top:446px;font-size:36px;color:var(--muted);font-weight:500}
-#c4 .q{position:absolute;left:84px;top:64px;font-size:34px;font-weight:600;color:var(--soft);width:900px}
+#k3{background:#0e0c1f;display:flex;flex-direction:column;justify-content:center;padding:0 84px}
+#k3 .v{position:absolute;inset:0;background:var(--accent);clip-path:circle(0% at 50% 50%)}
+#k3.on .v{animation:wipe .8s var(--ease) 2s both}
+#k3 .kt{position:relative;font-size:128px}
+#k3 .g{color:rgba(255,255,255,.55);display:inline-block;position:relative}
+#k3 .g::after{content:"";position:absolute;left:-8px;right:-8px;top:54%;height:12px;background:var(--lima);transform:scaleX(0);transform-origin:left}
+#k3.on .g::after{animation:strike .4s var(--ease) 1.2s both}
 
-#c5{background:#0e0c1f}
-#c5 .moon{width:680px;height:680px;right:-40px;top:20px;background:var(--accent)}
-#c5.on .moon{animation:pop .9s var(--spring) both}
-#c5 .phone{position:absolute;right:224px;top:44px;--w:276px;transform:rotate(4deg)}
-#c5.on .phone{animation:phin 1s var(--spring) .15s both}
-@keyframes phin{from{opacity:0;transform:translateY(240px) rotate(14deg)}to{opacity:1;transform:rotate(4deg)}}
-#c5 .phone img{position:absolute;inset:calc(var(--w)*.03);width:auto;height:auto;right:calc(var(--w)*.03);bottom:calc(var(--w)*.03);opacity:0;transform:scale(1.04);transition:opacity .5s ease,transform .7s var(--ease)}
-#c5 .phone img{width:calc(100% - var(--w)*.06);height:calc(100% - var(--w)*.06)}
-#c5[data-beat="b1"] img.b1,#c5[data-beat="b2"] img.b2,#c5[data-beat="b3"] img.b3,#c5[data-beat="b4"] img.b4{opacity:1;transform:none}
-#c5 .beat{display:none;position:absolute;left:84px;top:170px;width:560px}
-#c5[data-beat="b1"] .beat.b1,#c5[data-beat="b2"] .beat.b2,#c5[data-beat="b3"] .beat.b3,#c5[data-beat="b4"] .beat.b4{display:block}
-#c5 .beat .n{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--lima);color:#0e0c1f;font-weight:800;font-size:24px;animation:pop .5s var(--spring) both}
-#c5 .beat h3{font-family:var(--display);margin:22px 0 14px;font-size:76px;line-height:1;font-weight:800;letter-spacing:-.035em;animation:rise .6s var(--ease) .1s both}
-#c5 .beat p{margin:0;font-size:28px;line-height:1.3;color:var(--soft);animation:rise .6s var(--ease) .3s both}
-#c5 .chip{display:none;position:absolute;background:#fff;color:#0e0c1f;border-radius:999px;padding:12px 20px;font-weight:700;font-size:20px;box-shadow:0 14px 40px rgba(0,0,0,.45);animation:pop .5s var(--spring) .7s both}
-#c5 .chip.v{background:var(--lima)}
-#c5[data-beat="b1"] .chip.b1,#c5[data-beat="b2"] .chip.b2,#c5[data-beat="b3"] .chip.b3,#c5[data-beat="b4"] .chip.b4{display:block}
+#k4{background:radial-gradient(900px 600px at 78% 50%,#2a1f7a 0%,#0e0c1f 65%)}
+#k4 .lgo{position:absolute;left:84px;top:84px}
+#k4 .cap{position:absolute;left:84px;top:190px;width:600px;font-size:76px}
+#k4 .sub{position:absolute;left:88px;top:470px;width:560px;font-size:26px;line-height:1.35;color:var(--soft)}
+#k4 .ph{position:absolute;right:150px;top:40px;width:316px;height:640px;border-radius:46px;background:#0b0919;border:10px solid #2a2645;box-shadow:0 50px 100px rgba(0,0,0,.65);overflow:hidden}
+#k4.on .ph{animation:phin .9s var(--spring) both}
+@keyframes phin{from{opacity:0;transform:translateY(200px) rotate(8deg)}to{opacity:1;transform:none}}
+#k4 .scr{position:absolute;inset:0;background:#f5f3fb;color:#14112b;padding:42px 14px 14px;display:flex;flex-direction:column;gap:10px}
+#k4 .sb{position:absolute;left:22px;right:22px;top:12px;display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#14112b}
+#k4 .mc{background:#fff;border-radius:18px;padding:12px 14px;box-shadow:0 8px 22px rgba(20,17,43,.12);display:grid;grid-template-columns:46px 1fr;gap:10px;align-items:center}
+#k4 .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#e0ac69,#8d5524);display:grid;place-items:center;color:#fff;font-weight:800;font-size:20px}
+#k4 .mc b{font-size:16px;display:block}
+#k4 .mc em{font-style:normal;font-size:12.5px;font-weight:700;color:#5b3df5;display:block}
+#k4 .mc span{grid-column:1/-1;font-size:13px;color:#5a5577;font-weight:600}
+#k4 .mc svg{grid-column:1/-1;width:100%;height:12px}
+#k4 .tag2{font-size:11px;font-weight:800;letter-spacing:.12em;color:#5b3df5}
+#k4 .bb{max-width:80%;padding:10px 14px;border-radius:18px;font-size:15.5px;font-weight:600;line-height:1.3}
+#k4 .bb.me{align-self:flex-end;background:#5b3df5;color:#fff;border-bottom-right-radius:6px}
+#k4 .bb.ot{align-self:flex-start;background:#e7e4f2;color:#14112b;border-bottom-left-radius:6px}
+#k4 .bb small{display:block;font-size:11px;font-weight:700;opacity:.7;margin-bottom:2px}
+#k4 .ty{align-self:flex-start;background:#e7e4f2;border-radius:18px;padding:12px 14px;display:flex;gap:5px}
+#k4 .ty i{width:7px;height:7px;border-radius:50%;background:#6f6a8a;animation:twinkle .9s infinite}
+#k4 .ty i:nth-child(2){animation-delay:.15s}#k4 .ty i:nth-child(3){animation-delay:.3s}
+#k4 .pl{align-self:stretch;background:#c8f560;color:#14112b;font-size:13.5px;font-weight:700;border-radius:16px;padding:10px 12px;line-height:1.3}
+#k4 .pl small{display:block;font-weight:600;font-size:12px;opacity:.8}
+#k4 .vf{position:absolute;left:0;right:0;bottom:0;height:60%;background:#fff;border-radius:28px 28px 0 0;padding:22px 20px;box-shadow:0 -20px 50px rgba(20,17,43,.3);display:flex;flex-direction:column;align-items:center;gap:12px;color:#14112b}
+@keyframes sheet{from{opacity:1;transform:translateY(105%)}to{opacity:1;transform:none}}
+#k4 .vf h4{margin:0;font-family:var(--display);font-size:30px;font-weight:800;letter-spacing:-.02em}
+#k4 .vf .av{width:86px;height:86px;font-size:36px;box-shadow:0 0 0 5px #fff,0 0 0 8px #5b3df5}
+#k4 .ok{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;align-self:stretch;background:#f5f3fb;border-radius:14px;padding:10px 12px}
+#k4 .ok i{flex:none;width:26px;height:26px;border-radius:50%;background:#5b3df5;color:#fff;display:grid;place-items:center;font-style:normal;font-size:15px}
+#k4 .ok b{font-family:var(--display);font-size:18px;letter-spacing:.02em;margin-left:auto;white-space:nowrap}
 
-#c6{background:#0e0c1f}
-#c6 .hd{position:absolute;left:84px;top:70px;font-size:60px;width:640px}
-#c6 .line{position:absolute;left:140px;top:470px;width:1000px;height:8px;border-radius:8px;background:#252140}
-#c6 .line i{position:absolute;left:0;top:0;height:100%;border-radius:8px;background:var(--accent);width:0}
-#c6.on .line i{animation:prog 7.4s linear .6s both}
-@keyframes prog{0%{width:0}50%{width:50%}58%{width:50%}100%{width:100%}}
-#c6 .st{position:absolute;top:452px;width:44px;height:44px;margin-left:-22px;border-radius:50%;background:#0e0c1f;border:6px solid #fff;box-sizing:border-box}
-#c6 .st.end{border-color:var(--lima)}
-#c6 .lb{position:absolute;top:520px;width:260px;margin-left:-130px;text-align:center;font-size:22px;font-weight:700;line-height:1.25}
-#c6 .lb small{display:block;font-size:17px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
-#c6 .dot{position:absolute;top:420px;width:40px;height:40px;margin-left:-20px;border-radius:50%;left:140px}
-#c6 .dot.d{background:var(--lima);z-index:3}
-#c6 .dot.l{background:#fff;top:380px}
-#c6.on .dot.d{animation:trav 7.4s linear .6s both}
-#c6.on .dot.l{animation:trav2 7.4s linear .6s both}
-@keyframes trav{0%{left:140px}50%{left:640px}58%{left:640px}100%{left:1140px}}
-@keyframes trav2{0%{left:140px;opacity:1}50%{left:640px;opacity:1}58%{left:640px;opacity:1}66%{left:640px;opacity:0}100%{left:640px;opacity:0}}
-#c6 .toasts{position:absolute;right:70px;top:60px;width:440px;display:grid;gap:12px}
-#c6 .toast{background:#fff;color:#0e0c1f;border-radius:20px 20px 20px 6px;padding:16px 20px;font-size:21px;font-weight:600;line-height:1.3;box-shadow:0 16px 40px rgba(0,0,0,.5)}
-#c6 .toast small{display:block;font-size:14px;color:#6f6a8a;font-weight:500;margin-top:4px;font-variant-numeric:tabular-nums}
-#c6.on .st.end{animation:pulse .8s var(--spring) 8s both}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.5)}100%{transform:scale(1)}}
+#k5{background:#0e0c1f}
+#k5 .hd{position:absolute;left:84px;top:70px;font-size:64px;width:640px}
+#k5 .line{position:absolute;left:140px;top:500px;width:1000px;height:8px;border-radius:8px;background:#252140}
+#k5 .line i{position:absolute;left:0;top:0;height:100%;border-radius:8px;background:var(--accent);width:0}
+#k5.on .line i{animation:prog5 7.6s linear .4s both}
+@keyframes prog5{0%{width:0}45%{width:50%}55%{width:50%}100%{width:100%}}
+#k5 .st{position:absolute;top:482px;width:44px;height:44px;margin-left:-22px;border-radius:50%;background:#0e0c1f;border:6px solid #fff;box-sizing:border-box}
+#k5 .st.end{border-color:var(--lima)}
+#k5.on .st.end{animation:pulse .8s var(--spring) 7.9s both}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.6)}100%{transform:scale(1)}}
+#k5 .lb{position:absolute;top:548px;width:260px;margin-left:-130px;text-align:center;font-size:22px;font-weight:700;line-height:1.25}
+#k5 .lb small{display:block;font-size:17px;font-weight:500;color:var(--muted)}
+#k5 .dot{position:absolute;top:452px;width:40px;height:40px;margin-left:-20px;border-radius:50%;left:140px;display:grid;place-items:center;font-size:15px;font-weight:800;color:#0e0c1f}
+#k5 .dot.d{background:var(--lima);z-index:3}
+#k5 .dot.l{background:#fff;top:404px}
+#k5.on .dot.d{animation:trav5 7.6s linear .4s both}
+#k5.on .dot.l{animation:trav5l 7.6s linear .4s both}
+@keyframes trav5{0%{left:140px}45%{left:640px}55%{left:640px}100%{left:1140px}}
+@keyframes trav5l{0%{left:140px;opacity:1}45%{left:640px;opacity:1}58%{left:640px;opacity:1}68%{left:640px;opacity:0}100%{left:640px;opacity:0}}
+#k5 .toasts{position:absolute;right:70px;top:56px;width:460px;display:grid;gap:12px}
+#k5 .toast{background:#fff;color:#0e0c1f;border-radius:20px 20px 20px 6px;padding:14px 18px;font-size:20px;font-weight:600;line-height:1.3;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+#k5 .toast small{display:block;font-size:13px;color:#6f6a8a;font-weight:700;margin-bottom:4px;letter-spacing:.04em}
+#k5 .toast.l{background:#5b3df5;color:#fff;border-radius:20px 20px 6px 20px;margin-left:60px}
+#k5 .toast.l small{color:#eeebfe}
+#k5 .toast.g{background:var(--lima)}
 
-#c7{background:var(--accent)}
-#c7 .moon{width:640px;height:640px;right:40px;top:110px}
-#c7.on .moon{animation:pop 1s var(--spring) both}
-#c7 .ppl{position:absolute;right:156px;top:168px;width:408px}
-#c7 .ppl svg{width:100%;height:auto;display:block}
-#c7 .gr{position:absolute;left:0;right:0;top:672px;bottom:0;background:#0e0c1f}
-#c7 .kt{position:absolute;left:72px;top:70px;font-size:118px;width:600px}
-#c7 .lk{position:absolute;left:76px;top:440px}
-#c7 .tl{position:absolute;left:78px;top:508px;font-size:24px;color:#fff;width:420px;line-height:1.3}
-#c7 .city{height:96px;bottom:48px}
+#k6{background:var(--accent)}
+#k6 .moon{width:640px;height:640px;right:40px;top:110px}
+#k6.on .moon{animation:pop 1s var(--spring) both}
+#k6 .ppl{position:absolute;right:156px;top:168px;width:408px}
+#k6 .ppl svg{width:100%;height:auto;display:block}
+#k6 .gr{position:absolute;left:0;right:0;top:672px;bottom:0;background:#0e0c1f}
+#k6 .kt{position:absolute;left:72px;top:70px;font-size:124px;width:620px}
+#k6 .lk{position:absolute;left:76px;top:452px}
+#k6 .tl{position:absolute;left:78px;top:524px;font-size:26px;color:#fff;width:460px;line-height:1.3;font-weight:600}
+#k6 .city{height:96px;bottom:48px}
 
 @media (prefers-reduced-motion:reduce){
   .slide.active .in,.slide.active .pop{animation:none}
@@ -338,101 +345,95 @@ h2 em{font-style:normal;color:var(--accent)}
     <main class="stage" id="stage" aria-live="polite">
 
       <!-- 0 · COMERCIAL -->
-      <section class="slide active" id="s0" data-name="Comercial" data-sec="Comercial · 1 minuto">
+      <section class="slide active" id="s0" data-name="Comercial" data-sec="Comercial · 40 segundos">
         <div class="ad" id="ad">
           <div class="poster">
             <span class="logo" style="--s:74px"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/></svg><b>match</b></span>
             <button class="play" id="adPlay" aria-label="Reproducir el comercial"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5z"/></svg></button>
-            <p>Comercial · 1 minuto</p>
+            <p>Comercial · 40 segundos · con sonido</p>
           </div>
 
-          <div class="sc" id="c1">
+          <div class="sc" id="k1">
             <div class="sky stars" data-stars="46"></div>
             <div class="city" data-city="a"></div>
-            <div class="clock a" style="--an:slam;--d:.8s;--t:.3s">9:47<small>p. m.</small></div>
-            <div class="l1 a" style="--t:1.9s">Martes. Sales de clase.</div>
-            <div class="l2 a" style="--t:3.4s">Te faltan dos buses para llegar a casa.</div>
+            <div class="clock a" style="--an:slam;--d:.7s;--t:.15s">9:47<small>p. m.</small></div>
+            <div class="l1 a" style="--t:1s">Martes. Sales de clase.</div>
+            <div class="l2 a" style="--t:1.9s">Te faltan dos buses para llegar a casa.</div>
           </div>
 
-          <div class="sc" id="c2">
+          <div class="sc" id="k2">
             <div class="cone"></div><div class="post"></div><div class="lamp"></div>
             <div class="signp"></div><div class="sign">P</div>
-            <div class="rg"></div><div class="rg r2"></div>
-            <div class="me a" style="--an:fade;--t:.4s"><i class="h"></i><i class="b"></i></div>
+            <div class="me a" style="--an:fade;--t:.2s"><i class="h"></i><i class="b"></i></div>
             <div class="ground"></div>
+            <div class="think a" style="--an:pop;--e:var(--spring);--d:.5s;--t:1.1s">¿Alguien más va para Bosa?</div>
             <div class="tx">
-              <p class="a" style="--t:.8s">El paradero está vacío.</p>
-              <p class="m a" style="--t:2.8s">La app dice que el bus llega en 12 minutos.</p>
-              <p class="a" style="--t:4.7s">No dice quién más está esperando.</p>
+              <p class="a" style="--t:.3s">El paradero, vacío.</p>
+              <p class="m a" style="--t:2.1s">La app te dice cuándo llega el bus.</p>
+              <p class="a" style="--t:3.1s">No quién te acompaña.</p>
             </div>
           </div>
 
-          <div class="sc" id="c3">
+          <div class="sc" id="k3">
             <div class="v"></div>
-            <div class="kt"><span class="g a" style="--an:slam;--d:.6s;--t:.3s">Tienes la información.</span></div>
-            <div class="kt w a" style="--an:slam;--d:.6s;--t:3.3s">Lo que falta</div>
-            <div class="kt w a" style="--an:slam;--d:.6s;--t:4.1s">es compañía.</div>
+            <div class="kt"><span class="g a" style="--an:slam;--d:.5s;--t:.2s">No falta información.</span></div>
+            <div class="kt a" style="--an:slam;--d:.5s;--t:2.2s">Falta compañía.</div>
           </div>
 
-          <div class="sc" id="c4">
-            <div class="q a io" style="--t:.2s;--o:3.4s">¿Y si alguien de tu universidad va para el mismo lado?</div>
-            <svg class="lg" viewBox="0 0 72 72" aria-hidden="true">
-              <path class="p p1" pathLength="1" d="M14.4 12.6L36 37.8" stroke="#fff"/>
-              <path class="p p2" pathLength="1" d="M57.6 12.6L36 37.8" stroke="#fff"/>
-              <path class="p p3" pathLength="1" d="M36 37.8V55.8" stroke="#5b3df5"/>
-              <circle class="o" cx="14.4" cy="12.6" r="9.9" fill="#fff"/>
-              <circle class="o" cx="57.6" cy="12.6" r="9.9" fill="#fff"/>
-              <circle class="o o3" cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/>
-            </svg>
-            <div class="wm a" style="--t:2.6s;--d:.8s">match</div>
-            <div class="tg a" style="--t:3.6s">Dos rutas, un tramo.</div>
+          <div class="sc" id="k4">
+            <span class="logo lgo a" style="--s:44px;--an:fade;--t:.1s"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#5b3df5" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#0e0c1f" stroke="#5b3df5" stroke-width="5.4"/></svg><b>match</b></span>
+            <div class="cap kt a io" style="--t:.3s;--o:3.4s">Alguien de tu U hace tu mismo tramo.</div>
+            <div class="cap kt a io" style="--t:3.7s;--o:6.1s">Se encuentran en un punto seguro.</div>
+            <div class="cap kt a" style="--t:6.3s">Foto y código para reconocerse.</div>
+            <div class="sub a io" style="--t:.9s;--o:3.4s">Personas verificadas con el correo de su universidad o con dos avales.</div>
+            <div class="sub a io" style="--t:4.2s;--o:6.1s">Porterías, recepciones o un CAI: solo lugares con vigilancia.</div>
+            <div class="sub a" style="--t:6.8s">Así nadie se hace pasar por otra persona.</div>
+            <div class="ph">
+              <div class="scr">
+                <div class="sb"><span>8:52</span><span>●●● ▮</span></div>
+                <div class="tag2 a" style="--an:fade;--t:.5s">NUEVO MATCH · HOY</div>
+                <div class="mc a" style="--an:pop;--e:var(--spring);--d:.5s;--t:.6s"><div class="av">L</div><div><b>Laura M.</b><em>✓ Verificada · Universidad</em></div><span>2 de 3 tramos en común · sale 9:05 p. m.</span><svg viewBox="0 0 280 12" aria-hidden="true"><line x1="6" y1="6" x2="274" y2="6" stroke="#d5d2e5" stroke-width="2"/><line x1="6" y1="6" x2="186" y2="6" stroke="#5b3df5" stroke-width="6" stroke-linecap="round"/><circle cx="6" cy="6" r="5" fill="#14112b"/><circle cx="96" cy="6" r="5" fill="#14112b"/><circle cx="186" cy="6" r="5" fill="#14112b"/><circle cx="274" cy="6" r="4" fill="#fff" stroke="#d5d2e5" stroke-width="2"/></svg></div>
+                <div class="bb me a" style="--an:pop;--e:var(--spring);--d:.4s;--t:1.6s">¿Vamos juntas hasta el portal?</div>
+                <div class="ty a io" style="--an:fade;--t:2.2s;--o:2.8s"><i></i><i></i><i></i></div>
+                <div class="bb ot a" style="--an:pop;--e:var(--spring);--d:.4s;--t:2.9s"><small>Laura</small>¡Dale! Te espero en la portería 🙌</div>
+                <div class="pl a" style="--an:pop;--e:var(--spring);--d:.5s;--t:3.9s">📍 Punto seguro · Portería principal<small>Vigilancia en la entrada · 8:55 p. m.</small></div>
+              </div>
+              <div class="vf a" style="--an:sheet;--d:.6s;--t:6.2s">
+                <h4>¿Es Laura?</h4>
+                <div class="av">L</div>
+                <div class="ok a" style="--an:pop;--e:var(--spring);--d:.4s;--t:6.9s"><i>✓</i>Es la persona de la foto</div>
+                <div class="ok a" style="--an:pop;--e:var(--spring);--d:.4s;--t:7.6s"><i>✓</i>El código coincide<b>NARANJA-12</b></div>
+              </div>
+            </div>
           </div>
 
-          <div class="sc" id="c5" data-beat="">
-            <div class="moon"></div>
-            <figure class="phone">
-              <img class="b1" data-img="B06" alt="">
-              <img class="b2" data-img="E02" alt="">
-              <img class="b3" data-img="F05" alt="">
-              <img class="b4" data-img="F11" alt="">
-            </figure>
-            <div class="beat b1"><span class="n">1</span><h3>Personas verificadas.</h3><p>Con el correo de tu universidad o con dos avales de tu círculo.</p></div>
-            <div class="beat b2"><span class="n">2</span><h3>Tu mismo trayecto, a tu misma hora.</h3><p>La app te muestra quién comparte tu tramo.</p></div>
-            <div class="beat b3"><span class="n">3</span><h3>Foto y código para reconocerse.</h3><p>Se encuentran en un punto con vigilancia.</p></div>
-            <div class="beat b4"><span class="n">4</span><h3>Y alguien sabe que llegaste.</h3><p>Tu contacto recibe el aviso por WhatsApp, sin instalar nada.</p></div>
-            <div class="chip b1 v" style="right:120px;top:120px">✓ Verificada · Universidad</div>
-            <div class="chip b2" style="right:96px;top:300px">2 de 3 tramos en común</div>
-            <div class="chip b3 v" style="right:110px;top:470px">Punto seguro · portería</div>
-            <div class="chip b4" style="right:80px;top:560px">Daniela llegó a las 10:40 p. m.</div>
-          </div>
-
-          <div class="sc" id="c6">
-            <div class="hd kt a" style="--t:.2s">Juntas en el tramo que comparten.</div>
+          <div class="sc" id="k5">
+            <div class="hd kt a" style="--t:.1s">Juntas en el tramo que comparten.</div>
             <div class="line"><i></i></div>
             <div class="st" style="left:140px"></div><div class="st" style="left:640px"></div><div class="st end" style="left:1140px"></div>
-            <div class="lb a" style="left:140px;--an:fade;--t:.3s">Estación Calle 45<small>8:58 p. m.</small></div>
-            <div class="lb a" style="left:640px;--an:fade;--t:.6s">Portal Sur<small>Laura se baja aquí</small></div>
-            <div class="lb a" style="left:1140px;--an:fade;--t:.9s">Bosa Centro<small>10:40 p. m.</small></div>
-            <div class="dot l"></div><div class="dot d"></div>
+            <div class="lb a" style="left:140px;--an:fade;--t:.2s">Estación Calle 45<small>9:05 p. m.</small></div>
+            <div class="lb a" style="left:640px;--an:fade;--t:.4s">Portal Sur<small>Laura se baja aquí</small></div>
+            <div class="lb a" style="left:1140px;--an:fade;--t:.6s">Bosa<small>10:40 p. m.</small></div>
+            <div class="dot l">L</div><div class="dot d">D</div>
             <div class="toasts">
-              <div class="toast a" style="--an:pop;--e:var(--spring);--d:.5s;--t:1.2s">Daniela empezó su trayecto con Laura M.<small>8:58 p. m. · Match · Avisos</small></div>
-              <div class="toast a" style="--an:pop;--e:var(--spring);--d:.5s;--t:4.6s">Laura se bajó en Portal Sur. Daniela sigue su último tramo.<small>10:00 p. m.</small></div>
-              <div class="toast a" style="--an:pop;--e:var(--spring);--d:.5s;--t:8.1s">Daniela llegó a las 10:40 p. m. Su ubicación ya no se comparte.<small>10:40 p. m.</small></div>
+              <div class="toast a" style="--an:pop;--e:var(--spring);--d:.5s;--t:.9s"><small>WHATSAPP · PARA MAMÁ</small>Daniela va con Laura M. ✓ Verificada. Llega a las 10:40 p. m.</div>
+              <div class="toast l a" style="--an:pop;--e:var(--spring);--d:.5s;--t:4.3s"><small>LAURA</small>Me bajo aquí. ¡Avísame cuando llegues! 💜</div>
+              <div class="toast g a" style="--an:pop;--e:var(--spring);--d:.5s;--t:7.4s"><small>WHATSAPP · PARA MAMÁ</small>Daniela llegó a las 10:40 p. m. Su ubicación ya no se comparte.</div>
             </div>
           </div>
 
-          <div class="sc" id="c7">
+          <div class="sc" id="k6">
             <div class="sky stars" data-stars="30"></div>
             <div class="city" data-city="v"></div>
             <div class="moon"></div>
-            <div class="ppl a" style="--t:.5s;--d:.9s"><!--SVG:personas--></div>
+            <div class="ppl a" style="--t:.3s;--d:.9s"><!--SVG:personas--></div>
             <div class="gr"></div>
-            <div class="kt a" style="--an:slam;--t:1.3s">Nadie espera solo.</div>
-            <span class="logo lk a" style="--s:58px;--t:3.4s"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#c8f560" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#5b3df5" stroke="#c8f560" stroke-width="5.4"/></svg><b>match</b></span>
-            <div class="tl a" style="--t:4.2s">Compañía verificada para los trayectos de noche.</div>
+            <div class="kt a" style="--an:slam;--t:.7s">Nadie espera solo.</div>
+            <span class="logo lk a" style="--s:58px;--t:2.4s"><svg viewBox="0 0 72 72" aria-hidden="true"><path d="M14.4 12.6L36 37.8L57.6 12.6" fill="none" stroke="#fff" stroke-width="10.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 37.8V55.8" stroke="#c8f560" stroke-width="10.8" stroke-linecap="round"/><circle cx="14.4" cy="12.6" r="9.9" fill="#fff"/><circle cx="57.6" cy="12.6" r="9.9" fill="#fff"/><circle cx="36" cy="57.6" r="10.8" fill="#5b3df5" stroke="#c8f560" stroke-width="5.4"/></svg><b>match</b></span>
+            <div class="tl a" style="--t:3.1s">Compañía verificada para los trayectos de noche.</div>
           </div>
 
-          <div class="adui"><span id="adTime">0:00</span><div class="adbar"><i id="adBar"></i></div><button id="adPause">Pausa</button><button id="adSkip">Saltar</button></div>
+          <div class="adui"><span id="adTime">0:00</span><div class="adbar"><i id="adBar"></i></div><button id="adPause">Pausa</button><button id="adMute">Silenciar</button><button id="adSkip">Saltar</button></div>
           <div class="endcard"><button class="btn" id="adAgain">Ver de nuevo</button><button class="btn" id="adGo" style="background:#0e0c1f;border-color:#0e0c1f">Empezar el pitch →</button></div>
         </div>
       </section>
@@ -787,23 +788,15 @@ h2 em{font-style:normal;color:var(--accent)}
     <span class="where" id="where">Comercial</span>
     <span class="sp"></span>
     <span id="clock" class="count" title="Tiempo transcurrido">0:00</span>
-    <button class="btn ghost" id="bNotes">Guion (N)</button>
     <button class="btn ghost" id="bFull">Pantalla completa (F)</button>
   </nav>
 </div>
 
-<aside class="notes" id="notes" hidden>
-  <div class="t"><span id="notesT">Guion</span><span>Cerrar con N</span></div>
-  <div id="notesB"></div>
-</aside>
 
 <script>
 const IMG=/*__IMG__*/{}/*__IMG__*/;
 document.querySelectorAll('img[data-img]').forEach(i=>{if(IMG[i.dataset.img])i.src=IMG[i.dataset.img];});
 
-/* guion por lámina */
-const NOTES=["<b>Haz:</b> No hables. Presiona Espacio para reproducir. Cuando termine, pasa con →.", "<b>Haz:</b> Mira al público, no a la pantalla.<br><br><b>Di:</b> «Buenos días. Soy Juan Camilo Orozco y les presento Match: compañía verificada para los trayectos de noche.»", "<b>Haz:</b> Recorre la curva con la mano de izquierda a derecha. Detente en el recuadro morado.<br><br><b>Di:</b> «Les presento a Daniela. Tiene 22 años, estudia en Chapinero y vive en Bosa. Los martes sale de clase a las nueve de la noche. Camina ocho minutos por una calle oscura y va cuarenta minutos de pie en la troncal. Cuando llega al portal viene lo peor: esperar el alimentador, de diez a veinte minutos, en un paradero que se va quedando vacío. Y después, caminar seis minutos a su casa. El miedo no está en el bus: está en la espera. Daniela no existe: la construí con lo que me contaron cinco personas en entrevistas.»", "<b>Haz:</b> Señala el 5 de 5 y lee solo dos datos de la derecha.<br><br><b>Di:</b> «Mi hipótesis inicial era que el problema era no saber cuánto tarda el bus. Las entrevistas la tumbaron: los cinco ya usan apps de rutas y aun así sienten miedo. Los cinco cuentan algo que les pasó, y cuatro de cinco han cambiado de plan alguna vez. Ninguno elige dónde esperar por una app: eligen por la luz y por la gente. Son cinco entrevistas: me sirven para ver patrones, no para hacer estadística.»", "<b>Haz:</b> Haz una pausa de dos segundos después de «no falta información».<br><br><b>Di:</b> «Entonces entendí esto: no falta información. Falta compañía. Match es una app que conecta a personas verificadas de tu universidad, tu trabajo o tu círculo que hacen tu mismo trayecto a la misma hora. El logo lo dice: dos orígenes que se unen en un tramo y llegan juntos.»", "<b>Haz:</b> Señala cada celular cuando digas su número.<br><br><b>Di:</b> «Funciona en cuatro pasos. Uno: te verificas con el correo de tu universidad o con dos avales de personas ya verificadas. Dos: guardas tu ruta por tramos, con la hora y los días. Tres: la app te muestra quién comparte tu tramo con hasta quince minutos de diferencia, y solo hay match si las dos personas aceptan. Cuatro: viajan juntas, y la ubicación se comparte solo durante el trayecto y se apaga sola al llegar.»", "<b>Haz:</b> Primero la tarjeta morada; luego las tres de comunidad. De las cifras, lee solo la del 52 %.<br><br><b>Di:</b> «¿A quién va dirigida? A estudiantes y trabajadores que salen de noche y dependen del transporte público. Empiezo por las mujeres, porque son las más expuestas: según la Veeduría Distrital, el 52 % de las mujeres vivió acoso sexual en el transporte público, frente al 16 % de los hombres. Pero Match no funciona solo con usuarios: funciona con una comunidad. La universidad verifica, el círculo cercano avala y la familia recibe los avisos.»", "<b>Haz:</b> Lee el título como pregunta, mirando al público. Luego recorre las cinco capas.<br><br><b>Di:</b> «La pregunta obvia es: ¿y si la persona del match es la peligrosa? La confianza se arma por capas. Verificación doble. Modo de compañía: solo mujeres, solo hombres o cualquier persona. Puntos de encuentro con vigilancia: porterías, recepciones o un CAI. Al encontrarse confirman que es la persona de la foto y que dice el código. Y nunca se muestra el destino, el apellido ni el celular. No elimina el riesgo, pero lo reduce frente a esperar sola. Tres de estas capas salieron de la revisión del 25 de noviembre.»", "<b>Haz:</b> Señala primero el WhatsApp y después la página web.<br><br><b>Di:</b> «Hay una segunda usuaria: Gloria, la mamá de Daniela. Ella no instala nada. Le llega un WhatsApp, abre un enlace y ve con quién va su hija, por dónde va y a qué hora llega. Cuando Daniela llega, la página se apaga y no queda historial.»", "<b>Haz:</b> Lee la tabla fila por fila: «hoy…», «con Match…».<br><br><b>Di:</b> «¿Qué impacto genera? Hoy Daniela espera sola; con Match espera con alguien verificado en un punto vigilado. Hoy avisa a mano; con Match el aviso llega solo y la ubicación se apaga al llegar. Hoy, si se le hace tarde, paga un carro; con Match sigue en el transporte que ya paga. Y la universidad, por primera vez, sabe cómo vuelve su gente a casa. En el piloto lo mido con tres cosas: trayectos acompañados, minutos de espera sola y percepción de seguridad.»", "<b>Haz:</b> Señala las seis apps rápido y quédate en la tarjeta morada de Match.<br><br><b>Di:</b> «Revisé seis apps. Cada una resuelve una parte: Moovit informa, Google Maps ubica, Uber transporta, Life360 vigila y bSafe reacciona. Ninguna te pone a alguien al lado. Esa es mi propuesta de valor: a quien depende del transporte público de noche, Match lo conecta con alguien verificado de su comunidad que hace su mismo tramo. Y hay tres cosas que solo hace Match: emparejar por tramo, la verificación doble y la compañía en la espera.»", "<b>Haz:</b> Una frase por tarjeta.<br><br><b>Di:</b> «Gana quien viaja: compañía, gratis y sin exponer sus datos. Gana quien espera en casa: tranquilidad sin instalar nada. Y gana la universidad: la Ley 30 ya le exige destinar al menos el 2 % de su presupuesto de funcionamiento a bienestar, y Match le da una forma concreta de usarlo, con datos para pedir más luz o más vigilancia.»", "<b>Haz:</b> Di la primera fila completa; las otras dos, rápido.<br><br><b>Di:</b> «El riesgo más grande es que no haya nadie en tu ruta. Por eso empiezo con una sola universidad, emparejo por tramo y no por ruta completa, y uso un rango de quince minutos. La suplantación y la exposición de la rutina ya tienen respuesta en el diseño.»", "<b>Haz:</b> Di la regla con calma. Luego tarjeta por tarjeta, de izquierda a derecha.<br><br><b>Di:</b> «¿Cómo se sostiene? Con un modelo mixto y una regla: la seguridad nunca se cobra. Todo lo que te protege es gratis. Lo que se paga es la comodidad: Match Plus, a 6.900 pesos al mes, menos que dos pasajes de TransMilenio, para guardar rutas sin límite, programar tu compañía de la semana o filtrar por carrera. Y la fuente principal es la institución: una licencia de 1.200 pesos por estudiante al año. Una universidad de 20.000 estudiantes pagaría 24 millones al año. Son precios que propongo y que hay que validar.»", "<b>Haz:</b> Di los supuestos ANTES de las cifras.<br><br><b>Di:</b> «Con esos precios hice un estimado, y les muestro los supuestos: cada institución tiene 20.000 personas, el 10 % usa la app y el 5 % paga Plus. El primer año es un piloto sin cobro. El segundo, con tres universidades, son cerca de 97 millones de pesos. El tercero, con diez instituciones, cerca de 323 millones. Lo que me falta calcular son los costos: los SMS de verificación, los servidores y la moderación.»", "<b>Haz:</b> Esta lámina cierra la venta: baja el ritmo.<br><br><b>Di:</b> «Lo que propongo es un piloto en una universidad, con tres partes: registro, match y trayecto. Lo demás llega después. Hasta aquí la propuesta; ahora les cuento cómo la construí.»", "<b>Haz:</b> Recorre los números de izquierda a derecha y luego señala las tres tiras.<br><br><b>Di:</b> «Empecé con cinco entrevistas y seis hallazgos. Hice dieciséis ideas y las prioricé. La primera versión de los wireframes tenía treinta y nueve pantallas en gris; después de la revisión del 24 de octubre pasé a ochenta y dos. Armé un sistema de dieciocho componentes y llegué a noventa pantallas en alta, con un prototipo de siete recorridos. En estas tres tiras se ve la misma secuencia en cada versión.»", "<b>Haz:</b> Señala la paleta, luego el símbolo y la tarjeta.<br><br><b>Di:</b> «En la revisión, la profesora vio la app muy parecida a Uber, que es blanco y negro puro. Le di una identidad propia de noche: neutros con tinte índigo, títulos en Bricolage Grotesque y un recurso gráfico que sale del logo, la línea de tramos. Como todo está en componentes, cambiar una pieza actualiza las noventa pantallas.»", "<b>Haz:</b> Lee solo la columna izquierda y resume la derecha.<br><br><b>Di:</b> «Cada revisión cambió algo concreto. La primera me sacó de la idea de los tiempos de llegada. La del 24 de octubre duplicó las pantallas. Las clases de noviembre ordenaron la retícula y los componentes. Y la del 25 de noviembre reforzó la seguridad en el encuentro y le dio a la app una identidad propia.»", "<b>Haz:</b> Habla con tus palabras: esta lámina es la más personal.<br><br><b>Di:</b> «Me llevo cuatro cosas. El problema no era el que yo creía: no era el bus, era estar solo. Diseñar los errores también es diseñar. El sistema de componentes me permitió corregir a tiempo. Y en seguridad, decidir qué no se muestra pesa tanto como lo que sí. Lo que falta: probar el prototipo con usuarias y validar los precios con una universidad.»", "<b>Haz:</b> Deja esta lámina durante las preguntas. Si piden la app, abre el prototipo desde el enlace.<br><br><b>Di:</b> «Nadie espera solo. Gracias. ¿Preguntas?»"];
-const TIEMPOS=[[60, 60], [15, 75], [50, 125], [45, 170], [30, 200], [50, 250], [45, 295], [50, 345], [30, 375], [40, 415], [40, 455], [35, 490], [30, 520], [55, 575], [45, 620], [30, 650], [50, 700], [40, 740], [40, 780], [35, 815], [10, 825]];
 
 /* estrellas y ciudad */
 function rnd(seed){let s=seed;return()=>{s=(s*16807)%2147483647;return (s-1)/2147483646;};}
@@ -819,17 +812,16 @@ addEventListener('resize',fit);fit();
 /* navegación */
 const slides=[...document.querySelectorAll('.slide')];let cur=0;
 const $=id=>document.getElementById(id);
-function show(){$('count').textContent=cur+' / '+(slides.length-1);$('where').textContent=slides[cur].dataset.sec+(cur?' · '+slides[cur].dataset.name:'');$('rail').style.width=(cur/(slides.length-1)*100)+'%';{const T=TIEMPOS[cur],f=x=>Math.floor(x/60)+':'+String(x%60).padStart(2,'0');$('notesT').textContent='Guion · '+slides[cur].dataset.name+' · meta '+f(T[0])+' · al terminar deberías ir en '+f(T[1]);}$('notesB').innerHTML=NOTES[cur]||'';}
+function show(){$('count').textContent=cur+' / '+(slides.length-1);$('where').textContent=slides[cur].dataset.sec+(cur?' · '+slides[cur].dataset.name:'');$('rail').style.width=(cur/(slides.length-1)*100)+'%';}
 function go(n){n=Math.max(0,Math.min(slides.length-1,n));if(n===cur)return;if(cur===0)adStop();slides[cur].classList.remove('active');cur=n;slides[cur].classList.add('active');show();try{history.replaceState(null,'','#lamina-'+cur);}catch(e){}}
 $('prev').onclick=()=>go(cur-1);$('next').onclick=()=>go(cur+1);
-$('bNotes').onclick=()=>{$('notes').hidden=!$('notes').hidden;};
 $('bFull').onclick=()=>{const d=document.documentElement;try{(document.fullscreenElement?document.exitFullscreen():d.requestFullscreen()).catch(()=>{});}catch(e){}};
 addEventListener('keydown',e=>{if(e.metaKey||e.ctrlKey||e.altKey)return;const k=e.key;
   if(k==='ArrowRight'||k==='PageDown'||k==='Enter'){e.preventDefault();go(cur+1);}
   else if(k==='ArrowLeft'||k==='PageUp'){e.preventDefault();go(cur-1);}
   else if(k===' '){e.preventDefault();if(cur===0)adToggle();else go(cur+1);}
   else if(k==='Home')go(0);else if(k==='End')go(slides.length-1);
-  else if(k==='n'||k==='N')$('bNotes').click();else if(k==='f'||k==='F')$('bFull').click();
+  else if(k==='f'||k==='F')$('bFull').click();
   else if((k==='r'||k==='R')&&cur===0)adStart();});
 let tx=null;stage.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
 stage.addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;tx=null;if(Math.abs(dx)>60)go(cur+(dx<0?1:-1));},{passive:true});
@@ -840,16 +832,61 @@ addEventListener('hashchange',fromHash);
 let t0=null;function tick(){if(t0!==null){const s=Math.floor((Date.now()-t0)/1000);$('clock').textContent=Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}}
 setInterval(tick,1000);addEventListener('keydown',()=>{if(t0===null)t0=Date.now();},{once:true});addEventListener('pointerdown',()=>{if(t0===null)t0=Date.now();},{once:true});
 
-/* comercial */
-const ad=$('ad'),SC=[['c1',0],['c2',6],['c3',13],['c4',20],['c5',27],['c6',43],['c7',52]],BEATS=[[27,'b1'],[31,'b2'],[35,'b3'],[39,'b4']],END=60;
+/* comercial · 40 s con música generada en el navegador */
+const ad=$('ad'),SC=[['k1',0],['k2',3.5],['k3',8],['k4',12],['k5',22],['k6',31]],END=40;
 const scs=SC.map(([id])=>$(id));const AD={t:0,on:false,last:0,raf:0};
-function adRender(){let c=SC[0][0];for(const [id,t] of SC)if(AD.t>=t)c=id;scs.forEach(s=>s.classList.toggle('on',s.id===c));let b='';for(const [t,x] of BEATS)if(AD.t>=t)b=x;if($('c5').dataset.beat!==b)$('c5').dataset.beat=b;$('adBar').style.width=Math.min(100,AD.t/END*100)+'%';const s=Math.floor(AD.t);$('adTime').textContent='0:'+String(Math.min(s,60)).padStart(2,'0');}
+let AC=null,MG=null,MUTE=false;
+function score(ctx,t0,out){
+  const M=m=>440*Math.pow(2,(m-69)/12);
+  const comp=ctx.createDynamicsCompressor();comp.threshold.value=-16;comp.ratio.value=4;comp.connect(out);
+  const bus=ctx.createGain();bus.gain.value=.75;bus.connect(comp);
+  const dl=ctx.createDelay(1);dl.delayTime.value=.46875;const fb=ctx.createGain();fb.gain.value=.3;const wet=ctx.createGain();wet.gain.value=.35;const lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=3200;dl.connect(lp);lp.connect(fb);fb.connect(dl);lp.connect(wet);wet.connect(bus);
+  const nb=ctx.createBuffer(1,ctx.sampleRate,ctx.sampleRate);{const d=nb.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
+  const T=t=>t0+t;
+  function tone(f,t,d,o={}){const {type='sine',g=.2,a=.008,send=0,f2=0}=o;const os=ctx.createOscillator();os.type=type;os.frequency.setValueAtTime(f,T(t));if(f2)os.frequency.exponentialRampToValueAtTime(f2,T(t+d));const v=ctx.createGain();v.gain.setValueAtTime(.0001,T(t));v.gain.linearRampToValueAtTime(g,T(t+a));v.gain.exponentialRampToValueAtTime(.0001,T(t+d));os.connect(v);v.connect(bus);if(send){const s=ctx.createGain();s.gain.value=send;v.connect(s);s.connect(dl);}os.start(T(t));os.stop(T(t+d+.05));}
+  function pad(ms,t,d,g=.04,cut=1400){ms.forEach(m=>[-4,4].forEach(dt=>{const os=ctx.createOscillator();os.type='sawtooth';os.frequency.value=M(m);os.detune.value=dt;const fl=ctx.createBiquadFilter();fl.type='lowpass';fl.frequency.value=cut;const v=ctx.createGain();v.gain.setValueAtTime(.0001,T(t));v.gain.linearRampToValueAtTime(g,T(t+Math.min(.5,d/3)));v.gain.setValueAtTime(g,T(t+d-.3));v.gain.linearRampToValueAtTime(.0001,T(t+d));os.connect(fl);fl.connect(v);v.connect(bus);const s=ctx.createGain();s.gain.value=.25;v.connect(s);s.connect(dl);os.start(T(t));os.stop(T(t+d+.05));}));}
+  function noise(t,d,o={}){const {g=.2,type='highpass',f=7000,f2=0,q=1,a=.002}=o;const sr=ctx.createBufferSource();sr.buffer=nb;sr.loop=true;const fl=ctx.createBiquadFilter();fl.type=type;fl.frequency.setValueAtTime(f,T(t));if(f2)fl.frequency.exponentialRampToValueAtTime(f2,T(t+d));fl.Q.value=q;const v=ctx.createGain();v.gain.setValueAtTime(.0001,T(t));v.gain.linearRampToValueAtTime(g,T(t+a));v.gain.exponentialRampToValueAtTime(.0001,T(t+d));sr.connect(fl);fl.connect(v);v.connect(bus);sr.start(T(t));sr.stop(T(t+d+.05));}
+  const kick=(t,g=.85)=>tone(150,t,.36,{g,a:.003,f2:42});
+  const hat=(t,g=.05)=>noise(t,.05,{g});
+  const clap=t=>noise(t,.18,{g:.18,type:'bandpass',f:1700,q:.8});
+  const ping=t=>{tone(M(88),t,.35,{g:.13,send:.4});tone(M(95),t+.07,.45,{g:.1,send:.4});};
+  const ding=t=>{tone(M(84),t,.6,{type:'triangle',g:.16,send:.5});tone(M(91),t+.08,.8,{type:'triangle',g:.12,send:.5});};
+  const whoosh=t=>noise(t,.7,{g:.14,type:'bandpass',f:300,f2:4000,q:.7,a:.35});
+  const boom=t=>tone(70,t,1.3,{g:.7,a:.005,f2:32});
+  // 0–8 · tensión
+  pad([45,52],0,8.1,.03,480);boom(.15);
+  for(let t=0;t<8;t+=.625)tone(t%1.25<.1?2400:2000,t,.035,{type:'square',g:.022});
+  whoosh(3.2);ping(4.6);
+  // 8–12 · subida
+  noise(8,4,{g:.16,type:'highpass',f:500,f2:7000,a:3.8});pad([57,60,64],8,4,.035,900);
+  noise(9.35,.25,{g:.2,type:'bandpass',f:2500,q:1});boom(10.2);
+  // 12–31 · ritmo
+  const CH=[[48,52,55],[43,47,50],[45,48,52],[41,45,48]],RT=[36,31,33,29];
+  for(let k=0;k<8;k++){const t=12+2.5*k;if(t>=31)break;const c=CH[k%4],dur=Math.min(2.5,31-t);
+    pad(c.map(m=>m+12),t,dur,k<4?.024:.03,k<4?1100:2000);
+    for(let b=0;b<4;b++){const bt=t+b*.625;if(bt>=31)break;kick(bt,k<1&&b<2?.6:.85);hat(bt+.3125);if(bt>=17&&(b===1||b===3))clap(bt);}
+    for(let e=0;e<8;e++){const et=t+e*.3125;if(et>=31)break;tone(M(RT[k%4]+12),et,.26,{type:'triangle',g:.16});}
+    if(t>=22)for(let e=0;e<8;e++){const et=t+e*.3125;if(et>=31)break;tone(M(c[e%3]+24),et,.25,{type:'triangle',g:.045,send:.5});}}
+  whoosh(11.6);ping(12.6);ping(13.6);ping(14.9);ping(15.9);whoosh(18.1);ding(18.9);ding(19.6);
+  whoosh(21.6);ping(22.9);ping(26.3);ding(29.4);
+  // 31–40 · cierre
+  boom(31);pad([48,55,60,64,67],31,9,.04,2200);
+  [72,76,79,84].forEach((m,i)=>tone(M(m),31.5+i*.22,1.8,{type:'triangle',g:.11,send:.6}));
+  [79,84,88].forEach((m,i)=>tone(M(m),33.4+i*.16,1.6,{type:'triangle',g:.08,send:.6}));
+}
+function audioStart(){audioStop();try{AC=new (window.AudioContext||window.webkitAudioContext)();}catch(e){AC=null;return;}MG=AC.createGain();MG.gain.value=MUTE?0:.9;MG.connect(AC.destination);try{AC.resume();}catch(e){}score(AC,AC.currentTime+.05,MG);}
+function audioStop(){if(AC){try{AC.close();}catch(e){}AC=null;}}
+function adRender(){let c=SC[0][0];for(const [id,t] of SC)if(AD.t>=t)c=id;scs.forEach(s=>s.classList.toggle('on',s.id===c));$('adBar').style.width=Math.min(100,AD.t/END*100)+'%';$('adTime').textContent='0:'+String(Math.min(Math.floor(AD.t),END)).padStart(2,'0');}
 function adFrame(now){if(!AD.on)return;AD.t+=Math.min(.1,(now-AD.last)/1000);AD.last=now;if(AD.t>=END){AD.t=END;adRender();adEnd();return;}adRender();AD.raf=requestAnimationFrame(adFrame);}
-function adStart(){cancelAnimationFrame(AD.raf);scs.forEach(s=>s.classList.remove('on'));$('c5').dataset.beat='';void ad.offsetWidth;AD.t=0;AD.on=true;AD.last=performance.now();ad.classList.remove('ended','paused');ad.classList.add('playing');$('adPause').textContent='Pausa';adRender();AD.raf=requestAnimationFrame(adFrame);}
-function adToggle(){if(!ad.classList.contains('playing')){adStart();return;}AD.on=!AD.on;ad.classList.toggle('paused',!AD.on);$('adPause').textContent=AD.on?'Pausa':'Seguir';if(AD.on){AD.last=performance.now();AD.raf=requestAnimationFrame(adFrame);}}
+function cine(on){document.body.classList.toggle('cine',on);if(on){const d=document.documentElement;try{if(!document.fullscreenElement&&d.requestFullscreen)d.requestFullscreen().catch(()=>{});}catch(e){}}requestAnimationFrame(fit);}
+function adStart(){cancelAnimationFrame(AD.raf);scs.forEach(s=>s.classList.remove('on'));void ad.offsetWidth;AD.t=0;AD.on=true;AD.last=performance.now();ad.classList.remove('ended','paused');ad.classList.add('playing');$('adPause').textContent='Pausa';cine(true);audioStart();adRender();AD.raf=requestAnimationFrame(adFrame);}
+function adToggle(){if(!ad.classList.contains('playing')){adStart();return;}AD.on=!AD.on;ad.classList.toggle('paused',!AD.on);$('adPause').textContent=AD.on?'Pausa':'Seguir';if(AC){try{AD.on?AC.resume():AC.suspend();}catch(e){}}if(AD.on){AD.last=performance.now();AD.raf=requestAnimationFrame(adFrame);}}
 function adEnd(){AD.on=false;ad.classList.remove('playing');ad.classList.add('ended');}
-function adStop(){AD.on=false;cancelAnimationFrame(AD.raf);ad.classList.remove('playing','paused','ended');scs.forEach(s=>s.classList.remove('on'));}
+function adStop(){AD.on=false;cancelAnimationFrame(AD.raf);ad.classList.remove('playing','paused','ended');scs.forEach(s=>s.classList.remove('on'));audioStop();cine(false);}
 $('adPlay').onclick=adStart;$('adPause').onclick=adToggle;$('adSkip').onclick=()=>go(1);$('adAgain').onclick=adStart;$('adGo').onclick=()=>go(1);
+$('adMute').onclick=()=>{MUTE=!MUTE;$('adMute').textContent=MUTE?'Activar sonido':'Silenciar';if(MG)MG.gain.value=MUTE?0:.9;};
+let mt=0;addEventListener('pointermove',()=>{if(!document.body.classList.contains('cine'))return;document.body.classList.add('mouse');clearTimeout(mt);mt=setTimeout(()=>document.body.classList.remove('mouse'),1800);});
+try{new ResizeObserver(fit).observe(vp);}catch(e){}
 
 show();fromHash();
 </script>

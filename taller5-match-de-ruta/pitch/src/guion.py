@@ -1,9 +1,9 @@
-"""Guion del pitch: fuente única. Inyecta NOTES y TIEMPOS en pitch.src.html y escribe GUION.md.
+"""Guion del pitch, aparte de la presentación: escribe GUION.md (no toca pitch.src.html).
 Uso (desde pitch/): python3 -I src/guion.py"""
 import json, pathlib, re
 raiz = pathlib.Path(__file__).resolve().parent
 G = [  # (id, nombre, segundos, qué haces, qué dices)
- ('s0','Comercial',60,'No hables. Presiona Espacio para reproducir. Cuando termine, pasa con →.',''),
+ ('s0','Comercial',40,'No hables. Clic en el botón de play (o Espacio): se pone en pantalla completa y suena la música. Cuando termine el logo, pasa con →.',''),
  ('s1','Portada',15,'Mira al público, no a la pantalla.','Buenos días. Soy Juan Camilo Orozco y les presento Match: compañía verificada para los trayectos de noche.'),
  ('s2','El problema',50,'Recorre la curva con la mano de izquierda a derecha. Detente en el recuadro morado.','Les presento a Daniela. Tiene 22 años, estudia en Chapinero y vive en Bosa. Los martes sale de clase a las nueve de la noche. Camina ocho minutos por una calle oscura y va cuarenta minutos de pie en la troncal. Cuando llega al portal viene lo peor: esperar el alimentador, de diez a veinte minutos, en un paradero que se va quedando vacío. Y después, caminar seis minutos a su casa. El miedo no está en el bus: está en la espera. Daniela no existe: la construí con lo que me contaron cinco personas en entrevistas.'),
  ('s3','Lo que encontré',45,'Señala el 5 de 5 y lee solo dos datos de la derecha.','Mi hipótesis inicial era que el problema era no saber cuánto tarda el bus. Las entrevistas la tumbaron: los cinco ya usan apps de rutas y aun así sienten miedo. Los cinco cuentan algo que les pasó, y cuatro de cinco han cambiado de plan alguna vez. Ninguno elige dónde esperar por una app: eligen por la luz y por la gente. Son cinco entrevistas: me sirven para ver patrones, no para hacer estadística.'),
@@ -35,15 +35,8 @@ for sid, nom, seg, haz, di in G:
 src = raiz / 'pitch.src.html'; s = src.read_text(encoding='utf-8')
 order = re.findall(r'<section class="slide[^"]*" id="([^"]+)"', s)
 assert order == [g[0] for g in G], order
-a = s.index('const NOTES=['); b = s.index('];', a) + 2
-s = s[:a] + 'const NOTES=' + json.dumps(notes, ensure_ascii=False) + ';\nconst TIEMPOS=' + json.dumps(tiempos) + ';' + s[b:]
-old = "$('notesT').textContent='Guion · '+slides[cur].dataset.name;"
-new = "{const T=TIEMPOS[cur],f=x=>Math.floor(x/60)+':'+String(x%60).padStart(2,'0');$('notesT').textContent='Guion · '+slides[cur].dataset.name+' · meta '+f(T[0])+' · al terminar deberías ir en '+f(T[1]);}"
-if old in s: s = s.replace(old, new)
-assert 'TIEMPOS[cur]' in s
-src.write_text(s, encoding='utf-8')
-md = ['# Guion del pitch · Match de ruta', '', f'Duración meta: {mmss(acc)} (máximo 15:00). Ritmo: unas 120 palabras por minuto.', '',
-      'Cómo ensayar: abre `match-de-ruta-pitch.html`, presiona N para ver el guion y compara el reloj con la meta de cada lámina.', '',
+md = ['# Guion del pitch · Match de ruta', '', f'Duración meta: {mmss(acc)} (máximo 15:00). Si terminas antes de 11:00, vas muy rápido: haz pausas.', '',
+      'Cómo ensayar: ten este guion en otra pantalla (celular o tablet) y la presentación en el computador. El reloj de la barra de abajo empieza con la primera tecla: compáralo con la columna «Acumulado».', '',
       '| # | Lámina | Meta | Acumulado |', '|---|---|---|---|']
 for i, (sid, nom, seg, haz, di) in enumerate(G): md.append(f'| {i} | {nom} | {mmss(seg)} | {mmss(tiempos[i][1])} |')
 md.append('')

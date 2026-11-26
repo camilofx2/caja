@@ -1,6 +1,6 @@
 # Pitch de Match de ruta
 
-Presentación en un solo archivo HTML: comercial animado de 1 minuto y 20 láminas.
+Presentación en un solo archivo HTML: comercial animado de 40 segundos (pantalla completa, con música) y 20 láminas.
 
 - `match-de-ruta-pitch.html`: la que se abre con doble clic en Chrome. Funciona sin internet
   (solo cambia la tipografía por la del sistema si no puede cargar Figtree).
@@ -14,14 +14,13 @@ Presentación en un solo archivo HTML: comercial animado de 1 minuto y 20 lámin
 | Espacio (en el comercial) | Reproducir o pausar |
 | → o Enter | Lámina siguiente |
 | ← | Lámina anterior |
-| N | Mostrar u ocultar el guion de la lámina |
 | F | Pantalla completa |
 | R (en el comercial) | Volver a empezar el comercial |
 
 El reloj de abajo empieza a contar con la primera tecla o clic. La meta son 13 a 14 minutos (máximo 15).
 
 ## Orden
-0. Comercial (1 min)
+0. Comercial (40 s). Al darle play se pone en pantalla completa y suena la música, generada en el navegador (no usa archivos ni internet). Mover el mouse muestra los controles: pausa, silenciar y saltar.
 1–15. La idea: portada, problema, hallazgos, ¿qué es?, cómo funciona, ¿a quién va dirigida?, confianza,
    quien te espera, ¿qué impacto genera?, propuesta de valor, beneficios, riesgos, modelo de negocio mixto,
    valor comercial estimado, el primer paso.
@@ -63,6 +62,5 @@ de Figma. No hay cifras externas. Los aprendizajes de la lámina 14 son un borra
 - El violeta sigue siendo provisional.
 
 ## Guion
-`src/guion.py` es la fuente del guion: qué hacer, qué decir y la meta de tiempo de cada lámina.
-Al ejecutarlo (`python3 -I src/guion.py` y luego `python3 -I src/armar.py`) actualiza el guion de la tecla N
-y escribe `GUION.md` para leer o imprimir. Meta total: 13:45.
+El guion va aparte de la presentación, para tenerlo en otra pantalla: `GUION.md`.
+Se genera con `python3 -I src/guion.py` (desde `pitch/`). Meta total: 13:25.
