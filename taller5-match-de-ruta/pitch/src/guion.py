@@ -25,6 +25,44 @@ G = [  # (id, nombre, segundos, qué haces, qué dices)
  ('s14','Lo que me quedó',35,'Habla con tus palabras: esta lámina es la más personal.','Me llevo cuatro cosas. El problema no era el que yo creía: no era el bus, era estar solo. Diseñar los errores también es diseñar. El sistema de componentes me permitió corregir a tiempo. Y en seguridad, decidir qué no se muestra pesa tanto como lo que sí. Lo que falta: probar el prototipo con usuarias y validar los precios con una universidad.'),
  ('s15','Cierre',10,'Deja esta lámina durante las preguntas. Si piden la app, abre el prototipo desde el enlace.','Nadie espera solo. Gracias. ¿Preguntas?'),
 ]
+
+GLOS = {
+ 's2': [('Persona (user persona)','Usuaria ficticia construida con datos reales de las entrevistas. Daniela no existe, pero todo lo que vive salió de ellas.'),('Curva de tensión','Dibujo de cómo cambia el miedo durante el trayecto. Es interpretación, no una medición.')],
+ 's3': [('Hipótesis','Lo que uno cree antes de investigar. La mía era «el problema es no saber cuánto tarda el bus».'),('Insight','Hallazgo que cambia cómo entiendes el problema. Tuve 6.'),('Patrones vs. estadística','Con 5 entrevistas ves tendencias que se repiten; no puedes decir «el 80 % de los colombianos…».')],
+ 's4': [('Problema replanteado','La nueva definición del problema después de investigar: no falta información, falta compañía.')],
+ 's5': [('Verificación','Comprobar que la persona es quien dice ser: correo de la universidad o 2 avales.'),('Aval','Una persona ya verificada que responde por ti: «la conozco en persona».'),('Tramo','Pedazo del recorrido (por ejemplo, Calle 45 → Portal Sur). Se empareja por tramo, no por ruta completa.'),('Match','Cuando dos personas compatibles aceptan viajar juntas. Las dos tienen que aceptar (confirmación mutua).')],
+ 'sA': [('Público objetivo','Las personas para las que se diseña: estudiantes y trabajadores que salen de noche en transporte público.'),('Comunidad','Quienes hacen funcionar la confianza alrededor del usuario: universidad, círculo cercano y familia.'),('SNIES','Sistema del Ministerio de Educación que reporta cuántos estudiantes hay en educación superior.')],
+ 's6': [('Suplantación','Que alguien se haga pasar por otra persona.'),('Modo de compañía','Elegir con quién viajas: solo mujeres, solo hombres o cualquier persona.'),('Punto seguro','Lugar de encuentro con vigilancia: portería, recepción o CAI.'),('Código de encuentro','Palabra de verificación (ej. «Naranja-12») que las dos personas confirman al verse.')],
+ 's7': [('Contacto de confianza','Hasta 3 personas que reciben avisos del trayecto, sin instalar la app.'),('Sin historial','Al llegar, la ubicación se borra; no queda registro de por dónde anduviste.')],
+ 'sB': [('Impacto','El cambio que genera el proyecto: de esperar sola a llegar acompañada.'),('Indicador','Algo que se puede medir: % de trayectos acompañados, minutos de espera sola, percepción de seguridad.'),('Datos anónimos / agregados','Cifras sumadas sin nombres (ej. «la franja de 9 a 10 p. m. tiene más solicitudes»).')],
+ 's8': [('Benchmarking','Comparar tu propuesta con apps que ya existen para ver qué hacen y qué no.'),('Propuesta de valor','En una frase: qué le das a quién y por qué es distinto.'),('Diferenciador','Lo que solo hace Match: emparejar por tramo, verificación doble y compañía en la espera.')],
+ 'sC': [('Bienestar universitario','Área de la universidad que cuida a los estudiantes. La Ley 30 (art. 118) le asigna mínimo el 2 % del presupuesto de funcionamiento.')],
+ 's9': [('Masa crítica','Que haya suficientes usuarios para que funcione. Si no hay nadie en tu ruta, la app no sirve.'),('Piloto','Prueba pequeña y controlada (una universidad) antes de crecer.')],
+ 'sD': [('Modelo de negocio','Cómo se sostiene económicamente el proyecto.'),('Mixto / freemium','Una parte gratis para todos y otra paga. Aquí: seguridad gratis, comodidad paga y licencia para la institución.'),('Licencia institucional','Lo que paga la universidad o empresa por ofrecer Match a su gente: $1.200 por estudiante al año.'),('B2B / B2C','B2B: le vendes a una organización (universidad). B2C: le vendes a la persona (Match Plus).')],
+ 'sE': [('Supuesto','Número que asumo para calcular, por validar: 20.000 personas, 10 % usa, 5 % paga.'),('Escenario','Estimado por año: 1 piloto ($0), 2 ($96,8 M), 3 ($322,8 M).'),('Techo / mercado total','Lo máximo posible si todas las instituciones la usaran: $3.268 millones al año. Es referencia, no meta.'),('Conversión','Porcentaje de usuarios gratis que pasan a pagar.')],
+ 's10': [('MVP (producto mínimo viable)','La versión más pequeña que ya sirve: registro, match y trayecto.'),('MoSCoW','Método para priorizar ideas: Must (debe), Should (debería), Could (podría), Won\'t (no ahora).')],
+ 's11': [('Wireframe','Boceto de pantalla en grises, sin colores ni estilo, para probar el orden.'),('Alta fidelidad','Pantallas con el diseño final: colores, tipografía, ilustraciones.'),('Prototipo','Pantallas conectadas para navegar como si fuera la app real (7 recorridos).'),('User flow','Diagrama del paso a paso que sigue la persona en una tarea.'),('Arquitectura de información','Qué contiene la app y cómo se organiza (menús y secciones), no el paso a paso.')],
+ 's12': [('Sistema de diseño','Biblioteca de colores, tipografías y componentes reutilizables.'),('Componente','Pieza reutilizable (botón, tarjeta). Si cambias el original, se actualizan todas las copias.'),('Variante / propiedad','Versiones de un mismo componente (botón activo, bloqueado) que se eligen con una opción.'),('Instancia','Cada copia de un componente usada en una pantalla.'),('Auto layout','Función de Figma que acomoda los elementos solos, como una columna que crece con el contenido.'),('Retícula','Guía de columnas para alinear: 4 columnas, margen 16, medianil 12.'),('Línea de tramos','Recurso gráfico propio que sale del logo: dos rutas que comparten un tramo.')],
+ 's13': [('Retroalimentación','Los comentarios de la profesora en cada revisión y lo que cambió por ellos.')],
+}
+PREGUNTAS = [
+ ('¿Y si la persona del match es peligrosa?','Por eso la confianza va por capas: verificación doble, modo de compañía, punto seguro con vigilancia, foto y código al verse, y reporte con bloqueo inmediato. No elimina el riesgo, pero lo reduce frente a esperar sola.'),
+ ('¿Por qué no usar Uber o pedir un carro?','Cuesta cada noche y te saca del transporte público. 4 de 5 entrevistados lo hacen solo cuando se les hace tarde; Match les permite seguir en el transporte que ya pagan.'),
+ ('¿Qué pasa si no hay nadie en mi ruta?','Es el riesgo principal (masa crítica). Por eso: piloto en una sola universidad, emparejar por tramo y no ruta completa, rango de ±15 minutos. Si no hay nadie, la app lo dice y ofrece activar solo el aviso al contacto.'),
+ ('¿Compartir la ubicación no es peligroso?','Solo se comparte durante el trayecto, solo con tus contactos y con la persona del match, se apaga sola al llegar y no queda historial. Nunca se muestra destino, apellido ni celular.'),
+ ('¿Por qué cobrarías? ¿No es una app de seguridad?','La seguridad nunca se cobra: todo lo que protege es gratis. Se cobra la comodidad (Match Plus) y la paga principalmente la universidad, que ya debe destinar dinero a bienestar.'),
+ ('¿De dónde salen los precios?','$6.900 es menos que dos pasajes de TransMilenio ($7.100). $1.200 por estudiante al año es una propuesta mía. Son precios por validar en el piloto.'),
+ ('¿Esos 10 % y 5 % son reales?','Son supuestos míos y por eso los muestro. El piloto sirve para medirlos.'),
+ ('¿Cuánto cuesta hacer la app?','No lo he calculado todavía: SMS de verificación, servidores, moderación y soporte. Lo digo en la lámina como pendiente.'),
+ ('¿Solo 5 entrevistas no es muy poco?','Sí, para estadística. Me sirven para encontrar patrones, y los complementé con datos de la Cámara de Comercio y la Veeduría Distrital.'),
+ ('¿Por qué el modo solo mujeres? ¿No discrimina?','Es opcional y va en las dos direcciones (solo mujeres, solo hombres o cualquiera). Responde a un hallazgo: las 3 mujeres hablaron de violencia sexual, y la Veeduría reporta 52 % de acoso a mujeres en transporte público.'),
+ ('¿Quién no tiene correo institucional cómo entra?','Con 2 avales de personas ya verificadas. Quien avala responde: si la cuenta avalada es suspendida, se revisan sus avales. Máximo 5 avales por persona.'),
+ ('¿Qué hace la mamá si algo sale mal?','Recibe avisos por WhatsApp. Si hay retraso de 15 minutos, la app pregunta «¿Todo bien?» y si no hay respuesta en 5 minutos, el contacto recibe la última ubicación. Hay atajo al 123.'),
+ ('¿En qué se diferencia de Moovit, que ya deja compartir el viaje?','Moovit informa y comparte el avance (SafeRide, en su plan pago). Ninguna app te pone a alguien al lado: Match empareja personas verificadas por tramo.'),
+ ('¿Por qué cambiaste la identidad?','En la revisión del 25 de noviembre la vieron parecida a Uber (blanco y negro). Pasé a una identidad de noche: índigo, Bricolage Grotesque y la línea de tramos del logo.'),
+ ('¿Qué sigue?','Probar el prototipo con usuarias, validar precios con una universidad y hacer el piloto.'),
+]
+
 def mmss(s): return f'{s//60}:{s%60:02d}'
 acc, notes, tiempos = 0, [], []
 for sid, nom, seg, haz, di in G:
@@ -43,5 +81,10 @@ md.append('')
 for i, (sid, nom, seg, haz, di) in enumerate(G):
     md += [f'## {i} · {nom} · {mmss(seg)} (vas en {mmss(tiempos[i][1])})', '', f'**Haz:** {haz}', '']
     if di: md += [f'**Di:** «{di}»', '']
+    if sid in GLOS:
+        md += ['**Glosario de esta lámina:**', ''] + [f'- **{t}:** {d}' for t, d in GLOS[sid]] + ['']
+md += ['---', '', '# Preguntas posibles y cómo responder', '']
+for i, (q, r) in enumerate(PREGUNTAS, 1): md += [f'**{i}. {q}**', '', r, '']
+md += ['---', '', '# Links', '', '- Figma (para la profesora; desde ahí llega al FigJam y a la evolución): https://www.figma.com/design/B9iRO9GFetHn3IN3nbbWGJ/?node-id=125-2', '- FigJam de investigación: https://www.figma.com/board/Ot0HvEvorDkmOm9yVtU8hF', '- Pitch: https://claude.ai/artifact/5LTiy21zaR1UQJBFjFNmTd (para presentar, mejor el archivo match-de-ruta-pitch.html)', '']
 (raiz.parent / 'GUION.md').write_text('\n'.join(md), encoding='utf-8')
 print('total', mmss(acc), 'palabras', sum(len(g[4].split()) for g in G))
